@@ -1,28 +1,104 @@
-\documentclass[a4paper]{article}
+\documentclass[twoside]{article}
 
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage[spanish,activeacute]{babel}
 \usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[inner=3.0cm,top=2.5cm,outer=2.0cm,bottom=2.5cm]{geometry}  
+\usepackage{fancyhdr}
+%\usepackage{hyperref}
+\usepackage[toc,xindy]{glossaries}
 
-\usepackage[left=3.0cm,top=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}  
+\pagenumbering{gobble}
+\renewcommand{\baselinestretch}{1.5}
 
-\title{WifiBotRosPi}
-\author{Joan Guasch Iglesias}
+
+\title{\begin{center} 
+\includegraphics[scale=0.05]{images/upc-logo.png} 
+\end{center} 
+\vspace{0.5cm} 
+Proyecto Final de Carrera\\
+INGENIER\'IA INDUSTRIAL \\
+\vspace{0.5cm} 
+\Huge{WifiBotPi} 
+\vspace{0.5cm} \\
+ Memoria}
+
+%\author{Joan Guasch Iglesias}
 \date{} % void to avoid put current date
+\pagestyle{fancy}
+
+\fancyhead[LO,RE]{\title{WifiBotPiRos}}
+\fancyhead[LE,RO]{\thepage}
+\fancyfoot[C]{\includegraphics[scale=0.5]{images/etseib-logo.png}}
+%\headrulewidth 0.4pt
+%\footrulewidth 0 pt
+
 
 \begin{document}
 
-\maketitle 
-
+\maketitle
+\begin{center}
+\large{$\begin{array}{ll}
+\mbox{Autor:} & \mbox{Joan Guasch Iglesias} \\
+\mbox{Director:} & \mbox{Manel Velasco Garcia} \\
+\mbox{Convocatoria:} & \mbox{Fecha a presentar}
+\end{array}$}\\ 
+\vspace{2cm} 
+\Large{Escuela T'ecnica Superior de Ingenier'ia Industrial de Barcelona}\\ \vspace{1cm}
+\includegraphics[scale=1]{images/etseib-logo.png}
+\end{center}
+\thispagestyle{empty}
 \newpage
+
+\thispagestyle{empty}
+\paragraph*{}
+\newpage
+
+%\thispagestyle{empty}
+%\pagenumber{1}
+\pagenumbering{arabic}
+\section*{Resumen}
+Este proyecto consistir'a en el aprovechamiento de una plataforma rob'otica que corre el riesgo de quedarse obsoleta y rescatarla de su destino. Para ello se incorporar'an un conjunto de herramientas que simplificar'an el trabajo para futuros usuarios.
+\newpage
+
+\thispagestyle{empty}
+\paragraph*{}
+\newpage
+
+\fancyhead[LE,RO]{3}
 
 \tableofcontents
-
+\setcounter{page}{1}
+\addtocontents{toc}{~\hfill\textbf{P'agina}\par}
+\addcontentsline{toc}{section}{Resumen}
+%\setcounter{page}{3}
+%\addcontentsline{toc}{section}{'Indice}
 \newpage
 
-\section{Objetivos}
-Este proyecto consistir'a en el aprovechamiento de una plataforma rob'otica que corre el riesgo de quedarse obsoleta y rescatarla de su destino. Para ello se incorporar'an un conjunto de herramientas que simplificar'an el trabajo para futuros usuarios.
+\setcounter{page}{4}
+\fancyhead[LE,RO]{\thepage}
+\newglossaryentry{Hitler}
+{
+  name=Colega,
+  description={wawawawaa}
+}
+
+\makeglossaries
+
+\section{Glosario}
+\newpage
+
+\section{Prefacio}
+\subsection{Motivaci'on}
+\newpage
+
+\section{Introducci'on}
+\subsection{Historia}
+\subsection{Estado del arte}
+\subsection{Alcance}
+\subsection{Objetivos}
 
 \newpage
 \section{Material de partida }
@@ -105,10 +181,22 @@ En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mej
 
 \subsection{Raspberry Pi}
 Raspberry Pi es un ordenador del tama'no de una tarjeta de cr'edito desarrolado en Reino Unido por la \textbf{Raspberry Pi Foundation}
-
-
 \newpage
+
 \section{Soluci'on planteada}
 
+\subsection{Electr'onica}
+\newpage
+
+\section{Conclusiones}
+\newpage
+
+\section{Agradecimientos}
+\newpage
+
+\section{Biografia}
+\newpage
+
+\section{Soporte inform'atico}
 
 \end{document}
