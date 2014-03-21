@@ -29,13 +29,13 @@ register = 0x02
 new_address = 0xe6
 
 try:
-	bus.write_byte_data(address, register, 0x9a)
+        bus.write_byte_data(address, register, 0x9a) #First sequence
 	time.sleep(0.001)
-	bus.write_byte_data(address, register, 0x92)
+	bus.write_byte_data(address, register, 0x92) #Second sequence
         time.sleep(0.001)
-	bus.write_byte_data(address, register, 0x9e)
+	bus.write_byte_data(address, register, 0x9e) #Third sequence
         time.sleep(0.001)
-	bus.write_byte_data(address, register, new_address)
+	bus.write_byte_data(address, register, new_address) #Write new address
         time.sleep(0.1)
 
 except:

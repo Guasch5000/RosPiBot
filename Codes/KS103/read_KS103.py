@@ -7,7 +7,7 @@ address = 0x73
 
 try:
 	while (True):
-		#Inicialize the lecture in [mm], range [0-5200mm]
+		#Initialize the measure in [mm], range [0-5200mm]
 		bus.write_byte_data(address, 2, 0xb0)
 
 		#Max waiting time
