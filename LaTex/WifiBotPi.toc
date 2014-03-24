@@ -2,35 +2,33 @@
 ~\hfill \textbf {P'agina}\par 
 \contentsline {section}{Resumen}{1}
 \contentsline {section}{\numberline {1}Glosario}{4}
-\contentsline {section}{\numberline {2}Prefacio}{5}
-\contentsline {subsection}{\numberline {2.1}Motivaci'on}{5}
-\contentsline {section}{\numberline {3}Introducci'on}{6}
-\contentsline {subsection}{\numberline {3.1}Historia}{6}
-\contentsline {subsection}{\numberline {3.2}Estado del arte}{6}
-\contentsline {subsection}{\numberline {3.3}Alcance}{6}
-\contentsline {subsection}{\numberline {3.4}Objetivos}{6}
-\contentsline {section}{\numberline {4}Material de partida }{7}
-\contentsline {subsection}{\numberline {4.1}WifiBot}{7}
-\contentsline {subsubsection}{\numberline {4.1.1}Descripci'on}{7}
-\contentsline {paragraph}{Componentes}{7}
-\contentsline {paragraph}{Estructura}{8}
-\contentsline {subsubsection}{\numberline {4.1.2}Estado Inicial}{8}
-\contentsline {subsection}{\numberline {4.2}Raspberry Pi}{9}
-\contentsline {section}{\numberline {5}Especificaciones}{10}
-\contentsline {subsection}{\numberline {5.1}Software}{10}
-\contentsline {subsubsection}{\numberline {5.1.1}Web}{10}
-\contentsline {subsubsection}{\numberline {5.1.2}Librer'ias}{10}
-\contentsline {subsection}{\numberline {5.2}Electr'onica}{10}
-\contentsline {subsubsection}{\numberline {5.2.1}Funcionamiento}{10}
-\contentsline {subsubsection}{\numberline {5.2.2}Alimentaci'on}{11}
-\contentsline {subsubsection}{\numberline {5.2.3}L'ogica}{11}
-\contentsline {subsubsection}{\numberline {5.2.4}Comunicaci'on}{11}
-\contentsline {subsection}{\numberline {5.3}Mec'anica}{11}
-\contentsline {subsubsection}{\numberline {5.3.1}Estructura}{11}
-\contentsline {subsubsection}{\numberline {5.3.2}Distribuci'on}{11}
-\contentsline {subsubsection}{\numberline {5.3.3}Tornilleria}{11}
-\contentsline {section}{\numberline {6}Modificaciones}{12}
-\contentsline {subsection}{\numberline {6.1}Electr'onica}{12}
+\contentsline {section}{\numberline {2}Introducci'on}{5}
+\contentsline {subsection}{\numberline {2.1}Historia}{5}
+\contentsline {subsection}{\numberline {2.2}Estado del arte}{5}
+\contentsline {subsection}{\numberline {2.3}Objetivos}{5}
+\contentsline {subsection}{\numberline {2.4}Alcance}{5}
+\contentsline {section}{\numberline {3}Material de partida }{6}
+\contentsline {subsection}{\numberline {3.1}WifiBot}{6}
+\contentsline {subsubsection}{\numberline {3.1.1}Descripci'on}{6}
+\contentsline {paragraph}{Componentes}{6}
+\contentsline {paragraph}{Estructura}{7}
+\contentsline {subsubsection}{\numberline {3.1.2}Estado Inicial}{7}
+\contentsline {subsection}{\numberline {3.2}Raspberry Pi}{8}
+\contentsline {section}{\numberline {4}Especificaciones}{9}
+\contentsline {subsection}{\numberline {4.1}Software}{9}
+\contentsline {subsubsection}{\numberline {4.1.1}Web}{9}
+\contentsline {subsubsection}{\numberline {4.1.2}Librer'ias}{9}
+\contentsline {subsection}{\numberline {4.2}Electr'onica}{9}
+\contentsline {subsubsection}{\numberline {4.2.1}Funcionamiento}{9}
+\contentsline {subsubsection}{\numberline {4.2.2}Alimentaci'on}{10}
+\contentsline {subsubsection}{\numberline {4.2.3}L'ogica}{10}
+\contentsline {subsubsection}{\numberline {4.2.4}Comunicaci'on}{10}
+\contentsline {subsection}{\numberline {4.3}Mec'anica}{10}
+\contentsline {subsubsection}{\numberline {4.3.1}Estructura}{10}
+\contentsline {subsubsection}{\numberline {4.3.2}Tornilleria}{10}
+\contentsline {section}{\numberline {5}Modificaciones}{11}
+\contentsline {subsection}{\numberline {5.1}Electr'onica}{11}
+\contentsline {section}{\numberline {6}Presupuesto}{12}
 \contentsline {section}{\numberline {7}Conclusiones}{13}
 \contentsline {section}{\numberline {8}Agradecimientos}{14}
 \contentsline {section}{\numberline {9}Biografia}{15}

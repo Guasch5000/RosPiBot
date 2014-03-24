@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.10)  24 MAR 2014 18:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.10)  24 MAR 2014 20:13
 entering extended mode
 **WifiBotPi.tex
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.tex
@@ -365,19 +365,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 55.
+Package pdftex.def Info: images/etseib-logo.png used on input line 56.
 (pdftex.def)             Requested size: 65.04283pt x 85.03748pt.
  [1
 
 {C:/Users/AESS/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/AES
 S/Documents/GitHub/WifiBotPi/LaTex/images/upc-logo.png> <C:/Users/AESS/Document
-s/GitHub/WifiBotPi/LaTex/images/etseib-logo.png>] [2]
-File: images/etseib-logo.png Graphic file (type png)
- <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 70.
-(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
- [1] [2]
-(C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.toc
+s/GitHub/WifiBotPi/LaTex/images/etseib-logo.png>] [2] [1] [2] (C:\Users\AESS\Do
+cuments\GitHub\WifiBotPi\LaTex\WifiBotPi.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -389,118 +384,121 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 84.
+Package pdftex.def Info: images/etseib-logo.png used on input line 89.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [1]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 91.
+Package pdftex.def Info: images/etseib-logo.png used on input line 96.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [4]
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 95.
+Package pdftex.def Info: images/etseib-logo.png used on input line 109.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [5]
-File: images/etseib-logo.png Graphic file (type png)
- <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 103.
-(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
- [6]
-<images/Visuel_Wifibot_2.png, id=37, 301.125pt x 262.73157pt>
+<images/Visuel_Wifibot_2.png, id=36, 301.125pt x 262.73157pt>
 File: images/Visuel_Wifibot_2.png Graphic file (type png)
 
 <use images/Visuel_Wifibot_2.png>
-Package pdftex.def Info: images/Visuel_Wifibot_2.png used on input line 114.
+Package pdftex.def Info: images/Visuel_Wifibot_2.png used on input line 120.
 (pdftex.def)             Requested size: 150.56212pt x 131.36545pt.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 123.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 129.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 123.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 129.
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 144.
+Package pdftex.def Info: images/etseib-logo.png used on input line 150.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
- [7 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/Visuel_Wifibot_2.png
+ [6 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/Visuel_Wifibot_2.png
 >]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 184.
+Package pdftex.def Info: images/etseib-logo.png used on input line 190.
+(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
+ [7]
+File: images/etseib-logo.png Graphic file (type png)
+
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 190.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [8]
 File: images/etseib-logo.png Graphic file (type png)
-
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 184.
+ <use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 216.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [9]
 File: images/etseib-logo.png Graphic file (type png)
- <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 210.
+
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 237.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [10]
 File: images/etseib-logo.png Graphic file (type png)
-
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 235.
+ <use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 243.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [11]
 File: images/etseib-logo.png Graphic file (type png)
- <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 240.
+
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 246.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [12]
 File: images/etseib-logo.png Graphic file (type png)
-
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 243.
+ <use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 249.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [13]
 File: images/etseib-logo.png Graphic file (type png)
- <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 246.
+
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 252.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [14]
 File: images/etseib-logo.png Graphic file (type png)
-
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 249.
+ <use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 255.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [15]
 File: images/etseib-logo.png Graphic file (type png)
- <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 253.
+
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 259.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [16]
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.aux) ) 
 Here is how much of TeX's memory you used:
- 3929 strings out of 493921
- 53891 string characters out of 3144879
+ 3933 strings out of 493921
+ 53931 string characters out of 3144879
  121932 words of memory out of 3000000
- 7154 multiletter control sequences out of 15000+200000
- 50223 words of font info for 42 fonts, out of 3000000 for 9000
+ 7156 multiletter control sequences out of 15000+200000
+ 56216 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,14n,43p,989b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,14n,43p,989b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX
  2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/
 enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/l
 m/lm-ec.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
-lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on WifiBotPi.pdf (18 pages, 634519 bytes).
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
+lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on WifiBotPi.pdf (18 pages, 688347 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
