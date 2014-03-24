@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.10)  24 MAR 2014 10:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.10)  24 MAR 2014 14:05
 entering extended mode
 **WifiBotPi.tex
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.tex
@@ -258,20 +258,23 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \f@ncyO@olf=\skip57
 \f@ncyO@orf=\skip58
 )
+(C:\Users\AESS\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 43.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -327,42 +330,42 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 <images/upc-logo.png, id=1, 677.6517pt x 142.131pt>
 File: images/upc-logo.png Graphic file (type png)
  <use images/upc-logo.png>
-Package pdftex.def Info: images/upc-logo.png used on input line 43.
+Package pdftex.def Info: images/upc-logo.png used on input line 46.
 (pdftex.def)             Requested size: 377.62642pt x 79.20459pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 43.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 46.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 43.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 46.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 43.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 46.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 43.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 46.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 43.
+(Font)              <12> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              <6> on input line 46.
 
 <images/etseib-logo.png, id=3, 65.043pt x 85.0377pt>
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 52.
+Package pdftex.def Info: images/etseib-logo.png used on input line 55.
 (pdftex.def)             Requested size: 65.04283pt x 85.03748pt.
  [1
 
@@ -371,7 +374,7 @@ S/Documents/GitHub/WifiBotPi/LaTex/images/upc-logo.png> <C:/Users/AESS/Document
 s/GitHub/WifiBotPi/LaTex/images/etseib-logo.png>] [2]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 67.
+Package pdftex.def Info: images/etseib-logo.png used on input line 70.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [1] [2]
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.toc
@@ -386,96 +389,101 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 81.
+Package pdftex.def Info: images/etseib-logo.png used on input line 84.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [1]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 88.
+Package pdftex.def Info: images/etseib-logo.png used on input line 91.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [4]
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 92.
+Package pdftex.def Info: images/etseib-logo.png used on input line 95.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [5]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 100.
+Package pdftex.def Info: images/etseib-logo.png used on input line 103.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [6]
 <images/Visuel_Wifibot_2.png, id=37, 301.125pt x 262.73157pt>
 File: images/Visuel_Wifibot_2.png Graphic file (type png)
 
 <use images/Visuel_Wifibot_2.png>
-Package pdftex.def Info: images/Visuel_Wifibot_2.png used on input line 111.
+Package pdftex.def Info: images/Visuel_Wifibot_2.png used on input line 114.
 (pdftex.def)             Requested size: 150.56212pt x 131.36545pt.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 120.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 123.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 120.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 123.
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 136.
+Package pdftex.def Info: images/etseib-logo.png used on input line 144.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [7 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/Visuel_Wifibot_2.png
 >]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 176.
+Package pdftex.def Info: images/etseib-logo.png used on input line 184.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [8]
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 181.
+Package pdftex.def Info: images/etseib-logo.png used on input line 184.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [9]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 194.
+Package pdftex.def Info: images/etseib-logo.png used on input line 210.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [10]
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 199.
+Package pdftex.def Info: images/etseib-logo.png used on input line 215.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [11]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 202.
+Package pdftex.def Info: images/etseib-logo.png used on input line 220.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [12]
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 205.
+Package pdftex.def Info: images/etseib-logo.png used on input line 223.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [13]
 File: images/etseib-logo.png Graphic file (type png)
  <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 208.
+Package pdftex.def Info: images/etseib-logo.png used on input line 226.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [14]
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 212.
+Package pdftex.def Info: images/etseib-logo.png used on input line 229.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
  [15]
+File: images/etseib-logo.png Graphic file (type png)
+ <use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 233.
+(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
+ [16]
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.aux) ) 
 Here is how much of TeX's memory you used:
- 3895 strings out of 493921
- 53260 string characters out of 3144879
- 121671 words of memory out of 3000000
- 7124 multiletter control sequences out of 15000+200000
+ 3929 strings out of 493921
+ 53891 string characters out of 3144879
+ 120932 words of memory out of 3000000
+ 7154 multiletter control sequences out of 15000+200000
  50223 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  33i,14n,43p,989b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -490,9 +498,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x8
 9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
 lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on WifiBotPi.pdf (17 pages, 630390 bytes).
+Output written on WifiBotPi.pdf (18 pages, 633129 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

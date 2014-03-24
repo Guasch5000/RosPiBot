@@ -11,7 +11,9 @@
 %\usepackage[toc,xindy]{glossaries}
 
 \pagenumbering{gobble}
-\renewcommand{\baselinestretch}{1.5}
+%\renewcommand{\baselinestretch}{1.5}
+\usepackage{setspace}
+\onehalfspacing
 \setlength{\footskip}{43.0pt}
 
 \title{\begin{center} 
@@ -21,7 +23,8 @@
 Proyecto Final de Carrera\\
 INGENIER\'IA INDUSTRIAL \\
 \vspace{0.5cm} 
-\Huge{RosPiBot} 
+\Huge{
+RosPiBot}
 \vspace{0.5cm} \\
  Memoria}
 
@@ -29,7 +32,7 @@ INGENIER\'IA INDUSTRIAL \\
 \date{} % void to avoid put current date
 \pagestyle{fancy}
 
-\fancyhead[LO,RE]{\title{WifiBotPiRos}}
+\fancyhead[LO,RE]{\title{RosPiBot}}
 \fancyhead[LE,RO]{\thepage}
 \fancyfoot[LE,RO]{\includegraphics[scale=0.5]{images/etseib-logo.png}}
 \fancyfoot[C]{}
@@ -186,8 +189,26 @@ Tal y como se ha definido anteriormente, el objetivo de este proyecto consiste e
 Las especificaciones se han clasificado seg'un su or'igen. Dependiendo de si son de car'acter \textbf{software}, \textbf{electr'onico} o \textbf{mec'anico}. Las especificaciones de car'acter inform'atico engloban aspectos como la interf'icie con el usuario, las herramientas de desarrollo (librer'ias, documentaci'on) y la disponibilidad a futuras modificaciones. Por contra, la electr'onica ha de evitar que el usuario se encuentre obligado a manipular el interior del robot, pero que en el caso de dicha situaci'on permita una soluci'on simple del problema. Adem'as, la electr'onica ha de incorporar un sistema que permita conocer estados del robot de manera sencilla. Finalmente, la mec'anica se encarga de incorporar las nuevas especificaciones en la plataforma, manteniendo el concepto inicial. Igual que en la electr'onica, en el caso de una futura manipulaci'on por parte del usuario, el dise'no ha de facilitar el acceso a cualquier ubicaci'on.
 
 \subsection{Software}
+El principal requisito del software es ofrecer un acceso simple al usuario. Teniendo presente el hecho que pueda ser utilizado tanto para usuario noveles como para usuarios experimentados. Por ello se ha planteado las siguientes especificaciones.
+
+\subsubsection{Web}
+Se ofrecer'a un servidor web que permita de visualizar f'acilmente el estado del robot c'omo por ejemplo: el nivel de carga de bater'ias, sensores de proximidad, velocidad de desplazamiento, consumo de motores, etc. Adem'as se incluir'a una pantalla d'onde se monitorizar'a una c'amara que incorpora el robot y un par de terminales de comandos.
+En otro apartado de la web se ofrecer'a la descarga de todos aquellos documentos necesarios para el usuario, evitando as'i que el usuario pierda tiempo en la b'usqueda de la documentaci'on.
+
+\subsubsection{Librer'ias}
+%Por facilidad de uso y comodidad se ha decidido que todo el software utilizado en este proyecto se base en $Python^{ TM}$, un lenguaje de programación
+Para aquel desarrollador que decida utilizar esta plataforma se le ofrecer'a un conjunto de librer'ias que permitan trabajar con el robot de manera c'omoda. Estas librer'ias se compondr'an de una sintaxis limpia y un c'odigo legible que proporcinar'a una f'acil interpretaci'on.    
 
 \subsection{Electr'onica}
+El objetivo de la electr'onica es ser la parte m'as vital de la plataforma, pero pasando desapercibida por el usuario. Ofreciendo una m'inima interacci'on pero suficiente para comprender el estado del robot. Esta interacci'on se har'a mediante se'nales luminosas o ac'usticas, e indicar'an los siguientes estados.
+
+\subsubsection{Funcionamiento}
+En la plataforma de partida no se dispone de ningún medio que indique si se encuentra operativo, por ello la primera especificaci'on de la parte electr'onica ser'a la incoporaci'on de un se'nal luminosa que muestre si el robot est'a encendido o apagado. Tambi'en existe la posibilidad de ofrecer informaci'on de otros estados.
+
+\subsubsection{Bater'ias}
+Las bater'ias ofrecer'an  una autonom'ia suficiente para moverse en un entorno exterior, se estipula un m'inimo de 2 horas en movimiento c'omo m'inimo aceptable. Adem'as de la duraci'on, su recarga deber'a de ser lo m'aximo de c'omodo para el usuario, evitando que tenga que manipular las celdas de energ'ia. Finalmente, se monitorizar'a el nivel de carga que se mostrar'a de manera luminosa.
+
+\subsubsection{Vamos a comer}
 
 \subsection{Mec'anica}
 

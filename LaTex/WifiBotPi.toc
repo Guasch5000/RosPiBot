@@ -14,15 +14,20 @@
 \contentsline {subsubsection}{\numberline {4.1.1}Descripci'on}{7}
 \contentsline {paragraph}{Componentes}{7}
 \contentsline {paragraph}{Estructura}{8}
-\contentsline {subsubsection}{\numberline {4.1.2}Estado Inicial}{9}
+\contentsline {subsubsection}{\numberline {4.1.2}Estado Inicial}{8}
 \contentsline {subsection}{\numberline {4.2}Raspberry Pi}{9}
 \contentsline {section}{\numberline {5}Especificaciones}{10}
 \contentsline {subsection}{\numberline {5.1}Software}{10}
+\contentsline {subsubsection}{\numberline {5.1.1}Web}{10}
+\contentsline {subsubsection}{\numberline {5.1.2}Librer'ias}{10}
 \contentsline {subsection}{\numberline {5.2}Electr'onica}{10}
-\contentsline {subsection}{\numberline {5.3}Mec'anica}{10}
-\contentsline {section}{\numberline {6}Modificaciones}{11}
-\contentsline {subsection}{\numberline {6.1}Electr'onica}{11}
-\contentsline {section}{\numberline {7}Conclusiones}{12}
-\contentsline {section}{\numberline {8}Agradecimientos}{13}
-\contentsline {section}{\numberline {9}Biografia}{14}
-\contentsline {section}{\numberline {10}Soporte inform'atico}{15}
+\contentsline {subsubsection}{\numberline {5.2.1}Funcionamiento}{10}
+\contentsline {subsubsection}{\numberline {5.2.2}Bater'ias}{11}
+\contentsline {subsubsection}{\numberline {5.2.3}Vamos a comer}{11}
+\contentsline {subsection}{\numberline {5.3}Mec'anica}{11}
+\contentsline {section}{\numberline {6}Modificaciones}{12}
+\contentsline {subsection}{\numberline {6.1}Electr'onica}{12}
+\contentsline {section}{\numberline {7}Conclusiones}{13}
+\contentsline {section}{\numberline {8}Agradecimientos}{14}
+\contentsline {section}{\numberline {9}Biografia}{15}
+\contentsline {section}{\numberline {10}Soporte inform'atico}{16}
