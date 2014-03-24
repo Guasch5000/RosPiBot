@@ -203,14 +203,34 @@ Para aquel desarrollador que decida utilizar esta plataforma se le ofrecer'a un 
 El objetivo de la electr'onica es ser la parte m'as vital de la plataforma, pero pasando desapercibida por el usuario. Ofreciendo una m'inima interacci'on pero suficiente para comprender el estado del robot. Esta interacci'on se har'a mediante se'nales luminosas o ac'usticas, e indicar'an los siguientes estados.
 
 \subsubsection{Funcionamiento}
-En la plataforma de partida no se dispone de ningún medio que indique si se encuentra operativo, por ello la primera especificaci'on de la parte electr'onica ser'a la incoporaci'on de un se'nal luminosa que muestre si el robot est'a encendido o apagado. Tambi'en existe la posibilidad de ofrecer informaci'on de otros estados.
+En la plataforma de partida no se dispone de ning'un medio que indique si se encuentra operativo, por ello la primera especificaci'on de la parte electr'onica ser'a la incoporaci'on de un se'nal luminosa que muestre si el robot est'a encendido o apagado. Tambi'en existe la posibilidad de ofrecer informaci'on de otros estados.
 
-\subsubsection{Bater'ias}
-Las bater'ias ofrecer'an  una autonom'ia suficiente para moverse en un entorno exterior, se estipula un m'inimo de 2 horas en movimiento c'omo m'inimo aceptable. Adem'as de la duraci'on, su recarga deber'a de ser lo m'aximo de c'omodo para el usuario, evitando que tenga que manipular las celdas de energ'ia. Finalmente, se monitorizar'a el nivel de carga que se mostrar'a de manera luminosa.
+\subsubsection{Alimentaci'on}
+Las bater'ias ofrecer'an  una autonom'ia suficiente para moverse en un entorno exterior, se estipula un m'inimo de 2 horas en movimiento c'omo m'inimo aceptable. Adem'as de la duraci'on, su recarga deber'a de ser lo m'aximo de c'omodo para el usuario, evitando que tenga que manipular las celdas de energ'ia. Se recomienda elementos de seguridad ante problemas c'omo sobrecargas o cortocircuitos y de gesti'on de energ'ia para aumentar la vida 'util.
 
-\subsubsection{Vamos a comer}
+Otro punto a tener en cuenta es la disponibilidad en encontrar repuestos de la bater'ia, por ello se usar'an productos comerciales f'aciles de adquirir. Finalmente, se monitorizar'a el nivel de carga a partir de unos elementos luminosos.
+
+\subsubsection{L'ogica}
+Para el control de la plataforma el proyecto se ha basa en uso de la Raspberry Pi. Dicho ordenador ser'a el responsable de efectuar todo los c'alculos y 'ordenes, A'un as'i, a causa de sus limitaciones se precisa de una l'ogica complementaria capaz de gestionar y contabilizar las lecturas anal'ogicas de los sensores, el control de motores, la comunicaci'on externa y la distribuci'on de energ'ia.
+
+\subsubsection{Comunicaci'on}  
+Para poder interaccionar con el plataforma rob'otica se proponen 3 medios alternativos. Cada uno de estos canales permitir'an el acceso al usuario. Un primer medio ser'a por via cableada, a partir de un cable de red, los otros dos ser'an por via inal'ambrica, por un lado se buscar'a un red Wi-Fi predefinida y por otro se crear'a una red Wi-Fi propia. 
 
 \subsection{Mec'anica}
+Se intentar'a en la medida de lo posible mantener la silueta caracter'istica del robot, asignando mayor prioridad a aquellas modificaciones motivadas por software o  electr'onica. 
+
+\subsubsection{Estructura}
+Se desea mantener la estructura b'asica de la plataforma. A'un as'i se espera 
+
+\subsubsection{Distribuci'on} 
+La ubicaci'on de los distintos elementos se dispondr'an seg'un su relaci'on con el resto de dispositivos, 
+
+% te tal forma que la nueva plataforma disponga de los dos compartimentos unidos mediante una barra que atraviese   
+
+\subsubsection{Tornilleria}
+A causa del deterioro de los elementos de tornilleria se proceder'a a cambiar el roscado de todos los tornillos por uno m'as estandarizado c'omo el m'etrico. Este cambio tambi'en incluye las barras estructurales, los adaptadores de los ejes y los prisioneros
+
+
 
 \newpage
 \section{Modificaciones}
