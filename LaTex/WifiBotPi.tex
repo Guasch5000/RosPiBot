@@ -1,4 +1,4 @@
-\documentclass[twoside]{article}
+\documentclass[twoside,12pt]{article}
 
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
@@ -9,12 +9,18 @@
 \usepackage{fancyhdr}
 %\usepackage{hyperref}
 %\usepackage[toc,xindy]{glossaries}
+\usepackage{multicol}
+
+%\usepackage{glossary}
+%\makeglossary
+
 
 \pagenumbering{gobble}
 %\renewcommand{\baselinestretch}{1.5}
 \usepackage{setspace}
 \onehalfspacing
-\setlength{\footskip}{43.0pt}
+
+\setlength{\footskip}{42.0pt}
 
 \title{\begin{center} 
 \includegraphics[width=0.8\textwidth]{images/upc-logo.png} 
@@ -67,32 +73,44 @@ RosPiBot}
 \pagenumbering{arabic}
 \fancyhead[LE,RO]{1} 
 
+\normalsize
 \begin{abstract}
-Este proyecto consiste en el aprovechamiento de la plataforma rob'otica comercial WifiBot que corre el riesgo de quedarse obsoleta y rescatarla de su destino. Para ello se hace uso de una Raspberry Pi, un ordenador de placa reducida que ha revolucionado el mundo de la automatizaci'on desde el d'ia de su aparici'on en el 2012, como unidad de procesamiento de la nueva plataforma y que est'a basada en Linux. En el apartado de software, adem'as de incorporar herramientas que faciliten el trabajo a futuros usuarios se ha configurado para poder trabajar con ROS, una infrastructura digital para el desarrollo de software de robots creada por Willow Garage y extensamente utilizada.
+Este proyecto consiste en el aprovechamiento de la plataforma rob'otica comercial WifiBot que corre el riesgo de quedarse obsoleta y rescatarla de su destino. Para ello se hace uso de una Raspberry Pi, un ordenador de placa reducida que ha revolucionado el mundo de la automatizaci'on desde el d'ia de su aparici'on en el 2012, como unidad de procesamiento de la nueva plataforma y que est'a basada en Linux. En el apartado de software, adem'as de incorporar herramientas que faciliten el trabajo a futuros usuarios se ha configurado para poder trabajar con ROS, una infrastructura digital para el desarrollo de software de robots creada por Willow Garage y extensamente utilizada en este sector.\\
 
-A lo largo de este documento se expone el estado inicial del robot, los nuevos requerimientos a cumplir, las modificaciones efectuadas incluyendo las complicaciones encontradas a lo largo del proyecto. 
+A lo largo de este documento se exponen el estado inicial del robot, los nuevos requerimientos a cumplir, las modificaciones efectuadas incluyendo las complicaciones encontradas a lo largo del proyecto y el resultado final obtenido. Haciendo especial hincapi'e en el desarrollo de soluciones para cumplir los objetivos del proyecto, tales como el dise'no de circuitos electr'onicos, la integraci'on de los nuevos componentes o la creaci'on de una mejor interf'icie con el usuario. \\
+
 \end{abstract}
-\thispagestyle{empty}
+
+%\thispagestyle{empty}
 \newpage
+
 \paragraph*{}
 \thispagestyle{empty}
 \newpage
 
 \fancyhead[LE,RO]{3}
-
 \tableofcontents
 \setcounter{page}{1}
 \addtocontents{toc}{~\hfill\textbf{P'agina}\par}
 \addcontentsline{toc}{section}{Resumen}
+%\setcounter{page}{1}
+%\addcontentsline{toc}{section}{Glosario}
+%\setcounter{page}{4}
+\fancyhead[LE,RO]{4}
 %\setcounter{page}{3}
 %\addcontentsline{toc}{section}{'Indice}
 \newpage
 
 %\pagenumbering{arabic}
-\setcounter{page}{4}
+\setcounter{page}{5}
 \fancyhead[LE,RO]{\thepage}
 
-\section{Glosario}
+\section*{Glosario}
+
+\begin{description}
+\item[UART] Universal Asynchronous Receiver-Transmitter
+\end{description}
+
 \newpage
 
 %\section{Prefacio}
@@ -100,14 +118,15 @@ A lo largo de este documento se expone el estado inicial del robot, los nuevos r
 %\newpage
 
 \section{Introducci'on}
-\subsection{Historia}
+
 \subsection{Estado del arte}
+
 \subsection{Objetivos}
+
 \subsection{Alcance}
-
-
 \newpage
-\section{Material de partida }
+
+\section{Descripci'on }
 
 \subsection{WifiBot}
 \textbf{Wifibot} es una plataforma rob'otica, desarrollada por la empresa francesa \textbf{Nexter Robotics}, dise'nada para poder navegar en m'ultiples escenarios gr'acias a su dise'no. Su sistema de tracci'on a las cuatro ruedas, dise'no reducido y bajo peso, le otorga una gran flexibilidad.
@@ -123,6 +142,8 @@ Este proyecto partir'a del modelo \textbf{WifiBot 4G}, producido durante el peri
 \end{figure}
 
 \paragraph{Componentes}
+\paragraph*{}
+\begin{multicols}{2}
 \begin{itemize}
 \item CPU:
 	\begin{itemize}
@@ -173,6 +194,7 @@ Este proyecto partir'a del modelo \textbf{WifiBot 4G}, producido durante el peri
 	\item Autonom'ia de 2 horas
 	\end{itemize}
 \end{itemize}
+\end{multicols}
 
 \paragraph{Estructura}\noindent
 
@@ -181,16 +203,16 @@ La estructura de la base est'a formada por dos secciones sim'etricas que llamare
 %como vemos en figura \ref{fig:Wifi Bot 4G}
 
 \subsubsection{Estado Inicial}  
-La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. 
-
-En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones
+La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones
 
 \subsection{Raspberry Pi}
 Raspberry Pi es un ordenador del tama'no de una tarjeta de cr'edito desarrolado en Reino Unido por la \textbf{Raspberry Pi Foundation}
 \newpage
 
+\subsection{Protocolos de comunicaci'on}
+
 \section{Especificaciones}
-Tal y como se ha definido anteriormente, el objetivo de este proyecto consiste en ofrecer una plataforma funcional para los futuros usuarios. Para definir esta ''funcionalidad'' se ha basado en el conocimiento aportado por antiguos usuarios, trabajadores en productos similares y en la experiencia propia. 
+Tal y como se ha definido anteriormente, el objetivo de este proyecto consiste en ofrecer una plataforma funcional para los futuros usuarios. Para definir esta ''funcionalidad'' se ha basado en el conocimiento aportado por antiguos usuarios, trabajadores en productos similares y en la experiencia propia. \\
 
 Las especificaciones se han clasificado seg'un su or'igen. Dependiendo de si son de car'acter \textbf{software}, \textbf{electr'onico} o \textbf{mec'anico}. Las especificaciones de car'acter inform'atico engloban aspectos como la interf'icie con el usuario, las herramientas de desarrollo (librer'ias, documentaci'on) y la disponibilidad a futuras modificaciones. Por contra, la electr'onica ha de evitar que el usuario se encuentre obligado a manipular el interior del robot, pero que en el caso de dicha situaci'on permita una soluci'on simple del problema. Adem'as, la electr'onica ha de incorporar un sistema que permita conocer estados del robot de manera sencilla. Finalmente, la mec'anica se encarga de incorporar las nuevas especificaciones en la plataforma, manteniendo el concepto inicial. Igual que en la electr'onica, en el caso de una futura manipulaci'on por parte del usuario, el dise'no ha de facilitar el acceso a cualquier ubicaci'on.
 
@@ -212,7 +234,7 @@ El objetivo de la electr'onica es ser la parte m'as vital de la plataforma, pero
 En la plataforma de partida no se dispone de ning'un medio que indique si se encuentra operativo, por ello la primera especificaci'on de la parte electr'onica ser'a la incoporaci'on de un se'nal luminosa que muestre si el robot est'a encendido o apagado. Tambi'en existe la posibilidad de ofrecer informaci'on de otros estados.
 
 \subsubsection{Alimentaci'on}
-Las bater'ias ofrecer'an  una autonom'ia suficiente para moverse en un entorno exterior, se estipula un m'inimo de 2 horas en movimiento como m'inimo aceptable. Adem'as de la duraci'on, su recarga deber'a de ser lo m'aximo de comodo para el usuario, evitando que tenga que manipular las celdas de energ'ia. Se recomienda elementos de seguridad ante problemas como sobrecargas o cortocircuitos y de gesti'on de energ'ia para aumentar la vida 'util.
+Las bater'ias ofrecer'an  una autonom'ia suficiente para moverse en un entorno exterior, se estipula un m'inimo de 2 horas en movimiento como m'inimo aceptable. Adem'as de la duraci'on, su recarga deber'a de ser lo m'aximo de comodo para el usuario, evitando que tenga que manipular las celdas de energ'ia. Se recomienda elementos de seguridad ante problemas como sobrecargas o cortocircuitos y de gesti'on de energ'ia para aumentar la vida 'util.\\
 
 Otro punto a tener en cuenta es la disponibilidad en encontrar repuestos de la bater'ia, por ello se usar'an productos comerciales f'aciles de adquirir. Finalmente, se monitorizar'a el nivel de carga a partir de unos elementos luminosos.
 
@@ -236,10 +258,27 @@ A causa del deterioro de los elementos de tornilleria se proceder'a a cambiar el
 
 \newpage
 \section{Modificaciones}
-Para la realizaci'on de este proyecto se deber'a trabajar en varios sectores 
-
+Para la realizaci'on de este proyecto se deber'a trabajar en varios sectores. Debido que el software es el sector que permite mejor adaptarse a los nuevos cambios y que la mec'anica de la plataforma proporciona cierta flexibilidad, el componente electr'onico ser'a el que ofrezca las mayores limitaciones. Por ello se considera que los primeros esfuerzos deber'an centrarse en este sector, aprovechando al m'aximo los recursos ya existentes.
 
 \subsection{Electr'onica}
+Aunque la platafoma inicial segu'ia funcionando, los problemas derivados de su desgaste propiciaron la necesitad de modificar en gran medida su interior. En un principio de demostr'o que simplemente insertando una Raspberry Pi, conectada mediante puerto ethernet, se pod'ia comandar el robot. Tambi'en fu'e posible acceder a datos b'asicos del robot como el estado de las bater'ias o la lectura de los sensores de proximidad. Pero el hecho de la inestabilidad de su unidad de procesamiento hizo necesaria su subtituci'on completa.\\
+
+Debido a esta decisi'on, se tuvo que buscar el modo de comunicarse con los dem'as componentes ya existentes: etapa de alimentaci'on, gestor de bater'ias, control de motores y lectura de sensores. Para poder actuar con cada dispositivo el robot hacia uso de las interf'icies de comunicaci'on UART e I$^{2}$C; Pero a'un sabiendo el protocolo empleado, la comprensi'on de la informaci'on que circulaba fu'e pr'acticamente imposible. Por ello se determin'o que para poder proseguir con el proyecto hac'ia falta el desarrollo de nuevos componentes que substituyesen a los actuales y que permitiesen a futuros usuarios comprender r'apidamente que protocolos se utilizan y c'omo interaccionar con ellos. A continuaci'on se detallan los componentes utilizados seguiendo un orden de mayor a menor restrictivo.
+
+\subsubsection{Codificador de cuadratura}
+Uno de los elementos m'as 'utiles que podemos en contrar en la plataforma es la existencia de dos codificadores de cuadratura dispuestos en el grupo motriz delantero (uno a cada lado). Estos dispositivos permiten medir los cambios del eje del motor (antes de la etapa reductora) con gran precisi'on. Para su funcionamineto requieren de una alimentaci'on de 5 voltios, siendo este mismo voltaje el usado en la salida del se'nal. Devido a su voltaje, superior a los 3.3 voltios que soportan los pines de la Raspberry Pi, se hace necesario un adaptador de nivel. Adem'as, seg'un los resultados experimentados, la frecuencia m'axima de interrupciones generadas por el codificador llega hasta las 80.000 por segundo, Haciendo imposible que el microprocesador sea capaz de gestionarlo.\\
+
+Para solventar el problema, se hace uso del circuito integrado LS7366, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.15]{images/LS7366.png} 
+\caption{Diagrama de pines LS7366}
+\label{fig:LS7366}
+\end{figure} 
+
+Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovechara el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
+
 \newpage
 
 \section{Presupuesto}
