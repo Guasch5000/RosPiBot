@@ -109,6 +109,9 @@ A lo largo de este documento se exponen el estado inicial del robot, los nuevos 
 
 \begin{description}
 \item[UART] Universal Asynchronous Receiver-Transmitter
+\item[SPI] Serial Protocol Interface
+\item[I${2}$C] Inter-Integrated Circuit
+\item[ADC] Analog to Digital Converter
 \end{description}
 
 \newpage
@@ -277,7 +280,11 @@ Para solventar el problema, se hace uso del circuito integrado LS7366, un contad
 \label{fig:LS7366}
 \end{figure} 
 
-Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovechara el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
+Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovecha el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
+
+\subsubsection{Monitorizaci'on de la Bater'ia}
+Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda se utiliza el circuito integrado LM3914, un dispositivo encargado de medir el voltage y mostrar dicha informaci'on mediante 10 LEDs siguiendo una tendencia lineal. 
+
 
 \newpage
 
