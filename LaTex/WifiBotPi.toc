@@ -8,29 +8,30 @@
 \contentsline {subsection}{\numberline {1.3}Objetivos}{6}{subsection.1.3}
 \contentsline {section}{\numberline {2}Descripci'on }{7}{section.2}
 \contentsline {subsection}{\numberline {2.1}WifiBot}{7}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Descripci'on}{7}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Caracter'isticas}{7}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Estructura}{8}{subsubsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.3}Estado Inicial}{8}{subsubsection.2.1.3}
-\contentsline {subsection}{\numberline {2.2}Raspberry Pi}{8}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Protocolos de comunicaci'on}{9}{subsection.2.3}
-\contentsline {section}{\numberline {3}Especificaciones}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Software}{9}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Web}{9}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Librer'ias}{10}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Electr'onica}{10}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Funcionamiento}{10}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Alimentaci'on}{10}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}L'ogica}{10}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Comunicaci'on}{11}{subsubsection.3.2.4}
-\contentsline {subsection}{\numberline {3.3}Mec'anica}{11}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Estructura}{11}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Tornilleria}{11}{subsubsection.3.3.2}
-\contentsline {section}{\numberline {4}Modificaciones}{12}{section.4}
-\contentsline {subsection}{\numberline {4.1}Electr'onica}{12}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Codificador de cuadratura}{12}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Monitorizaci'on de la Bater'ia}{13}{subsubsection.4.1.2}
-\contentsline {section}{\numberline {5}Presupuesto}{14}{section.5}
-\contentsline {section}{\numberline {6}Conclusiones}{15}{section.6}
-\contentsline {section}{\numberline {7}Agradecimientos}{16}{section.7}
-\contentsline {section}{\numberline {8}Biografia}{17}{section.8}
-\contentsline {section}{\numberline {9}Soporte inform'atico}{18}{section.9}
+\contentsline {subsection}{\numberline {2.2}Raspberry Pi}{9}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Caracter'isticas}{9}{subsubsection.2.2.1}
+\contentsline {subsection}{\numberline {2.3}Protocolos de comunicaci'on}{11}{subsection.2.3}
+\contentsline {section}{\numberline {3}Especificaciones}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Software}{11}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Web}{11}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Librer'ias}{12}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Electr'onica}{12}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Funcionamiento}{12}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Alimentaci'on}{12}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}L'ogica}{12}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Comunicaci'on}{13}{subsubsection.3.2.4}
+\contentsline {subsection}{\numberline {3.3}Mec'anica}{13}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Estructura}{13}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Tornilleria}{13}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}Modificaciones}{14}{section.4}
+\contentsline {subsection}{\numberline {4.1}Electr'onica}{14}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Codificador de cuadratura}{14}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Monitorizaci'on de la Bater'ia}{15}{subsubsection.4.1.2}
+\contentsline {section}{\numberline {5}Presupuesto}{16}{section.5}
+\contentsline {section}{\numberline {6}Conclusiones}{17}{section.6}
+\contentsline {section}{\numberline {7}Agradecimientos}{18}{section.7}
+\contentsline {section}{\numberline {8}Biografia}{19}{section.8}
+\contentsline {section}{\numberline {9}Soporte inform'atico}{20}{section.9}

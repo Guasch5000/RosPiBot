@@ -113,6 +113,16 @@ A lo largo de este documento se exponen el estado inicial del robot, los nuevos 
 \item[SPI] Serial Protocol Interface
 \item[I${2}$C] Inter-Integrated Circuit
 \item[ADC] Analog to Digital Converter
+\item[SoC] System on a Chip
+\item[CPU] Central Processing Unit
+\item[GPU] Graphics Processing Unit
+\item[RAM] Random Access Memory
+\item[RCA] Random Access Memory
+\item[HDMI] Random Access Memory
+\item[DSI] Random Access Memory
+\item[CSI] Random Access Memory
+\item[GPIO] Random Access Memory
+\item[SD] Random Access Memory
 \end{description}
 
 %\printglossaries
@@ -136,8 +146,8 @@ A lo largo de este documento se exponen el estado inicial del robot, los nuevos 
 \subsection{WifiBot}
 \textbf{Wifibot} es una plataforma rob'otica, desarrollada por la empresa francesa \textbf{Nexter Robotics}, dise'nada para poder navegar en m'ultiples escenarios gracias a su dise'no. Su sistema de tracci'on a las cuatro ruedas, dise'no reducido y bajo peso, le otorga una gran flexibilidad.
 
-\subsubsection{Descripci'on}
-Este proyecto partir'a del modelo \textbf{WifiBot 4G}, producido durante el periodo 2002--2006 y que a grandes rasgos incluye las siguientes caracter'isticas:
+\subsubsection{Caracter'isticas}
+Este proyecto parte del modelo \textbf{WifiBot 4G}, producido durante el periodo 2002--2006 y que a grandes rasgos incluye::
 
 \begin{figure}[ht]
 \centering
@@ -208,10 +218,68 @@ La estructura de la base est'a formada por dos secciones sim'etricas que llamare
 %como vemos en figura \ref{fig:Wifi Bot 4G}
 
 \subsubsection{Estado Inicial}  
-La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones
+La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones\\
+\newpage
 
 \subsection{Raspberry Pi}
-Raspberry Pi es un ordenador del tama'no de una tarjeta de cr'edito desarrolado en Reino Unido por la \textbf{Raspberry Pi Foundation}
+Raspberry Pi es un ordenador del tama'no de una tarjeta de cr'edito desarrolado en Reino Unido por la \textbf{Raspberry Pi Foundation} con el objetivo de fomentar las bases de la computaci'on en escuelas. El desarrollo de este diminuto ordenador empez'o en el 2006 hasta alcanzar su madurez y comercializaci'on en Febrero del 2012. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{images/raspi.png} 
+\caption{Raspberri Pi}
+\label{fig:Raspberry Pi}
+\end{figure}
+
+\subsubsection{Caracter'isticas}
+Aunque existen varios modelos de Raspberry Pi, este proyecto se basa en el modelo B (segunda revisi'on). Este modelo se caracteriza por:
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.15]{images/RaspiModelB.png} 
+\caption{Esquema Modelo B}
+\label{fig:Esquema Modelo B}
+\end{figure}
+
+%\begin{multicols}{2}
+\begin{itemize}
+\item Procesador Broadcom BCM2835 (SoC) compuesto por:
+	\begin{itemize}
+	\item CPU: ARM1176JZF-S (Arquitectura ARM 11)
+	\item GPU: VIDEOCORE IV (250 Mhz)
+	\item Mem'oria RAM de 512MB
+	\end{itemize}
+\item Connexiones multimedia:
+	\begin{itemize}
+	\item 1x Entrada de v'ideo: CSI
+	\item 3x Salidas de v'ideo: RCA, HDMI y DSI
+	\item 2x Salida de audio: 3.5mm jack y HDMI
+	\item 1x RS232
+	\end{itemize}
+\item Connexiones de datos:
+	\begin{itemize}
+	\item 1x Ranura tarjeta SD (Disco Duro)
+	\item 2x Puertos USB 2.0
+	\item 1x Puerto Ethernet RJ45 (10/100 MBit/s)
+	\end{itemize}
+\item Perif'ericos de bajo nivel:
+	\begin{itemize}
+	\item 8x GPIO
+	\item 1x UART
+	\item 1x I$^{2}$C bus
+	\item 1x SPI bus (dos pines de selecci'on)
+	\end{itemize}
+\item Otros datos:
+	\begin{itemize}
+	\item Alimentaci'on: 5V via MicroUSB o GPIO
+	\item Medidas: 85.6mm x 56mm
+	\item Peso: 45 g
+	\end{itemize}
+\end{itemize}
+%\end{multicols}
+
+
+
 \newpage
 
 \subsection{Protocolos de comunicaci'on}
