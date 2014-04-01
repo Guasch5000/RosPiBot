@@ -2,16 +2,14 @@
 
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage[spanish,activeacute]{babel}
+\usepackage[spanish,activeacute,es-tabla]{babel}
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage[inner=3.0cm,top=2.5cm,outer=2.0cm,bottom=2.5cm]{geometry}  
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{multicol}
-
 \usepackage{glossaries}
-
 
 \pagenumbering{gobble}
 %\renewcommand{\baselinestretch}{1.5}
@@ -237,7 +235,7 @@ En mediciones efectuadas, se determin'o que la alimentaci'on de los motores lleg
 \end{figure}
 
 \subsubsection{Codificador 'optico de cuadratura}
-Este tipo de sensor permite conocer tanto la velocidad como la posici'on de un eje. Su funcionamiento se basa en un disco ranurado que gira solidario al que se dispone un par de fototransistores. Estos transistores emiten una se'nal 
+Este tipo de sensor permite conocer tanto la velocidad como la posici'on de un eje. Tal y como se describe en la figura ~\ref{fig:Esquema QEI} , su funcionamiento se basa en un disco ranurado que gira solidario al que se dispone un par de fototransistores. Estos transistores emiten una se'nal compuesta por dos canales, com'unmente llamados A y B, de onda cuadrada. Estos dos canales est'an desfasados un cuarto de fase, creando una secuencia que depende del sentido de giro. 
 
 \begin{figure}[ht]
 \centering
@@ -246,7 +244,35 @@ Este tipo de sensor permite conocer tanto la velocidad como la posici'on de un e
 \label{fig:Esquema QEI}
 \end{figure}
 
-De los 4 motores que conforman la plataforma, los dos delanteros disponen de un codificador de efecto Hall, concretamente el modelo \textbf{E4P-120-079-HT} del fabricante \textbf{US DIGITAL}. Este modelo ofrece unos 120 ciclos por revoluci'on (o 480 interrupciones), est'a pensado para ejes de 2mm de di'ametro y no dispone de 
+De los 4 motores que conforman la plataforma, los dos delanteros disponen de un codificador 'optico, concretamente el modelo \textbf{E4P-120-079-HT} del fabricante \textbf{US DIGITAL}. Este modelo ofrece unos 120 ciclos por revoluci'on (o 480 interrupciones), est'a pensado para ejes de 2mm de di'ametro y no dispone de canal de 'indice (permite corregir errores). Tras un ensayo del motor sin carga, cuyos datos se encuentran en la tabla ~\ref{tab:Encoder periods}, se determin'o que se llegaba a un m'aximo de 80.000 pulsos por segundo.\\
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Voltaje [V]} & \textbf{Consumo [A]} & \textbf{Per'iodo de Cuadratura [us]} \\ \hline
+	0.5 & 0.07 & 2200 \\ \hline
+	1.0 & 0.08 & 1000 \\ \hline
+	1.5 & 0.09 & 320 \\ \hline
+	2.0 & 0.10 & 220 \\ \hline
+	2.5 & 0.11 & 170 \\	\hline
+	3.0 & 0.11 & 140 \\ \hline
+	3.5 & 0.12 & 120 \\ \hline
+	4.0 & 0.12 & 100 \\ \hline  
+	4.5 & 0.13 & 90 \\ \hline  
+	5.0 & 0.13 & 80 \\ \hline
+	5.5 & 0.14 & 70 \\ \hline
+	6.0 & 0.15 & 65 \\ \hline
+	6.5 & 0.15 & 60 \\ \hline
+	7.0 & 0.15 & 55 \\ \hline
+	7.5 & 0.16 & 50 \\ \hline
+
+\end{tabular}
+\end{center}
+
+\caption{Ensayo de consumo y se'nal de codificador del motor sin carga }
+\label{tab:Encoder periods}
+\end{table}
 
 \subsubsection{Estado Inicial}  
 La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones\\
@@ -374,7 +400,7 @@ A causa de a esta decisi'on, se tuvo que buscar el modo de comunicarse con los d
 \subsubsection{Motorizaci'on}
 Debido al buen estado de los motores y del hecho que un par incorpora codificadores de cuadratura, se ha optado por mantener estos motores. Con este gesto evitamos la b'usqueda de su substituto y nos aseguramos que se mantenga la misma funcionalidad que al inicio. \\
 
-Al conservar este dispositivos se considera que el consumo (por lo que afecta a la parte de motorizaci'on) permanecer'a semejante, por tanto la nueva etapa de control de motores dispondr'a de características similares. Siendo el voltaje nominal del grupo motriz de unos 7.2V 
+Al conservar este dispositivos se considera que el consumo (por lo que afecta a la parte de motorizaci'on) permanecer'a semejante, por tanto la nueva etapa de control de motores dispondr'a de características similares. Siendo el voltaje nominal del grupo motriz de unos 7.2 se requiere de una alimentaci'on acorde a este voltaje; En el caso de utilizar bater'ias de voltaje superior, ser'a necesario una etapa DC-DC para adecuar los niveles.
 
 \subsubsection{Bater'ia}
 Para la selecci'on del sistema de acumulaci'on de energ'ia se ha barajado diferentes posibilidades: baterías de plomo, NiCd, NiMH, Ion Litio y Pol'imero de Litio (LiPo).  
