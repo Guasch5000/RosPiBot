@@ -183,14 +183,14 @@ Este proyecto parte del modelo \textbf{WifiBot 4G}, producido durante el periodo
 \item Sensores:
 	\begin{itemize}
 	\item 1x C'amara IP
-	\item 2x Sensor IR de dist'ancia
-	\item 2x Codificador de efecto Hall (Hall Encoder) 
+	\item 2x Sensores IR de dist'ancia (ADC)
+	\item 2x Codificadores de efecto Hall (Hall Encoder) 
 	\item 2x DSPIC30F2010
-	\item 1x Nivel de bater'ia
+	\item 1x Nivel de bater'ia (ADC)
 	\end{itemize}
 \item Motores:
 	\begin{itemize}
-	\item 4x Motor de 7.2V
+	\item 4x Motores de 7.2V
 	\item Reductora $i=50:1$
 	\item Par nominal 8.87Kg/cm
 	\item Velocidad nominal 120Rpm
@@ -216,6 +216,19 @@ Este proyecto parte del modelo \textbf{WifiBot 4G}, producido durante el periodo
 La estructura de la base est'a formada por dos secciones sim'etricas que llamaremos hemisferios izquierdo y derecho. Estas dos partes est'an unidas por una barra roscada que atraviesa transversalmente todo el robot, ofreciendo un eje de rotaci'on entre los dos elementos, cualidad que le otorga una mayor adaptaci'on a superf'icies irregulares.
 %include image SolidWorks
 %como vemos en figura \ref{fig:Wifi Bot 4G}
+
+\subsubsection{Grupo Motriz}
+Los motores que componen el WifiBot son concretamente el modelo \textbf{HN-GH7.2-2414T-50:1} del fabricante \textbf{Hsiang Neng}. Este modelo est'a compuesto por un motor de continua de voltaje nominal de 7.2V y una reductora con relaci'on 50:1. Dispone de un eje de 6mm de di'ametro, una longitud de 81.1mm y un di'ametro exterior de 37mm. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.35]{images/motor_dimensions.png} 
+\caption{Dimensiones [mm] motor HN-GH7.2-2414T-50:1}
+\label{fig:Dimensiones del Motor}
+\end{figure}
+
+En mediciones efectuadas, se concluy'o que la alimentaci'on de los motores llegaba hasta los 8.2V con un consumo inferior a los 1.8A por motor (con carga). 
+
 
 \subsubsection{Estado Inicial}  
 La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones\\
@@ -338,10 +351,20 @@ Para la realizaci'on de este proyecto se deber'a trabajar en varios sectores. De
 \subsection{Electr'onica}
 Aunque la platafoma inicial segu'ia funcionando, los problemas derivados de su desgaste propiciaron la necesitad de modificar en gran medida su interior. En un principio de demostr'o que simplemente insertando una Raspberry Pi, conectada mediante puerto ethernet, se pod'ia comandar el robot. Tambi'en fu'e posible acceder a datos b'asicos del robot como el estado de las bater'ias o la lectura de los sensores de proximidad. Pero el hecho de la inestabilidad de su unidad de procesamiento hizo necesaria su subtituci'on completa.\\
 
-Debido a esta decisi'on, se tuvo que buscar el modo de comunicarse con los dem'as componentes ya existentes: etapa de alimentaci'on, gestor de bater'ias, control de motores y lectura de sensores. Para poder actuar con cada dispositivo el robot hacia uso de las interf'icies de comunicaci'on UART e I$^{2}$C; Pero a'un sabiendo el protocolo empleado, la comprensi'on de la informaci'on que circulaba fu'e pr'acticamente imposible. Por ello se determin'o que para poder proseguir con el proyecto hac'ia falta el desarrollo de nuevos componentes que substituyesen a los actuales y que permitiesen a futuros usuarios comprender r'apidamente que protocolos se utilizan y c'omo interaccionar con ellos. A continuaci'on se detallan los componentes utilizados seguiendo un orden de mayor a menor restrictivo.
+A causa de a esta decisi'on, se tuvo que buscar el modo de comunicarse con los dem'as componentes ya existentes: etapa de alimentaci'on, gestor de bater'ias, control de motores y lectura de sensores. Para poder actuar con cada dispositivo el robot hac'ia uso de las interf'icies de comunicaci'on UART e I$^{2}$C; Pero a'un sabiendo el protocolo empleado, la comprensi'on de la informaci'on que circulaba fu'e pr'acticamente imposible. Por ello se determin'o que para poder proseguir con el proyecto hac'ia falta el desarrollo de nuevos componentes que substituyesen a los actuales y que permitiesen a futuros usuarios comprender r'apidamente que protocolos se utilizan y c'omo interaccionar con ellos. A continuaci'on se detallan los componentes utilizados siguiendo un orden de mayor a menor restrictivo.
 
-\subsubsection{Codificador de cuadratura}
-Uno de los elementos m'as 'utiles que podemos en contrar en la plataforma es la existencia de dos codificadores de cuadratura dispuestos en el grupo motriz delantero (uno a cada lado). Estos dispositivos permiten medir los cambios del eje del motor (antes de la etapa reductora) con gran precisi'on. Para su funcionamineto requieren de una alimentaci'on de 5 voltios, siendo este mismo voltaje el usado en la salida del se'nal. Devido a su voltaje, superior a los 3.3 voltios que soportan los pines de la Raspberry Pi, se hace necesario un adaptador de nivel. Adem'as, seg'un los resultados experimentados, la frecuencia m'axima de interrupciones generadas por el codificador llega hasta las 80.000 por segundo, Haciendo imposible que el microprocesador sea capaz de gestionarlo.\\
+\subsubsection{Motorizaci'on}
+Debido al buen estado de los motores y del hecho que un par incorpora codificadores de cuadratura, se ha optado por mantener estos motores. Con este gesto evitamos la b'usqueda de su substituto y nos aseguramos que se mantenga la misma funcionalidad que al inicio. \\
+
+Al conservar este dispositivos se considera que el consumo (por lo que afecta a la parte de motorizaci'on) permanecer'a semejante, por tanto la nueva etapa de control de motores dispondr'a de características similares. Siendo el voltaje nominal del grupo motriz de unos 7.2V 
+
+\subsubsection{Bater'ia}
+Para la selecci'on del sistema de acumulaci'on de energ'ia se ha barajado diferentes posibilidades: baterías de plomo, NiCd, NiMH, Ion Litio y Pol'imero de Litio (LiPo).  
+
+
+
+\subsubsection{Descodificador de cuadratura}
+Uno de los elementos m'as 'utiles que podemos encontrar en la plataforma es la existencia de dos codificadores de cuadratura dispuestos en el grupo motriz delantero (uno a cada lado). Estos dispositivos permiten medir los cambios del eje del motor (antes de la etapa reductora) con gran precisi'on. Para su funcionamiento requieren de una alimentaci'on de 5 voltios, siendo este mismo voltaje el usado en la salida del se'nal. Debido a su voltaje, superior a los 3.3 voltios que soportan los pines de la Raspberry Pi, se hace necesario un adaptador de nivel. Adem'as, seg'un los resultados experimentados, la frecuencia m'axima de interrupciones generadas por el codificador llega hasta las 80.000 por segundo, Haciendo imposible que el microprocesador sea capaz de gestionarlo.\\
 
 Para solventar el problema, se hace uso del circuito integrado LS7366, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.
 
@@ -355,7 +378,9 @@ Para solventar el problema, se hace uso del circuito integrado LS7366, un contad
 Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovecha el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
 
 \subsubsection{Monitorizaci'on de la Bater'ia}
-Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda se utiliza el circuito integrado LM3914, un dispositivo encargado de medir el voltage y mostrar dicha informaci'on mediante 10 LEDs siguiendo una tendencia lineal. 
+Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda utiliza el circuito integrado LM3914, un dispositivo encargado de medir el voltage y mostrar dicha informaci'on mediante 10 LEDs siguiendo una tendencia lineal.
+
+ 
 
 
 \newpage
