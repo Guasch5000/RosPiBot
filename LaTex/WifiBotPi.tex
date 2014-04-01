@@ -184,7 +184,7 @@ Este proyecto parte del modelo \textbf{WifiBot 4G}, producido durante el periodo
 	\begin{itemize}
 	\item 1x C'amara IP
 	\item 2x Sensores IR de dist'ancia (ADC)
-	\item 2x Codificadores de efecto Hall (Hall Encoder) 
+	\item 2x Codificadores 'optico de cuadratura 
 	\item 2x DSPIC30F2010
 	\item 1x Nivel de bater'ia (ADC)
 	\end{itemize}
@@ -218,7 +218,7 @@ La estructura de la base est'a formada por dos secciones sim'etricas que llamare
 %como vemos en figura \ref{fig:Wifi Bot 4G}
 
 \subsubsection{Grupo Motriz}
-Los motores que componen el WifiBot son concretamente el modelo \textbf{HN-GH7.2-2414T-50:1} del fabricante \textbf{Hsiang Neng}. Este modelo est'a compuesto por un motor de continua de voltaje nominal de 7.2V y una reductora con relaci'on 50:1. Dispone de un eje de 6mm de di'ametro, una longitud de 81.1mm y un di'ametro exterior de 37mm. 
+Los motores que componen el WifiBot son concretamente el modelo \textbf{HN-GH7.2-2414T-50:1} del fabricante \textbf{Hsiang Neng}. Este modelo est'a compuesto por un motor de continua de voltaje nominal de 7.2V y una reductora con relaci'on 50:1. Tal y como se describe en la figura ~\ref{fig:Dimensiones del Motor}, dispone de un eje de 6mm de di'ametro, una longitud de 81.1mm y un di'ametro exterior de 37mm. 
 
 \begin{figure}[ht]
 \centering
@@ -227,8 +227,26 @@ Los motores que componen el WifiBot son concretamente el modelo \textbf{HN-GH7.2
 \label{fig:Dimensiones del Motor}
 \end{figure}
 
-En mediciones efectuadas, se concluy'o que la alimentaci'on de los motores llegaba hasta los 8.2V con un consumo inferior a los 1.8A por motor (con carga). 
+En mediciones efectuadas, se determin'o que la alimentaci'on de los motores llegaba hasta los 8.2V con un consumo inferior a los 1.8A por motor (con carga), bas'andonos en la figura ~\ref{fig:Gr'afica del Motor}, podremos asegurar que el motor se encontraba ofreciendo un par de 4.7 Kg-cm. 
 
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.35]{images/motor_graph.png} 
+\caption{Gr'afica de curvas espec'ificas del motor HN-GH7.2-2414T-50:1}
+\label{fig:Gr'afica del Motor}
+\end{figure}
+
+\subsubsection{Codificador 'optico de cuadratura}
+Este tipo de sensor permite conocer tanto la velocidad como la posici'on de un eje. Su funcionamiento se basa en un disco ranurado que gira solidario al que se dispone un par de fototransistores. Estos transistores emiten una se'nal 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.45]{images/encoderQEI.png} 
+\caption{Esquema de funcionamiento de un encoder de cuadratura}
+\label{fig:Esquema QEI}
+\end{figure}
+
+De los 4 motores que conforman la plataforma, los dos delanteros disponen de un codificador de efecto Hall, concretamente el modelo \textbf{E4P-120-079-HT} del fabricante \textbf{US DIGITAL}. Este modelo ofrece unos 120 ciclos por revoluci'on (o 480 interrupciones), est'a pensado para ejes de 2mm de di'ametro y no dispone de 
 
 \subsubsection{Estado Inicial}  
 La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones\\

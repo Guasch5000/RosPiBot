@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.10)  1 APR 2014 14:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.10)  1 APR 2014 17:52
 entering extended mode
 **WifiBotPi.tex
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.tex
@@ -695,7 +695,7 @@ dictionary-English.dict
 Dictionary: glossaries-dictionary, Language: English 
 )
 (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.glsdefs)
-<images/upc-logo.png, id=154, 677.6517pt x 142.131pt>
+<images/upc-logo.png, id=158, 677.6517pt x 142.131pt>
 File: images/upc-logo.png Graphic file (type png)
 
 <use images/upc-logo.png>
@@ -730,7 +730,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 55.
 
-<images/etseib-logo.png, id=156, 65.043pt x 85.0377pt>
+<images/etseib-logo.png, id=160, 65.043pt x 85.0377pt>
 File: images/etseib-logo.png Graphic file (type png)
 
 <use images/etseib-logo.png>
@@ -859,7 +859,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <images/Visuel_Wifibot_2.png, id=238, 301.125pt x 262.73157pt>
+[6] <images/Visuel_Wifibot_2.png, id=243, 301.125pt x 262.73157pt>
 File: images/Visuel_Wifibot_2.png Graphic file (type png)
 
 <use images/Visuel_Wifibot_2.png>
@@ -896,14 +896,65 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/Visuel_Wifibot_2.png>
-] <images/motor_dimensions.png, id=248, 1309.14093pt x 359.09157pt>
+] <images/motor_dimensions.png, id=254, 1309.14093pt x 359.09157pt>
 File: images/motor_dimensions.png Graphic file (type png)
 
 <use images/motor_dimensions.png>
 Package pdftex.def Info: images/motor_dimensions.png used on input line 225.
 (pdftex.def)             Requested size: 458.20619pt x 125.68393pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+<images/motor_graph.png, id=256, 1008.01593pt x 700.86844pt>
+File: images/motor_graph.png Graphic file (type png)
+
+<use images/motor_graph.png>
+Package pdftex.def Info: images/motor_graph.png used on input line 234.
+(pdftex.def)             Requested size: 352.81087pt x 245.30763pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/etseib-logo.png Graphic file (type png)
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 241.
+(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
+
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+ Make it at least 42.51874pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/motor_dimensions.png>
+] <images/encoderQEI.png, id=265, 963.6pt x 380.17032pt>
+File: images/encoderQEI.png Graphic file (type png)
+
+<use images/encoderQEI.png>
+Package pdftex.def Info: images/encoderQEI.png used on input line 244.
+(pdftex.def)             Requested size: 433.616pt x 171.07506pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/etseib-logo.png Graphic file (type png)
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 251.
+(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
+
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+ Make it at least 42.51874pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/motor_graph.png> <C:/
+Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/encoderQEI.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
@@ -915,7 +966,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 235.
+Package pdftex.def Info: images/etseib-logo.png used on input line 253.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -924,36 +975,17 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/motor_dimensions.png>
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-File: images/etseib-logo.png Graphic file (type png)
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 235.
-(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
-
-
-Package Fancyhdr Warning: \footskip is too small (42.0pt): 
- Make it at least 42.51874pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9] <images/raspi.png, id=260, 1027.84pt x 552.0625pt>
+[10] <images/raspi.png, id=276, 1027.84pt x 552.0625pt>
 File: images/raspi.png Graphic file (type png)
  <use images/raspi.png>
-Package pdftex.def Info: images/raspi.png used on input line 242.
+Package pdftex.def Info: images/raspi.png used on input line 260.
 (pdftex.def)             Requested size: 205.56436pt x 110.41054pt.
 
-<images/RaspiModelB.png, id=261, 1276.77pt x 916.1728pt>
+<images/RaspiModelB.png, id=277, 1276.77pt x 916.1728pt>
 File: images/RaspiModelB.png Graphic file (type png)
 
 <use images/RaspiModelB.png>
-Package pdftex.def Info: images/RaspiModelB.png used on input line 252.
+Package pdftex.def Info: images/RaspiModelB.png used on input line 270.
 (pdftex.def)             Requested size: 191.50723pt x 137.41998pt.
 
 
@@ -964,7 +996,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 268.
+Package pdftex.def Info: images/etseib-logo.png used on input line 286.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -973,7 +1005,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/raspi.png> <C:/Users
+[11 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/raspi.png> <C:/Users
 /AESS/Documents/GitHub/WifiBotPi/LaTex/images/RaspiModelB.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -983,25 +1015,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 296.
-(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
-
-
-Package Fancyhdr Warning: \footskip is too small (42.0pt): 
- Make it at least 42.51874pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-File: images/etseib-logo.png Graphic file (type png)
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 300.
+Package pdftex.def Info: images/etseib-logo.png used on input line 314.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1011,10 +1025,6 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1023,7 +1033,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 320.
+Package pdftex.def Info: images/etseib-logo.png used on input line 318.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1033,7 +1043,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
@@ -1045,7 +1055,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 335.
+Package pdftex.def Info: images/etseib-logo.png used on input line 338.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1055,6 +1065,10 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1063,7 +1077,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 347.
+Package pdftex.def Info: images/etseib-logo.png used on input line 353.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1073,12 +1087,30 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/etseib-logo.png Graphic file (type png)
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 365.
+(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
+
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+ Make it at least 42.51874pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
@@ -1090,7 +1122,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 366.
+Package pdftex.def Info: images/etseib-logo.png used on input line 384.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1099,15 +1131,15 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
 
-<images/LS7366.png, id=295, 859.21pt x 879.285pt>
+<images/LS7366.png, id=312, 859.21pt x 879.285pt>
 File: images/LS7366.png Graphic file (type png)
  <use images/LS7366.png>
-Package pdftex.def Info: images/LS7366.png used on input line 373.
+Package pdftex.def Info: images/LS7366.png used on input line 391.
 (pdftex.def)             Requested size: 128.87593pt x 131.88705pt.
 
 
@@ -1118,7 +1150,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 382.
+Package pdftex.def Info: images/etseib-logo.png used on input line 400.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1127,7 +1159,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/LS7366.png>]
+[18 <C:/Users/AESS/Documents/GitHub/WifiBotPi/LaTex/images/LS7366.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1136,25 +1168,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 386.
-(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
-
-
-Package Fancyhdr Warning: \footskip is too small (42.0pt): 
- Make it at least 42.51874pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-File: images/etseib-logo.png Graphic file (type png)
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 389.
+Package pdftex.def Info: images/etseib-logo.png used on input line 404.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1172,7 +1186,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 392.
+Package pdftex.def Info: images/etseib-logo.png used on input line 407.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1190,7 +1204,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 395.
+Package pdftex.def Info: images/etseib-logo.png used on input line 410.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1208,7 +1222,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 398.
+Package pdftex.def Info: images/etseib-logo.png used on input line 413.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1219,15 +1233,6 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 
 [22]
 
-Package glossaries Warning: \makeglossaries hasn't been used,
-the glossaries will not be updated.
-
-
-Package glossaries Warning: No \printglossary or \printglossaries found.
-This document will not have a glossary.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1235,7 +1240,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 402.
+Package pdftex.def Info: images/etseib-logo.png used on input line 416.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -1245,19 +1250,46 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+
+Package glossaries Warning: \makeglossaries hasn't been used,
+the glossaries will not be updated.
+
+
+Package glossaries Warning: No \printglossary or \printglossaries found.
+This document will not have a glossary.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 420.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/etseib-logo.png Graphic file (type png)
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 420.
+(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
+
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+ Make it at least 42.51874pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 420.
  (C:\Users\AESS\Documents\GitHub\WifiBotPi\LaTex\WifiBotPi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 420.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 420.
 Package rerunfilecheck Info: File `WifiBotPi.out' has not changed.
-(rerunfilecheck)             Checksum: 98515B80A5013CD1EF9FE47D9B8DB8BA;2465.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
+(rerunfilecheck)             Checksum: 3BE4486E077CF5AD5B4A02F10686A9E1;2561.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 420.
  ) 
 Here is how much of TeX's memory you used:
- 11581 strings out of 493921
- 171355 string characters out of 3144879
- 316157 words of memory out of 3000000
- 14567 multiletter control sequences out of 15000+200000
+ 11599 strings out of 493921
+ 171716 string characters out of 3144879
+ 316315 words of memory out of 3000000
+ 14579 multiletter control sequences out of 15000+200000
  56563 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  46i,15n,57p,1695b,640s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1272,9 +1304,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
 /lm/lmsy10.pfb>
-Output written on WifiBotPi.pdf (25 pages, 1586641 bytes).
+Output written on WifiBotPi.pdf (26 pages, 1713648 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 340 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 358 words of extra memory for PDF output out of 10000 (max. 10000000)
 
