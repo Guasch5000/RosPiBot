@@ -403,14 +403,16 @@ Debido al buen estado de los motores y del hecho que un par incorpora codificado
 Al conservar este dispositivos se considera que el consumo (por lo que afecta a la parte de motorizaci'on) permanecer'a semejante, por tanto la nueva etapa de control de motores dispondr'a de características similares. Siendo el voltaje nominal del grupo motriz de unos 7.2 se requiere de una alimentaci'on acorde a este voltaje; En el caso de utilizar bater'ias de voltaje superior, ser'a necesario una etapa DC-DC para adecuar los niveles.
 
 \subsubsection{Bater'ia}
-Para la selecci'on del sistema de acumulaci'on de energ'ia se ha barajado diferentes posibilidades que podemos encontrar en el mercado: bater'ias de plomo, NiCd, NiMH, Ion Litio y Pol'imero de Litio (LiPo). 
+Para la selecci'on del sistema de acumulaci'on de energ'ia se ha barajado diferentes posibilidades que podemos encontrar en el mercado:Bater'ias de plomo, NiCd, NiMH, Ion Litio y Pol'imero de Litio (LiPo). Las de plomo han sido las primeras descartadas a causa de su baja densidad de carga y su elevado peso. Las constituidas por elementos de NiCd se encuentran en fase de desaparici'on por experimentar el efecto mem'oria (reducci'on de su capacidad al cabo del tiempo) y ser superadas por sus competidoras. Las bater'ias de Ion de Litio, a'un disponiendo de una alta densidad de carga y bajo peso (motivo de su extendido uso en dispositivos m'obiles), no son capaces de ofrecer una gran capacidad de descarga. \\
+
+Llegados a este punto queda decidir entre las bater'ias constituidas por NiMH o LiPo. Ambas bater'ias est'an ampliamente comercializadas y ofrecen una alta capacidad de descarga si se comparan con las descartadas.
 
 
 
 \subsubsection{Descodificador de cuadratura}
 Uno de los elementos m'as 'utiles que podemos encontrar en la plataforma es la existencia de dos codificadores de cuadratura dispuestos en el grupo motriz delantero (uno a cada lado). Estos dispositivos permiten medir los cambios del eje del motor (antes de la etapa reductora) con gran precisi'on. Para su funcionamiento requieren de una alimentaci'on de 5 voltios, siendo este mismo voltaje el usado en la salida del se'nal. Debido a su voltaje, superior a los 3.3 voltios que soportan los pines de la Raspberry Pi, se hace necesario un adaptador de nivel. Adem'as, seg'un los resultados experimentados, la frecuencia m'axima de interrupciones generadas por el codificador llega hasta las 80.000 por segundo, Haciendo imposible que el microprocesador sea capaz de gestionarlo.\\
 
-Para solventar el problema, se hace uso del circuito integrado LS7366, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.
+Para solventar el problema, se hace uso del circuito integrado LS7366, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.\\
 
 \begin{figure}[ht]
 \centering
