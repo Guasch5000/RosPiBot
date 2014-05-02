@@ -452,6 +452,30 @@ Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrar
 \label{fig:LM3914}
 \end{figure} 
 
+\subsubsection{Adaptador de nivel de tensi'on}
+Para una correcta comunicaci'on entre los diferentes dispositivos es preciso adaptar los diferentes voltajes. Para ello hay que tener en cuenta en que rangos cada dispositivo se comunica; Mientras que la Raspberry Pi usa voltajes en su GPIO de 0 a 3.3V, el controlador de motores opera con tensiones superior a los 4.5V.\\
+
+Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se ha decantado por el uso del circuito recomendado por la empresa \textbf{Philips Semiconductors} explicado en su documento \textbf{AN97055} y que corresponde a la figura \ref{fig:Level_shifter_circuit}. Finalmente para el circuito se utilizar'an resistencias de 10 KiloOmhs para la funci'on de ''pull-up'' y el mosfet de canal N \textbf{BSS138} como el de la figura \ref{fig:BSS138}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.30]{images/level_shifter_circuit.png}
+\caption{Circuito adaptador de tensi'on}
+\label{fig:Level_shifter_circuit}
+\end{figure} 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.35]{images/bss138_diagram.png}
+\caption{Diagrama BSS138}
+\label{fig:BSS138}
+\end{figure} 
+
+\subsubsection{Regulador de voltaje de alimentaci'on}
+A causa de la diferencia tensi'on entre la bater'ia y el resto de dispositivos, es necesario un sistema que regule el voltaje. Para satisfacer los consumos del robot se 
+
+
+\newpage
 \subsection{Dispositivos Electr'onicos}
 
 
