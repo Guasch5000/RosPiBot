@@ -471,8 +471,19 @@ Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se 
 \label{fig:BSS138}
 \end{figure} 
 
-\subsubsection{Regulador de voltaje de alimentaci'on}
-A causa de la diferencia tensi'on entre la bater'ia y el resto de dispositivos, es necesario un sistema que regule el voltaje. Para satisfacer los consumos del robot se 
+\subsubsection{Alimentaci'on de l'ogica}
+A causa de los diferentes niveles de tensi'on entre la bater'ia que cada componente requiere, se hace necesario un sistema que lo adecue; Por ello se ha dedicido usar un regulador que ofrezca una salida estable de 5 voltios. En el caso de la Raspberry Pi se utilizar'a el propio regulador interno de 5V a 3.3V.
+A partir de experimentaciones previas se estima un consumo medio de 1500mA. Para satisfacer dicho consumo es necesario un regulador de alta eficiencia, y debido a que siempre nos encontramos la situaci'on de reducir el voltaje, deberemos usar un convertidor Buck. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.35]{images/LM2596.png}
+\caption{Circuito regulador Buck 5V}
+\label{fig:LM2596}
+\end{figure} 
+
+El componente elegido ha sido el LM2596, un regulador capaz de ofrecer hasta 3A. Su elecci'on se ha basado en el tipo de componentes que requiere, su facilidad de uso, su coste total reducido y la experiencia previa con este regulador.
+
 
 
 \newpage
