@@ -455,7 +455,7 @@ Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrar
 \subsubsection{Adaptador de nivel de tensi'on}
 Para una correcta comunicaci'on entre los diferentes dispositivos es preciso adaptar los diferentes voltajes. Para ello hay que tener en cuenta en que rangos cada dispositivo se comunica; Mientras que la Raspberry Pi usa voltajes en su GPIO de 0 a 3.3V, el controlador de motores opera con tensiones superior a los 4.5V.\\
 
-Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se ha decantado por el uso del circuito recomendado por la empresa \textbf{Philips Semiconductors} explicado en su documento \textbf{AN97055} y que corresponde a la figura \ref{fig:Level_shifter_circuit}. Finalmente para el circuito se utilizar'an resistencias de 10 KiloOmhs para la funci'on de ''pull-up'' y el mosfet de canal N \textbf{BSS138} como el de la figura \ref{fig:BSS138}.
+Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se ha decantado por el uso del circuito recomendado por la empresa \textbf{Philips Semiconductors} explicado en su documento \textbf{AN97055} y que corresponde a la figura \ref{fig:Level_shifter_circuit}. Finalmente para el circuito se utilizar'an resistencias de 10K$\Omega$ para la funci'on de ''pull-up'' y el mosfet de canal N \textbf{BSS138} como el de la figura \ref{fig:BSS138}.
 
 \begin{figure}[ht]
 \centering
@@ -472,7 +472,7 @@ Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se 
 \end{figure} 
 
 \subsubsection{Alimentaci'on de l'ogica}
-A causa de los diferentes niveles de tensi'on entre la bater'ia que cada componente requiere, se hace necesario un sistema que lo adecue; Por ello se ha dedicido usar un regulador que ofrezca una salida estable de 5 voltios. En el caso de la Raspberry Pi se utilizar'a el propio regulador interno de 5V a 3.3V.
+A causa de los diferentes niveles de tensi'on entre la bater'ia que cada componente requiere, se hace necesario un sistema que lo adecue; Por ello se ha dedicido usar un regulador que ofrezca una salida estable de 5 voltios. En el caso de la Raspberry Pi se utilizar'a el propio regulador interno de 5 a 3.3V.
 A partir de experimentaciones previas se estima un consumo medio de 1500mA. Para satisfacer dicho consumo es necesario un regulador de alta eficiencia, y debido a que siempre nos encontramos la situaci'on de reducir el voltaje, deberemos usar un convertidor Buck. 
 
 \begin{figure}[ht]
@@ -482,7 +482,15 @@ A partir de experimentaciones previas se estima un consumo medio de 1500mA. Para
 \label{fig:LM2596}
 \end{figure} 
 
-El componente elegido ha sido el LM2596, un regulador capaz de ofrecer hasta 3A. Su elecci'on se ha basado en el tipo de componentes que requiere, su facilidad de uso, su coste total reducido y la experiencia previa con este regulador.
+El componente elegido ha sido el LM2596, un regulador capaz de ofrecer hasta 3A. Su elecci'on se ha basado en el tipo de componentes que requiere, su facilidad de uso, su coste total reducido y la experiencia previa con este regulador. Para la selecci'on de componentes, la mayor'ia vienen definidos por el propio fabricante, excepto la bobina, la  cual para obtener el m'aximo rendimiento del regulador su inductancia se ha de elegir seg'un la figura \ref{fig:Bobina_Graph}. Puesto que las bater'ias oscilan de 6 a 8.4V y que el consumo var'ia de 1 a 2A, se ha coloreado de verde claro aquellas zonas en la que el regulador puede llegar a trabajar y de color m'as oscuro la zona m'as t'ipica d'onde se puede encontrar. Por esto motivo se ha elegido el valor de 22 $\mu$H.
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.30]{images/bobina_graph.png}
+\caption{Guia de selecci'on de inductancia}
+\label{fig:Bobina_Graph}
+\end{figure} 
 
 
 
