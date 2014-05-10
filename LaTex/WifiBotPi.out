@@ -29,16 +29,23 @@
 \BOOKMARK [1][-]{section.4}{Modificaciones}{}% 29
 \BOOKMARK [2][-]{subsection.4.1}{ Componentes Electr\363nicos}{section.4}% 30
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Motorizaci\363n}{subsection.4.1}% 31
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Bater\355a}{subsection.4.1}% 32
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Descodificador de cuadratura}{subsection.4.1}% 33
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Control de motores}{subsection.4.1}% 34
-\BOOKMARK [3][-]{subsubsection.4.1.5}{Monitorizaci\363n de la Bater\355a}{subsection.4.1}% 35
-\BOOKMARK [3][-]{subsubsection.4.1.6}{Lectura de valores anal\363gicos}{subsection.4.1}% 36
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Sensores de proximidad}{subsection.4.1}% 32
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Bater\355a}{subsection.4.1}% 33
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Punto de acceso WiFi}{subsection.4.1}% 34
+\BOOKMARK [3][-]{subsubsection.4.1.5}{Conmutador de red}{subsection.4.1}% 35
+\BOOKMARK [3][-]{subsubsection.4.1.6}{Descodificador de cuadratura}{subsection.4.1}% 36
 \BOOKMARK [3][-]{subsubsection.4.1.7}{Adaptador de nivel de tensi\363n}{subsection.4.1}% 37
-\BOOKMARK [3][-]{subsubsection.4.1.8}{Alimentaci\363n de l\363gica}{subsection.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.2}{Dispositivos Electr\363nicos}{section.4}% 39
-\BOOKMARK [1][-]{section.5}{Presupuesto}{}% 40
-\BOOKMARK [1][-]{section.6}{Conclusiones}{}% 41
-\BOOKMARK [1][-]{section.7}{Agradecimientos}{}% 42
-\BOOKMARK [1][-]{section.8}{Biografia}{}% 43
-\BOOKMARK [1][-]{section.9}{Soporte inform\341tico}{}% 44
+\BOOKMARK [3][-]{subsubsection.4.1.8}{Lectura de valores anal\363gicos}{subsection.4.1}% 38
+\BOOKMARK [3][-]{subsubsection.4.1.9}{Monitorizaci\363n de la Bater\355a}{subsection.4.1}% 39
+\BOOKMARK [3][-]{subsubsection.4.1.10}{Alimentaci\363n de l\363gica}{subsection.4.1}% 40
+\BOOKMARK [3][-]{subsubsection.4.1.11}{Control de motores}{subsection.4.1}% 41
+\BOOKMARK [2][-]{subsection.4.2}{Integraci\363n de los componentes}{section.4}% 42
+\BOOKMARK [3][-]{subsubsection.4.2.1}{SecurePi}{subsection.4.2}% 43
+\BOOKMARK [3][-]{subsubsection.4.2.2}{SensorPi}{subsection.4.2}% 44
+\BOOKMARK [3][-]{subsubsection.4.2.3}{MotorPi}{subsection.4.2}% 45
+\BOOKMARK [2][-]{subsection.4.3}{Conexionado}{section.4}% 46
+\BOOKMARK [1][-]{section.5}{Presupuesto}{}% 47
+\BOOKMARK [1][-]{section.6}{Conclusiones}{}% 48
+\BOOKMARK [1][-]{section.7}{Agradecimientos}{}% 49
+\BOOKMARK [1][-]{section.8}{Biografia}{}% 50
+\BOOKMARK [1][-]{section.9}{Soporte inform\341tico}{}% 51

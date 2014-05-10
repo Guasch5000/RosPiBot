@@ -396,22 +396,98 @@ Para la realizaci'on de este proyecto se deber'a trabajar en varios sectores. De
 Aunque la platafoma inicial segu'ia funcionando, los problemas derivados de su desgaste propiciaron la necesitad de modificar en gran medida su interior. En un principio de demostr'o que simplemente insertando una Raspberry Pi, conectada mediante puerto ethernet, se pod'ia comandar el robot. Tambi'en fu'e posible acceder a datos b'asicos del robot como el estado de las bater'ias o la lectura de los sensores de proximidad. Pero el hecho de la inestabilidad de su unidad de procesamiento hizo necesaria su subtituci'on completa. A causa de a esta decisi'on, se tuvo que buscar el modo de comunicarse con los dem'as componentes ya existentes: etapa de alimentaci'on, gestor de bater'ias, control de motores y lectura de sensores. 
 
 \subsection{ Componentes Electr'onicos}
-Para poder actuar con cada dispositivo el robot hac'ia uso de las interf'icies de comunicaci'on UART e I$^{2}$C; Pero a'un sabiendo el protocolo empleado, la comprensi'on de la informaci'on que circulaba fu'e pr'acticamente imposible. Por ello se determin'o que para poder proseguir con el proyecto hac'ia falta el desarrollo de nuevos componentes que substituyesen a los actuales y que permitiesen a futuros usuarios comprender r'apidamente que protocolos se utilizan y c'omo interaccionar con ellos. A continuaci'on se detallan los componentes utilizados siguiendo un orden de mayor a menor restrictivo.
+Para poder actuar con cada dispositivo, el robot hac'ia uso de las interf'icies de comunicaci'on UART e I$^{2}$C; Pero a'un sabiendo el protocolo empleado, la comprensi'on de la informaci'on que circulaba fu'e pr'acticamente imposible. Por ello se determin'o que para poder proseguir con el proyecto hac'ia falta el desarrollo de nuevos componentes que substituyesen a los actuales y que permitiesen a futuros usuarios comprender r'apidamente que protocolos se utilizan y c'omo interaccionar con ellos. A continuaci'on se detallan los componentes utilizados.
 
 \subsubsection{Motorizaci'on}
 Debido al buen estado de los motores y del hecho que un par incorpora codificadores de cuadratura, se ha optado por mantener estos motores. Con este gesto evitamos la b'usqueda de su substituto y nos aseguramos que se mantenga la misma funcionalidad que al inicio. Al conservar este dispositivos se considera que el consumo (por lo que afecta a la parte de motorizaci'on) permanecer'a semejante, por tanto la nueva etapa de control de motores dispondr'a de características similares. Siendo el voltaje nominal del grupo motriz de unos 7.2 se requiere de una alimentaci'on acorde a este voltaje; En el caso de utilizar bater'ias de voltaje superior, ser'a necesario una etapa DC-DC para adecuar los niveles.
 
+
+\subsubsection{Sensores de proximidad}
+Cualquier plataforma rob'otica dedicada a la exploraci'on ha de disponer de sensores que les proporcionen informaci'on sobre el mundo que le rodea. Por ello se aprovechar'an los sensores anal'ogicos infrarrojos actuales del robot, Sharp GP2Y0A2YK, y se an'adir'an cuatro nuevos sensores por ultrasonidos KS103.\\
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.40]{images/KS103.png}
+\caption{Sensor de distancia por ultrasonidos KS103}
+\label{fig:KS103}
+\end{figure} 
+
+Las caracter'isticas de este sensor han sido el motivo de su elecci'on: Su gran rango de medida (de 1cm a 550cm), una resoluci'on de 1mm, comunicaci'on via I${^2}$C (con 20 direcciones possibles), capaz de operar de 3.0 a 5.5V y permite hasta unas 500 lecturas por segundo. Otro factor que se ha tenido en cuenta es el hecho que la luz de sol en determinadas circunstancias puede afectar a la lectura real de los sensores infrarrojos, en cambio los sensores de ultrasonidos no quedan afectados.\\
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.20]{images/KS103_diagram.png}
+\caption{Diagrama de radiaci'on del sensor KS103}
+\label{fig:KS103_diagram}
+\end{figure} 
+
+El funcionamiento de este tipo de sensor de basa en el envi'o de un pulso y la recepci'on de su eco, luego el propio sensor determina el tiempo entre estos dos sucesos y calcula la distancia a la que se encuentra el obst'aculo. Debido a que los ultrasonidos producidos pueden afectarse entre ellos si se realiza una lectura simult'anea, se deber'a esperar la finalizaci'on de la lectura de un sensor para activar el siguiente. 
+
+
+
 \subsubsection{Bater'ia}
 Para la selecci'on del sistema de acumulaci'on de energ'ia se ha barajado diferentes posibilidades que podemos encontrar en el mercado:Bater'ias de plomo, NiCd, NiMH, Ion Litio y Pol'imero de Litio (LiPo). Las de plomo han sido las primeras descartadas a causa de su baja densidad de carga y su elevado peso. Las constituidas por elementos de NiCd se encuentran en fase de desaparici'on por experimentar el efecto mem'oria (reducci'on de su capacidad al cabo del tiempo) y ser superadas por sus competidoras. Las bater'ias de Ion de Litio, a'un disponiendo de una alta densidad de carga y bajo peso (motivo de su extendido uso en dispositivos m'obiles), no son capaces de ofrecer una gran capacidad de descarga. \\
 
-Llegados a este punto queda decidir entre las bater'ias constituidas por NiMH o LiPo. Ambas bater'ias est'an ampliamente comercializadas y ofrecen una alta capacidad de descarga si se comparan con las descartadas.
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Tipo} & \textbf{Densidad de carga} & \textbf{Densidad de potencia} \\ 
+	\textbf{ } & \textbf{[Wh/Kg]} & \textbf{[W/Kg]} \\	\hline
+	NiCd & 50 & 600 \\ \hline
+	NiMh & 70 & 700 \\ \hline
+	Li-Ion & 220 & 300 \\ \hline
+	Li-Poly & 150 & 2690 \\ \hline
 
+\end{tabular}
+\end{center}
 
+\caption{Comparativa entre tipos de bater'ias }
+\label{tab:Battery_type_table}
+\end{table}
 
-\subsubsection{Descodificador de cuadratura}
-Uno de los elementos m'as 'utiles que podemos encontrar en la plataforma es la existencia de dos codificadores de cuadratura dispuestos en el grupo motriz delantero (uno a cada lado). Estos dispositivos permiten medir los cambios del eje del motor (antes de la etapa reductora) con gran precisi'on. Para su funcionamiento requieren de una alimentaci'on de 5 voltios, siendo este mismo voltaje el usado en la salida del se'nal. Debido a su voltaje, superior a los 3.3 voltios que soportan los pines de la Raspberry Pi, se hace necesario un adaptador de nivel. Adem'as, seg'un los resultados experimentados, la frecuencia m'axima de interrupciones generadas por el codificador llega hasta las 80.000 por segundo, Haciendo imposible que el microprocesador sea capaz de gestionarlo.\\
+Llegados a este punto queda decidir entre las bater'ias constituidas por NiMH o LiPo. Ambas bater'ias est'an ampliamente comercializadas y ofrecen una alta capacidad de descarga si se comparan con las descartadas. Aunque las LiPo disponen de mejores caracter'isticas, seg'un la tabla \ref{tab:Battery_type_table}, se corre el riesgo de que  lleguen a incendiarse si se sobrecargan o que queden inutilizadas si se alcanza un voltaje inferior de 2.5V por celda.\\
 
-Para solventar el problema, se hace uso del circuito integrado LS7366, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.\\
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{images/Lipo_PCM.png} 
+\caption{Bater'ia LiPo con PCM instalado}
+\label{fig:LiPo_PCM}
+\end{figure} 
+
+Por ello se ha optado por el uso de unas bater'ias con un m'odulo PCM instalado, este peque'no dispositivo ofrece un control sobre la bater'ia, protegi'endola de sobredescargas y gestionando su carga. Adem'as ya no hace necesario cargadores espec'ificos, simplemente una fuente de tensi'on acorde. Debido a que los motores tienen un voltaje nominal de 7.2V, se ha decidido el uso de bater'ias de 7.4V, estas bater'ias tienen un rango de funcionamiento de 2.75 hasta los 4.2V. \\
+
+Finalmente las la bater'ia elegidas ha sido un conjunto formado por dos celdas de 3.7V de 6000mAh cada una conectadas en serie y con un modulo PCM instalado. Su consumo de carga llega a los 2A y a unos 6A en descarga.
+
+\subsubsection{Punto de acceso WiFi}
+Tal y c'omo se ha descrito en las especificaciones, se requiere de una sistema que ofrezca un acceso WiFi. Debido a que se ha descartado el uso del m'odulo que ya dispo'ia el robot, se hace necesario un nuevo dispositivo que se encargue. En este caso de ha optado por el uso de un elemento comercial de tama'no reducido que se pueda alimentar f'acilmente, ofezca un alcance aceptable y de r'apida configuraci'on.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.15]{images/TL-WR702N.png} 
+\caption{Router TP-Link WR702N}
+\label{fig:TL-WR702N}
+\end{figure}
+
+El dispositivo elegido se trata del mini router TL-WR702N de la empresa TP-LINK. Este modelo ofrece una velocidad m'axima de transmisi'on de 150Mbps, se alimenta mediante un puerto MicroUSB (5V) y dispone de un puerto ethernet RJ45, que dependiendo del modo de trabajo se comporta como un puerto WAN o LAN.\\
+
+Entre todas sus configuraciones (AP Mode, Router Mode ,Client Mode,
+Repeater Modey  Bridge Mode) se ha optado por la de punto de acceso con el nombre de RosPiBot y servidor DHCP activado. De esta manera el usuario s'olo deber'a conectarse a su red para poder acceder al robot.
+
+\subsubsection{Conmutador de red}
+Seg'un las especificaciones se desea que la nueva plataforma disponga de tres medios de acceso a red. Dos de estos medios (Wifi y clavija ethernet) han de estar conectados directamente con el puerto ethernet de la Raspberry, por este motivo se necesita un conmutador o switch. Puesto que el robot ya dispone de un switch de 5 puertos (4 habilitados), se aprovechar'a el mismo dispositivo.\\
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.35]{images/switch_comparative.png} 
+\caption{Switch antes y despu'es de la modificaci'on}
+\label{fig:switch_comparative}
+\end{figure}
+
+Debido a que el conector que dispone el switch implica una que el conector se encuentre en posici'on horizontal, se ha optado por la substituci'on de la clavija de cuatro puertos por tres verticales, de esta manera se reduce la superf'icie que requiere el switch con los conectores.
+
+\subsubsection{Descodificador de cuadratura} \label{sec:LS7366}
+Uno de los elementos m'as 'utiles que podemos encontrar en la plataforma es la existencia de dos codificadores de cuadratura dispuestos en el grupo motriz delantero (uno a cada lado). Estos dispositivos permiten medir los cambios del eje del motor (antes de la etapa reductora) con gran precisi'on. Para su funcionamiento requieren de una alimentaci'on de 5 voltios, siendo este mismo voltaje el usado en la salida del se'nal. Debido a su voltaje, superior a los 3.3 voltios que soportan los pines de la Raspberry Pi, se hace necesario un adaptador de nivel. Adem'as, seg'un los resultados experimentados, la frecuencia m'axima de interrupciones generadas por el codificador llega hasta las 80.000 por segundo, Haciendo imposible que el microprocesador sea capaz de gestionarlo.
 
 \begin{figure}[ht]
 \centering
@@ -420,37 +496,9 @@ Para solventar el problema, se hace uso del circuito integrado LS7366, un contad
 \label{fig:LS7366}
 \end{figure} 
 
+Para solventar el problema, se hace uso del circuito integrado LS7366, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.\\
+
 Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovecha el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
-
-\subsubsection{Control de motores}
-Para el control de motores se utilizar'a el mismo componente usado en el robot original, el doble puente en H L298. Este dispositivo permite un control independiente de dos motores de cont'inua hasta un consumo de 2 amperios por motor. El sentido de rotaci'on se dirige a partir de dos pines indicados como ''Inputs'' y la velocidad mediante una se'nal PWM en el pin de ''Enable''. Aunque dispone de una salida para conocer la intensidad que circula por cada canal (se conecta en serie una resistencia Shunt y se mide la diferencia de potencial), no dispone de ning'un sensor para saber la velocidad del motor.\\
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.30]{images/L298_pin_diagram.png}
-\caption{Diagrama de pines L298N}
-\label{fig:LM3914}
-\end{figure} 
-
-\subsubsection{Monitorizaci'on de la Bater'ia}
-Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda utiliza el circuito integrado LM3914, un dispositivo encargado de medir el voltaje y mostrar dicha informaci'on mediante LEDs.\\
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.30]{images/LM3914_pin_diagram.png}
-\caption{Diagrama de pines LM3914}
-\label{fig:LM3914}
-\end{figure} 
-
-\subsubsection{Lectura de valores anal'ogicos}
-Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrarrojos), el uso de resistencias Shunt y la monitorizaci'on de bater'ias, se requiere una lectura anal'ogica. Por ello se utilizar'a un conversor anal'ogico a digital o ADC ya que la Raspberry no dispone de uno propio. De los posibles componentes que cumplan esta funci'on se ha elegido aquel que de comunique por I$^{2}$C, ofrezca una resoluci'on aceptable, haya sido utilizado satisfactoriamente por otros usuarios y de menor coste. El componente elegido ha sido el MCP3428, un conversor ADC Sigma-Delta de 4 canales diferenciales, resoluci'on de hasta 16 bits y voltaje de referencia interno de 2.048 voltios.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.30]{images/MCP3428_pin_diagram.png}
-\caption{Diagrama de pines MCP3428}
-\label{fig:LM3914}
-\end{figure} 
 
 \subsubsection{Adaptador de nivel de tensi'on}
 Para una correcta comunicaci'on entre los diferentes dispositivos es preciso adaptar los diferentes voltajes. Para ello hay que tener en cuenta en que rangos cada dispositivo se comunica; Mientras que la Raspberry Pi usa voltajes en su GPIO de 0 a 3.3V, el controlador de motores opera con tensiones superior a los 4.5V.\\
@@ -466,9 +514,30 @@ Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.35]{images/bss138_diagram.png}
+\includegraphics[scale=0.30]{images/bss138_diagram.png}
 \caption{Diagrama BSS138}
 \label{fig:BSS138}
+\end{figure} 
+
+\subsubsection{Lectura de valores anal'ogicos}
+Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrarrojos), el uso de resistencias Shunt y la monitorizaci'on de bater'ias, se requiere una lectura anal'ogica. Por ello se utilizar'a un conversor anal'ogico a digital o ADC ya que la Raspberry no dispone de uno propio. De los posibles componentes que cumplan esta funci'on se ha elegido aquel que de comunique por I$^{2}$C, ofrezca una resoluci'on aceptable, haya sido utilizado satisfactoriamente por otros usuarios y de menor coste. El componente elegido ha sido el MCP3428, un conversor ADC Sigma-Delta de 4 canales diferenciales, resoluci'on de hasta 16 bits y voltaje de referencia interno de 2.048 voltios.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.30]{images/MCP3428_pin_diagram.png}
+\caption{Diagrama de pines MCP3428}
+\label{fig:MCP3428}
+\end{figure} 
+
+
+\subsubsection{Monitorizaci'on de la Bater'ia}
+Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda utiliza el circuito integrado LM3914, un dispositivo encargado de medir el voltaje y mostrar dicha informaci'on mediante LEDs.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.30]{images/LM3914_pin_diagram.png}
+\caption{Diagrama de pines LM3914}
+\label{fig:LM3914}
 \end{figure} 
 
 \subsubsection{Alimentaci'on de l'ogica}
@@ -484,7 +553,6 @@ A partir de experimentaciones previas se estima un consumo medio de 1500mA. Para
 
 El componente elegido ha sido el LM2596, un regulador capaz de ofrecer hasta 3A. Su elecci'on se ha basado en el tipo de componentes que requiere, su facilidad de uso, su coste total reducido y la experiencia previa con este regulador. Para la selecci'on de componentes, la mayor'ia vienen definidos por el propio fabricante, excepto la bobina, la  cual para obtener el m'aximo rendimiento del regulador su inductancia se ha de elegir seg'un la figura \ref{fig:Bobina_Graph}. Puesto que las bater'ias oscilan de 6 a 8.4V y que el consumo var'ia de 1 a 2A, se ha coloreado de verde claro aquellas zonas en la que el regulador puede llegar a trabajar y de color m'as oscuro la zona m'as t'ipica d'onde se puede encontrar. Por esto motivo se ha elegido el valor de 22 $\mu$H.
 
-
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.30]{images/bobina_graph.png}
@@ -492,13 +560,52 @@ El componente elegido ha sido el LM2596, un regulador capaz de ofrecer hasta 3A.
 \label{fig:Bobina_Graph}
 \end{figure} 
 
+\subsubsection{Control de motores} \label{sec:L298N}
+Para el control de motores se utilizar'a el mismo componente L298 usado en el robot original, un doble puente en H . Este dispositivo permite un control independiente de dos motores de cont'inua hasta un consumo de 2 amperios por motor.\\
 
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.25]{images/L298_pin_diagram.png}
+\caption{Diagrama de pines L298N}
+\label{fig:L298N}
+\end{figure} 
+
+El sentido de rotaci'on se dirige a partir de dos pines indicados como ''Inputs'' y la velocidad mediante una se'nal PWM en el pin de ''Enable''. Aunque dispone de una salida para conocer la intensidad que circula por cada canal (se conecta en serie una resistencia Shunt y se mide la diferencia de potencial), no dispone de ning'un sensor para saber la velocidad del motor.
+
+\subsection{Integraci'on de los componentes}
+Los componentes descritos anteriormente desde los puntos \ref{sec:LS7366} hasta \ref{sec:L298N} requieren de ser montados en una PCB. Para ello se han dise'nado un conjunto de placas, se han enviado a producir y finalmente se han ensamblado los componentes manualmente.\\
+
+Para la producci'on de las PCB se ha utilizado un servido de prototipado de bajo coste pero con la limitaci'on que los dise'nos han de estar contenidos en rect'angulos de 5x5, 5x10 o 10x10cm. Aunque posiblemente se pudiera incluir todos los componentes en un solo circuito impreso de 10x5cm, se ha preferido crear 3 dise'nos de 5x5cm. As'i se reduce el riesgo de deshacerse de toda una placa por culpa de un imperfecci'on en un componente y se da modularidad al sistema. Las placas creadas s'on: SecurePi, SensorPi y MotorPi.
+
+\subsubsection{SecurePi}
+Esta placa tiene dos objetivos: Ofrecer una etapa de regulaci'on para la alimentaci'on de todos aquellos elementos que requieran una alimentaci'on de 5V y proteger todos los pines GPIO de la Raspberry Pi (ofreciendo bidirecionalidad y convirtiendo el voltaje de 3.3 a 5V).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.60]{images/SecurePi_comparation.png}
+\caption{Layout y PCB de la placa SecurePi}
+\label{fig:SecurePi_comparation}
+\end{figure} 
+
+Otra caracter'istica de esta placa es la redistribuci'on de los pines, separados seg'un la funcionalidad de cada uno. Podemos observar como el conector de 26 pines se ha distribuido en varios: UART(x2), GPIO(x8), SPI(x5), I2C(x2) y alimentaci'on (GND, 3.3V y 5V).\\
+
+Tal y como se aprecia en la figura \ref{fig:SecurePi_mounted}, una vez montada la SecurePi encima de la Raspberry, el usuario puede seguir accediendo a los pines directos del GPIO, usar las nuevas salidas elevadas a 5V y decidir si alimentar el dispositivo mediante el puerto MicroUSB o con una fuente de mayor tensi'on mediante el conector Jack de 5.1mm.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.40]{images/SecurePi_mounted.png}
+\caption{SecurePi colocada con la Raspberry Pi}
+\label{fig:SecurePi_mounted}
+\end{figure} 
+
+\subsubsection{SensorPi}
+
+\subsubsection{MotorPi}
+
+\subsection{Conexionado}
 
 \newpage
-\subsection{Dispositivos Electr'onicos}
 
-
-\newpage
 
 \section{Presupuesto}
 \newpage
