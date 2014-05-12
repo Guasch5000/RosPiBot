@@ -599,6 +599,12 @@ Tal y como se aprecia en la figura \ref{fig:SecurePi_mounted}, una vez montada l
 \end{figure} 
 
 \subsubsection{SensorPi}
+Sobre la placa SecurePi se coloca la SensorPi, esta placa dispone de los descodificadores de cuadratura, los conversores anal'ogicos y un conjunto de leds (uno verde para indicar la correcta alimentaci'on y ocho 'ambar para los pines GPIO destinador a al control de motores).\\
+
+Para cada uno de los descodificadores se han dispuesto de dos tiras de tres pines que disponen de alimentaci'on (GND y 5V), dos canales de cuadratura y un pin opcional para el 'indice. En el caso de las entradas anal'ogicas, se han adaptado mediante divisores de tensiones para ajustar al l'imite de 2.048V. Para medir las bater'ias se han dispuesto de dos lectura para cada una de las celdas en serie, la primera lectura tiene el fondo de escala a 5V y la segunda a 10V. Para los sensores infrarrojos se han configurado a 3.5V como máximo y a 2.2V las dise'nadas para la lectura de la intensidad (midiendo la ca'ida de potencial entre los extremos de una resistencia Shunt). \\
+
+Finalmente las ocho salidas del GPIO se han colocado en un extremo para facilitar su acceso y se ha dispuesto una tira de 4 pines extra para la alimentaci'on y comunicaci'on de los dispositivos que utilizan I${^2}$C.   
+
 
 \subsubsection{MotorPi}
 
