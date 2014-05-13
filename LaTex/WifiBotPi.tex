@@ -9,6 +9,7 @@
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{multicol}
+\usepackage{datatool}
 \usepackage{glossaries}
 
 \pagenumbering{gobble}
@@ -605,10 +606,26 @@ Para cada uno de los descodificadores se han dispuesto de dos tiras de tres pine
 
 Finalmente las ocho salidas del GPIO se han colocado en un extremo para facilitar su acceso y se ha dispuesto una tira de 4 pines extra para la alimentaci'on y comunicaci'on de los dispositivos que utilizan I${^2}$C.   
 
-
 \subsubsection{MotorPi}
+Esta placa controla la gesti'on de motores e incluye el circuito de monitorizaci'on de la bater'ia. Al contrario que las dos placas anteriormente descritas, la MotorPi no est'a dise'nada para ser encajada encima de otra placa.\\
+
+Se han utilizado bloques de terminales para el cableado de potencia (bater'ia y motores) y tiras de pines para el resto de conexiones separadas en 3 bloques: El primero consiste en una tira de 11 pines pensado para el visualizador led de 10 barras. Un segundo bloque de 10 terminales incorpora los quatro pines de indicaci'on del sentido de giro de los motores, dos para la habilitaci'on de los motores delanteros y cuatro más de lectura de corriente. Finalmente el tercer bloque proporciona la alimentaci'on de l'ogica para los L298, dos pines de habilitaci'on para los motores traseros y sus 4 correspondientes para la lectura de consumo.  
+
+\newpage
 
 \subsection{Conexionado}
+Una vez definidos todos los elementos que participan en la modificaci'on de la plataforma rob'otica, es necesario de indicar c'omo se conectan entre ellos. En este proyecto se han diferenciado cuatro conexionados: Conexionado de potencia, que incluye la bater'ia, el circuito de carga y el circuito que alimenta motores, switch y la placa SecurePi. Conexionado de alimentaci'on de l'ogica, circuito regulado a 5V que alimenta la Raspberry Pi, el punto de acceso WiFi y la placa SensorPi. Conexionado de sensores y por 'ultimo el conexionado de datos.\\
+
+\subsubsection{Potencia}
+
+\subsubsection{Alimentaci'on de l'ogica}
+
+\subsubsection{Sensores}
+
+\subsubsection{Datos}
+
+
+
 
 \newpage
 

@@ -45,9 +45,13 @@
 \contentsline {subsubsection}{\numberline {4.2.1}SecurePi}{26}{subsubsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2}SensorPi}{27}{subsubsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.3}MotorPi}{27}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}Conexionado}{27}{subsection.4.3}
-\contentsline {section}{\numberline {5}Presupuesto}{28}{section.5}
-\contentsline {section}{\numberline {6}Conclusiones}{29}{section.6}
-\contentsline {section}{\numberline {7}Agradecimientos}{30}{section.7}
-\contentsline {section}{\numberline {8}Biografia}{31}{section.8}
-\contentsline {section}{\numberline {9}Soporte inform'atico}{32}{section.9}
+\contentsline {subsection}{\numberline {4.3}Conexionado}{29}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Potencia}{29}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Alimentaci'on de l'ogica}{29}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Sensores}{29}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Datos}{29}{subsubsection.4.3.4}
+\contentsline {section}{\numberline {5}Presupuesto}{30}{section.5}
+\contentsline {section}{\numberline {6}Conclusiones}{31}{section.6}
+\contentsline {section}{\numberline {7}Agradecimientos}{32}{section.7}
+\contentsline {section}{\numberline {8}Biografia}{33}{section.8}
+\contentsline {section}{\numberline {9}Soporte inform'atico}{34}{section.9}
