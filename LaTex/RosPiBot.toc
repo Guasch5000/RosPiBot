@@ -1,0 +1,73 @@
+\select@language {spanish}
+~\hfill \textbf {P'agina}\par 
+\contentsline {section}{Resumen}{1}{section*.3}
+\contentsline {section}{Glosario}{7}{section*.6}
+\contentsline {section}{\numberline {1}Introducci'on}{8}{section.1}
+\contentsline {subsection}{\numberline {1.1}Estado del arte}{8}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Alcance}{8}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Objetivos}{8}{subsection.1.3}
+\contentsline {section}{\numberline {2}Descripci'on }{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}WifiBot}{9}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Caracter'isticas}{9}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Estructura}{10}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Grupo Motriz}{10}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Codificador 'optico de cuadratura}{11}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Estado Inicial}{12}{subsubsection.2.1.5}
+\contentsline {subsection}{\numberline {2.2}Raspberry Pi}{13}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Caracter'isticas}{13}{subsubsection.2.2.1}
+\contentsline {subsection}{\numberline {2.3}Protocolos de comunicaci'on}{15}{subsection.2.3}
+\contentsline {section}{\numberline {3}Especificaciones}{16}{section.3}
+\contentsline {subsection}{\numberline {3.1}Software}{16}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Web}{16}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Librer'ias}{16}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Electr'onica}{17}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Funcionamiento}{17}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Alimentaci'on}{17}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}L'ogica}{17}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Comunicaci'on}{17}{subsubsection.3.2.4}
+\contentsline {subsection}{\numberline {3.3}Mec'anica}{18}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Estructura}{18}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Tornilleria}{18}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}Modificaciones}{19}{section.4}
+\contentsline {subsection}{\numberline {4.1} Componentes Electr'onicos}{19}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Motorizaci'on}{19}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Sensores de proximidad}{20}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Bater'ia}{21}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Punto de acceso WiFi}{22}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}Conmutador de red}{23}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}Descodificador de cuadratura}{23}{subsubsection.4.1.6}
+\contentsline {subsubsection}{\numberline {4.1.7}Adaptador de nivel de tensi'on}{24}{subsubsection.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.8}Lectura de valores anal'ogicos}{24}{subsubsection.4.1.8}
+\contentsline {subsubsection}{\numberline {4.1.9}Monitorizaci'on de la Bater'ia}{25}{subsubsection.4.1.9}
+\contentsline {subsubsection}{\numberline {4.1.10}Alimentaci'on de l'ogica}{26}{subsubsection.4.1.10}
+\contentsline {subsubsection}{\numberline {4.1.11}Control de motores}{27}{subsubsection.4.1.11}
+\contentsline {subsection}{\numberline {4.2}Integraci'on de los componentes}{28}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}SecurePi}{28}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}SensorPi}{29}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}MotorPi}{29}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Conexionado}{31}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Potencia}{31}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Alimentaci'on de l'ogica}{32}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Cableado SensorPi}{32}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Comunicaci'on}{33}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}Distribuci'on interna}{34}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Componentes mec'anicos}{35}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Mecanizados}{35}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Soportes}{35}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Paneles}{35}{subsubsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.4}Torniller'ia}{35}{subsubsection.4.5.4}
+\contentsline {subsection}{\numberline {4.6}Montaje}{36}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Entorno inform'atico}{37}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Configuraci'on Router WiFi}{37}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Configuraci'on Raspberry Pi}{37}{subsubsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.3}Servicios b'asicos}{37}{subsubsection.4.7.3}
+\contentsline {subsubsection}{\numberline {4.7.4}M'odulo Rospibot}{37}{subsubsection.4.7.4}
+\contentsline {subsection}{\numberline {4.8}Adaptaci'on a ROS}{38}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Instalaci'on ROS Groovy}{38}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Nodos b'asicos}{38}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.3}Paquete Rospibot}{38}{subsubsection.4.8.3}
+\contentsline {section}{\numberline {5}Presupuesto}{39}{section.5}
+\contentsline {section}{\numberline {6}Conclusiones}{40}{section.6}
+\contentsline {section}{\numberline {7}Soporte inform'atico}{41}{section.7}
+\contentsline {section}{\numberline {8}Agradecimientos}{42}{section.8}
+\contentsline {section}{Referencias}{43}{section.8}
