@@ -11,6 +11,7 @@
 \usepackage{multicol}
 \usepackage{datatool}
 \usepackage{glossaries}
+\usepackage{cite}
 
 \pagenumbering{gobble}
 %\renewcommand{\baselinestretch}{1.5}
@@ -95,18 +96,30 @@ A lo largo de este documento se exponen el estado inicial del robot, los nuevos 
 \addtocontents{toc}{~\hfill\textbf{P'agina}\par}
 \addcontentsline{toc}{section}{Resumen}
 %\setcounter{page}{1}
-\addcontentsline{toc}{section}{Glosario}
 %\setcounter{page}{4}
 \fancyhead[LE,RO]{4}
 %\setcounter{page}{3}
 %\addcontentsline{toc}{section}{'Indice}
-\newpage
 
+\newpage
 %\pagenumbering{arabic}
 \setcounter{page}{5}
 \fancyhead[LE,RO]{\thepage}
+\listoffigures
+
+\newpage
+%\pagenumbering{arabic}
+\setcounter{page}{6}
+\fancyhead[LE,RO]{\thepage}
+\listoftables
+
+\newpage
+%\pagenumbering{arabic}
+\setcounter{page}{7}
+\fancyhead[LE,RO]{\thepage}
 
 \section*{Glosario}
+\addcontentsline{toc}{section}{Glosario}
 \begin{description}
 \item[UART] Universal Asynchronous Receiver-Transmitter
 \item[SPI] Serial Protocol Interface
@@ -602,7 +615,7 @@ Tal y como se aprecia en la figura \ref{fig:SecurePi_mounted}, una vez montada l
 \subsubsection{SensorPi}
 Sobre la placa SecurePi se coloca la SensorPi, esta placa dispone de los descodificadores de cuadratura, los conversores anal'ogicos y un conjunto de leds (uno verde para indicar la correcta alimentaci'on y ocho 'ambar para los pines GPIO destinador a al control de motores).\\
 
-Para cada uno de los descodificadores se han dispuesto de dos tiras de tres pines que disponen de alimentaci'on (GND y 5V), dos canales de cuadratura y un pin opcional para el 'indice. En el caso de las entradas anal'ogicas, se han adaptado mediante divisores de tensiones para ajustar al l'imite de 2.048V. Para medir las bater'ias se han dispuesto de dos lectura para cada una de las celdas en serie, la primera lectura tiene el fondo de escala a 5V y la segunda a 10V. Para los sensores infrarrojos se han configurado a 3.5V como mÃ¡ximo y a 2.2V las dise'nadas para la lectura de la intensidad (midiendo la ca'ida de potencial entre los extremos de una resistencia Shunt). \\
+Para cada uno de los descodificadores se han dispuesto de dos tiras de tres pines que disponen de alimentaci'on (GND y 5V), dos canales de cuadratura y un pin opcional para el 'indice. En el caso de las entradas anal'ogicas, se han adaptado mediante divisores de tensiones para ajustar al l'imite de 2.048V. Para medir las bater'ias se han dispuesto de dos lectura para cada una de las celdas en serie, la primera lectura tiene el fondo de escala a 5V y la segunda a 10V. Para los sensores infrarrojos se han configurado a 3.5V como m'aximo y a 2.2V las dise'nadas para la lectura de la intensidad (midiendo la ca'ida de potencial entre los extremos de una resistencia Shunt). \\
 
 Finalmente las ocho salidas del GPIO se han colocado en un extremo para facilitar su acceso y se ha dispuesto una tira de 4 pines extra para la alimentaci'on y comunicaci'on de los dispositivos que utilizan I${^2}$C.   
 
@@ -614,34 +627,110 @@ Se han utilizado bloques de terminales para el cableado de potencia (bater'ia y 
 \newpage
 
 \subsection{Conexionado}
-Una vez definidos todos los elementos que participan en la modificaci'on de la plataforma rob'otica, es necesario de indicar c'omo se conectan entre ellos. En este proyecto se han diferenciado cuatro conexionados: Conexionado de potencia, que incluye la bater'ia, el circuito de carga y el circuito que alimenta motores, switch y la placa SecurePi. Conexionado de alimentaci'on de l'ogica, circuito regulado a 5V que alimenta la Raspberry Pi, el punto de acceso WiFi y la placa SensorPi. Conexionado de sensores y por 'ultimo el conexionado de datos.\\
+Una vez definidos todos los elementos que participan en la modificaci'on de la plataforma rob'otica, es necesario de indicar c'omo se conectan entre ellos. Debido a que cada componente debe ser alimentado a un voltaje específico, se han proyectado diferentes conexionados seg'un la funci'on de sus elementos:
 
 \subsubsection{Potencia}
+Este cableado se encarga de la distribuci'on de energ'ia a todos aquellos componentes que est'en dise'nados para aceptar voltajes dentro del rango de la bater'ia. Si nos fijamos en la figura \ref{fig:esquema_power} estos componentes forman dos grupos que se han enmarcado: El grupo encargado de la recarga, formado por el conector ''Power Jack'' y un fusible para proteger la fuente de alimentaci'on exterior, y el grupo encargado del consumo, donde encontramos un interruptor, el switch y los dos circuitos impresos MotorPi y SecurePi.\\
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.37]{images/esquema_power.png}
+\caption{Esquema el'ectrico del conexionado de potencia}
+\label{fig:esquema_power}
+\end{figure} 
+
+Aunque el circuito de recarga dispone de fusible, se puede observar que el segundo no. Este hecho se debe a que en la situaci'on de funcionamiento normal, el robot se encuentra en movimiento, el circuito de recarga est'a abierto, por lo que toda la energ'ia la subministra la bater'ia. Y en el caso que una sobrecarga o cortocircuito el propio m'odulo PCM actuar'ia, con lo que no hace necesaria la intalaci'on de un fusible para el circuito de consumo. En cambio, si por casualidad nos encontramos en la situaci'on que tenemos el robot recarg'andose con poca bater'ia y decidimos activar los motores, debido al pico de consumo que aparece se puede dar el caso que sea la fuente qui'en alimente el grupo motor y la acabemos dañando.
+
 
 \subsubsection{Alimentaci'on de l'ogica}
+Una vez la placa SecurePi ha sido alimentada, ofrece una tensi'on de 5V estable. Los consumidores de esta salida son la propia Raspberry Pi, la placa SensorPi y el Router WiFi.
 
-\subsubsection{Sensores}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.25]{images/esquema_5V.png}
+\caption{Esquema el'ectrico de la alimentaci'on de l'ogica}
+\label{fig:esquema_5V}
+\end{figure} 
 
-\subsubsection{Datos}
+Tanto la Raspberry Pi como la SensorPi no requieren de cableado puesto que su contacto se efect'ua mediante los pines previamente soldados. Por el otro lado, se ha modificado un cable USB tipo A a MicroUSB para ser conectado al GPIO y subministrar energ'ia al Router.
 
+\subsubsection{Cableado SensorPi}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.39]{images/esquema_sensor.png}
+\caption{Esquema el'ectrico del cableado de la placa SensorPi}
+\label{fig:esquema_sensor}
+\end{figure} 
+
+Del mismo modo que la placa SecurePi alimenta a un conjunto de elementos, la placa SensorPi hace lo mismo. Podemos observar la distribuci'on del cableado en la figura \ref{fig:esquema_sensor} y los elementos que dependen de esta placa para funcionar.\\
+
+El conexionado con la placa MotorPi se separa en 3 grupos: Alimentaci'on, comunicaci'on con los controladores y lectura de consumo. El resto de componentes también son alimentados excepto los destinados a la lectura del estado de las celdas de la bater'ia. 
+
+\subsubsection{Comunicaci'on}
+Una vez tenemos todo lo necesario para que el robot sea capaz de moverse y obtener informaci'on de su entorno, solamente nos queda poder comunicarnos con 'el. Para ello se ha conectado la Raspberry Pi, Router, Switch y la clavija de red externa mediante cables Ethernet. Por otra parte se han extendido las salidas USB de la Raspberry Pi hacia el exterior del robot para facilitar su acceso.
+
+\newpage
+\subsection{Distribuci'on interna}
+
+\newpage
+\subsection{Componentes mec'anicos}
+
+\subsubsection{Mecanizados}
+
+\subsubsection{Soportes}
+
+\subsubsection{Paneles}
+
+\subsubsection{Torniller'ia}
+
+\newpage
+\subsection{Montaje}
+
+\newpage
+\subsection{Entorno inform'atico}
+
+\subsubsection{Configuraci'on Router WiFi}
+
+\subsubsection{Configuraci'on Raspberry Pi}
+
+\subsubsection{Servicios b'asicos}
+
+\subsubsection{M'odulo Rospibot}
+
+\newpage
+\subsection{Adaptaci'on a ROS}
+
+\subsubsection{Instalaci'on ROS Groovy}
+
+\subsubsection{Nodos b'asicos}
+
+\subsubsection{Paquete Rospibot}
 
 
 \newpage
-
-
 \section{Presupuesto}
-\newpage
 
+
+\newpage
 \section{Conclusiones}
-\newpage
 
-\section{Agradecimientos}
 \newpage
-
-\section{Biografia}
-\newpage
-
 \section{Soporte inform'atico}
+
+\newpage
+\section{Agradecimientos}
+
+\newpage
+%\section{Bibliografia}
+\addcontentsline{toc}{section}{Referencias}
+\begin{thebibliography}{a}
+\bibitem{pradery} \textsc{Montero, J.},
+\textit{Metodos matemáticos aplicados a la ganadería.}
+Sevilla: Ediciones de la pradera, 2007  
+\bibitem{old} \textsc{Old, L.},
+\textit{Confesiones de una oveja bizca}
+Madrid: Naturalistic, 2010 
+\end{thebibliography}
 
 \end{document}
