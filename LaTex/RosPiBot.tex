@@ -515,9 +515,6 @@ Para solventar el problema, se hace uso del circuito integrado LS7366, un contad
 Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovecha el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
 
 \subsubsection{Adaptador de nivel de tensi'on}
-Para una correcta comunicaci'on entre los diferentes dispositivos es preciso adaptar los diferentes voltajes. Para ello hay que tener en cuenta en que rangos cada dispositivo se comunica; Mientras que la Raspberry Pi usa voltajes en su GPIO de 0 a 3.3V, el controlador de motores opera con tensiones superior a los 4.5V.\\
-
-Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se ha decantado por el uso del circuito recomendado por la empresa \textbf{Philips Semiconductors} explicado en su documento \textbf{AN97055} y que corresponde a la figura \ref{fig:Level_shifter_circuit}. Finalmente para el circuito se utilizar'an resistencias de 10K$\Omega$ para la funci'on de ''pull-up'' y el mosfet de canal N \textbf{BSS138} como el de la figura \ref{fig:BSS138}.
 
 \begin{figure}[ht]
 \centering
@@ -533,7 +530,15 @@ Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se 
 \label{fig:BSS138}
 \end{figure} 
 
+Para una correcta comunicaci'on entre los diferentes dispositivos es preciso adaptar los diferentes voltajes. Para ello hay que tener en cuenta en que rangos cada dispositivo se comunica; Mientras que la Raspberry Pi usa voltajes en su GPIO de 0 a 3.3V, el controlador de motores opera con tensiones superior a los 4.5V.\\
+
+Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se ha decantado por el uso del circuito recomendado por la empresa \textbf{Philips Semiconductors} explicado en su documento \textbf{AN97055} y que corresponde a la figura \ref{fig:Level_shifter_circuit}. Finalmente para el circuito se utilizar'an resistencias de 10K$\Omega$ para la funci'on de ''pull-up'' y el mosfet de canal N \textbf{BSS138} como el de la figura \ref{fig:BSS138}.
+
+
+
 \subsubsection{Lectura de valores anal'ogicos}
+
+
 Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrarrojos), el uso de resistencias Shunt y la monitorizaci'on de bater'ias, se requiere una lectura anal'ogica. Por ello se utilizar'a un conversor anal'ogico a digital o ADC ya que la Raspberry no dispone de uno propio. De los posibles componentes que cumplan esta funci'on se ha elegido aquel que de comunique por I$^{2}$C, ofrezca una resoluci'on aceptable, haya sido utilizado satisfactoriamente por otros usuarios y de menor coste. El componente elegido ha sido el MCP3428, un conversor ADC Sigma-Delta de 4 canales diferenciales, resoluci'on de hasta 16 bits y voltaje de referencia interno de 2.048 voltios.
 
 \begin{figure}[ht]
@@ -668,24 +673,122 @@ Del mismo modo que la placa SecurePi alimenta a un conjunto de elementos, la pla
 El conexionado con la placa MotorPi se separa en 3 grupos: Alimentaci'on, comunicaci'on con los controladores y lectura de consumo. El resto de componentes también son alimentados excepto los destinados a la lectura del estado de las celdas de la bater'ia. 
 
 \subsubsection{Comunicaci'on}
-Una vez tenemos todo lo necesario para que el robot sea capaz de moverse y obtener informaci'on de su entorno, solamente nos queda poder comunicarnos con 'el. Para ello se ha conectado la Raspberry Pi, Router, Switch y la clavija de red externa mediante cables Ethernet. Por otra parte se han extendido las salidas USB de la Raspberry Pi hacia el exterior del robot para facilitar su acceso.
+Llegados a es este punto tenemos todo lo necesario para que el robot sea capaz de moverse y obtener informaci'on de su entorno, solamente nos queda poder comunicarnos con 'el. Para ello se ha conectado la Raspberry Pi, Router, Switch y la clavija de red externa mediante cables Ethernet. Por otra parte se han extendido las salidas USB de la Raspberry Pi hacia el exterior del robot para facilitar su acceso.
 
 \newpage
 \subsection{Distribuci'on interna}
+Una vez que los elementos internos del robot han sido definidos, es hora de organizar su distribuci'on. Para ello se han considerados las especificaciones previas, donde se define a grandes rasgos su ubicaci'on preferida. Durante esta fase se ha ido corrigiendo la disposici'on de los elementos hasta encontrar uno que satisface todas las restricciones. Para poder llevar a cabo esta tarea se han modelado todos los componentes en SolidWorks\textregistered, de tal manera que se puede obtener una repressentaci'on gr'afica de su colocaci'on y adem'as poder usar herramientas propias del programa para detectar colisiones o interferencias entre s'olidos.
+
+\subsubsection{Dise'no preliminar}
+Puesto que se desea que la parte de procesamiento y comunicaci'on se encuentran en el mismo hemisferio, la colocaci'on de la clavija de Ethernet externa y los dos conectores USB también deber'an estar en el mismo bloque. Siguiendo con el proceso de descarte, el único sensor que se puede colocar en el panel trasero derecho es el infrarrojo, ya que el ultrasonidos ocupar'ia demasiado y haciendo imposible una distribuci'on acorde de los conectores externos. A causa de esta elecci'on quedan fijados en que lugares se distribuyen el resto de sensores.\\
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.43]{images/pre_design.png}
+\caption{Dise'no preliminar con la ubicaci'on de todos los componentes}
+\label{fig:pre_design}
+\end{figure} 
+
+Con los conectores y sensores colocados, es el turno de el Switch y la Raspberry Pi. En este caso hab'ian muy pocas combinaciones posibles, haciendo que la preferida fuese aquella que permitiese una f'acil manipulaci'on del cableado m'as fr'agil (los procedentes de la placa SensorPi) y que en caso de problema procedente del sistema operativo, la extracci'on de la SD fuese c'omoda. Finalmente se introdujo el Router, la c'amara se ubicó en el punto m'as centrado y se defini'o la rotaci'on de los motores (los ejes no son colineales al eje central).\\
+
+A continuaci'on se sigui'o con el hemisferio izquierdo. En el panel trasero se ubicaron el interruptor vand'alico, el portafusibles, el encapsulado de 10 leds, el conector para la carga y el sensor de ultrasonidos. Puesto que el uno de los motores se encuentra cerca, la distribuci'on se ha basado en la profundidad a la que llegan estos componentes, de tal manera que se ha evitado cualquier tipo de colisi'on y se ha dejado espacio para el cableado correspondiente. Para terminar se colocaron el placa MotorPi y la bater'ia en la parte inferior de robot y se dejó la IMU en la parte superior para acceder f'acilmente durante el ensamblado, el resultado final se puede apreciar en la figura \ref{fig:pre_design}
+
+\subsubsection{Soportes}
+Con todos los elementos ubicados, llegamos al punto de ofrecer un soporte a cada uno.
+El objetivo de estos soportes es que sus elementos se unan a los paneles más cercanos y posteriormente unir estos grupos al ensamblaje principal. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.50]{images/soportes.png}
+\caption{Conjunto de soportes orientados para impresi'on 3D}
+\label{fig:soportes}
+\end{figure} 
+
+Debido a las intrincadas formas que cada uno de los soportes ten'ia que disponer, se opt'o por la impresi'on 3D basada en la superposici'on de material para la fabricaci'on de estos. Este hecho afect'o al dise'no final de los soportes, haciendo que estos se pudiesen fabricar. Un aspecto que se tuvo en cuenta fue la disposici'on de ranuras para las tuercas, haciendo que estas se colocar'an f'acilmente y que no requieran del uso de alicates o llaves para su posterior sujeci'on a la hora de insertar el tornillo.\\ 
+
+Para darle un acabado menos rectangular se dise'naron unos chaflanes, para la colocaci'on de estos se crearon piezas auxiliares con el único ebjetivo de ser unidas al cuerpo principal. Estas piezas auxiliares corresponden a las que se encuentran en los extremos de la figura \ref{fig:soportes} formando dos filas. 
+
+\subsubsection{Dise'no Final}
+En esta 'ultima fase se crearon todos los paneles y sus correspondientes orificios par torniller'ia, ejes de motores y paso de cableado. Para mantener la estética original, todos los paneles que forman el robot se ha decidido que sean negros excepto los dos superiores.  
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.45]{images/final_design.png}
+\caption{Acabado final delantero del robot}
+\label{fig:final_design}
+\end{figure} 
+
+Para los paneles superiores se ha optado por que sean transparentes, con este cambio se pretende que el usuario tenga una idea de que contiene el robot a primera vista, además de permitir encontrar r'apidamente incidencias por de la falta de indicadores encendidos. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.43]{images/final_design2.png}
+\caption{Acabado final trasero del robot}
+\label{fig:final_design2}
+\end{figure} 
+
 
 \newpage
 \subsection{Componentes mec'anicos}
+El trabajo de ofrecer una estructura donde poder incorporar toda la electr'onica y que permita al robot desplazarse por su entorno recae en la mec'anica. De entre los varios dise'nos posibles se ha elegido aquel que conserve el esp'iritu del robot original, es decir que siga siendo una plataforma constituida por dos partes, que mantenga el concepto de estructura una externa y que su tama'no se respete. A continuaci'on se detallan los diferentes trabajos realizados en este proyecto.  
 
 \subsubsection{Mecanizados}
+Como se ha comentado anteriormente, todos los roscados hab'ian sido elaborados con una m'etrica no est'andar. En un primer lugar tenemos los roscados correspondiente a las ocho barras longitudinales de aluminio, unos siete orificios por barra (quatro en una direcci'on y el resto en su perpendicular. Por suerte el di'ametro exterior del roscado era casi id'entico al di'ametro interior de una roscado t'ipico de M3. Gr'acias a este hecho no se requer'ia la necesidad de repasar los orificios con una broca y volver a roscar. Simplemente se volvieron a mecanizar utilizando un macho de roscar.\\
 
-\subsubsection{Soportes}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.43]{images/barra.png}
+\caption{Modelo por ordenador de una barra longitudinal de aluminio}
+\label{fig:barra}
+\end{figure} 
+
+Otro elemento que tambi'en requer'ia de una modificaci'on era los acopladores (couplings) entre la salida del eje del motor y de las ruedas. Estos acopladores, que aparecen en la figura \ref{fig:couplings}, disponen en un extremo un orificio de 6mm de di'ametro pensado para insertar el eje del motor, en el otro extremo se ha mecanizado el cilindro hasta obtener un prisma de base hexagonal (para ofrecer un giro soldiario con la rueda) y en su interior se ha mecanizado una rosca cercana al M4. Perpendicular al eje principal el acoplador dispone de un tercer orificio dise'nado para utilizar un esp'arrago prisionero. Debido al degradado estado de los tornillos y prisioneros, se tuvo que utilizar m'etodos poco convencionales para poder extraerlos. En los tornillos que un'ian la rueda se les practic'o una ranura para poder insertar un destonillador plano, ya que el 'oxido y su cabeza con hueco hexagonal no estandarizado imposibilitaba el uso de llaves Allen. En el caso de los prisioneros, no hubo m'as remedio que realizar un corte con sierra de disco para obtener una ranura, pero para ello se tubo que eliminar parte del aluminio del acoplador.\
+
+\
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.43]{images/couplings.png}
+\caption{Modelo por ordenador de un acoplador de aluminio}
+\label{fig:couplings}
+\end{figure} 
 
 \subsubsection{Paneles}
+Una vez dise'nados los paneles que conformar'ian la estructura del robot, se procedi'o a su fabricaci'on. Debido a que en un principio se desconoc'ia que material se utilizar'ia (PVC, Metracrilado, Policarbonato, Acr´ilico, etc.) se decidió usar un grosor típico, f'acil de adquirir y que aportase una resist'encia aceptable. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.09]{images/paneles.png}
+\caption{Conjunto de paneles obtenidos por corte l'aser}
+\label{fig:paneles}
+\end{figure} 
+
+Finalmente el material elegido fue el metacrilato, el motivo que hizo decantar la balanza fue saber que era el 'unico que se pod'ia cortar a un precio razonable. Mientras que el resto requer'ian del uso de una fresadora CNC, el metacrilado pod'ia ser trabajado mediante corte l'aser.
 
 \subsubsection{Torniller'ia}
+Adem'as de soportar la estructura el objetivo de la nueva torniller'ia que se ha utilizado es que resista mejor las inclemencias de su entorno, por este motivo se ha querido que todos los tornillos sean inoxidables. Adem'as para evitar posibles enredos a la hora de realizar alg'un mantenimiento se han restringido los tipos de tornillos utilizados. De tal manera que para la sujeci'on de los paneles, elementos internos y motores se ha utilizado un tornillo de calidad A2, de cabeza alomanada o DIN 7985 y de  M3x10 o M3x20 seg'un requiera la ocasi'on. Para sujetar la c'amara se han usado el mismo DIN7985 pero de M2x10. Para la uni'on entre el acoplador y la llanta unos DIN912 A2 de M4x10 y para sujetar el acoplador al eje unos esp'arragos DIN 916 de M5x5, estos últimos han tenido que ser de Acero Negro ya que no se han localizado de inoxidables.
 
 \newpage
 \subsection{Montaje}
+En esta parte fe realiza el ensamblado final del robot. El objetivo es crear un sándwich donde los paneles laterales son el continente y los paneles traseros, delanteros, superiores, inferiores y chaflanes el contenido.
+
+\subsubsection{Grupos individuales}
+Para ello se unen los paneles interiores verticales con sus tapas inferiores, de esta manera se crea una escuadra de referencia. En una de ellas se colocan el Switch y la Raspberry con las placas SecurePi y SensorPi ya insertadas, el la otra la bater'ia y la placa MotorPi. Por el contrario, en los paneles exteriores verticales se instalan los motores y el sensor de ultrasonidos.\\
+
+En el caso de los paneles delanteros y traseros se unen sus respectivos componentes aprovechando los soportes creados. Excepto la clavija de red, ya que esta forma parte del primer grupo definido. Una vez montados todos los grupos individualmente se realiza un primer cableado de aquellos componentes que su posterior acceso resulte reducido o nulo, concretamente estamos hablando del encapsulado de 10 leds, el conjunto de carga (conector y portafusibles), el interruptor antivand'alico, los sensores de infrarrojos y ultrasonidos y el m'odulo de la c'amara. Llegados a este punto se obtiene el resultado de la figura \ref{fig:montaje}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.12]{images/montaje.png}
+\caption{Conjunto de paneles montados individualmente}
+\label{fig:montaje}
+\end{figure} 
+
+\subsubsection{Conjunto}
+Finalmente se van acoplando los paneles traseros a cada uno de las escuadras creadas y se hace un primer cableado. A continuaci'on se hace pasar la barra roscada que ser'a la que permita la rotaci'on de cada unos de los hemisferios y se coloca un separador de unos 30mm en el medio. Seguidamente se coloca el panel con los motores con cuidado de respetar las tolerancias y evitando enredos con el cableado. Llegados a este punto colocamos los chaflanes, las tuercas de cabeza redondeada en cada extremo de la barra roscada y las tapas superiores. Para acabar colocamos los acopladores en cada uno de los cuatro ejes e insertamos las llantas en su ranura respetando el sentido del perfil del neum'atico.
+
+
+
 
 \newpage
 \subsection{Entorno inform'atico}
