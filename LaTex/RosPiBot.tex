@@ -811,7 +811,7 @@ La IP del router asignada ha sido la \textbf{192.168.100.254}, se ha elegido est
 Debido a que el disco duro de la Raspberry Pi reside en la SD, y esta puede ser extra'ida sin inconvenientes, la configuraci'on que a continuaci'on se explica se ha efectuado mediante una segunda Raspberry Pi conectada a internet. Una vez finalizada la configuraci'on, se ha insertado la SD de nuevo en el robot (Para tener acceso a la SD se ha de retirar el panel inferior del hemisferio derecho).
 
 \subsubsection{Grabaci'on Raspbian}
-El primer paso realizado ha sido la grabaci'on del sistema operativo \textbf{Raspbian}, el m'as extendido en la comunidad (concretamente se ha utilizado la versi'on m'as actual, la de Enero 2014). De los diferentes procedimientos para la obtenci'on de nuestra SD, se ha optado por el programa \textbf{Win32 Disk Imager}.
+El primer paso realizado ha sido la grabaci'on del sistema operativo \textbf{Raspbian}, el m'as extendido en la comunidad (concretamente se ha utilizado la versi'on m'as actual, la de Enero 2014). La imagen de este sistema ocupa un espacio de unos 2.75GB, pero para un correcto funcionamiento se requiere un SD de 4GB mínimo, 8GB recomendado. De los diferentes procedimientos para la obtenci'on de nuestra SD, se ha optado por el programa \textbf{Win32 Disk Imager}. Una vez grabada la SD, en Windows solo aparecerá la partición NTFS de 57MB.
 
 \begin{figure}[ht]
 \centering
@@ -820,10 +820,10 @@ El primer paso realizado ha sido la grabaci'on del sistema operativo \textbf{Ras
 \label{fig:win32disk}
 \end{figure} 
 
-El sistema operativo de ha obtenido de la p'agina oficial \url{http://www.raspberrypi.org/downloads/} y viene con una cuenta creada con el usuario \textbf{pi} y contrase'na \textbf{raspberry}. Durante toda la realizaci'on del proyecto se ha utilizado esta cuenta de usuario manteniendo su contrase'na. 
+El sistema operativo de ha obtenido de la p'agina oficial \url{http://www.raspberrypi.org/downloads/} y viene con una cuenta creada con el usuario \textbf{pi} y contrase'na \textbf{raspberry}. Durante toda la realizaci'on del proyecto se ha utilizado esta cuenta de usuario manteniendo su contrase'na. Adem'as de esta dritribuci'on podemos encontrar otros sistemas compatibles con la Raspberry Pi.
 
 \subsubsection{Configuraci'on inicial}
-Con la imagen del sistema cargada en la SD, introducimos la tarjeta de memoria en la Raspberry Pi, conectamos el cable de red y alimentamos el conjunto. Al haber activado el servidor DHCP. por defecto el router le asignar'a una IP aleatoria, en este caso seg'un la figura \ref{fig:dhcp}, \textbf(192.168.1.105).
+Con la imagen del sistema cargada en la SD, introducimos la tarjeta de memoria en la Raspberry Pi, conectamos el cable de red y alimentamos el conjunto. Al haber activado el servidor DHCP. por defecto el router le asignar'a una IP aleatoria, en este caso seg'un la figura \ref{fig:dhcp}, \textbf(192.168.1.105). Con esta IP nos conectamos mediante SSH . Para ello podemos utilizar diversos m'etodos, en este proyecto se ha usado el comando \textbf{\texttt{ssh pi@192.168.1.105}} en entorno Linux y el programa \textbf{Putty} en Windows. En el caso de Linux, solamente nos pedir'an la contrase'na, en cambio en Windows hay que especificar el puerto 22 y luego el usuario y contrase'na. Una vez hemos accedido v'ia ssh, nos aparecer'a un terminal id'entico al de la figura \ref{fig:ssh}.
 
 \begin{figure}[ht]
 \centering
@@ -832,7 +832,7 @@ Con la imagen del sistema cargada en la SD, introducimos la tarjeta de memoria e
 \label{fig:dhcp}
 \end{figure} 
 
-Con esta IP nos conectamos mediante SSH . Para ello podemos utilizar diversos m'etodos, en este proyecto se ha usado el comando \texttt{ssh pi@192.168.1.105} en entorno Linux y el programa \textbf{Putty} en Windows. En el caso de Linux, solamente nos pedir'an la contrase'na, en cambio en Windows hay que especificar el puerto 22 y luego el usuario y contrase'na. Una vez hemos accedido v'ia ssh, nos aparecer'a un terminal id'entico al de la figura \ref{fig:ssh}.
+Una vez dentro de la Raspberry Pi, procedemos a su configuraci'on inicial. Para ello tecleamos el comando \texttt{sudo raspi-config}. A continuaci'on apareceremos en un men'u con diversas opciones como el de la figura \ref{fig:raspiconfig}. Lo primero que haremos ser'a aprovechar el m'aximo la capacidad de nuestra SD con la opci'on \textbf{Expand Filesystem}. Indicaremos que al iniciar no active el modo gr'afico, habilitaremos la c'amara y por 'ultimo, en \textbf{Advanced Options} modificaremos el nombre del dispositivo (o hostname) a ''\textbf{rospibot}''.\\
 
 \begin{figure}[ht]
 \centering
@@ -841,9 +841,7 @@ Con esta IP nos conectamos mediante SSH . Para ello podemos utilizar diversos m'
 \label{fig:ssh}
 \end{figure} 
 
-Una vez dentro de la Raspberry Pi, procedemos a su configuraci'on inicial. Para ello tecleamos el comando \texttt{sudo raspi-config}. A continuaci'on apareceremos en un men'u con diversas opciones como el de la figura \ref{fig:raspiconfig}. Lo primero que haremos ser'a aprovechar el m'aximo la capacidad de nuestra SD con la opci'on \textbf{Expand Filesystem}. Indicaremos que al iniciar no active el modo gr'afico, habilitaremos la c'amara y por 'ultimo, en \textbf{Advanced Options} modificaremos el nombre del dispositivo (o hostname) a ''\textbf{rospibot}''.\\
-
-Aunque tambi'en existe la opci'on de aumentar la frecuencia de la CPU, de momento se dejar'a con el valor predefinido de 700Mhz. Una vez definidos todos estos cambios se proceder'a a un reinicio de la placa, con lo que posiblemente la IP sea diferente.
+Aunque tambi'en existe la opci'on de aumentar la frecuencia de la CPU hasta 1GHz, de momento se dejar'a con el valor predefinido de 700MHz. En el caso de necesitar una mejora se proceder'a a aumentar progresivamente la frecuencia usando la opcion \textbf{Overclock}. Una vez definidos todos estos cambios se reinicia la placa, iniciando el sistema con la nueva configuraci'on pero teniendo en cuenta que posiblemente la IP sea diferente.
 
 \begin{figure}[ht]
 \centering
@@ -852,24 +850,75 @@ Aunque tambi'en existe la opci'on de aumentar la frecuencia de la CPU, de moment
 \label{fig:raspiconfig}
 \end{figure} 
 
-
 \subsubsection{Instalaci'on de librer'ias}
+Con el S.O. Raspbian debidamente configurado procedemos a la instalaci'on de de herramientas, m'odulos y librer'ias. Primero de todo actualizaremos nuestras fuentes con el comando \textbf{\texttt{sudo apt-get update}}, de esta manera sabremos d'onde encontrar aquello que busquemos. A continuaci'on se ir'an detallando aquellas herramientas instaladas.
 
+\begin{itemize}
 
-\subsection{Servicios b'asicos}
+\item \textbf{\texttt{sudo apt-get install xrdp}}  Permite acceder por entorno gr'afico mediante el uso del Escritorio Remoto de Windows.
 
+\item \textbf{\texttt{sudo apt-get install python-numpy }}  M'odulo de Python, ofrece un mayor soporte para vectores y matrices.
+
+\item \textbf{\texttt{sudo apt-get install python-scipy }}  M'odulo de Python, orientado a optimizaci'on, algebra lineal y procesamiento de se'nales y de imagen entre otros.
+
+\item \textbf{\texttt{sudo apt-get install python-matplotlib }}  M'odulo de Python, permite generar gr'aficos a partir de listas o vectores.
+
+\item \textbf{\texttt{sudo apt-get install python-imaging }} M'odulo de Python, a'nade herramientas para procesamiento de im'agenes.
+
+\item \textbf{\texttt{sudo apt-get install memcached python-memcached}} Programa y m'odulo de Python, permite crear y compartir variables en la memoria cach'e. 
+\end{itemize}
+
+Para el uso de bus I2C y SPI que dispone el componente BCM2708, se han de seguir los siguientes pasos: Primero modificamos el archivo \textbf{raspi-blacklist.conf}, para ello ejecutamos el comando \textbf{\texttt{sudo nano /etc/modprobe.d/raspi-blacklist.conf}} y comentamos con una almohadilla los dos dispositivos de la lista. Tal y como aparece en la figura \ref{fig:blacklist}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{images/blacklist.png}
+\caption{Archivo de configuraci'on de los dispositivos I${^2}$C y SPI.}
+\label{fig:blacklist}
+\end{figure} 
+
+El siguiente paso consiste en modificar el archivo \textbf{modules}, abrimos el archivo con \textbf{\texttt{sudo nano /etc/modules}} y añadimos al final \textbf{i2c-bcm2708} y \textbf{i2c-dev}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{images/modules.png}
+\caption{Archivo de configuraci'on de los m'dulos.}
+\label{fig:modules}
+\end{figure} 
+
+A continuaci'on instalamos un nuevo grupo de herramientas para el uso de estos dos buses de comunicaci'on:
+
+\begin{itemize}
+\item \textbf{\texttt{sudo apt-get install i2c-tools}}  Herramientas y comandos para utilizar el bus I${^2}$C.
+
+\item \textbf{\texttt{sudo apt-get install python-smbus }}  M'odulo de Python, ofrece funciones para trabajar m'as c'omodamente con el bus I${^2}$C.
+
+\item \textbf{\texttt{sudo apt-get install python-dev }}  M'odulo de Python, conjunto de librer'ias est'aticas orientadas al desarrollo. 
+\end{itemize}
+
+Ahora s'olo nos hace falta el m'odulo orientado para la comunicaci'on por SPI, en este caso se va a usar un m'odulo creado por un desarrollador independiente. Para ello crearemos una carpeta donde almacenar su c'odigo, lo descargaremos y los instalaremos. Los comandos a ejecutar son:
+
+\begin{itemize}
+\item \textbf{\texttt{mkdir python-spi }}
+\item \textbf{\texttt{cd python-spi }}
+\item \textbf{\texttt{wget https://raw.github.com/doceme/py-spidev/master/setup.py }}
+\item \textbf{\texttt{wget https://raw.github.com/doceme/py-spidev/master/spidev$\_$module.c}}
+\item \textbf{\texttt{sudo python setup.py install}}
+\end{itemize}
+
+Una vez tenemos nuestra Raspberry Pi ya configurada y con las librer'ias instaladas, reiniciamos para que los cambios surtan efecto. 
+
+\newpage
+\subsection{Programas b'asicos}
+
+\newpage
 \subsection{M'odulo Rospibot}
 
 \newpage
-\subsection{Adaptaci'on a ROS}
-
-\subsubsection{Instalaci'on ROS Groovy}
-
-
+\subsection{Instalaci'on ROS Groovy}
 
 \newpage
 \section{Presupuesto}
-
 
 \newpage
 \section{Conclusiones}
