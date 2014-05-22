@@ -61,17 +61,17 @@
 \contentsline {subsection}{\numberline {4.6}Montaje}{41}{subsection.4.6}
 \contentsline {subsubsection}{\numberline {4.6.1}Grupos individuales}{41}{subsubsection.4.6.1}
 \contentsline {subsubsection}{\numberline {4.6.2}Conjunto}{42}{subsubsection.4.6.2}
-\contentsline {subsection}{\numberline {4.7}Entorno inform'atico}{43}{subsection.4.7}
-\contentsline {subsubsection}{\numberline {4.7.1}Configuraci'on Router WiFi}{43}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Configuraci'on Raspberry Pi}{43}{subsubsection.4.7.2}
-\contentsline {subsubsection}{\numberline {4.7.3}Servicios b'asicos}{43}{subsubsection.4.7.3}
-\contentsline {subsubsection}{\numberline {4.7.4}M'odulo Rospibot}{43}{subsubsection.4.7.4}
-\contentsline {subsection}{\numberline {4.8}Adaptaci'on a ROS}{44}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Instalaci'on ROS Groovy}{44}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}Nodos b'asicos}{44}{subsubsection.4.8.2}
-\contentsline {subsubsection}{\numberline {4.8.3}Paquete Rospibot}{44}{subsubsection.4.8.3}
-\contentsline {section}{\numberline {5}Presupuesto}{45}{section.5}
-\contentsline {section}{\numberline {6}Conclusiones}{46}{section.6}
-\contentsline {section}{\numberline {7}Soporte inform'atico}{47}{section.7}
-\contentsline {section}{\numberline {8}Agradecimientos}{48}{section.8}
-\contentsline {section}{Referencias}{49}{section.8}
+\contentsline {subsection}{\numberline {4.7}Configuraci'on Router WiFi}{43}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Configuraci'on Raspberry Pi}{44}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Grabaci'on Raspbian}{44}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Configuraci'on inicial}{44}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.3}Instalaci'on de librer'ias}{45}{subsubsection.4.8.3}
+\contentsline {subsection}{\numberline {4.9}Servicios b'asicos}{45}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}M'odulo Rospibot}{45}{subsection.4.10}
+\contentsline {subsection}{\numberline {4.11}Adaptaci'on a ROS}{46}{subsection.4.11}
+\contentsline {subsubsection}{\numberline {4.11.1}Instalaci'on ROS Groovy}{46}{subsubsection.4.11.1}
+\contentsline {section}{\numberline {5}Presupuesto}{47}{section.5}
+\contentsline {section}{\numberline {6}Conclusiones}{48}{section.6}
+\contentsline {section}{\numberline {7}Soporte inform'atico}{49}{section.7}
+\contentsline {section}{\numberline {8}Agradecimientos}{50}{section.8}
+\contentsline {section}{Referencias}{51}{section.8}

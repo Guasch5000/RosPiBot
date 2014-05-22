@@ -59,15 +59,15 @@
 \BOOKMARK [2][-]{subsection.4.6}{Montaje}{section.4}% 59
 \BOOKMARK [3][-]{subsubsection.4.6.1}{Grupos individuales}{subsection.4.6}% 60
 \BOOKMARK [3][-]{subsubsection.4.6.2}{Conjunto}{subsection.4.6}% 61
-\BOOKMARK [2][-]{subsection.4.7}{Entorno inform\341tico}{section.4}% 62
-\BOOKMARK [3][-]{subsubsection.4.7.1}{Configuraci\363n Router WiFi}{subsection.4.7}% 63
-\BOOKMARK [3][-]{subsubsection.4.7.2}{Configuraci\363n Raspberry Pi}{subsection.4.7}% 64
-\BOOKMARK [3][-]{subsubsection.4.7.3}{Servicios b\341sicos}{subsection.4.7}% 65
-\BOOKMARK [3][-]{subsubsection.4.7.4}{M\363dulo Rospibot}{subsection.4.7}% 66
-\BOOKMARK [2][-]{subsection.4.8}{Adaptaci\363n a ROS}{section.4}% 67
-\BOOKMARK [3][-]{subsubsection.4.8.1}{Instalaci\363n ROS Groovy}{subsection.4.8}% 68
-\BOOKMARK [3][-]{subsubsection.4.8.2}{Nodos b\341sicos}{subsection.4.8}% 69
-\BOOKMARK [3][-]{subsubsection.4.8.3}{Paquete Rospibot}{subsection.4.8}% 70
+\BOOKMARK [2][-]{subsection.4.7}{Configuraci\363n Router WiFi}{section.4}% 62
+\BOOKMARK [2][-]{subsection.4.8}{Configuraci\363n Raspberry Pi}{section.4}% 63
+\BOOKMARK [3][-]{subsubsection.4.8.1}{Grabaci\363n Raspbian}{subsection.4.8}% 64
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Configuraci\363n inicial}{subsection.4.8}% 65
+\BOOKMARK [3][-]{subsubsection.4.8.3}{Instalaci\363n de librer\355as}{subsection.4.8}% 66
+\BOOKMARK [2][-]{subsection.4.9}{Servicios b\341sicos}{section.4}% 67
+\BOOKMARK [2][-]{subsection.4.10}{M\363dulo Rospibot}{section.4}% 68
+\BOOKMARK [2][-]{subsection.4.11}{Adaptaci\363n a ROS}{section.4}% 69
+\BOOKMARK [3][-]{subsubsection.4.11.1}{Instalaci\363n ROS Groovy}{subsection.4.11}% 70
 \BOOKMARK [1][-]{section.5}{Presupuesto}{}% 71
 \BOOKMARK [1][-]{section.6}{Conclusiones}{}% 72
 \BOOKMARK [1][-]{section.7}{Soporte inform\341tico}{}% 73

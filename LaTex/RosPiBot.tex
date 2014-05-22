@@ -473,7 +473,7 @@ Por ello se ha optado por el uso de unas bater'ias con un m'odulo PCM instalado,
 
 Finalmente las la bater'ia elegidas ha sido un conjunto formado por dos celdas de 3.7V de 6000mAh cada una conectadas en serie y con un modulo PCM instalado. Su consumo de carga llega a los 2A y a unos 6A en descarga.
 
-\subsubsection{Punto de acceso WiFi}
+\subsubsection{Punto de acceso WiFi} \label{sec:router}
 Tal y c'omo se ha descrito en las especificaciones, se requiere de una sistema que ofrezca un acceso WiFi. Debido a que se ha descartado el uso del m'odulo que ya dispo'ia el robot, se hace necesario un nuevo dispositivo que se encargue. En este caso de ha optado por el uso de un elemento comercial de tama'no reducido que se pueda alimentar f'acilmente, ofezca un alcance aceptable y de r'apida configuraci'on.
 
 \begin{figure}[ht]
@@ -486,7 +486,7 @@ Tal y c'omo se ha descrito en las especificaciones, se requiere de una sistema q
 El dispositivo elegido se trata del mini router TL-WR702N de la empresa TP-LINK. Este modelo ofrece una velocidad m'axima de transmisi'on de 150Mbps, se alimenta mediante un puerto MicroUSB (5V) y dispone de un puerto ethernet RJ45, que dependiendo del modo de trabajo se comporta como un puerto WAN o LAN.\\
 
 Entre todas sus configuraciones (AP Mode, Router Mode ,Client Mode,
-Repeater Modey  Bridge Mode) se ha optado por la de punto de acceso con el nombre de RosPiBot y servidor DHCP activado. De esta manera el usuario s'olo deber'a conectarse a su red para poder acceder al robot.
+Repeater Mode y  Bridge Mode) se ha optado por la de punto de acceso con el nombre de RosPiBot y servidor DHCP activado. De esta manera el usuario s'olo deber'a conectarse a su red para poder acceder al robot.
 
 \subsubsection{Conmutador de red}
 Seg'un las especificaciones se desea que la nueva plataforma disponga de tres medios de acceso a red. Dos de estos medios (Wifi y clavija ethernet) han de estar conectados directamente con el puerto ethernet de la Raspberry, por este motivo se necesita un conmutador o switch. Puesto que el robot ya dispone de un switch de 5 puertos (4 habilitados), se aprovechar'a el mismo dispositivo.\\
@@ -770,7 +770,7 @@ Adem'as de soportar la estructura el objetivo de la nueva torniller'ia que se ha
 
 \newpage
 \subsection{Montaje}
-En esta parte fe realiza el ensamblado final del robot. El objetivo es crear un sándwich donde los paneles laterales son el continente y los paneles traseros, delanteros, superiores, inferiores y chaflanes el contenido.
+En esta parte se realiza el ensamblado final del robot. El objetivo es crear un sándwich donde los paneles laterales son el continente y los paneles traseros, delanteros, superiores, inferiores y chaflanes el contenido.
 
 \subsubsection{Grupos individuales}
 Para ello se unen los paneles interiores verticales con sus tapas inferiores, de esta manera se crea una escuadra de referencia. En una de ellas se colocan el Switch y la Raspberry con las placas SecurePi y SensorPi ya insertadas, el la otra la bater'ia y la placa MotorPi. Por el contrario, en los paneles exteriores verticales se instalan los motores y el sensor de ultrasonidos.\\
@@ -796,24 +796,75 @@ Finalmente se van acoplando los paneles traseros a cada uno de las escuadras cre
 
 
 \newpage
-\subsection{Entorno inform'atico}
+%\subsection{Software}
+%Una vez que disponemos de la nueva plataforma, es el turno de volverla operativa. Para ello se han configurado sus componentes y programado varias herramientas. Primero se ha configurado el punto de acceso WiFi. Una vez establecida la conexi'on se ha procedido con el Sistema Operativo. A continuaci'on se han creado programas que se comunican con los periféricos a un bajo nivel y finalmente se ha dise'nado un m'odulo (o librer'ia) para el usuario final. 
 
-\subsubsection{Configuraci'on Router WiFi}
+\subsection{Configuraci'on Router WiFi}
+El router TP-Link WR702N permite operar en vario modos tal y como est'an definidos en el punto \ref{sec:router}. Debido a la necesidad de que tanto la red inal'ambrica como la cableada se puedan comunicar, el único modo posible es que la clavija de red RJ45 est'e configurada como LAN. Adem'as el dispotivo ha de ser capaz de crear su red propia y no depender de otras redes. Por este motivo el modo elegido ha sido el de punto de acceso (o Access Point).\\
 
-\subsubsection{Configuraci'on Raspberry Pi}
+La peculiaridad de este punto de acceso es que se ha habilitado el servidor DCHP, lo que permite que cualquier dispositivo que entre en la red se le asigne un IP. Definido el  modo de trabajo, se configura la red inal'ambrica, para ello se ha elegido el nombre de ''\textbf{rospibot}'' como SSID. Para la contrase'na se ha elegido el mismo nombre que la red y protegida mediante el protocolo WPA2.\\
 
-\subsubsection{Servicios b'asicos}
+La IP del router asignada ha sido la \textbf{192.168.100.254}, se ha elegido esta numeraci'on para evitar conflictos con las numeraciones m'as utilizadas (192.168.0.XXX y 192.168.1.XXX). Para la asignaci'on del resto de IPs, se ha establecido un rango, desde 192.168.100.101 hasta 192.168.100.199.
 
-\subsubsection{M'odulo Rospibot}
+\newpage
+\subsection{Configuraci'on Raspberry Pi}
+Debido a que el disco duro de la Raspberry Pi reside en la SD, y esta puede ser extra'ida sin inconvenientes, la configuraci'on que a continuaci'on se explica se ha efectuado mediante una segunda Raspberry Pi conectada a internet. Una vez finalizada la configuraci'on, se ha insertado la SD de nuevo en el robot (Para tener acceso a la SD se ha de retirar el panel inferior del hemisferio derecho).
+
+\subsubsection{Grabaci'on Raspbian}
+El primer paso realizado ha sido la grabaci'on del sistema operativo \textbf{Raspbian}, el m'as extendido en la comunidad (concretamente se ha utilizado la versi'on m'as actual, la de Enero 2014). De los diferentes procedimientos para la obtenci'on de nuestra SD, se ha optado por el programa \textbf{Win32 Disk Imager}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1]{images/win32disk.png}
+\caption{Interf'icie del programa Win32 Disk Imager.}
+\label{fig:win32disk}
+\end{figure} 
+
+El sistema operativo de ha obtenido de la p'agina oficial \url{http://www.raspberrypi.org/downloads/} y viene con una cuenta creada con el usuario \textbf{pi} y contrase'na \textbf{raspberry}. Durante toda la realizaci'on del proyecto se ha utilizado esta cuenta de usuario manteniendo su contrase'na. 
+
+\subsubsection{Configuraci'on inicial}
+Con la imagen del sistema cargada en la SD, introducimos la tarjeta de memoria en la Raspberry Pi, conectamos el cable de red y alimentamos el conjunto. Al haber activado el servidor DHCP. por defecto el router le asignar'a una IP aleatoria, en este caso seg'un la figura \ref{fig:dhcp}, \textbf(192.168.1.105).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{images/dhcp.png}
+\caption{Assignaci'on de IP por DHCP.}
+\label{fig:dhcp}
+\end{figure} 
+
+Con esta IP nos conectamos mediante SSH . Para ello podemos utilizar diversos m'etodos, en este proyecto se ha usado el comando \texttt{ssh pi@192.168.1.105} en entorno Linux y el programa \textbf{Putty} en Windows. En el caso de Linux, solamente nos pedir'an la contrase'na, en cambio en Windows hay que especificar el puerto 22 y luego el usuario y contrase'na. Una vez hemos accedido v'ia ssh, nos aparecer'a un terminal id'entico al de la figura \ref{fig:ssh}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{images/ssh.png}
+\caption{Consola de acceso remotor por SSH.}
+\label{fig:ssh}
+\end{figure} 
+
+Una vez dentro de la Raspberry Pi, procedemos a su configuraci'on inicial. Para ello tecleamos el comando \texttt{sudo raspi-config}. A continuaci'on apareceremos en un men'u con diversas opciones como el de la figura \ref{fig:raspiconfig}. Lo primero que haremos ser'a aprovechar el m'aximo la capacidad de nuestra SD con la opci'on \textbf{Expand Filesystem}. Indicaremos que al iniciar no active el modo gr'afico, habilitaremos la c'amara y por 'ultimo, en \textbf{Advanced Options} modificaremos el nombre del dispositivo (o hostname) a ''\textbf{rospibot}''.\\
+
+Aunque tambi'en existe la opci'on de aumentar la frecuencia de la CPU, de momento se dejar'a con el valor predefinido de 700Mhz. Una vez definidos todos estos cambios se proceder'a a un reinicio de la placa, con lo que posiblemente la IP sea diferente.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{images/raspiconfig.png}
+\caption{Men'u de opciones de configuraci'on de Raspbian.}
+\label{fig:raspiconfig}
+\end{figure} 
+
+
+\subsubsection{Instalaci'on de librer'ias}
+
+
+\subsection{Servicios b'asicos}
+
+\subsection{M'odulo Rospibot}
 
 \newpage
 \subsection{Adaptaci'on a ROS}
 
 \subsubsection{Instalaci'on ROS Groovy}
 
-\subsubsection{Nodos b'asicos}
-
-\subsubsection{Paquete Rospibot}
 
 
 \newpage
