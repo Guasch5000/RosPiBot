@@ -917,7 +917,7 @@ Todos los c'odigos que aqu'i se mencionan peuden allarse en el repositorio \text
 \begin{itemize}
 \item \textbf{\texttt{readsensors.py}} Este m'odulo se encarga de la lectura de los sensores que se comunican por el bus I${^2}$C, donde encontramos la lectura del estado de la bater'ia, la de corriente de cada motor, los dos sensores de dist'ancia por infrarrojos, los cuatro por ultrasonidos y la imu. Debido a que cada sensor requiere de ser muestreado a frecuencias diferentes, lo primero que encontramos en el c'odigo es una tabla para definir estos valores en segundos. Seguidamente se definen las direcciones de cada dispositvo y se declaran las funciones de lectura.\\
 
-La lectura de los sonars se publica en mil'imetros debido a que esa es su resoluci'on, con un m'aximo de 5192mm. Por el contrario los infrarrojos se publican en cent'imetros, siendo su m'aximo valor de 1,51cm. En el caso de la bater'ia, se ha pasado su voltaje a un procentaje, siendo 6V el 0\% y 8,3V el 100\%. Para los sensores de corriente, se almacena el valor en miliamperios, con un m'aximo de 4000mA. Finalemente, los valores procedentes de la imu se han almacenado seg'un se han recibido, las acceleraciones en G (9,8m$\cdot$s$^{-1}$), las velocidades angulares en rad${\cdot}$s$^{-1}$ y la orientaci'on en radianes.\\
+La lectura de los sonars se publica en mil'imetros debido a que esa es su resoluci'on, con un m'aximo de 5192mm. Por el contrario los infrarrojos se publican en cent'imetros, siendo su m'aximo valor de 1,51cm. En el caso de la bater'ia, se ha pasado su voltaje a un procentaje, siendo 6V el 0\% y 8,3V el 100\%. Para los sensores de corriente, se almacena el valor en miliamperios, con un m'aximo de 4000mA. Finalemente, los valores procedentes de la imu se han almacenado seg'un se han recibido, las acceleraciones en G (9,8m$\cdot$s$^{-2}$), las velocidades angulares en rad${\cdot}$s$^{-1}$ y la orientaci'on en radianes.\\
 
 \item \textbf{\texttt{readencoders.py}} Dise'nado para comunicarse con los descodificadores de cuadratura. Puesto que almacenar el recorrido de cada rueda no es 'util para sistemas no hol'onomos, este programa recoge el recuento de cada codificador y mediante una diferencia se extrae la velocidad de cada motor delantero. Para estandarizar los valores, estos se almacenar'an en radianes por segundo, el sentido positivo indica que la rueda ejerce una movimiento hacia adelante.\\
 
@@ -930,10 +930,35 @@ La lectura de los sonars se publica en mil'imetros debido a que esa es su resolu
 
 \newpage
 \subsection{M'odulo Rospibot}
+Puesto que el objetivo de este proyecto es ofrecer una plataforma rob'otica con las herramientas necesarias para trabajar con ella, se ha creado el m'odulo \textbf{rospibot} de python para poder interaccionar con todas las variables del sistema. Dicho m'odulo se encuentra alojado en el directorio \textbf{Modules} (junto otras librer'ias).\\
+
+Para importar este m'odulo desde cualquier ubicaci'on se ha modificado la variable de entorno \textbf{PYTHONPATH}, a'nadiendo el directorio \textbf{/home/pi/Modules} a dicha variable. Para ello se ha ejecutado el comando \textbf{\texttt{export PYTHONPATH=\$PYTHONPATH:/home/pi/Modules}}. Con este cambio cualquier usuario puede importar los nuevos m'odulos, excepto el usuario \textbf{root}. Para que el usuario root tambi'en pueda hacer uso, se ha editado el archivo \textbf{/etc/sudoers} y se ha incorporado la l'inea \textbf{\texttt{Define env$\_$keep += \$PYTHONPATH}}. A continuaci'on se detallan todas la funciones que forman el m'odulo rospibot, estas funciones simplemente sirven de enlace con la memoria cache:\\
+
+\begin{itemize}
+\item \textbf{\texttt{get$\_$sonar$\_$front()}} Devuelve en mil'imetros la lectura del sensor de distancia por ultrasonidos orientado hacia adelante. Del mismo modo, para el sensor trasero deberemos cambiar \textbf{$\_$front()} por \textbf{$\_$back()}, \textbf{$\_$left()} para el izquierdo y \textbf{$\_$right()} para el derecho.
+
+\item \textbf{\texttt{get$\_$orientation()}} Devuelve en radianes un vector de tres posiciones correspondiente a la orientaci'on respecto el suelo. El primer valor corresponde al ''pitch'' o rotaci'on respecto el eje $y$, el segundo al ''roll'', rotaci'on respecto $x$ y el 'ultimo al ''yaw' , eje $z$. \\
+
+\item \textbf{\texttt{get$\_$acce()}} Devuelve en G (9.8m$\cdot$s$^{-2}$) las aceleraciones de cada eje, siguiendo el orden $x$, $y$ y $z$.\\
+
+\item \textbf{\texttt{get$\_$acce()}} Devuelve en radianes por segundo la velocidad angular de cada eje siguiendo el mismo orden que la funci'on anterior.\\
+
+\item \textbf{\texttt{get$\_$infrared$\_$front()}} Devuelve en cent'imetros la distancia de un obt'aculo a partir del sensor de infrarrojos. Del mismo modo que los sonars, para lalectura del sensor trasero 'unicamente se deber'a modificar \textbf{$\_$front()} por \textbf{$\_$back()}.\\
+
+\item \textbf{\texttt{get$\_$battery()}} Devuelve en tanto por ciento (un n'umero entero) el estado de la bater'ia.\\
+
+\item \textbf{\texttt{get$\_$current$\_$left$\_$front()}} Devuelve en miliamperios el consumo de corriente del motor delantero izquierdo. Para el motor delantero derecho \textbf{\texttt{$\_$right$\_$front()}} y para los traseros \textbf{\texttt{$\_$left$\_$back()}} y \textbf{\texttt{$\_$right$\_$back()}}.\\
+
+\item \textbf{\texttt{get$\_$rads$\_$left()}}: Devuelve en radianes por segundo la velocidad de la rueda delantera izquierda. En condiciones de experimentaci'on se ha observado que el valor m'aximo en carga es de aproximadamente unos 7rad${\cdot}$s$^{-1}$. En el caso de querer conocer la velocidad de la otra  rueda, deberemos cambiar \textbf{$\_$left()} por \textbf{$\_$right()}-.\\
+
+\item \textbf{\texttt{set$\_$speed(left$\_$speed, right$\_$speed)}} Al contrario que el resto de funciones, esta se encarga de modificar el registro. para ello ser'a obligatorio definir las dos velocidad con un valor de entre -100 y 100. La velocidad aplicada por el usuario puede no corresponder con la real puesto que se trata de un control de lazo abierto.\\
+
+\end{itemize}
 
 
 \newpage
 \subsection{Instalaci'on ROS Groovy}
+
 
 \newpage
 \section{Presupuesto}
