@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.29)  22 MAY 2014 22:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.29)  24 MAY 2014 22:13
 entering extended mode
 **RosPiBot.tex
 (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.tex
@@ -2140,6 +2140,30 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48]
+Underfull \hbox (badness 10000) in paragraph at lines 913--914
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--919
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 920--921
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--925
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2148,7 +2172,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 914.
+Package pdftex.def Info: images/etseib-logo.png used on input line 925.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2166,7 +2190,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 917.
+Package pdftex.def Info: images/etseib-logo.png used on input line 934.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2184,7 +2208,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 920.
+Package pdftex.def Info: images/etseib-logo.png used on input line 937.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2202,7 +2226,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 923.
+Package pdftex.def Info: images/etseib-logo.png used on input line 940.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2220,7 +2244,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 926.
+Package pdftex.def Info: images/etseib-logo.png used on input line 943.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2238,7 +2262,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 929.
+Package pdftex.def Info: images/etseib-logo.png used on input line 946.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2256,7 +2280,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 932.
+Package pdftex.def Info: images/etseib-logo.png used on input line 949.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2266,8 +2290,6 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [55]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 944.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2276,7 +2298,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 944.
+Package pdftex.def Info: images/etseib-logo.png used on input line 952.
 (pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
 
 
@@ -2286,24 +2308,44 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [56]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 944.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 964.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/etseib-logo.png Graphic file (type png)
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 964.
+(pdftex.def)             Requested size: 32.52141pt x 42.51874pt.
+
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+ Make it at least 42.51874pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 964.
  (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 944.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 944.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 964.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 964.
 Package rerunfilecheck Info: File `RosPiBot.out' has not changed.
 (rerunfilecheck)             Checksum: 5A355B484259EB4DE6BDD78C8BD4585B;5271.
  ) 
 Here is how much of TeX's memory you used:
- 12465 strings out of 494045
- 185257 string characters out of 3146017
+ 12468 strings out of 494045
+ 185283 string characters out of 3146017
  347890 words of memory out of 3000000
- 15291 multiletter control sequences out of 15000+200000
- 67884 words of font info for 52 fonts, out of 3000000 for 9000
+ 15292 multiletter control sequences out of 15000+200000
+ 70872 words of font info for 53 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  46i,15n,57p,1758b,638s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/
 fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/lm/lmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx
 12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:
@@ -2313,11 +2355,12 @@ KTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
 lic/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on RosPiBot.pdf (60 pages, 28393325 bytes).
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on RosPiBot.pdf (61 pages, 28403285 bytes).
 PDF statistics:
- 897 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
+ 909 PDF objects out of 1000 (max. 8388607)
+ 181 named destinations out of 1000 (max. 500000)
  798 words of extra memory for PDF output out of 10000 (max. 10000000)
 

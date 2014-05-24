@@ -910,9 +910,27 @@ Una vez tenemos nuestra Raspberry Pi ya configurada y con las librer'ias instala
 
 \newpage
 \subsection{Programas b'asicos}
+Para que el usuario pueda trabajar c'omodamente con el robot, se han creado un conjunto de programas encargados de comunicarse directamente con los dispositivos. Estos programas se han distribuido en dos carpetas dentro del directorio \textbf{\texttt{/home/pi}}: \textbf{Modules}, incluye todas las librer'ias auxiliares creadas por otros miembros de la comunidad Raspberry Pi, y \textbf{Publishers}, d'onde encontramos los programas que se comunican los dispositivos y almacenan la informaci'on en la memoria cach'e.\\
+
+Todos los c'odigos que aqu'i se mencionan peuden allarse en el repositorio \textbf{GitHub} de este proyecto, \url{https://github.com/Guasch5000/RosPiBot}. A continuaci'on se detallan los programas ubicados en la carpeta  \textbf{Publishers}, cual es su funci'on, que par'ametros intervienen y de que manera almacena la informaci'on.
+
+\begin{itemize}
+\item \textbf{\texttt{readsensors.py}} Este m'odulo se encarga de la lectura de los sensores que se comunican por el bus I${^2}$C, donde encontramos la lectura del estado de la bater'ia, la de corriente de cada motor, los dos sensores de dist'ancia por infrarrojos, los cuatro por ultrasonidos y la imu. Debido a que cada sensor requiere de ser muestreado a frecuencias diferentes, lo primero que encontramos en el c'odigo es una tabla para definir estos valores en segundos. Seguidamente se definen las direcciones de cada dispositvo y se declaran las funciones de lectura.\\
+
+La lectura de los sonars se publica en mil'imetros debido a que esa es su resoluci'on, con un m'aximo de 5192mm. Por el contrario los infrarrojos se publican en cent'imetros, siendo su m'aximo valor de 1,51cm. En el caso de la bater'ia, se ha pasado su voltaje a un procentaje, siendo 6V el 0\% y 8,3V el 100\%. Para los sensores de corriente, se almacena el valor en miliamperios, con un m'aximo de 4000mA. Finalemente, los valores procedentes de la imu se han almacenado seg'un se han recibido, las acceleraciones en G (9,8m$\cdot$s$^{-1}$), las velocidades angulares en rad${\cdot}$s$^{-1}$ y la orientaci'on en radianes.\\
+
+\item \textbf{\texttt{readencoders.py}} Dise'nado para comunicarse con los descodificadores de cuadratura. Puesto que almacenar el recorrido de cada rueda no es 'util para sistemas no hol'onomos, este programa recoge el recuento de cada codificador y mediante una diferencia se extrae la velocidad de cada motor delantero. Para estandarizar los valores, estos se almacenar'an en radianes por segundo, el sentido positivo indica que la rueda ejerce una movimiento hacia adelante.\\
+
+\item \textbf{\texttt{movemotors.py}} A partir de dos variables almacenadas en la memoria cache (speed$\_$l, speed$\_$r) con un rango de valores de -100 hasta 100, se genera se'nales PWM para cada motor. El sentido de giro de los motores es el mismo para cada lado, debido que hacer girar las ruedas de un mismo hemisferio en sentidos contrarios implica contraponer los dos motores y desaprovechar la energ'ia.\\
+
+\item \textbf{\texttt{readjoystick.py}} Este 'ultimo programa se espera a que el mando inal'ambrico F710 de Logitech est'e conectando y envi'e se'nal. Una vez conectado el programa lee los eventos generados por el mando y modifica la los registros de la cache relacionados con la velocidad de los motores. Para poder conducir el robot mediante el mando es necesario mantener el bot'on \textbf{LB}, luego con el joystick izquierdo se controla el sentido de ir adelante o atr'as, por el contrario, con el derecho se controla el sentido de rotaci'on.
+
+\end{itemize}
+
 
 \newpage
 \subsection{M'odulo Rospibot}
+
 
 \newpage
 \subsection{Instalaci'on ROS Groovy}
