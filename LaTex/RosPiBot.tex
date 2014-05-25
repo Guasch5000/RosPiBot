@@ -9,6 +9,8 @@
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage{multicol}
+\usepackage{float}
+\usepackage{eurosym}
 \usepackage{datatool}
 \usepackage{glossaries}
 \usepackage{cite}
@@ -349,14 +351,7 @@ Aunque existen varios modelos de Raspberry Pi, este proyecto se basa en el model
 \end{itemize}
 %\end{multicols}
 
-
-
 \newpage
-
-\subsection{Protocolos de comunicaci'on}
-
-\newpage
-
 \section{Especificaciones}
 Tal y como se ha definido anteriormente, el objetivo de este proyecto consiste en ofrecer una plataforma funcional para los futuros usuarios. Para definir esta ''funcionalidad'' se ha basado en el conocimiento aportado por antiguos usuarios, trabajadores en productos similares y en la experiencia propia. \\
 
@@ -1004,11 +999,231 @@ Este proyecto finaliza con la instalaci'on y configuraci'on de ROS Groovy en la 
 \item \textbf{\texttt{source ~/.bashrc}}\\
 \end{itemize}
 
-
 \newpage
 \section{Presupuesto}
+El coste total de este proyecto asciende hasta los \textbf{5139,69 euros}. El material utilizado implica unos \textbf{523,69 euros} (un 10,2\% del coste total) y el coste personal unos \textbf{4616,00 euros} (el 89,8\% restante). A continuaci'on se detallan los costes del proyecto.
+
+\subsection{Coste Material}
+De los 523,69 euros invertidos en este proyecto para la adquisici'on de material, se han distribuido seg'un la tabla \ref{tab:coste material}. En los siguiente sub-apartados se define los componentes.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|}
+	\hline
+	\textbf{Concepto} & \textbf{Coste [\euro]} & \textbf{Porcentaje} \\ \hline
+	Dispositivos & 234.05 & 44.7 \\ \hline
+	Electr'onica & 112.59 & 21.5 \\ \hline
+	Mec'anica & 106.63 & 20.4 \\ \hline
+	SecurePi & 25.49 & 4.9 \\ \hline
+	SensorPi & 24.10 & 4.6 \\	\hline
+	MotorPi & 20.83 & 4.0 \\ \hline
+	\textbf{Total} & \textbf{523,69} & \textbf{100,0} \\ \hline
+\end{tabular}
+\end{center}
+\caption{Distribuci'on del presupuesto de material}
+\label{tab:coste material}
+\end{table}
+
+\subsubsection{Coste de Dispositivos}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	\textbf{Concepto} & \textbf{Coste unitario} & \textbf{Unidades} & \textbf{Total [\euro]}\\
+	 \hline
+	Raspberry Pi tipo B & 40,96 & 1 & 40,96 \\ \hline
+	M'odulo c'amara & 28,92 & 1 & 28,92 \\ \hline	
+	SD 8GB & 7,19 & 1 & 7,19 \\ \hline	
+	Mando Logitech F710 & 60,44 & 1 & 60,44 \\ \hline	
+	Router TL-WR720N & 21,68 & 1 & 21,68 \\ \hline
+	Cable Ethernet Cat5 & 2,30 & 3 & 6,90 \\ \hline
+	Extensor Ethernet & 3,96 & 1 & 3,96 \\ \hline
+	Extensor USB & 2.12 & 2 & 4,24 \\ \hline
+	Sonar KS103 & 11,50 & 4 & 46,00 \\ \hline
+	IMU GY-80 & 13,79 & 1 & 13,79 \\ \hline
+	\textbf{Total} &  &  & \textbf{234,05} \\ \hline
+\end{tabular}
+\end{center}
+\caption{Coste detallado de cada dispositivo}
+\label{tab:coste dispositivos}
+\end{table}
+
+\subsubsection{Coste de la Electr'onica}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	\textbf{Concepto} & \textbf{Coste unitario} & \textbf{Unidades}& \textbf{Total [\euro]} \\ \hline
+	
+	Bater'ia LiPo 7,4V 11.000mAh & 78,59 & 1 & 78,59\\ \hline
+	Interruptor antivand'alico & 11,49 & 1 & 11,49\\ \hline
+	Barra 10 leds & 8,05 & 1 &  8,05\\ \hline
+	Portafusible & 3,87 & 1 & 3,87\\ \hline
+	Cableado & 10,59 & 1 & 10,59\\ \hline
+	\textbf{Total} &  &  & \textbf{112,59} \\ \hline
 
 
+\end{tabular}
+\end{center}
+\caption{Coste detallado de la electr'onica}
+\label{tab:coste electronica}
+\end{table}
+
+\subsubsection{Coste placa SecurePi}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	\textbf{Concepto} & \textbf{Coste unitario} & \textbf{Unidades}& \textbf{Total [\euro]} \\ \hline
+	
+	PCB SecurePi & 1,94 & 1 & 1,94\\ \hline
+	Regulador LM2596S-5.0 & 4,22 & 1 & 4,22\\ \hline
+	Diodo Schottky 50V 4A & 0,52 & 1 & 0,52\\ \hline
+	Bobina 22uH & 1,11 & 1 & 1,11\\ \hline
+	Condensador 680uF electrol'itico & 0,92 & 1 & 0,92\\ \hline
+	Condensador 220uF electrol'itico & 0,73 & 1 & 0,73\\ \hline
+	Resist'encia 10Kohms SMD 1206 & 0,005 & 32 & 0,15\\ \hline
+	Mosfet BSS138 & 0,21 & 16 & 3,36\\ \hline
+	Conector barrel Jack 5.2mm & 2,51 & 1 & 2,51\\ \hline
+	Conector Hembra 18x2 pines & 4,84 & 1 & 4,84\\ \hline
+	Conector Hembra 8 pines & 1,14 & 1 & 1,14\\ \hline
+	Conector Hembra 5 pines & 0,91 & 1 & 0,91\\ \hline
+	Conector Hembra 4 pines & 0,82 & 1 & 0,82\\ \hline
+	Conector Hembra 3 pines & 0,77 & 1 & 0,77\\ \hline
+	Conector Hembra 2 pines & 0,73 & 1 & 0,73\\ \hline
+	Conector Macho 13x2 pines & 0,53 & 1 & 0,53\\ \hline
+	\textbf{Total} &  &  & \textbf{25,49} \\ \hline
+
+\end{tabular}
+\end{center}
+\caption{Coste detallado placa SecurePi}
+\label{tab:coste securepi}
+\end{table}
+
+\subsubsection{Coste de la Mec'anica}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	\textbf{Concepto} & \textbf{Coste unitario} & \textbf{Unidades}& \textbf{Total [\euro]} \\ \hline
+	
+	Paneles Metacrilato & 99,75 & 1 & 99,75\\ \hline
+	DIN 912 INOX A4 4x10 & 0,23 & 4 & 0,92\\ \hline
+	DIN 913 5x5 & 0,10 & 4 & 0,40\\ \hline
+	DIN 934 M2 & 0,07 & 2 & 0,14\\ \hline
+	DIN 934 M3 & 0,04 & 80 & 3,2\\ \hline
+	DIN 1587 M8 & 0,91 & 2 & 1,82 \\ \hline
+	DIN 7985 A2 3x10 & 0,03 & 102 & 3,06\\ \hline
+	DIN 7985 A4 3x20 & 0,05 & 11 & 0,55\\ \hline
+	\textbf{Total} &  &  & \textbf{106,63} \\ \hline
+
+\end{tabular}
+\end{center}
+\caption{Coste detallado de la mec'anica}
+\label{tab:coste mecanica}
+\end{table}
+
+\subsubsection{Coste placa SensorPi}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	\textbf{Concepto} & \textbf{Coste unitario} & \textbf{Unidades}& \textbf{Total [\euro]} \\ \hline
+	
+	PCB SensorPi & 1,94 & 1 & 1,94\\ \hline
+	Led 'ambar & 0,11 & 8 & 0,88\\ \hline
+	Led verde & 0,05 & 1 & ','5\\ \hline
+	Resist'encia 1Mohms 1/4W SMD 1206 & 0,01 & 2 & 0,02\\ \hline
+	Resist'encia 10Kohms 1/4W SMD 1206 & 0,005 & 12 & 0,06\\ \hline
+	Resist'encia 6,9Kohms 1/4W SMD 1206 & 0,007 & 4 & 0,03\\ \hline
+	Resist'encia 2,49Kohms 1/4W SMD 1206 & 0,008 & 2 & 0,02\\ \hline
+	Resist'encia 1Mohms 1/4W SMD 1206 & 0,01 & 2 & 0,02\\ \hline
+	Resist'encia 1Mohms 1/4W SMD 1206 & 0,01 & 2 & 0,02\\ \hline
+	Condensador 10uF 10V cer'amico SMD 1206 & 0,19 & 2 & 0,38\\ \hline
+	Condensador 0,1uF 10V cer'amico SMD 1206 & 0,03 & 2 & 0,06\\ \hline
+	Condensador 18pF 50V cer'amico SMD 1206 & 0,06 & 2 & 0,12\\ \hline
+	Integrado MCP3424 ADC Delta-Sigma SOIC & 3,79 & 2 & 7,58\\ \hline
+	Cristal 40MHz 30ppm & 0.53 & 2 & 1,06\\ \hline
+	Integrado LS7366S descodificador SOIC & 4,23 & 2 & 8,46\\ \hline
+	Conector macho 8 pin largo & 1,05 & 3 & 3,15\\ \hline
+	Conector macho 40 pin & 0,24 & 1 & 0,24\\ \hline
+	\textbf{Total} &  &  & \textbf{24,10} \\ \hline
+
+\end{tabular}
+\end{center}
+\caption{Coste detallado placa SensorPi}
+\label{tab:coste securepi}
+\end{table}
+
+\subsubsection{Coste placa MotorPi}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	\textbf{Concepto} & \textbf{Coste unitario} & \textbf{Unidades}& \textbf{Total [\euro]} \\ \hline
+	
+	PCB MotorPi & 1,94 & 1 & 1,94\\ \hline
+	Integrado LM3914 & 2,34 & 1 & 2,34\\ \hline
+	Resist'encia 10Kohms 1\% DIP & 0,03 & 2 & 0,06\\ \hline
+	Resist'encia 11Kohms 1\% DIP & 0,03 & 1 & 0,03\\ \hline
+	Resist'encia 13Kohms 1\% DIP & 0,10 & 1 & 0,10\\ \hline
+	Resist'encia 1Kohms SMD 1206 & 0,007 & 4 & 0,03\\ \hline
+	Resist'encia Shunt 0,5Ohms 2W SMD & 1,91 & 4 & 4,74\\ \hline
+	Condensador 1uF 16V Ceramico & 0,06 & 1 & 0,06\\ \hline
+	Bloque Terminal doble & 0,38 & 5 & 1,90\\ \hline
+	Diodo Schottky 40V 5A & 0,29 & 4 & 1,17\\ \hline
+	Driver L298P & 4,24 & 2 & 8,48\\ \hline	
+	\textbf{Total} &  &  & \textbf{20,83} \\ \hline
+
+\end{tabular}
+\end{center}
+\caption{Coste detallado placa MotorPi}
+\label{tab:coste motorpi}
+\end{table}
+
+\newpage
+\subsection{Coste Personal}
+Aunque en un proyecto de este tipo el presupuesto en personal no influyen en el gasto total, es recomendable conocer en que cantidades rondar'ia el proyecto si fuese de 'ambito comercial. Para realizar dicha contabilidad se ha segmentado el coste personal seg'un su labor\\
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+	\hline
+	\textbf{Labor} & \textbf{Coste horario [\euro /h]} & \textbf{Horas}& \textbf{Total [\euro]} \\ \hline
+	
+	Estudio de viabilidad & 40 & 53 & 2.120\\ \hline
+	Dise'no circuito impreso & 26 & 12 & 312\\ \hline
+	Dise'no asistido por ordenador & 24 & 22 & 528\\ \hline
+	Soldadura PCB & 18 & 4 & 72\\ \hline
+	Montaje y cableado & 16 & 14 & 224\\ \hline
+	programaci'on & 20 & 68 & 1.360\\ \hline
+	\textbf{Total} &  &  & \textbf{4.616} \\ \hline
+
+\end{tabular}
+\end{center}
+\caption{Coste detallado del personal necesario}
+\label{tab:coste personal}
+\end{table}
+
+\subsubsection{Descripci'on de las labores}
+
+\begin{itemize}
+\item \textbf{Estudio de viabilidad}  Analizar el producto WifiBot, buscar mejoras, localizar nuevo componentes que ofrezcan mayor utilidad y estudiar su compatibilidad entre ellos.
+
+\item \textbf{Dise'no Circuito Impreso} Encontrar la mejor distribuci'on de los componentes encontrados en el estudio de viabilidad, de tal manera que su producci'on sea f'acil para sus distribuidores y montadores.
+
+\item \textbf{Dise'no Asistido por ordenador} Ubicar los diferentes componentes dentro del robot, realizar un modelo por ordenador de todos los componentes y Dise'nar el resultado final.
+
+\item \textbf{Soldadura de PCB} Montaje de las placas que conforman el proyecto y comprobaci'on de su funcionamiento.
+
+\item \textbf{Montaje y Cableado} Unificaci'on de todos los elementos que forman el robot, rectificaci'on de roscas y acabado final.
+ 
+\item \textbf{Programaci'on} Configuraci'on del sistema operativo, creaci'on de programas para la comunicaci'on con los diferentes dispotivos y de un conjunto de librer'ias para mejorar la comodidad al usuario.
+\end{itemize}
+
+\newpage
+\section{Impacto Ambiental}
 
 \newpage
 \section{Conclusiones}

@@ -15,66 +15,74 @@
 \contentsline {subsubsection}{\numberline {2.1.5}Estado Inicial}{12}{subsubsection.2.1.5}
 \contentsline {subsection}{\numberline {2.2}Raspberry Pi}{13}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Caracter'isticas}{13}{subsubsection.2.2.1}
-\contentsline {subsection}{\numberline {2.3}Protocolos de comunicaci'on}{15}{subsection.2.3}
-\contentsline {section}{\numberline {3}Especificaciones}{16}{section.3}
-\contentsline {subsection}{\numberline {3.1}Software}{16}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Web}{16}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Librer'ias}{16}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Electr'onica}{17}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Funcionamiento}{17}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Alimentaci'on}{17}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}L'ogica}{17}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Comunicaci'on}{17}{subsubsection.3.2.4}
-\contentsline {subsection}{\numberline {3.3}Mec'anica}{18}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Estructura}{18}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Tornilleria}{18}{subsubsection.3.3.2}
-\contentsline {section}{\numberline {4}Modificaciones}{19}{section.4}
-\contentsline {subsection}{\numberline {4.1} Componentes Electr'onicos}{19}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Motorizaci'on}{19}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Sensores de proximidad}{20}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Bater'ia}{21}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}Punto de acceso WiFi}{22}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}Conmutador de red}{23}{subsubsection.4.1.5}
-\contentsline {subsubsection}{\numberline {4.1.6}Descodificador de cuadratura}{23}{subsubsection.4.1.6}
-\contentsline {subsubsection}{\numberline {4.1.7}Adaptador de nivel de tensi'on}{24}{subsubsection.4.1.7}
-\contentsline {subsubsection}{\numberline {4.1.8}Lectura de valores anal'ogicos}{25}{subsubsection.4.1.8}
-\contentsline {subsubsection}{\numberline {4.1.9}Monitorizaci'on de la Bater'ia}{25}{subsubsection.4.1.9}
-\contentsline {subsubsection}{\numberline {4.1.10}Alimentaci'on de l'ogica}{26}{subsubsection.4.1.10}
-\contentsline {subsubsection}{\numberline {4.1.11}Control de motores}{27}{subsubsection.4.1.11}
-\contentsline {subsection}{\numberline {4.2}Integraci'on de los componentes}{28}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}SecurePi}{28}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}SensorPi}{29}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}MotorPi}{29}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}Conexionado}{31}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Potencia}{31}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Alimentaci'on de l'ogica}{32}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Cableado SensorPi}{32}{subsubsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.4}Comunicaci'on}{33}{subsubsection.4.3.4}
-\contentsline {subsection}{\numberline {4.4}Distribuci'on interna}{34}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Dise'no preliminar}{34}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Soportes}{35}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Dise'no Final}{36}{subsubsection.4.4.3}
-\contentsline {subsection}{\numberline {4.5}Componentes mec'anicos}{38}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Mecanizados}{38}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Paneles}{39}{subsubsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.3}Torniller'ia}{40}{subsubsection.4.5.3}
-\contentsline {subsection}{\numberline {4.6}Montaje}{41}{subsection.4.6}
-\contentsline {subsubsection}{\numberline {4.6.1}Grupos individuales}{41}{subsubsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.2}Conjunto}{42}{subsubsection.4.6.2}
-\contentsline {subsection}{\numberline {4.7}Configuraci'on Router WiFi}{43}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Configuraci'on Raspberry Pi}{44}{subsection.4.8}
-\contentsline {subsubsection}{\numberline {4.8.1}Grabaci'on Raspbian}{44}{subsubsection.4.8.1}
-\contentsline {subsubsection}{\numberline {4.8.2}Configuraci'on inicial}{44}{subsubsection.4.8.2}
-\contentsline {subsubsection}{\numberline {4.8.3}Instalaci'on de librer'ias}{46}{subsubsection.4.8.3}
-\contentsline {subsection}{\numberline {4.9}Programas b'asicos}{49}{subsection.4.9}
-\contentsline {subsection}{\numberline {4.10}M'odulo Rospibot}{51}{subsection.4.10}
-\contentsline {subsection}{\numberline {4.11}Instalaci'on ROS Groovy}{53}{subsection.4.11}
-\contentsline {subsubsection}{\numberline {4.11.1}Instalaci'on b'asica}{53}{subsubsection.4.11.1}
-\contentsline {subsubsection}{\numberline {4.11.2}Inicializar dependencias y librer'ias}{53}{subsubsection.4.11.2}
-\contentsline {subsubsection}{\numberline {4.11.3}Creaci'on directorio de trabajo}{54}{subsubsection.4.11.3}
-\contentsline {subsubsection}{\numberline {4.11.4}Creaci'on paquete ''beginner$\_$tutorials''}{54}{subsubsection.4.11.4}
-\contentsline {section}{\numberline {5}Presupuesto}{55}{section.5}
-\contentsline {section}{\numberline {6}Conclusiones}{56}{section.6}
-\contentsline {section}{\numberline {7}Soporte inform'atico}{57}{section.7}
-\contentsline {section}{\numberline {8}Agradecimientos}{58}{section.8}
-\contentsline {section}{Referencias}{59}{section.8}
+\contentsline {section}{\numberline {3}Especificaciones}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Software}{15}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Web}{15}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Librer'ias}{15}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Electr'onica}{16}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Funcionamiento}{16}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Alimentaci'on}{16}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}L'ogica}{16}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Comunicaci'on}{16}{subsubsection.3.2.4}
+\contentsline {subsection}{\numberline {3.3}Mec'anica}{17}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Estructura}{17}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Tornilleria}{17}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}Modificaciones}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1} Componentes Electr'onicos}{18}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Motorizaci'on}{18}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Sensores de proximidad}{19}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Bater'ia}{20}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Punto de acceso WiFi}{21}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}Conmutador de red}{22}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}Descodificador de cuadratura}{22}{subsubsection.4.1.6}
+\contentsline {subsubsection}{\numberline {4.1.7}Adaptador de nivel de tensi'on}{23}{subsubsection.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.8}Lectura de valores anal'ogicos}{24}{subsubsection.4.1.8}
+\contentsline {subsubsection}{\numberline {4.1.9}Monitorizaci'on de la Bater'ia}{24}{subsubsection.4.1.9}
+\contentsline {subsubsection}{\numberline {4.1.10}Alimentaci'on de l'ogica}{25}{subsubsection.4.1.10}
+\contentsline {subsubsection}{\numberline {4.1.11}Control de motores}{26}{subsubsection.4.1.11}
+\contentsline {subsection}{\numberline {4.2}Integraci'on de los componentes}{27}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}SecurePi}{27}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}SensorPi}{28}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}MotorPi}{28}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Conexionado}{30}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Potencia}{30}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Alimentaci'on de l'ogica}{31}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Cableado SensorPi}{31}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Comunicaci'on}{32}{subsubsection.4.3.4}
+\contentsline {subsection}{\numberline {4.4}Distribuci'on interna}{33}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Dise'no preliminar}{33}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Soportes}{34}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Dise'no Final}{35}{subsubsection.4.4.3}
+\contentsline {subsection}{\numberline {4.5}Componentes mec'anicos}{37}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Mecanizados}{37}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Paneles}{38}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Torniller'ia}{39}{subsubsection.4.5.3}
+\contentsline {subsection}{\numberline {4.6}Montaje}{40}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Grupos individuales}{40}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Conjunto}{41}{subsubsection.4.6.2}
+\contentsline {subsection}{\numberline {4.7}Configuraci'on Router WiFi}{42}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Configuraci'on Raspberry Pi}{43}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Grabaci'on Raspbian}{43}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Configuraci'on inicial}{43}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.3}Instalaci'on de librer'ias}{45}{subsubsection.4.8.3}
+\contentsline {subsection}{\numberline {4.9}Programas b'asicos}{48}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}M'odulo Rospibot}{50}{subsection.4.10}
+\contentsline {subsection}{\numberline {4.11}Instalaci'on ROS Groovy}{52}{subsection.4.11}
+\contentsline {subsubsection}{\numberline {4.11.1}Instalaci'on b'asica}{52}{subsubsection.4.11.1}
+\contentsline {subsubsection}{\numberline {4.11.2}Inicializar dependencias y librer'ias}{52}{subsubsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.3}Creaci'on directorio de trabajo}{53}{subsubsection.4.11.3}
+\contentsline {subsubsection}{\numberline {4.11.4}Creaci'on paquete ''beginner$\_$tutorials''}{53}{subsubsection.4.11.4}
+\contentsline {section}{\numberline {5}Presupuesto}{54}{section.5}
+\contentsline {subsection}{\numberline {5.1}Coste Material}{54}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Coste de Dispositivos}{54}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Coste de la Electr'onica}{55}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Coste placa SecurePi}{55}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Coste de la Mec'anica}{56}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}Coste placa SensorPi}{56}{subsubsection.5.1.5}
+\contentsline {subsubsection}{\numberline {5.1.6}Coste placa MotorPi}{57}{subsubsection.5.1.6}
+\contentsline {subsection}{\numberline {5.2}Coste Personal}{58}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Descripci'on de las labores}{58}{subsubsection.5.2.1}
+\contentsline {section}{\numberline {6}Conclusiones}{59}{section.6}
+\contentsline {section}{\numberline {7}Soporte inform'atico}{60}{section.7}
+\contentsline {section}{\numberline {8}Agradecimientos}{61}{section.8}
+\contentsline {section}{Referencias}{62}{section.8}
