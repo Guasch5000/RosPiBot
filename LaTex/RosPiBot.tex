@@ -958,10 +958,57 @@ Para importar este m'odulo desde cualquier ubicaci'on se ha modificado la variab
 
 \newpage
 \subsection{Instalaci'on ROS Groovy}
+La peculiaridad de este robot respecto otros es el hecho que en su interior puede ejecutarse un n'ucleo de ROS (roscore). Otras plataformas recurren a un ''int'erprete'' entre la informaci'on que procedente de la plataforma y el formato aceptado por ROS. Esta caracter'istica permite que el robot funcione independientemente de un ordenador externo a la hora de trabajar con ROS.\\
+
+De las versiones existentes en la realizaci'on del proyecto, s'olo hab'ian dos posibilidades, \textbf{Groovy} o \textbf{Hydro} (la distribuci'on de Indigo a'un se encontraba en desarrollo). De entra las dos versiones disponibles se elegi'o Groovy debido a que ofreci'a soporte directo a Raspbian.\\
+
+Este proyecto finaliza con la instalaci'on y configuraci'on de ROS Groovy en la plataforma RosPiBot. Puesto que las variables del robot se pueden acceder con el m'odulo creado, no aparece la necesidad de crear t'opicos que publiquen esta informaci'on. A'un así, puede convertirse en un primer contacto con ROS para futuros usuarios. A continuaci'on se detallan los pasos realizados, aunque estos pasos ya quedan explicados en la p'agina \url{http://wiki.ros.org/groovy/Installation/Raspbian}, existe una diferencia que puede conllevar problemas si se desea realizar los tutoriales. Por ello se eplica todo el proceso hasta la  creaci'on del paquete ''beginner$\_$tutorials'' incluido.\\
+
+\subsubsection{Instalaci'on b'asica}
+\begin{itemize}
+\item \textbf{\texttt{sudo sh -c $'$echo ''deb http://64.91.227.57/repos/rospbian wheezy main'' > \
+/etc/apt/sources.list.d/rospbian.list$'$}}
+\item \textbf{\texttt{wget http://64.91.227.57/repos/rospbian.key -O - | sudo apt-key add -}}
+\item \textbf{\texttt{sudo apt-get update}}
+\item \textbf{\texttt{sudo apt-get install ros-groovy-ros-comm}}\\
+\end{itemize}
+
+\subsubsection{Inicializar dependencias y librer'ias}
+\begin{itemize}
+\item \textbf{\texttt{sudo rosdep init}}
+\item \textbf{\texttt{rosdep update}}
+\item \textbf{\texttt{echo ''source /opt/ros/groovy/setup.bash'' $>>$ ~/.bashrc}}
+\item \textbf{\texttt{source ~/.bashrc}}
+\item \textbf{\texttt{sudo apt-get install python-rosinstall}}
+\item \textbf{\texttt{sudo apt-get install ros-groovy-ros-tutorials}}\\
+\end{itemize}
+
+\subsubsection{Creaci'on directorio de trabajo}
+\begin{itemize}
+\item \textbf{\texttt{mkdir -p ~/ROS/catkin$\_$ws/src}}
+\item \textbf{\texttt{cd ~/ROS/catkin$\_$ws/src}}
+\item \textbf{\texttt{catkin$\_$init$\_$workspace}}
+\item \textbf{\texttt{cd ~/ROS/catkin$\_$ws}}
+\item \textbf{\texttt{catkin$\_$make}}
+\item \textbf{\texttt{source devel/setup.bash}}\\
+\end{itemize}
+
+\subsubsection{Creaci'on paquete ''beginner$\_$tutorials''}
+\begin{itemize}
+\item \textbf{\texttt{cd ~/ROS/catkin$\_$ws/src}}
+\item \textbf{\texttt{catkin$\_$create$\_$pkg beginner$\_$tutorials std$\_$msgs rospy roscpp}}
+\item \textbf{\texttt{catkin$\_$make -DCMAKE$\_$BUILD$\_$TYPE=Release}}
+\item \textbf{\texttt{catkin$\_$make install}}
+\item \textbf{\texttt{catkin$\_$make install -DCMAKE$\_$INSTALL$\_$PREFIX=/opt/ros/groovy}}
+\item \textbf{\texttt{echo ''source /home/pi/ROS/catkin$\_$ws/devel/setup.bash'' $>>$ ~/.bashrc}}
+\item \textbf{\texttt{source ~/.bashrc}}\\
+\end{itemize}
 
 
 \newpage
 \section{Presupuesto}
+
+
 
 \newpage
 \section{Conclusiones}
