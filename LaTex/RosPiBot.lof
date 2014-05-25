@@ -1,40 +1,40 @@
 \select@language {spanish}
-\contentsline {figure}{\numberline {1}{\ignorespaces Wifi Bot 4G}}{9}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Dimensiones [mm] motor HN-GH7.2-2414T-50:1}}{10}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Gr'afica de curvas espec'ificas del motor HN-GH7.2-2414T-50:1}}{11}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Esquema de funcionamiento de un encoder de cuadratura}}{11}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Raspberri Pi}}{13}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Esquema Modelo B}}{13}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Sensor de distancia por ultrasonidos KS103}}{19}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de radiaci'on del sensor KS103}}{19}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Bater'ia LiPo con PCM instalado}}{20}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Router TP-Link WR702N}}{21}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Switch antes y despu'es de la modificaci'on}}{22}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de pines LS7366}}{23}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Circuito adaptador de tensi'on}}{23}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama BSS138}}{24}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de pines MCP3428}}{24}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de pines LM3914}}{25}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Circuito regulador Buck 5V}}{25}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Guia de selecci'on de inductancia}}{26}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama de pines L298N}}{26}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Layout y PCB de la placa SecurePi}}{27}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces SecurePi colocada con la Raspberry Pi}}{28}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Esquema el'ectrico del conexionado de potencia}}{30}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Esquema el'ectrico de la alimentaci'on de l'ogica}}{31}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Esquema el'ectrico del cableado de la placa SensorPi}}{31}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Dise'no preliminar con la ubicaci'on de todos los componentes}}{33}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Conjunto de soportes orientados para impresi'on 3D}}{34}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Acabado final delantero del robot}}{35}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Acabado final trasero del robot}}{36}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Modelo por ordenador de una barra longitudinal de aluminio.}}{37}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Modelo por ordenador de un acoplador de aluminio.}}{38}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Conjunto de paneles obtenidos por corte l'aser.}}{38}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Conjunto de paneles montados individualmente.}}{40}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Acabado final de la plataforma RospiBot.}}{41}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Interf'icie del programa Win32 Disk Imager.}}{43}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces Assignaci'on de IP por DHCP.}}{44}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Consola de acceso remotor por SSH.}}{44}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Men'u de opciones de configuraci'on de Raspbian.}}{45}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Archivo de configuraci'on de los dispositivos I${^2}$C y SPI.}}{46}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Archivo de configuraci'on de los m'dulos.}}{46}{figure.39}
+\contentsline {figure}{\numberline {1}{\ignorespaces Wifi Bot 4G}}{11}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Dimensiones [mm] motor HN-GH7.2-2414T-50:1}}{12}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Gr'afica de curvas espec'ificas del motor HN-GH7.2-2414T-50:1}}{13}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Esquema de funcionamiento de un encoder de cuadratura}}{13}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Raspberri Pi}}{15}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Esquema Modelo B}}{15}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Sensor de distancia por ultrasonidos KS103}}{21}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de radiaci'on del sensor KS103}}{21}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Bater'ia LiPo con PCM instalado}}{22}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Router TP-Link WR702N}}{23}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Switch antes y despu'es de la modificaci'on}}{24}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de pines LS7366}}{25}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Circuito adaptador de tensi'on}}{25}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama BSS138}}{26}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de pines MCP3428}}{26}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de pines LM3914}}{27}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Circuito regulador Buck 5V}}{27}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Guia de selecci'on de inductancia}}{28}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama de pines L298N}}{28}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Layout y PCB de la placa SecurePi}}{29}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces SecurePi colocada con la Raspberry Pi}}{30}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Esquema el'ectrico del conexionado de potencia}}{32}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Esquema el'ectrico de la alimentaci'on de l'ogica}}{33}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Esquema el'ectrico del cableado de la placa SensorPi}}{33}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Dise'no preliminar con la ubicaci'on de todos los componentes}}{35}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Conjunto de soportes orientados para impresi'on 3D}}{36}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Acabado final delantero del robot}}{37}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Acabado final trasero del robot}}{38}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Modelo por ordenador de una barra longitudinal de aluminio.}}{39}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Modelo por ordenador de un acoplador de aluminio.}}{40}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Conjunto de paneles obtenidos por corte l'aser.}}{40}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Conjunto de paneles montados individualmente.}}{42}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Acabado final de la plataforma RospiBot.}}{43}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Interf'icie del programa Win32 Disk Imager.}}{45}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Assignaci'on de IP por DHCP.}}{46}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Consola de acceso remotor por SSH.}}{46}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Men'u de opciones de configuraci'on de Raspbian.}}{47}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Archivo de configuraci'on de los dispositivos I${^2}$C y SPI.}}{48}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Archivo de configuraci'on de los m'dulos.}}{48}{figure.39}

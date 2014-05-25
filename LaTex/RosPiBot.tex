@@ -78,6 +78,8 @@ RosPiBot}
 \fancyhead[LE,RO]{1} 
 
 \normalsize
+\addtocontents{toc}{~\hfill\textbf{P'agina}\par}
+\addcontentsline{toc}{section}{Resumen}
 \begin{abstract}
 Este proyecto consiste en el aprovechamiento de la plataforma rob'otica comercial WifiBot que corre el riesgo de quedarse obsoleta y rescatarla de su destino. Para ello se hace uso de una Raspberry Pi, un ordenador de placa reducida que ha revolucionado el mundo de la automatizaci'on desde el d'ia de su aparici'on en el 2012, como unidad de procesamiento de la nueva plataforma y que est'a basada en Linux. En el apartado de software, adem'as de incorporar herramientas que faciliten el trabajo a futuros usuarios se ha configurado para poder trabajar con ROS, una infrastructura digital para el desarrollo de software de robots creada por Willow Garage y extensamente utilizada en este sector.\\
 
@@ -92,36 +94,39 @@ A lo largo de este documento se exponen el estado inicial del robot, los nuevos 
 \thispagestyle{empty}
 \newpage
 
-\fancyhead[LE,RO]{3}
+%\fancyhead[LE,RO]{3}
+\fancyhead[LE,RO]{\thepage}
 \tableofcontents
-\setcounter{page}{1}
-\addtocontents{toc}{~\hfill\textbf{P'agina}\par}
-\addcontentsline{toc}{section}{Resumen}
 %\setcounter{page}{1}
+%\addtocontents{toc}{~\hfill\textbf{P'agina}\par}
+%\addcontentsline{toc}{section}{Resumen}
+%\setcounter{page}{3}
 %\setcounter{page}{4}
-\fancyhead[LE,RO]{4}
+%\fancyhead[LE,RO]{4}
 %\setcounter{page}{3}
 %\addcontentsline{toc}{section}{'Indice}
 
 \newpage
 %\pagenumbering{arabic}
-\setcounter{page}{5}
+%\setcounter{page}{6}
 \fancyhead[LE,RO]{\thepage}
+\addcontentsline{toc}{section}{'Indice de figuras}
 \listoffigures
 
 \newpage
 %\pagenumbering{arabic}
-\setcounter{page}{6}
+%\setcounter{page}{7}
 \fancyhead[LE,RO]{\thepage}
+\addcontentsline{toc}{section}{'Indice de tablas}
 \listoftables
 
 \newpage
 %\pagenumbering{arabic}
-\setcounter{page}{7}
+%\setcounter{page}{8}
 \fancyhead[LE,RO]{\thepage}
 
-\section*{Glosario}
-\addcontentsline{toc}{section}{Glosario}
+\section*{Acr'onimos}
+\addcontentsline{toc}{section}{Acr'onimos}
 \begin{description}
 \item[UART] Universal Asynchronous Receiver-Transmitter
 \item[SPI] Serial Protocol Interface
@@ -1133,7 +1138,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 	
 	PCB SensorPi & 1,94 & 1 & 1,94\\ \hline
 	Led 'ambar & 0,11 & 8 & 0,88\\ \hline
-	Led verde & 0,05 & 1 & ','5\\ \hline
+	Led verde & 0,05 & 1 & 0,05\\ \hline
 	Resist'encia 1Mohms 1/4W SMD 1206 & 0,01 & 2 & 0,02\\ \hline
 	Resist'encia 10Kohms 1/4W SMD 1206 & 0,005 & 12 & 0,06\\ \hline
 	Resist'encia 6,9Kohms 1/4W SMD 1206 & 0,007 & 4 & 0,03\\ \hline
@@ -1223,20 +1228,56 @@ Aunque en un proyecto de este tipo el presupuesto en personal no influyen en el 
 \end{itemize}
 
 \newpage
+\subsection{Planificaci'on}
+
+\newpage
 \section{Impacto Ambiental}
+Aunque este proyecto trate de la restauraci'on de un plataforma m'obil que estaba en desuso, hay que tener en cuenta que existe la posibilidad que su mejora suponga un empeoramiento del medioambiente. Para ello se ha tenido en cuenta aquello de lo que nos deshacemos y de lo que añadimos.\\
+
+Los paneles originales del WifiBot est'an constituidos de Policarbonato, este tipo de pl'astico se recicla alrededor del 90\% en pa'ises europeos. Su impacto en el ambiente es reducido y se puede encontrar en aplicaciones sanitarias. Aun así, desde hace unos a'nos se ha comprobado que en condiciones de degradaci'on este pl'astico libera mol'eculas de Bisfenol A, que puede causar anormalidades durante el desarrollo de embriones.\\ 
+
+Otro elemento del que nos desharemos ser'a la circuiter'ia original. Debido al uso de esta'no con plomo hasta 2006 por la directiva RoHS, muy probablemente que contenga este metal pesado. Adem'as de plomo, a causa de la complejidad de la circuiter'ia empleada es posible que tambi'en disponga de otro metales nocivos como el zinc, cobalto o n'iquel entre otros. Para minimizar su impacto, los circuitos ser'an entregados en un punto especial de recogida de este tipo de material para su reciclaje.\\
+
+Adem'as de la circuiter'ia, las bater'ias tambi'en s'on otro elemento a tener en cuenta. Aunque la eliminación inadecuada de las baterías de NiMH representa un gran peligro ambiental menor que la de NiCd debido a la ausencia de cadmio tóxico. La extracci'on y su procesamiento puede plantear otros tipos de impacto ambiental, sin embargo, la mayoría de níquel industrial es reciclado, debido a la relativamente fácil recuperación mediante electroimanes. Sobre el n'iquel, se ha de tener en cuenta que tiene efectos sobre la piel y que puede producir c'ancer de pulm'on si se inhala en altas cantidades.\\
+
+Sobre los componentes introducidos, la gran mayor'ia cumplen la directiva RoHS actual. El 'unico componente que puede introducir un poco de sospecha son las bater'ias. Estas bater'ias est'an compuestas por litio, un elemento neurot'oxico y da'nino para el ri'non. Aunque el litio puede conllevar riesgo, su impacto ambiental es m'inimo. En Estados Unidos se ha declarado que se pueden desechar de forma segura como residuo normal, por el contrario, los gobiernos europeos advierten del potencial para contaminar aguas subterr'aneas debido a que contienen metales base como el cobalto. Para extender el uso de las bater'ias, contamos con los m'odulos PCM. Estos m'odulos nos ayudar'an a alargar la vida de nuestras celdas de energ'ia.
 
 \newpage
 \section{Conclusiones}
+Aunque restaurar una plataforma y volverla a poner al d'ia ha sido un labor que conllevado varios quebraderos de cabeza, este proyecto demuestra que es realizable. Durante la ejecuci'on de este proyecto se ha observado que las plataformas rob'oticas se quedan obsoletas a causa de sus unidades de procesamiento desfasadas, mientras que los componentes m'as b'asicos como los controladores de motores o los sensores siguen estando operativos. Todo esto hace ver que quiz'a hace falta un cambio en el razonamiento de la rob'otica, de tal manera que las unidades de procesamiento puedan ser actualizadas sin afectar al resto de los elementos de un robot.\\
+
+A medida que se ha ido realizando el proyecto, trabajando con el robot, pensando mejoras y aplic'andolas, uno se da cuenta de las deficiencias del producto original y comprende la evoluci'on que ha seguido la plataforma WifiBot hasta el presente. El cambio m'as notorio es el hecho que los nuevas plataformas creadas por la empresa francesa est'an constituidas por un 'unico bloque (sin la necesidad de crear dos hemisferios). Durante el dise'no del RosPiBot, en el momento de la ubicar sus componentes, se destino gran parte del tiempo a encontrar la manera que el switch, la Raspberry Pi y el router pudiesen convivir en el mismo espacio. Adem'as, disponer de una barra met'alica que atraviesa transversalmente el robot, dificult'o enormemente su desarrollo.\\
+
+Por 'ultimo, el hecho de ''Rosificar'' cualquier plataforma rob'otica es una apuesta segura hacia su desarrollo. La gran comunidad que hay detr'as de ROS y el nivel de conocimientos del que dispone, son motivos suficientes utilizar esta herramienta. Incluso con plataformas desactualizadas, añadir ROS puede originar un resurgimiento. 
+
 
 \newpage
 \section{Soporte inform'atico}
+
+\textbf{Filezilla} Linux, Mac, Windows\\
+Cliente FTP multiplataforma de código abierto y software libre. Permite la transferencia de archivos entre ordenadores.\\
+
+\textbf{\LaTeX } Linux, Mac y Windows\\
+Sistema de composición de textos, orientado especialmente a la creación de libros, documentos científicos y técnicos que contengan fórmulas matemáticas.\\
+
+\textbf{KiCad} Linux y Windows\\
+Entorno de software usado para el diseño de circuitos eléctricos y de c'odigo abierto.\\
+
+\textbf{Photoshop CS2} Windows\\
+Editor de gráficos rasterizados desarrollado para el retoque de fotografías y gráficos.\\
+
+\textbf{Putty} Linux, Mac y Windows\\
+Cliente SSH, Telnet, rlogin, y TCP raw con licencia libre. Permite conexi'on remota con otro ordenador.\\
+
+\textbf{Solidworks 2010} Windows\\
+Programa de diseño asistido por computadora para modelado mecánico.\\
 
 \newpage
 \section{Agradecimientos}
 
 \newpage
-%\section{Bibliografia}
 \addcontentsline{toc}{section}{Referencias}
+
 \begin{thebibliography}{a}
 \bibitem{pradery} \textsc{Montero, J.},
 \textit{Metodos matemáticos aplicados a la ganadería.}
