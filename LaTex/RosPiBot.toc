@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {2.3}ROS}{20}{subsection.2.3}
 \contentsline {section}{\numberline {3}Especificaciones}{22}{section.3}
 \contentsline {subsection}{\numberline {3.1}Software}{22}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Web}{22}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1}GitHub }{22}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Librer'ias}{22}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Electr'onica}{23}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Funcionamiento}{23}{subsubsection.3.2.1}
@@ -92,4 +92,4 @@
 \contentsline {section}{\numberline {7}Conclusiones}{67}{section.7}
 \contentsline {section}{\numberline {8}Agradecimientos}{68}{section.8}
 \contentsline {section}{Referencias}{69}{section.8}
-\contentsline {section}{Soporte inform'atico}{70}{section*.9}
+\contentsline {section}{Soporte inform'atico}{71}{section*.9}

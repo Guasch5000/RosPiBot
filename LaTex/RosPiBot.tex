@@ -192,17 +192,17 @@ Adem'as de sensores, se hace necesaria una remodelaci'on tanto del exterior como
 
 Para incitar al futuro usuario trabajar con la nueva plataforma, se ofrecer'a un conjunto de funciones en lenguaje Python con las que obtener informaci'on del entorno y hacer mover el robot se convierta en una labor verdaremente f'acil. Para ello se crear'an dos grupos de c'odigos. Los primeros se encargar'an de la comunicaci'on con los diferentes dispositivos y almacenar'an la informaci'on. El segundo grupo tendr'a la funci'on de ofrecer herramientas para que el usuario sea capaz de recuperar la informaci'on guardada.\\
 
-Finalmente, para darle un valor a'nadido al robot, se instalar'a ROS, este conjunto de herramientas est'a orientado para plataformas rob'oticas. El hecho de lanzar un n'ucleo de ROS dentro del robot ofrece un mayor n'umero de posibilidades a futuros trabajos. En este proyecto 'unicamente se plantea la opci'on de instalar y configurar ROS.
+Finalmente, para darle un valor a'nadido al robot, se instalar'a ROS, este conjunto de herramientas est'a orientado para plataformas rob'oticas. El hecho de lanzar un n'ucleo de ROS dentro del robot ofrece un mayor n'umero de posibilidades a futuros trabajos. En este proyecto 'unicamente se plantea la opci'on de instalar y configurar ROS. Para futuros proyectos se recomienda la lectura de libros que nos introduzcan en ROS.\cite{ros}.
 
 
 \newpage
 \section{Descripci'on }
 
 \subsection{WifiBot}
-\textbf{Wifibot} es una plataforma rob'otica, desarrollada por la empresa francesa \textbf{Nexter Robotics}, dise'nada para poder navegar en m'ultiples escenarios gracias a su dise'no. Su sistema de tracci'on a las cuatro ruedas, dise'no reducido y bajo peso, le otorga una gran flexibilidad.
+\textbf{Wifibot} es una plataforma rob'otica, desarrollada por la empresa francesa \textbf{Nexter Robotics}, dise'nada para poder navegar en m'ultiples escenarios gracias a su dise'no. Su sistema de tracci'on a las cuatro ruedas, dise'no reducido y bajo peso, le otorga una gran flexibilidad. 
 
 \subsubsection{Caracter'isticas}
-Este proyecto parte del modelo \textbf{WifiBot 4G}, producido durante el periodo 2002--2006 y que a grandes rasgos incluye::
+Este proyecto parte del modelo \textbf{WifiBot 4G} (figura \ref{fig:Wifi Bot 4G}, producido durante el periodo 2002--2006. Se'gun su gu'ia de usuario \cite{guia}  est'a formador por:
 
 \begin{figure}[ht]
 \centering
@@ -273,7 +273,7 @@ La estructura de la base est'a formada por dos secciones sim'etricas que llamare
 %como vemos en figura \ref{fig:Wifi Bot 4G}
 
 \subsubsection{Grupo Motriz}
-Los motores que componen el WifiBot son concretamente el modelo \textbf{HN-GH7.2-2414T-50:1} del fabricante \textbf{Hsiang Neng}. Este modelo est'a compuesto por un motor de continua de voltaje nominal de 7.2V y una reductora con relaci'on 50:1. Tal y como se describe en la figura ~\ref{fig:Dimensiones del Motor}, dispone de un eje de 6mm de di'ametro, una longitud de 81.1mm y un di'ametro exterior de 37mm. 
+Los motores que componen el WifiBot son concretamente el modelo \textbf{HN-GH7.2-2414T-50:1} del fabricante \textbf{Hsiang Neng}. Este modelo est'a compuesto por un motor de continua de voltaje nominal de 7.2V y una reductora con relaci'on 50:1. Tal y como se describe en la figura ~\ref{fig:Dimensiones del Motor}, dispone de un eje de 6mm de di'ametro, una longitud de 81.1mm y un di'ametro exterior de 37mm. Los datos se han extraido de la ficha t'ecnica \cite{motor}.
 
 \begin{figure}[ht]
 \centering
@@ -301,7 +301,7 @@ Este tipo de sensor permite conocer tanto la velocidad como la posici'on de un e
 \label{fig:Esquema QEI}
 \end{figure}
 
-De los 4 motores que conforman la plataforma, los dos delanteros disponen de un codificador 'optico, concretamente el modelo \textbf{E4P-120-079-HT} del fabricante \textbf{US DIGITAL}. Este modelo ofrece unos 120 ciclos por revoluci'on (o 480 interrupciones), est'a pensado para ejes de 2mm de di'ametro y no dispone de canal de 'indice (permite corregir errores). Tras un ensayo del motor sin carga, cuyos datos se encuentran en la tabla ~\ref{tab:Encoder periods}, se determin'o que se llegaba a un m'aximo de 80.000 pulsos por segundo.\\
+De los 4 motores que conforman la plataforma, los dos delanteros disponen de un codificador 'optico, concretamente el modelo \textbf{E4P-120-079-HT} del fabricante \textbf{US DIGITAL}. Se'un si ficha t'ecnica \cite{encoder}, este modelo ofrece unos 120 ciclos por revoluci'on (o 480 interrupciones), est'a pensado para ejes de 2mm de di'ametro y no dispone de canal de 'indice (permite corregir errores). Tras un ensayo del motor sin carga, cuyos datos se encuentran en la tabla ~\ref{tab:Encoder periods}, se determin'o que se llegaba a un m'aximo de 80.000 pulsos por segundo.\\
 
 \begin{table}[ht]
 \begin{center}
@@ -463,14 +463,14 @@ Las especificaciones se han clasificado seg'un su or'igen. Dependiendo de si son
 \subsection{Software}
 El principal requisito del software es ofrecer un acceso simple al usuario. Teniendo presente el hecho que pueda ser utilizado tanto para usuario noveles como para usuarios experimentados. Por ello se ha planteado las siguientes especificaciones.
 
-\subsubsection{Web}
-Se ofrecer'a un servidor web que permita de visualizar f'acilmente el estado del robot como por ejemplo: el nivel de carga de bater'ias, sensores de proximidad, velocidad de desplazamiento, consumo de motores, etc. Adem'as se incluir'a una pantalla d'onde se monitorizar'a una c'amara que incorpora el robot y un par de terminales de comandos.
-En otro apartado de la web se ofrecer'a la descarga de todos aquellos documentos necesarios para el usuario, evitando as'i que el usuario pierda tiempo en la b'usqueda de la documentaci'on.
+\subsubsection{GitHub }
+Con el objetivo de ofrecer toda la informaci'on necesaria a futuros usuarios se ha creado el repositorio \url{https://github.com/Guasch5000/RosPiBot}, que permitir'a acceder a todos los archivos relacionados con este proyecto, desde c'odigos de programaci'on, hasta los dise'nos de los componentes a utilizar. De este modo se consigue que la informaci'on perdure, sea accesible y permite ponerse en contacto con su desarrollador.  
 
 \subsubsection{Librer'ias}
 %Por facilidad de uso y comodidad se ha decidido que todo el software utilizado en este proyecto se base en $Python^{ TM}$, un lenguaje de programaciÃ³n
 Para aquel desarrollador que decida utilizar esta plataforma se le ofrecer'a un conjunto de librer'ias que permitan trabajar con el robot de manera comoda. Estas librer'ias se compondr'an de una sintaxis limpia y un c'odigo legible que proporcinar'a una f'acil interpretaci'on.    
 
+\newpage
 \subsection{Electr'onica}
 El objetivo de la electr'onica es ser la parte m'as vital de la plataforma, pero pasando desapercibida por el usuario. Ofreciendo una m'inima interacci'on pero suficiente para comprender el estado del robot. Esta interacci'on se har'a mediante se'nales luminosas o ac'usticas, e indicar'an los siguientes estados.
 
@@ -524,7 +524,7 @@ Cualquier plataforma rob'otica dedicada a la exploraci'on ha de disponer de sens
 \label{fig:KS103}
 \end{figure} 
 
-Las caracter'isticas de este sensor han sido el motivo de su elecci'on: Su gran rango de medida (de 1cm a 550cm), una resoluci'on de 1mm, comunicaci'on via I${^2}$C (con 20 direcciones possibles), capaz de operar de 3.0 a 5.5V y permite hasta unas 500 lecturas por segundo. Otro factor que se ha tenido en cuenta es el hecho que la luz de sol en determinadas circunstancias puede afectar a la lectura real de los sensores infrarrojos, en cambio los sensores de ultrasonidos no quedan afectados.\\
+Las caracter'isticas de este sensor han sido el motivo de su elecci'on, pueden encontrarse en su ficha t'ecnica \cite{sonar}: Su gran rango de medida (de 1cm a 550cm), una resoluci'on de 1mm, comunicaci'on via I${^2}$C (con 20 direcciones possibles), capaz de operar de 3.0 a 5.5V y permite hasta unas 500 lecturas por segundo. Otro factor que se ha tenido en cuenta es el hecho que la luz de sol en determinadas circunstancias puede afectar a la lectura real de los sensores infrarrojos, en cambio los sensores de ultrasonidos no quedan afectados.\\
 
 \begin{figure}[ht]
 \centering
@@ -583,7 +583,7 @@ Tal y c'omo se ha descrito en las especificaciones, se requiere de una sistema q
 
 El dispositivo elegido se trata del mini router TL-WR702N de la empresa TP-LINK. Este modelo ofrece una velocidad m'axima de transmisi'on de 150Mbps, se alimenta mediante un puerto MicroUSB (5V) y dispone de un puerto ethernet RJ45, que dependiendo del modo de trabajo se comporta como un puerto WAN o LAN.\\
 
-Entre todas sus configuraciones (AP Mode, Router Mode ,Client Mode,
+Seg'un su gu'ia de usuario \cite{router}, entre todas sus configuraciones (AP Mode, Router Mode , Client Mode,
 Repeater Mode y  Bridge Mode) se ha optado por la de punto de acceso con el nombre de RosPiBot y servidor DHCP activado. De esta manera el usuario s'olo deber'a conectarse a su red para poder acceder al robot.
 
 \subsubsection{Conmutador de red}
@@ -608,7 +608,7 @@ Uno de los elementos m'as 'utiles que podemos encontrar en la plataforma es la e
 \label{fig:LS7366}
 \end{figure} 
 
-Para solventar el problema, se hace uso del circuito integrado LS7366, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.\\
+Para solventar el problema, se hace uso del circuito integrado LS7366 \cite{counter}, un contador de cuadratura de hasta 32 bits con interf'icie SPI. Este componente incrementa o decrementa un contador interno dependiendo de la secuencia que proviene del codificador de cuadratura. Adem'as en el momento que se quiera acceder al registro de dicho contador, el circuito procede a copiar el estado de contador en un segundo registro, permitiendo que la lectura no interfiera con el c'omputo.\\
 
 Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovecha el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
 
@@ -630,14 +630,14 @@ Gracias a este integrado, se evita que el microprocesador tenga que hacerse carg
 
 Para una correcta comunicaci'on entre los diferentes dispositivos es preciso adaptar los diferentes voltajes. Para ello hay que tener en cuenta en que rangos cada dispositivo se comunica; Mientras que la Raspberry Pi usa voltajes en su GPIO de 0 a 3.3V, el controlador de motores opera con tensiones superior a los 4.5V.\\
 
-Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se ha decantado por el uso del circuito recomendado por la empresa \textbf{Philips Semiconductors} explicado en su documento \textbf{AN97055} y que corresponde a la figura \ref{fig:Level_shifter_circuit}. Finalmente para el circuito se utilizar'an resistencias de 10K$\Omega$ para la funci'on de ''pull-up'' y el mosfet de canal N \textbf{BSS138} como el de la figura \ref{fig:BSS138}.
+Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se ha decantado por el uso del circuito recomendado por la empresa \textbf{Philips Semiconductors} explicado en su documento \textbf{AN97055} \cite{bidirectional} y que corresponde a la figura \ref{fig:Level_shifter_circuit}. Finalmente para el circuito se utilizar'an resistencias de 10K$\Omega$ para la funci'on de ''pull-up'' y el mosfet de canal N \textbf{BSS138} \cite{bss138}como el de la figura \ref{fig:BSS138}.
 
 
 
 \subsubsection{Lectura de valores anal'ogicos}
 
 
-Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrarrojos), el uso de resistencias Shunt y la monitorizaci'on de bater'ias, se requiere una lectura anal'ogica. Por ello se utilizar'a un conversor anal'ogico a digital o ADC ya que la Raspberry no dispone de uno propio. De los posibles componentes que cumplan esta funci'on se ha elegido aquel que de comunique por I$^{2}$C, ofrezca una resoluci'on aceptable, haya sido utilizado satisfactoriamente por otros usuarios y de menor coste. El componente elegido ha sido el MCP3428, un conversor ADC Sigma-Delta de 4 canales diferenciales, resoluci'on de hasta 16 bits y voltaje de referencia interno de 2.048 voltios.
+Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrarrojos), el uso de resistencias Shunt y la monitorizaci'on de bater'ias, se requiere una lectura anal'ogica. Por ello se utilizar'a un conversor anal'ogico a digital o ADC ya que la Raspberry no dispone de uno propio. De los posibles componentes que cumplan esta funci'on se ha elegido aquel que de comunique por I$^{2}$C, ofrezca una resoluci'on aceptable, haya sido utilizado satisfactoriamente por otros usuarios y de menor coste. El componente elegido ha sido el MCP3428 \cite{ADC}, un conversor ADC Sigma-Delta de 4 canales diferenciales, resoluci'on de hasta 16 bits y voltaje de referencia interno de 2.048 voltios.
 
 \begin{figure}[ht]
 \centering
@@ -648,7 +648,7 @@ Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrar
 
 
 \subsubsection{Monitorizaci'on de la Bater'ia}
-Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda utiliza el circuito integrado LM3914, un dispositivo encargado de medir el voltaje y mostrar dicha informaci'on mediante LEDs.
+Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda utiliza el circuito integrado LM3914 \cite{display}, un dispositivo encargado de medir el voltaje y mostrar dicha informaci'on mediante LEDs.
 
 \begin{figure}[ht]
 \centering
@@ -668,7 +668,7 @@ A partir de experimentaciones previas se estima un consumo medio de 1500mA. Para
 \label{fig:LM2596}
 \end{figure} 
 
-El componente elegido ha sido el LM2596, un regulador capaz de ofrecer hasta 3A. Su elecci'on se ha basado en el tipo de componentes que requiere, su facilidad de uso, su coste total reducido y la experiencia previa con este regulador. Para la selecci'on de componentes, la mayor'ia vienen definidos por el propio fabricante, excepto la bobina, la  cual para obtener el m'aximo rendimiento del regulador su inductancia se ha de elegir seg'un la figura \ref{fig:Bobina_Graph}. Puesto que las bater'ias oscilan de 6 a 8.4V y que el consumo var'ia de 1 a 2A, se ha coloreado de verde claro aquellas zonas en la que el regulador puede llegar a trabajar y de color m'as oscuro la zona m'as t'ipica d'onde se puede encontrar. Por esto motivo se ha elegido el valor de 22 $\mu$H.
+El componente elegido ha sido el LM2596 \cite{regulator}, un regulador capaz de ofrecer hasta 3A. Su elecci'on se ha basado en el tipo de componentes que requiere, su facilidad de uso, su coste total reducido y la experiencia previa con este regulador. Para la selecci'on de componentes, la mayor'ia vienen definidos por el propio fabricante, excepto la bobina, la  cual para obtener el m'aximo rendimiento del regulador su inductancia se ha de elegir seg'un la figura \ref{fig:Bobina_Graph}. Puesto que las bater'ias oscilan de 6 a 8.4V y que el consumo var'ia de 1 a 2A, se ha coloreado de verde claro aquellas zonas en la que el regulador puede llegar a trabajar y de color m'as oscuro la zona m'as t'ipica d'onde se puede encontrar. Por esto motivo se ha elegido el valor de 22 $\mu$H.
 
 \begin{figure}[ht]
 \centering
@@ -1441,12 +1441,80 @@ Agradecer la oportunidad que los profesores  \textbf{Cecilio Angulo} y \textbf{M
 \addcontentsline{toc}{section}{Referencias}
 
 \begin{thebibliography}{a}
-\bibitem{pradery} \textsc{Montero, J.},
-\textit{Metodos matemáticos aplicados a la ganadería.}
-Sevilla: Ediciones de la pradera, 2007  
-\bibitem{old} \textsc{Old, L.},
-\textit{Confesiones de una oveja bizca}
-Madrid: Naturalistic, 2010 
+\bibitem{ros} \textsc{Mart'inez, A. y Fern'andez, E.},
+\textit{Learning ROS for Robotics Programming.}
+PACKT Publishing, 2013  
+
+\bibitem{guia} \textsc{Nexter Robotics}, 
+\textit{Wifibot4G Quick Start Guide}
+Francia, 2006
+\url{http://rbouraoui.free.fr/wifibot/wifibot4Genglishguide.pdf}
+
+\bibitem{guia} \textsc{Lynxmotion}, 
+\textit{Data sheet for: GHM-04 7.2vdc 50:1 175rpm 6mm shaft}
+Estados unidos, 2006
+\url{http://vallejo.cc/proyectos/cellbot/motor_lynxmotion_7_2V.pdf}
+
+\bibitem{encoder} \textsc{US Digital}, 
+\textit{E4P OEM Miniature Optical Kit Encoder}
+Estados Unidos, 2005
+\url{http://www.usdigital.com/assets/datasheets/E4P_datasheet.pdf?k=635367475934568087}
+
+\bibitem{sonar} \textsc{Kingsin Technologies Co.}, 
+\textit{KS101B/KS103/KS103S Ultra Sonic Range Finder Technical Specification}
+China, 2011
+\url{http://www.dauxi.com/KS10X-V110_EN.pdf}
+
+\bibitem{router} \textsc{TP-LINK}, 
+\textit{TL-WR702N 150Mbps Wireless N Nano Router User Guide}
+China, 2014
+\url{http://www.tp-link.com/resources/document/TL-WR702N_V1_User_Guide_1910010880.pdf}
+
+\bibitem{counter} \textsc{LSI Computer Systems, Inc.}, 
+\textit{32-Bit Quadrature Counter With Serial Interface}
+Estados Unidos, 2012
+\url{http://www.lsicsi.com/pdfs/Data_Sheets/LS7366R.pdf}
+
+\bibitem{bidirectional} \textsc{Philips Semiconductors N.V.}, 
+\textit{Bi-directional level shifter for I$^{2}$C-bus and other
+systems. Application Note AN97055}
+Países Bajos, 1997
+\url{http://www.adafruit.com/datasheets/an97055.pdf}
+
+\bibitem{bss138} \textsc{Fairchild Semiconductors}, 
+\textit{BSS138 N-Channel Logic Level Enhancement Mode Field Effect Transistor}
+Estados Unidos, 2005
+\url{http://www.adafruit.com/datasheets/BSS138.pdf}
+
+\bibitem{ADC} \textsc{Microchip Technology Inc.}, 
+\textit{16-Bit, Multi-Channel $\Delta \Sigma$ Analog-to-Digital Converter with I$^{2}$C Interface and On-Board Reference}
+Estados Unidos, 2009
+\url{http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf}
+
+\bibitem{display} \textsc{Texas Instruments Inc.}, 
+\textit{LM3914 Dot/Bar Display Driver}
+Estados Unidos, 2000
+\url{http://www.ti.com/lit/ds/symlink/lm3914.pdf}
+
+\bibitem{display} \textsc{Texas Instruments Inc.}, 
+\textit{LM3914 Dot/Bar Display Driver}
+Estados Unidos, 2000
+\url{http://www.ti.com/lit/ds/symlink/lm3914.pdf}
+
+\bibitem{regulador} \textsc{Texas Instruments Inc.}, 
+\textit{LM2596 SIMPLE SWITCHER Power Converter 150 kHz
+3A Step-Down Voltage Regulator}
+Estados Unidos, 1999
+\url{http://www.ti.com/lit/ds/symlink/lm2596.pdf}
+
+\bibitem{driver} \textsc{STMicroelectronics N.V.}, 
+\textit{L298 DUAL FULL-BRIDGE DRIVER}
+Pa'ises Bajos, 2000
+\url{https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf}
+
+
+
+
 \end{thebibliography}
 
 \newpage

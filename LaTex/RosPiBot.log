@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.29)  27 MAY 2014 00:14
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.29)  27 MAY 2014 10:21
 entering extended mode
 **RosPiBot.tex
 (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.tex
@@ -1030,6 +1030,12 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 
 LaTeX Warning: Label `tab:coste securepi' multiply defined.
 
+
+LaTeX Warning: Label `guia' multiply defined.
+
+
+LaTeX Warning: Label `display' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -1437,7 +1443,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] <images/Visuel_Wifibot_2.png, id=660, 301.125pt x 262.73157pt>
+[12] <images/Visuel_Wifibot_2.png, id=664, 301.125pt x 262.73157pt>
 File: images/Visuel_Wifibot_2.png Graphic file (type png)
 
 <use images/Visuel_Wifibot_2.png>
@@ -1477,7 +1483,10 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 l.252 	\end{itemize}
                      <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/Vis
 uel_Wifibot_2.png>]
-<images/motor_dimensions.png, id=669, 1309.14093pt x 359.09157pt>
+
+LaTeX Warning: Citation `motor' on page 14 undefined on input line 276.
+
+<images/motor_dimensions.png, id=674, 1309.14093pt x 359.09157pt>
 File: images/motor_dimensions.png Graphic file (type png)
 
 <use images/motor_dimensions.png>
@@ -1488,7 +1497,7 @@ Overfull \hbox (2.96208pt too wide) in paragraph at lines 280--281
  [][] 
  []
 
-<images/motor_graph.png, id=671, 1008.01593pt x 700.86844pt>
+<images/motor_graph.png, id=676, 1008.01593pt x 700.86844pt>
 File: images/motor_graph.png Graphic file (type png)
 
 <use images/motor_graph.png>
@@ -1519,7 +1528,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.296 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/motor_dimensions.
-png>] <images/encoderQEI.png, id=679, 963.6pt x 380.17032pt>
+png>] <images/encoderQEI.png, id=684, 963.6pt x 380.17032pt>
 File: images/encoderQEI.png Graphic file (type png)
 
 <use images/encoderQEI.png>
@@ -1588,14 +1597,14 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.336 \newpage
-              ] <images/raspi.png, id=690, 1027.84pt x 552.0625pt>
+              ] <images/raspi.png, id=697, 1027.84pt x 552.0625pt>
 File: images/raspi.png Graphic file (type png)
 
 <use images/raspi.png>
 Package pdftex.def Info: images/raspi.png used on input line 343.
 (pdftex.def)             Requested size: 205.56436pt x 110.41054pt.
 
-<images/RaspiModelB.png, id=691, 1276.77pt x 916.1728pt>
+<images/RaspiModelB.png, id=698, 1276.77pt x 916.1728pt>
 File: images/RaspiModelB.png Graphic file (type png)
 
 <use images/RaspiModelB.png>
@@ -1633,7 +1642,7 @@ l.372 	\end{itemize}
 l.372 	\end{itemize}
                      <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/ras
 pi.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/RaspiModelB.png>
-] <images/raspbian.png, id=699, 779.91376pt x 658.46pt>
+] <images/raspbian.png, id=706, 779.91376pt x 658.46pt>
 File: images/raspbian.png Graphic file (type png)
 
 <use images/raspbian.png>
@@ -1664,7 +1673,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.407 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/raspbian.png>]
-<images/gpio.png, id=705, 755.07094pt x 356.83313pt>
+<images/gpio.png, id=712, 755.07094pt x 356.83313pt>
 File: images/gpio.png Graphic file (type png)
  <use images/gpio.png>
 Package pdftex.def Info: images/gpio.png used on input line 414.
@@ -1699,7 +1708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
-<images/ros.png, id=710, 254.9525pt x 73.27374pt>
+<images/ros.png, id=717, 254.9525pt x 73.27374pt>
 File: images/ros.png Graphic file (type png)
  <use images/ros.png>
 Package pdftex.def Info: images/ros.png used on input line 427.
@@ -1714,7 +1723,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
-<images/rxgraph.png, id=711, 1044.90375pt x 218.31563pt>
+<images/rxgraph.png, id=718, 1044.90375pt x 218.31563pt>
 File: images/rxgraph.png Graphic file (type png)
 
 <use images/rxgraph.png>
@@ -1760,7 +1769,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-<images/gazebo.png, id=717, 1298.60156pt x 780.66656pt>
+<images/gazebo.png, id=724, 1298.60156pt x 780.66656pt>
 File: images/gazebo.png Graphic file (type png)
 
 <use images/gazebo.png>
@@ -1796,6 +1805,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 467.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1804,7 +1818,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 476.
+Package pdftex.def Info: images/etseib-logo.png used on input line 473.
 (pdftex.def)             Requested size: 39.0261pt x 51.023pt.
 
 
@@ -1879,7 +1893,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] <images/KS103.png, id=739, 380.42125pt x 241.90375pt>
+[25] <images/KS103.png, id=748, 380.42125pt x 241.90375pt>
 File: images/KS103.png Graphic file (type png)
 
 <use images/KS103.png>
@@ -1890,7 +1904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--528
 
  []
 
-<images/KS103_diagram.png, id=740, 758.08218pt x 679.78969pt>
+<images/KS103_diagram.png, id=750, 758.08218pt x 679.78969pt>
 File: images/KS103_diagram.png Graphic file (type png)
 
 <use images/KS103_diagram.png>
@@ -1936,7 +1950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
-<images/Lipo_PCM.png, id=747, 463.7325pt x 279.29344pt>
+<images/Lipo_PCM.png, id=758, 463.7325pt x 279.29344pt>
 File: images/Lipo_PCM.png Graphic file (type png)
 
 <use images/Lipo_PCM.png>
@@ -1979,7 +1993,7 @@ has been already used, duplicate ignored
 l.572 F
        inalmente las la bater'ia elegidas ha sido un conjunto formado por do...
  <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/Lipo_PCM.png>]
-<images/TL-WR702N.png, id=753, 1445.4pt x 1289.56781pt>
+<images/TL-WR702N.png, id=764, 1445.4pt x 1289.56781pt>
 File: images/TL-WR702N.png Graphic file (type png)
 
 <use images/TL-WR702N.png>
@@ -2019,14 +2033,14 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.591 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/TL-WR702N.png>]
-<images/switch_comparative.png, id=759, 1184.17406pt x 321.45094pt>
+<images/switch_comparative.png, id=772, 1184.17406pt x 321.45094pt>
 File: images/switch_comparative.png Graphic file (type png)
 
 <use images/switch_comparative.png>
 Package pdftex.def Info: images/switch_comparative.png used on input line 594.
 (pdftex.def)             Requested size: 414.46713pt x 112.5095pt.
 
-<images/LS7366.png, id=760, 859.21pt x 879.285pt>
+<images/LS7366.png, id=773, 859.21pt x 879.285pt>
 File: images/LS7366.png Graphic file (type png)
  <use images/LS7366.png>
 Package pdftex.def Info: images/LS7366.png used on input line 606.
@@ -2067,7 +2081,7 @@ l.612
 l.612 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/switch_comparativ
 e.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/LS7366.png>]
-<images/level_shifter_circuit.png, id=768, 1263.97218pt x 475.7775pt>
+<images/level_shifter_circuit.png, id=782, 1263.97218pt x 475.7775pt>
 File: images/level_shifter_circuit.png Graphic file (type png)
 
 <use images/level_shifter_circuit.png>
@@ -2075,7 +2089,7 @@ Package pdftex.def Info: images/level_shifter_circuit.png used on input line 61
 9.
 (pdftex.def)             Requested size: 379.19458pt x 142.73434pt.
 
-<images/bss138_diagram.png, id=769, 364.36125pt x 316.93407pt>
+<images/bss138_diagram.png, id=783, 364.36125pt x 316.93407pt>
 File: images/bss138_diagram.png Graphic file (type png)
 
 <use images/bss138_diagram.png>
@@ -2117,7 +2131,7 @@ l.634
 l.634 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/level_shifter_cir
 cuit.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/bss138_diagram
-.png>] <images/MCP3428_pin_diagram.png, id=776, 372.64218pt x 356.0803pt>
+.png>] <images/MCP3428_pin_diagram.png, id=794, 372.64218pt x 356.0803pt>
 File: images/MCP3428_pin_diagram.png Graphic file (type png)
 
 <use images/MCP3428_pin_diagram.png>
@@ -2125,7 +2139,7 @@ Package pdftex.def Info: images/MCP3428_pin_diagram.png used on input line 644.
 
 (pdftex.def)             Requested size: 111.7935pt x 106.8249pt.
 
-<images/LM3914_pin_diagram.png, id=777, 934.24031pt x 425.33907pt>
+<images/LM3914_pin_diagram.png, id=796, 934.24031pt x 425.33907pt>
 File: images/LM3914_pin_diagram.png Graphic file (type png)
 
 <use images/LM3914_pin_diagram.png>
@@ -2163,14 +2177,17 @@ l.663
 l.663 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/MCP3428_pin_diagr
 am.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/LM3914_pin_diagr
-am.png>] <images/LM2596.png, id=782, 1123.19624pt x 267.24844pt>
+am.png>] <images/LM2596.png, id=805, 1123.19624pt x 267.24844pt>
 File: images/LM2596.png Graphic file (type png)
 
 <use images/LM2596.png>
 Package pdftex.def Info: images/LM2596.png used on input line 666.
 (pdftex.def)             Requested size: 393.12457pt x 93.53835pt.
 
-<images/bobina_graph.png, id=784, 579.66562pt x 557.08125pt>
+
+LaTeX Warning: Citation `regulator' on page 32 undefined on input line 671.
+
+<images/bobina_graph.png, id=807, 579.66562pt x 557.08125pt>
 File: images/bobina_graph.png Graphic file (type png)
 
 <use images/bobina_graph.png>
@@ -2212,7 +2229,7 @@ l.682
 l.682 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/LM2596.png> <C:/U
 sers/Joan/Documents/GitHub/WifiBotPi/LaTex/images/bobina_graph.png>]
-<images/L298_pin_diagram.png, id=789, 889.07156pt x 583.42969pt>
+<images/L298_pin_diagram.png, id=812, 889.07156pt x 583.42969pt>
 File: images/L298_pin_diagram.png Graphic file (type png)
 
 <use images/L298_pin_diagram.png>
@@ -2223,7 +2240,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
-<images/SecurePi_comparation.png, id=792, 641.89418pt x 315.82559pt>
+<images/SecurePi_comparation.png, id=815, 641.89418pt x 315.82559pt>
 File: images/SecurePi_comparation.png Graphic file (type png)
 
 <use images/SecurePi_comparation.png>
@@ -2260,7 +2277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 707--708
 
  []
 
-<images/SecurePi_mounted.png, id=798, 386.19281pt x 410.2828pt>
+<images/SecurePi_mounted.png, id=821, 386.19281pt x 410.2828pt>
 File: images/SecurePi_mounted.png Graphic file (type png)
 
 <use images/SecurePi_mounted.png>
@@ -2306,7 +2323,7 @@ l.720
 l.720 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/SecurePi_comparat
 ion.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/SecurePi_mounte
-d.png>] <images/sensorpi.png, id=805, 941.76843pt x 429.10312pt>
+d.png>] <images/sensorpi.png, id=828, 941.76843pt x 429.10312pt>
 File: images/sensorpi.png Graphic file (type png)
 
 <use images/sensorpi.png>
@@ -2346,7 +2363,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.738 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/sensorpi.png>]
-<images/motorpi.png, id=812, 933.4875pt x 430.60875pt>
+<images/motorpi.png, id=835, 933.4875pt x 430.60875pt>
 File: images/motorpi.png Graphic file (type png)
 
 <use images/motorpi.png>
@@ -2382,7 +2399,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 751--752
 
  []
 
-<images/esquema_power.png, id=818, 1294.8375pt x 344.78813pt>
+<images/esquema_power.png, id=841, 1294.8375pt x 344.78813pt>
 File: images/esquema_power.png Graphic file (type png)
 
 <use images/esquema_power.png>
@@ -2393,7 +2410,7 @@ Overfull \hbox (23.83826pt too wide) in paragraph at lines 755--756
  [][] 
  []
 
-<images/esquema_5V.png, id=819, 896.59969pt x 661.72218pt>
+<images/esquema_5V.png, id=842, 896.59969pt x 661.72218pt>
 File: images/esquema_5V.png Graphic file (type png)
 
 <use images/esquema_5V.png>
@@ -2424,7 +2441,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.771 \end{figure}
                    <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/esque
-ma_power.png>] <images/esquema_sensor.png, id=825, 779.16093pt x 612.03656pt>
+ma_power.png>] <images/esquema_sensor.png, id=848, 779.16093pt x 612.03656pt>
 File: images/esquema_sensor.png Graphic file (type png)
 
 <use images/esquema_sensor.png>
@@ -2488,7 +2505,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 796--797
 
  []
 
-<images/pre_design.png, id=835, 967.36406pt x 678.28406pt>
+<images/pre_design.png, id=858, 967.36406pt x 678.28406pt>
 File: images/pre_design.png Graphic file (type png)
 
 <use images/pre_design.png>
@@ -2523,7 +2540,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.806 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/pre_design.png>]
-<images/soportes.png, id=843, 560.0925pt x 469.00218pt>
+<images/soportes.png, id=866, 560.0925pt x 469.00218pt>
 File: images/soportes.png Graphic file (type png)
 
 <use images/soportes.png>
@@ -2558,7 +2575,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.821 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/soportes.png>]
-<images/final_design.png, id=851, 1099.85907pt x 676.77844pt>
+<images/final_design.png, id=874, 1099.85907pt x 676.77844pt>
 File: images/final_design.png Graphic file (type png)
 
 <use images/final_design.png>
@@ -2569,7 +2586,7 @@ Overfull \hbox (39.6879pt too wide) in paragraph at lines 829--830
  [][] 
  []
 
-<images/final_design2.png, id=852, 1119.43219pt x 639.13782pt>
+<images/final_design2.png, id=875, 1119.43219pt x 639.13782pt>
 File: images/final_design2.png Graphic file (type png)
 
 <use images/final_design2.png>
@@ -2609,7 +2626,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 849--850
 
  []
 
-<images/barra.png, id=857, 1060.71281pt x 228.10219pt>
+<images/barra.png, id=880, 1060.71281pt x 228.10219pt>
 File: images/barra.png Graphic file (type png)
  <use images/barra.png>
 Package pdftex.def Info: images/barra.png used on input line 853.
@@ -2649,14 +2666,14 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.859 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/final_design2.png
->] <images/couplings.png, id=863, 720.44156pt x 259.7203pt>
+>] <images/couplings.png, id=886, 720.44156pt x 259.7203pt>
 File: images/couplings.png Graphic file (type png)
 
 <use images/couplings.png>
 Package pdftex.def Info: images/couplings.png used on input line 864.
 (pdftex.def)             Requested size: 309.78383pt x 111.67755pt.
 
-<images/paneles.png, id=864, 3044.37375pt x 2739.23375pt>
+<images/paneles.png, id=887, 3044.37375pt x 2739.23375pt>
 File: images/paneles.png Graphic file (type png)
 
 <use images/paneles.png>
@@ -2724,7 +2741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 889--890
 
  []
 
-<images/montaje.png, id=875, 3863.43375pt x 1888.05376pt>
+<images/montaje.png, id=898, 3863.43375pt x 1888.05376pt>
 File: images/montaje.png Graphic file (type png)
 
 <use images/montaje.png>
@@ -2763,7 +2780,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.902 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/montaje.png>]
-<images/rospibot_finish.png, id=881, 2704.85532pt x 1723.1878pt>
+<images/rospibot_finish.png, id=904, 2704.85532pt x 1723.1878pt>
 File: images/rospibot_finish.png Graphic file (type png)
 
 <use images/rospibot_finish.png>
@@ -2803,7 +2820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 916--917
 
  []
 
-<images/routerIP.png, id=889, 511.15968pt x 150.5625pt>
+<images/routerIP.png, id=912, 511.15968pt x 150.5625pt>
 File: images/routerIP.png Graphic file (type png)
 
 <use images/routerIP.png>
@@ -2815,7 +2832,7 @@ Overfull \hbox (14.0752pt too wide) in paragraph at lines 927--928
 a-das (192.168.0.XXX y 192.168.1.XXX).
  []
 
-<images/dhcprospibot.png, id=890, 510.40688pt x 250.68657pt>
+<images/dhcprospibot.png, id=913, 510.40688pt x 250.68657pt>
 File: images/dhcprospibot.png Graphic file (type png)
 
 <use images/dhcprospibot.png>
@@ -2853,18 +2870,12 @@ l.936 \newpage
 l.936 \newpage
                <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/routerIP.
 png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/dhcprospibot.png>]
-<images/win32disk.png, id=895, 280.04625pt x 136.71075pt>
+<images/win32disk.png, id=918, 280.04625pt x 136.71075pt>
 File: images/win32disk.png Graphic file (type png)
 
 <use images/win32disk.png>
 Package pdftex.def Info: images/win32disk.png used on input line 945.
 (pdftex.def)             Requested size: 280.04555pt x 136.7104pt.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 950.
-
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 953.
 
@@ -2892,7 +2903,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.954 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/win32disk.png>]
-<images/dhcp.png, id=907, 416.2752pt x 102.1416pt>
+<images/dhcp.png, id=929, 416.2752pt x 102.1416pt>
 File: images/dhcp.png Graphic file (type png)
  <use images/dhcp.png>
 Package pdftex.def Info: images/dhcp.png used on input line 957.
@@ -2902,13 +2913,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 962--963
 
  []
 
-<images/ssh.png, id=909, 480.34pt x 198.56pt>
+<images/ssh.png, id=931, 480.34pt x 198.56pt>
 File: images/ssh.png Graphic file (type png)
  <use images/ssh.png>
 Package pdftex.def Info: images/ssh.png used on input line 966.
 (pdftex.def)             Requested size: 384.27252pt x 158.84819pt.
 
-<images/raspiconfig.png, id=910, 510.40688pt x 308.65312pt>
+<images/raspiconfig.png, id=932, 510.40688pt x 308.65312pt>
 File: images/raspiconfig.png Graphic file (type png)
 
 <use images/raspiconfig.png>
@@ -2946,14 +2957,14 @@ l.982
 l.982 
        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/dhcp.png> <C:/Use
 rs/Joan/Documents/GitHub/WifiBotPi/LaTex/images/ssh.png>]
-<images/blacklist.png, id=918, 473.51906pt x 177.66376pt>
+<images/blacklist.png, id=940, 473.51906pt x 177.66376pt>
 File: images/blacklist.png Graphic file (type png)
 
 <use images/blacklist.png>
 Package pdftex.def Info: images/blacklist.png used on input line 1002.
 (pdftex.def)             Requested size: 378.81575pt x 142.13118pt.
 
-<images/modules.png, id=919, 480.29437pt x 268.00125pt>
+<images/modules.png, id=941, 480.29437pt x 268.00125pt>
 File: images/modules.png Graphic file (type png)
 
 <use images/modules.png>
@@ -3566,6 +3577,23 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [68]
+Underfull \hbox (badness 4739) in paragraph at lines 1458--1462
+[]\T1/lmr/m/sc/12 US Di-gi-tal\T1/lmr/m/n/12 , \T1/lmr/m/it/12 E4P OEM Mi-nia-t
+u-re Op-ti-cal Kit En-co-der \T1/lmr/m/n/12 Es-ta-dos Uni-dos,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1458--1462
+\T1/lmr/m/n/12 2005 []$\T1/lmtt/m/n/12 http : / / www . usdigital . com / asset
+s / datasheets / E4P _ datasheet . pdf ? k =$
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 1484--1488
+\T1/lmr/m/it/12 de Field Ef-fect Tran-sis-tor \T1/lmr/m/n/12 Es-ta-dos Uni-dos,
+ 2005 []$\T1/lmtt/m/n/12 http : / / www . adafruit . com /$
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3574,7 +3602,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1452.
+Package pdftex.def Info: images/etseib-logo.png used on input line 1514.
 (pdftex.def)             Requested size: 39.0261pt x 51.023pt.
 
 
@@ -3583,36 +3611,19 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 1456--1458
+[69pdfTeX warning (ext4): destination with the same identifier (name{cite.guia}
+) has been already used, duplicate ignored
 
- []
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1514 
+       pdfTeX warning (ext4): destination with the same identifier (name{cite.d
+isplay}) has been already used, duplicate ignored
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1461
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1462--1464
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1467
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1468--1470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1471--1473
-
- []
-
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1514 
+       ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3621,7 +3632,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1474.
+Package pdftex.def Info: images/etseib-logo.png used on input line 1520.
 (pdftex.def)             Requested size: 39.0261pt x 51.023pt.
 
 
@@ -3631,25 +3642,75 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [70]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1478.
- [71]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1478.
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1530--1532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1533--1535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1536--1538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1541
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/etseib-logo.png Graphic file (type png)
+<use images/etseib-logo.png>
+Package pdftex.def Info: images/etseib-logo.png used on input line 1542.
+(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
+
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+ Make it at least 51.023pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1546.
+ [72]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1546.
  (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1478.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1546.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1546.
 
 Package rerunfilecheck Info: File `RosPiBot.out' has not changed.
-(rerunfilecheck)             Checksum: E19E5397254D8C7BA0A3B2EADC7DD557;6761.
+(rerunfilecheck)             Checksum: 5347B9EF4C58FA29092CAACB471E4805;6765.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24682 strings out of 494045
- 457360 string characters out of 3146017
- 599454 words of memory out of 3000000
- 27186 multiletter control sequences out of 15000+200000
+ 24706 strings out of 494045
+ 457602 string characters out of 3146017
+ 599746 words of memory out of 3000000
+ 27199 multiletter control sequences out of 15000+200000
  76975 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  62i,16n,66p,1758b,875s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3670,9 +3731,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/lm/lmtk10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/lm/lmtt12.pfb>
-Output written on RosPiBot.pdf (73 pages, 31784206 bytes).
+Output written on RosPiBot.pdf (74 pages, 31814327 bytes).
 PDF statistics:
- 1129 PDF objects out of 1200 (max. 8388607)
- 231 named destinations out of 1000 (max. 500000)
+ 1177 PDF objects out of 1200 (max. 8388607)
+ 242 named destinations out of 1000 (max. 500000)
  1007 words of extra memory for PDF output out of 10000 (max. 10000000)
 
