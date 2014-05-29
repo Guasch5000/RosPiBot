@@ -1,4 +1,4 @@
-\documentclass[twoside,12pt,a4paper]{article}
+\documentclass[twoside,12pt,a4paper, openright]{report}
 
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
@@ -17,8 +17,8 @@
 \usepackage{glossaries}
 \usepackage{cite}
 
-\counterwithin{figure}{section}
-\counterwithin{table}{section}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
 
 \pagenumbering{gobble}
 %\renewcommand{\baselinestretch}{1.5}
@@ -65,11 +65,12 @@ RosPiBot\\Restauraci\'on y mejora de una plataforma rob\'otica incorporando un S
 \mbox{Directores:} & \mbox{Cecilio Angulo Bahon y Manel Velasco Garcia} \\
 \mbox{Convocatoria:} & \mbox{Junio 2014}
 \end{array}$}\\ 
-\vspace{1cm} 
+\vspace{0.5cm} 
 \Large{Escuela T'ecnica Superior de Ingenier'ia Industrial de Barcelona}\\ 
-\vspace{1cm}
+\vspace{0.5cm}
 \includegraphics[scale=1]{images/etseib-logo.png}
 \end{center}
+
 \thispagestyle{empty}
 
 \newpage
@@ -85,8 +86,11 @@ RosPiBot\\Restauraci\'on y mejora de una plataforma rob\'otica incorporando un S
 \normalsize
 \addtocontents{toc}{~\hfill\textbf{P'agina}\par}
 \addcontentsline{toc}{section}{Resumen}
+
 \begin{abstract}
-Este proyecto consiste en el aprovechamiento de la plataforma rob'otica comercial WifiBot que corre el riesgo de quedarse obsoleta y rescatarla de su destino. Para ello se hace uso de una Raspberry Pi, un ordenador de placa reducida que ha revolucionado el mundo de la automatizaci'on desde el d'ia de su aparici'on en el 2012, como unidad de procesamiento de la nueva plataforma y que est'a basada en Linux. En el apartado de software, adem'as de incorporar herramientas que faciliten el trabajo a futuros usuarios se ha configurado para poder trabajar con ROS, una infrastructura digital para el desarrollo de software de robots creada por Willow Garage y extensamente utilizada en este sector.\\
+WifiBot es una plataforma robótica de cuatro ruedas orientada al sector educativo y de desarrollo. Se caracteriza por su capacidad de adaptaci'on a múltiples terrenos.  Este proyecto consiste en el aprovechamiento de la plataforma comercial que corre el riesgo de quedarse obsoleta. Para ello se hace uso de una Raspberry Pi, un ordenador de placa reducida del formato de una tarjeta de cr'edito con un procesador ARM11 utilizado en m'oviles como el IPhone 3G y que ha permitido realizar otros proyectos de este tipo, como unidad de procesamiento de la nueva plataforma y que est'a basada en Linux. \\
+
+%En el apartado de software, adem'as de incorporar herramientas que faciliten el trabajo a futuros usuarios se ha configurado para poder trabajar con ROS, una infrastructura digital para el desarrollo de software de robots creada por Willow Garage y extensamente utilizada en este sector.\\
 
 A lo largo de este documento se exponen el estado inicial del robot, los nuevos requerimientos a cumplir, las modificaciones efectuadas incluyendo las complicaciones encontradas a lo largo del proyecto y el resultado final obtenido. Haciendo especial hincapi'e en el desarrollo de soluciones para cumplir los objetivos del proyecto, tales como el dise'no de circuitos electr'onicos, la integraci'on de los nuevos componentes o la creaci'on de una mejor interf'icie para el usuario. \\
 
@@ -165,25 +169,34 @@ A lo largo de este documento se exponen el estado inicial del robot, los nuevos 
 
 \newpage
 
-\section{Introducci'on}
-Este proyecto surge de la observaci'on de c'omo una plataforma r'obotica robusta deja de ser utilizada por estudiantes a causa de los problema derivados de su unidad de procesamiento y de la falta de informaci'on relacionada con el robot. El hecho de recurrir a software desactualizado y que ya no dispone de soporte por parte de su fabricante, ha sentenciado este robot a formar parte de unos activos que ya no volver'an a ser utilizados.\\
+\chapter{Introducci'on}
 
-En tiempos de escasez pero de avances tecnol'ogicos, uno empieza a descubrir el potencial que esconde este tipo de plataformas. Mec'anicamente siguen funcionando sin problemas, los motores siguen aportando sus mismas caracter'isticas que al principio y los componentes m'as b'asicos siguen utiliz'andose en la actualidad. Su 'unico punto d'ebil es un procesador desfasado (pero adelantado en su 'epoca).\\
+\section{Motivaci'on}
 
-Y es en el momento de buscar el proyecto, uno se pregunta tipo de trabajo quiere realizar. En este caso, el objetivo era crear un proyecto que tuviese continuidad después de su realizaci'on. As'i pues, se ha considerado que la restauraci'on de un plataforma rob'otica obsoleta puede convertirse en ese proyecto deseado. Lo solo se recuper'a una herramienta educacional, sino que al mejorarla, permitir'a a futuros estudiantes llevar a cabo nuevo trabajos.\\
+A mediados de 2007, el departamento de de Ingeniería de Sistemas, Automática e Informática Industrial (ESAII) adquiri'o un par de plataformas rob'oticas conocidas como WifiBot4G. Este producto ofrec'ia un robot capaz de navegar por terrenos abruptos gracias a su tracci'on de cuatro ruedas y deserrollar nuevos proyectos.\\
+
+Este trabajo surge de la necesidad de recuperar una plataforma r'obotica que ha dejado ser utilizada por estudiantes a causa de los problema derivados de su unidad de procesamiento y de la falta de informaci'on relacionada con el robot. El hecho de recurrir a software desactualizado y que ya no dispone de soporte por parte de su fabricante, ha relegado este robot a formar parte de unos activos que ya no volver'an a ser utilizados. Mec'anicamente los motores siguen aportando las mismas caracter'isticas que al principio y los componentes m'as b'asicos siguen utiliz'andose en la actualidad.\\
+
+%En tiempos de escasez pero de avances tecnol'ogicos, uno empieza a descubrir el potencial que esconde este tipo de plataformas. 
+%Mec'anicamente los motores siguen aportando las mismas caracter'isticas que al principio y los componentes m'as b'asicos siguen utiliz'andose en la actualidad. Su 'unico punto d'ebil es un procesador desfasado (pero adelantado en su 'epoca).\\
+
+%Y es en el momento de buscar el proyecto, uno se pregunta tipo de trabajo quiere realizar. En este caso, el objetivo era crear un proyecto que tuviese continuidad después de su realizaci'on. As'i pues, se ha considerado que la restauraci'on de un plataforma rob'otica obsoleta puede convertirse en ese proyecto deseado. Lo solo se recuper'a una herramienta educacional, sino que al mejorarla, permitir'a a futuros estudiantes llevar a cabo nuevo trabajos.\\
+
+Durante la realizaci'on del proyecto se definieron las dos vertientes del WifiBot donde concentrar esfuerzos, el hardware y el software. Se analiz'o la viabilidad de mantener el hardware ya existente, pero se concluye que es mejor redise'narlo. Por lo que afecta al software, se decide dar un fuerte empuje al futuro. Con este objetivo se ha trabajado en lenguaje Python por el protagonismo est'a adquiriendo d'ia a d'ia y se ha instalado un infraestructura digital para el desarrollo de robots conocida como ROS.
+
+%\newpage
+%\subsection{Objetivos}
+%El objetivo principal de este proyecto es recuperar la plataforma WifiBot. Para ello no solo se restaurar'a, sino que se mejorar'a para ofrecer una interacci'on m'as c'omoda con el usuario. Tal y como se ha comentado en la introducci'on, el principal problema se centra en su procesador; Por ello el primer paso ser'a buscar un subtituto que pueda cumplir la labor. Adem'as para evitar que se repita la situaci'on. se va a elegir un componente que goce de una amplia repercusi'on, que disponga de una gran comunidad a su espalda y que no requiera de extensa documentaci'on para poder trabajar con él.\\
+
+%Una vez mejorado el cerebro del robot, se atacar'an otros punto d'ebiles localizados durante el largo periodo de observaci'on que se experiment'o. Una respuesta luminosa o ac'ustica permitir'ia al usuario conocer algunos estados de la plataforma como por ejemplo: Si los dispositivos est'an operativos, si hay comunicaci'on entre ellos e incluso si dispone de carga en su bater'ia.\\
+%
+%Otro campo a mejorar ser'ia el apartado de sensores para percibir informaci'on de su entorno. Ya que se trata de un robot dise'nado en su or'igen para moverse por terreno abrupto, ser'ia recomendable reforzar este sector y disponer se sensores acorde a dise'no.\\
+%
+%Con una plataforma actualizada, el siguiente tema que deber'iamos centrar nuestros esfuerzos, ser'ia en encontrar de que manera podemos hacer apetecible el robot para que atraiga la mirada y transmita ganas de experimentar. Ofrecer un conjunto de herramientas que permita un acceso a todo el robot pero que a la vez evite problemas indeseados.
 
 \newpage
-\subsection{Objetivos}
-El objetivo principal de este proyecto es recuperar la plataforma WifiBot. Para ello no solo se restaurar'a, sino que se mejorar'a para ofrecer una interacci'on m'as c'omoda con el usuario. Tal y como se ha comentado en la introducci'on, el principal problema se centra en su procesador; Por ello el primer paso ser'a buscar un subtituto que pueda cumplir la labor. Adem'as para evitar que se repita la situaci'on. se va a elegir un componente que goce de una amplia repercusi'on, que disponga de una gran comunidad a su espalda y que no requiera de extensa documentaci'on para poder trabajar con él.\\
-
-Una vez mejorado el cerebro del robot, se atacar'an otros punto d'ebiles localizados durante el largo periodo de observaci'on que se experiment'o. Una respuesta luminosa o ac'ustica permitir'ia al usuario conocer algunos estados de la plataforma como por ejemplo: Si los dispositivos est'an operativos, si hay comunicaci'on entre ellos e incluso si dispone de carga en su bater'ia.\\
-
-Otro campo a mejorar ser'ia el apartado de sensores para percibir informaci'on de su entorno. Ya que se trata de un robot dise'nado en su or'igen para moverse por terreno abrupto, ser'ia recomendable reforzar este sector y disponer se sensores acorde a dise'no.\\
-
-Con una plataforma actualizada, el siguiente tema que deber'iamos centrar nuestros esfuerzos, ser'ia en encontrar de que manera podemos hacer apetecible el robot para que atraiga la mirada y transmita ganas de experimentar. Ofrecer un conjunto de herramientas que permita un acceso a todo el robot pero que a la vez evite problemas indeseados.
-
-\newpage
-\subsection{Alcance}
+\section{Objetivos}
+\label{obje}
 Puesto que el objetivo primordial es mejorar la unidad de procesamiento, se ha elegido que entre todas las opciones de introducir una Raspberry Pi. Esta placa cuenta con un gran nombre de perif'ericos que se adaptan perfectamente a las necesidades del robot. Como caracter'isticas t'ecnicas m'as destacables, puede ejecutar un sistema operativo como Linux, cuenta con conectores de red y USB adem'as de pines para m'ultiples funciones; Otra cualidad remarcable es que su disco duro es extra'ible, de esta manera se puede manipular el sistema si la necesidad de estar obligatoriamente siempre conectado al robot.\\
 
 En el caso de los sensores externos, un conjunto de sensores sonar, una c'amara y un m'odulo IMU ser'an una buena opci'on a la hora de actualizar el robot. De esta manera se evita el problema de la interferencia de la luz solar en los sensores infrarrojos, adem'as de ofrecer otras informaciones como la orientaci'on del robot e incluso poder aplicar procesamiento de imagen.\\
@@ -194,14 +207,22 @@ Para incitar al futuro usuario trabajar con la nueva plataforma, se ofrecer'a un
 
 Finalmente, para darle un valor a'nadido al robot, se instalar'a ROS, este conjunto de herramientas est'a orientado para plataformas rob'oticas. El hecho de lanzar un n'ucleo de ROS dentro del robot ofrece un mayor n'umero de posibilidades a futuros trabajos. En este proyecto 'unicamente se plantea la opci'on de instalar y configurar ROS. Para futuros proyectos se recomienda la lectura de libros que nos introduzcan en ROS.\cite{ros}.
 
+\newpage
+\section{Alcance}
+Debido a que el estudio de la viabilidad de reutilizar el hardware ya existente demostr'o que ser'ia recomendable redise'narlo, se procedi'o a estudiar las alternativas. A causa de deshacernos de todo el hardware, incluida la etapa de potencia de motores, gestión de baterías y lectura de sensores, fue necesario la obtención de dispositivos que pudiesen ofrecer las mismas características y que la Raspberry Pi no disponía. Aunque en el mercado existía gran variedad de productos que desempeñaban algunas de las funciones necesarias, no se localizó ninguna que ofreciera los que se buscaba. Por este motivo se decidió desarrollar un hardware que satisficiera todas nuestras necesidades. \\
+
+Así pues, se han creado tres dispositivos distintos: La placa SecurePi, que permite alimentar la lógica con un rango de 6 a 35V y además protege todas las salidas del GPIO de la Raspberry Pi (pasándolas de 3.3V a 5V). La placa de expansi'on SensorPi, diseñada para encajar sobre la SecurePi, que ofrece la contabilización de dos codificares de cuadratura, ocho canales de conversión analógico a digital y ocho pines que pueden utilizarse tanto para inputs o output. Y finalmente la placa MotorPi, que permite el control de hasta cuatro motores, ofreciendo lectura de intensidad de cada uno, además incorpora un volt'imetro con representación de 10 luces que indican el estado de carga de la batería.\\
+
+Puesto que el interior se iba a manipular, se decidió aprovechar para mejorar otros aspectos. La primer punto fue ofrecer un sistema de encendido más cómodo, en vez de un interruptor interior se substituyó por un antivandálico situado en la parte trasera y de fácil acceso. Las baterías pasaron de encontrarse en el exterior a formar parte del interior, se cambiaron por unas de polímero de litio con una electrónica de gestión de carga propia. De esta manera no haría falta comprar cargadores específicos, simplemente una fuente de alimentación acorde de 9V. Para poder acceder remotamente al robot se optó por la incorporación de un router WiFi comercial, para mejorar la modularidad del nuevo robot. por lo que afecta a los nuevos sensores, se instalaron los definidos anteriormente en en el apratado \ref{obje}. A causa de las nuevas modificaciones internas, se rediseñó el exterior del robot, aumentando la altura del chasis pero manteniendo la distancia entre ejes. Puesto que el objetivo era mantener la estética del robot, se conservó su característica principal, un eje transversal que permite pivotar las dos partes del robot.\\
+
+Finalmente se desarrollo un módulo de Python llamado rospibot que permite al usuario comandar y acceder a toda la información necesaria, además de instalar y configurar ROS. Este proyecto no otorga ninguna funcionalidad al robot, simplemente se ha centrado en el objetivo de ofrecer una plataforma lo más flexible posible para cualquier futuro proyecto.
 
 \newpage
-\section{Descripci'on }
+\section{Descripci'on Wifibot}
+\textbf{Wifibot} es una plataforma rob'otica, desarrollada en el 2006 por la empresa francesa \textbf{Nexter Robotics} (anteriormente conocida como GIAT Industries o el 
+\textit{Groupement des Industries de l$'$Armée de Terre}, Grupo de Industrias Militares del Ejército de Francia), dise'nada para poder navegar en m'ultiples escenarios gracias a su dise'no. Su sistema de tracci'on a las cuatro ruedas, dise'no reducido y bajo peso, le otorga una gran flexibilidad. 
 
-\subsection{WifiBot}
-\textbf{Wifibot} es una plataforma rob'otica, desarrollada por la empresa francesa \textbf{Nexter Robotics}, dise'nada para poder navegar en m'ultiples escenarios gracias a su dise'no. Su sistema de tracci'on a las cuatro ruedas, dise'no reducido y bajo peso, le otorga una gran flexibilidad. 
-
-\subsubsection{Caracter'isticas}
+\subsection{Caracter'isticas}
 Este proyecto parte del modelo \textbf{WifiBot 4G} (figura \ref{fig:Wifi Bot 4G}, producido durante el periodo 2002--2006. Se'gun su gu'ia de usuario \cite{guia}  est'a formador por:
 
 \begin{figure}[ht]
@@ -266,13 +287,13 @@ Este proyecto parte del modelo \textbf{WifiBot 4G} (figura \ref{fig:Wifi Bot 4G}
 \end{itemize}
 \end{multicols}
 
-\subsubsection{Estructura}
+\subsection{Estructura}
 
 La estructura de la base est'a formada por dos secciones sim'etricas que llamaremos hemisferios izquierdo y derecho. Estas dos partes est'an unidas por una barra roscada que atraviesa transversalmente todo el robot, ofreciendo un eje de rotaci'on entre los dos elementos, cualidad que le otorga una mayor adaptaci'on a superf'icies irregulares.
 %include image SolidWorks
 %como vemos en figura \ref{fig:Wifi Bot 4G}
 
-\subsubsection{Grupo Motriz}
+\subsection{Grupo Motriz}
 Los motores que componen el WifiBot son concretamente el modelo \textbf{HN-GH7.2-2414T-50:1} del fabricante \textbf{Hsiang Neng}. Este modelo est'a compuesto por un motor de continua de voltaje nominal de 7.2V y una reductora con relaci'on 50:1. Tal y como se describe en la figura ~\ref{fig:Dimensiones del Motor}, dispone de un eje de 6mm de di'ametro, una longitud de 81.1mm y un di'ametro exterior de 37mm. Los datos se han extraido de la ficha t'ecnica \cite{motor}.
 
 \begin{figure}[ht]
@@ -291,7 +312,7 @@ En mediciones efectuadas, se determin'o que la alimentaci'on de los motores lleg
 \label{fig:Gr'afica del Motor}
 \end{figure}
 
-\subsubsection{Codificador 'optico de cuadratura}
+\subsection{Codificador 'optico de cuadratura}
 Este tipo de sensor permite conocer tanto la velocidad como la posici'on de un eje. Tal y como se describe en la figura ~\ref{fig:Esquema QEI} , su funcionamiento se basa en un disco ranurado que gira solidario al que se dispone un par de fototransistores. Estos transistores emiten una se'nal compuesta por dos canales, com'unmente llamados A y B, de onda cuadrada. Estos dos canales est'an desfasados un cuarto de fase, creando una secuencia que depende del sentido de giro. 
 
 \begin{figure}[ht]
@@ -331,9 +352,68 @@ De los 4 motores que conforman la plataforma, los dos delanteros disponen de un 
 \label{tab:Encoder periods}
 \end{table}
 
-\subsubsection{Estado Inicial}  
+\subsection{Estado Inicial}  
 La plataforma de la que se dispon'ia en un principio carec'ia de cierta cualidades. La m'as destacable era la inestabilidad de la red WiFi, dicha conexi'on sufr'ia constantes ca'idas con lo que dificultaba enormemente su teleopraci'on. Su otro tal'on de Aquiles era su escasa documentaci'on disponible, al ser un producto que su fabricante da por descontinuado y al no disponer de una comunidad que lo mantenga, dicha base rob'otica provocaba quebraderos de cabeza para usuarios noveles. Finalmente, las bater'ias al haber completado su vida 'util, dispon'ian de una carga efectiva muy inferior a la inicial. En cambio, tanto la estructura, ruedas, motores y sensores se encontraban en mejores condiciones\\
+
+
 \newpage
+\chapter{Especificaciones}
+Tal y como se ha definido anteriormente, el objetivo de este proyecto consiste en ofrecer una plataforma funcional para los futuros usuarios. Para definir esta ''funcionalidad'' se ha basado en el conocimiento aportado por antiguos usuarios, trabajadores en productos similares y en la experiencia propia. \\
+
+Las especificaciones se han clasificado seg'un su or'igen. Dependiendo de si son de car'acter \textbf{software}, \textbf{electr'onico} o \textbf{mec'anico}. Las especificaciones de car'acter inform'atico engloban aspectos como la interf'icie con el usuario, las herramientas de desarrollo (librer'ias, documentaci'on) y la disponibilidad a futuras modificaciones. Por contra, la electr'onica ha de evitar que el usuario se encuentre obligado a manipular el interior del robot, pero que en el caso de dicha situaci'on permita una soluci'on simple del problema. Adem'as, la electr'onica ha de incorporar un sistema que permita conocer estados del robot de manera sencilla. Finalmente, la mec'anica se encarga de incorporar las nuevas especificaciones en la plataforma, manteniendo el concepto inicial. Igual que en la electr'onica, en el caso de una futura manipulaci'on por parte del usuario, el dise'no ha de facilitar el acceso a cualquier ubicaci'on.
+
+\section{Software}
+El principal requisito del software es ofrecer un acceso simple al usuario. Teniendo presente el hecho que pueda ser utilizado tanto para usuario noveles como para usuarios experimentados. Por ello se ha planteado las siguientes especificaciones.
+
+\subsection{GitHub }
+Con el objetivo de ofrecer toda la informaci'on necesaria a futuros usuarios se ha creado el repositorio \url{https://github.com/Guasch5000/RosPiBot}, que permitir'a acceder a todos los archivos relacionados con este proyecto, desde c'odigos de programaci'on, hasta los dise'nos de los componentes a utilizar. De este modo se consigue que la informaci'on perdure, sea accesible y permite ponerse en contacto con su desarrollador.  
+
+\subsection{Librer'ias}
+%Por facilidad de uso y comodidad se ha decidido que todo el software utilizado en este proyecto se base en $Python^{ TM}$, un lenguaje de programaciÃ³n
+Para aquel desarrollador que decida utilizar esta plataforma se le ofrecer'a un conjunto de librer'ias que permitan trabajar con el robot de manera comoda. Estas librer'ias se compondr'an de una sintaxis limpia y un c'odigo legible que proporcinar'a una f'acil interpretaci'on.    
+
+%\newpage
+\section{Electr'onica}
+El objetivo de la electr'onica es ser la parte m'as vital de la plataforma, pero pasando desapercibida por el usuario. Ofreciendo una m'inima interacci'on pero suficiente para comprender el estado del robot. Esta interacci'on se har'a mediante se'nales luminosas o ac'usticas, e indicar'an los siguientes estados.
+
+\subsection{Funcionamiento}
+En la plataforma de partida no se dispone de ning'un medio que indique si se encuentra operativo, por ello la primera especificaci'on de la parte electr'onica ser'a la incoporaci'on de un se'nal luminosa que muestre si el robot est'a encendido o apagado. Tambi'en existe la posibilidad de ofrecer informaci'on de otros estados.
+
+\subsection{Alimentaci'on}
+Las bater'ias ofrecer'an  una autonom'ia suficiente para moverse en un entorno exterior, se estipula un m'inimo de 2 horas en movimiento como m'inimo aceptable. Adem'as de la duraci'on, su recarga deber'a de ser lo m'aximo de comodo para el usuario, evitando que tenga que manipular las celdas de energ'ia. Se recomienda elementos de seguridad ante problemas como sobrecargas o cortocircuitos y de gesti'on de energ'ia para aumentar la vida 'util.\\
+
+Otro punto a tener en cuenta es la disponibilidad en encontrar repuestos de la bater'ia, por ello se usar'an productos comerciales f'aciles de adquirir. Finalmente, se monitorizar'a el nivel de carga a partir de unos elementos luminosos.
+
+\subsection{L'ogica}
+Para el control de la plataforma el proyecto se ha basa en uso de la Raspberry Pi. Dicho ordenador ser'a el responsable de efectuar todo los c'alculos y 'ordenes, A'un as'i, a causa de sus limitaciones se precisa de una l'ogica complementaria capaz de gestionar y contabilizar las lecturas anal'ogicas de los sensores, el control de motores, la comunicaci'on externa y la distribuci'on de energ'ia.
+
+\subsection{Comunicaci'on}  
+Para poder interaccionar con el plataforma rob'otica se proponen 3 medios alternativos. Cada uno de estos canales permitir'an el acceso al usuario. Un primer medio ser'a por via cableada, a partir de un cable de red, los otros dos ser'an por via inal'ambrica, por un lado se buscar'a un red Wi-Fi predefinida y por otro se crear'a una red Wi-Fi propia. 
+
+\section{Mec'anica}
+Se intentar'a en la medida de lo posible mantener la silueta caracter'istica del robot, asignando mayor prioridad a aquellas modificaciones motivadas por software o  electr'onica. 
+
+\subsection{Estructura}
+Se desea mantener la estructura b'asica de la plataforma, dejando su peculiar forma de dos bloques unidos por una barra roscada longitudinal. Se mantendr'a el concepto de perfiles cuadrados como elemento estructural pero modificando la separaci'on entre ellos.La ubicaci'on de los distintos elementos se dispondr'an seg'un su relaci'on con el resto de dispositivos, uniendo seg'un se traten de control de potencia, l'ogica o comunicaci'on.
+
+
+\subsection{Tornilleria}
+A causa del deterioro de los elementos de tornilleria se proceder'a a cambiar el roscado de todos los tornillos por uno m'as estandarizado como el m'etrico. Este cambio tambi'en incluye las barras estructurales, los adaptadores de los ejes y los prisioneros
+
+\newpage
+\chapter{Elementos de mejora }
+
+%\section{WifiBot}
+%\newpage
+%\newpage
+%\chapter{Modificaciones}
+Para la realizaci'on de este proyecto se deber'a trabajar en varios sectores. Debido que el software es el sector que permite mejor adaptarse a los nuevos cambios y que la mec'anica de la plataforma proporciona cierta flexibilidad, el componente electr'onico ser'a el que ofrezca las mayores limitaciones. Por ello se considera que los primeros esfuerzos deber'an centrarse en este sector, aprovechando al m'aximo los recursos ya existentes.
+
+
+Aunque la platafoma inicial segu'ia funcionando, los problemas derivados de su desgaste propiciaron la necesitad de modificar en gran medida su interior. En un principio de demostr'o que simplemente insertando una Raspberry Pi, conectada mediante puerto ethernet, se pod'ia comandar el robot. Tambi'en fu'e posible acceder a datos b'asicos del robot como el estado de las bater'ias o la lectura de los sensores de proximidad. Pero el hecho de la inestabilidad de su unidad de procesamiento hizo necesaria su subtituci'on completa. A causa de a esta decisi'on, se tuvo que buscar el modo de comunicarse con los dem'as componentes ya existentes: etapa de alimentaci'on, gestor de bater'ias, control de motores y lectura de sensores. 
+
+\section{ Componentes Electr'onicos}
+Para poder actuar con cada dispositivo, el robot hac'ia uso de las interf'icies de comunicaci'on UART e I$^{2}$C; Pero a'un sabiendo el protocolo empleado, la comprensi'on de la informaci'on que circulaba fu'e pr'acticamente imposible. Por ello se determin'o que para poder proseguir con el proyecto hac'ia falta el desarrollo de nuevos componentes que substituyesen a los actuales y que permitiesen a futuros usuarios comprender r'apidamente que protocolos se utilizan y c'omo interaccionar con ellos. A continuaci'on se detallan los componentes utilizados.
 
 \subsection{Raspberry Pi}
 Raspberry Pi es un ordenador del tama'no de una tarjeta de cr'edito desarrolado en Reino Unido por la \textbf{Raspberry Pi Foundation} con el objetivo de fomentar las bases de la computaci'on en escuelas. El desarrollo de este diminuto ordenador empez'o en el 2006 hasta alcanzar su madurez y comercializaci'on en Febrero del 2012. 
@@ -418,103 +498,11 @@ Uno de los grandes alicientes de esta placa comparada con otras ordenadores embe
 
 Aunque todos los pines definidos como GPIO pueden usarse como entradas o salidas, algunos de estos disponen de otras funciones. En el caso del protocolo de comunicaci'on I$^{2}$C, el ping GPIO2 se convierte en \textbf{SDA} y el GPIO3 en \textbf{SCL}. Para el bus SPI, el GPIO10 pasa a ser \textbf{MOSI}, el GPIO9 a \textbf{MISO}, el GPIO11 a \textbf{SCLK} y los pines de selecci'on de esclavo GPIO8 para el \textbf{CE0} y GPIO7 para el \textbf{CE1}. Finalmente la comunicaci'on UART, \textbf{TXD} por el GPIO14 y \textbf{RXD} por el GPIO15.
 
-\newpage
-\subsection{ROS}
-El nombre de ROS viene de ''Robot Operative System''. ROS puede clasificarse como un Framework de Desarrollo en Robótica que ofrece herramientas y librerías para el desarrollo de sistemas rob'oticos. A pesar de su nombre, ROS no es un sistema operativo propiamente dicho (de hecho funciona sobre Linux).\\
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{images/ros.png} 
-\caption{Logotipo de ROS}
-\label{fig:ros}
-\end{figure}
-
-El objetivo de ROS es ofrecer una solución integral al problema de desarrollo de robots. Para ello requiere de una abstracci'on del hardware, de tal manera que cada plataforma entienda la misma orden, es decir que si el ROS requiere que el robot se desplace hacia adelante, pues este lo cumpla independientemente de si se trata de un robot diferencial, b'ipedo o volador. Por su parte, ROS incorpora  desde algoritmos de bajo nivel de control, cinemática, SLAM, etc. Hasta algoritmos de alto nivel como planificación o aprendizaje.\\
-
-Lo que hace de ROS una herramienta tan extendida en el mundo de la rob'otica es su mecanismo de comunicaciones distribuido entre nodos. Un nodos es cualquier c'odigo de software del sistema (desde un algoritmo SLAM hasta un driver para el manejo de un motor). El hecho de usar nodos obliga a realizar un nivel de abstracci'on, de esta manera podemos asignar tareas para cada nodos y conseguir que muchos de estos se puedan reutilizar. Otra caracter'istica importante del uso de nodos es la independencia de donde se encuentre localizado el nodo, ya que ROS no hace distinciones.\\
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.35]{images/rxgraph.png} 
-\caption{Gr'afico ejemplo de la comunicaci'on entre nodos.}
-\label{fig:rxgraph}
-\end{figure}
-
-Estos nodos se comunican entre ellos mediante mecanismos de intercambio de mensajes, entre estos ROS nos ofrece \textbf{Topics}, \textbf{Publishers}, \textbf{Subscribers} y  \textbf{Services} entre otros. Para entender sus diferencias se propone un ejemplo: Imaginemos que tenemos un nodo que informa de la velocidad de cada rueda de un robot diferencial, debido a que la velocidad puede variar en cualquier momento, se ha programado el nodo para que informe cada 0,1 segundos. En este caso el nodo publica la informaci'on, a este acto se define como crear un ''Publisher''. La informaci'on que env'ia se la llama ''Topic'' y su estructura ''Messages''. Todo esto se define en archivos de configuraci'on o dentro del propio c'odigo del nodo. \\
-
-Siguiendo con el ejemplo, si ahora hemos creado un nodo que se dedica a estudiar la odometr'ia, haremos que se subscriba al t'opico, es decir hemos creado un ''Subscriber''. Adem'as de los t'opicos, tambi'en existen los servicios, los servicio se diferencian en que un nodo llama a otro para intercambiar informaci'on. esta informaci'on no puede ser compartida entre otros nodos, excepto si estos utilizan el mismo servicio. Es decir, un t'opico puede ser publicado por varios nodos, y varios nodos se pueden subscribir a él; Pero un ''Service'' solo funciona entre dos nodos.\\
-
-Otro punto fuerte de ROS es la incorporaci'on de simuladores virtuales donde podemos  crear un modelo de nuestro robot y simular su comportamiento en cualquier ambiente, Gazebo y Rviz. Durante la simulaci'on, el sistema es capaz de ofrecernos informaci'on sobre la din'amica de nuestro robot, obteniendo unos resultados muy parecidos a la realidad sin la necesidad que disponer del robot en la realidad. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.35]{images/gazebo.png} 
-\caption{Simulaci'on del robot PR2 en Gazebo y publicaci'on en Rviz.}
-\label{fig:gazebo}
-\end{figure}
+%\subsection{Motorizaci'on}
+%Debido al buen estado de los motores y del hecho que un par incorpora codificadores de cuadratura, se ha optado por mantener estos motores. Con este gesto evitamos la b'usqueda de su substituto y nos aseguramos que se mantenga la misma funcionalidad que al inicio. Al conservar este dispositivos se considera que el consumo (por lo que afecta a la parte de motorizaci'on) permanecer'a semejante, por tanto la nueva etapa de control de motores dispondr'a de caracter'i­sticas similares. Siendo el voltaje nominal del grupo motriz de unos 7.2 se requiere de una alimentaci'on acorde a este voltaje; En el caso de utilizar bater'ias de voltaje superior, ser'a necesario una etapa DC-DC para adecuar los niveles.
 
 
-\newpage
-\section{Especificaciones}
-Tal y como se ha definido anteriormente, el objetivo de este proyecto consiste en ofrecer una plataforma funcional para los futuros usuarios. Para definir esta ''funcionalidad'' se ha basado en el conocimiento aportado por antiguos usuarios, trabajadores en productos similares y en la experiencia propia. \\
-
-Las especificaciones se han clasificado seg'un su or'igen. Dependiendo de si son de car'acter \textbf{software}, \textbf{electr'onico} o \textbf{mec'anico}. Las especificaciones de car'acter inform'atico engloban aspectos como la interf'icie con el usuario, las herramientas de desarrollo (librer'ias, documentaci'on) y la disponibilidad a futuras modificaciones. Por contra, la electr'onica ha de evitar que el usuario se encuentre obligado a manipular el interior del robot, pero que en el caso de dicha situaci'on permita una soluci'on simple del problema. Adem'as, la electr'onica ha de incorporar un sistema que permita conocer estados del robot de manera sencilla. Finalmente, la mec'anica se encarga de incorporar las nuevas especificaciones en la plataforma, manteniendo el concepto inicial. Igual que en la electr'onica, en el caso de una futura manipulaci'on por parte del usuario, el dise'no ha de facilitar el acceso a cualquier ubicaci'on.
-
-\subsection{Software}
-El principal requisito del software es ofrecer un acceso simple al usuario. Teniendo presente el hecho que pueda ser utilizado tanto para usuario noveles como para usuarios experimentados. Por ello se ha planteado las siguientes especificaciones.
-
-\subsubsection{GitHub }
-Con el objetivo de ofrecer toda la informaci'on necesaria a futuros usuarios se ha creado el repositorio \url{https://github.com/Guasch5000/RosPiBot}, que permitir'a acceder a todos los archivos relacionados con este proyecto, desde c'odigos de programaci'on, hasta los dise'nos de los componentes a utilizar. De este modo se consigue que la informaci'on perdure, sea accesible y permite ponerse en contacto con su desarrollador.  
-
-\subsubsection{Librer'ias}
-%Por facilidad de uso y comodidad se ha decidido que todo el software utilizado en este proyecto se base en $Python^{ TM}$, un lenguaje de programaciÃ³n
-Para aquel desarrollador que decida utilizar esta plataforma se le ofrecer'a un conjunto de librer'ias que permitan trabajar con el robot de manera comoda. Estas librer'ias se compondr'an de una sintaxis limpia y un c'odigo legible que proporcinar'a una f'acil interpretaci'on.    
-
-\newpage
-\subsection{Electr'onica}
-El objetivo de la electr'onica es ser la parte m'as vital de la plataforma, pero pasando desapercibida por el usuario. Ofreciendo una m'inima interacci'on pero suficiente para comprender el estado del robot. Esta interacci'on se har'a mediante se'nales luminosas o ac'usticas, e indicar'an los siguientes estados.
-
-\subsubsection{Funcionamiento}
-En la plataforma de partida no se dispone de ning'un medio que indique si se encuentra operativo, por ello la primera especificaci'on de la parte electr'onica ser'a la incoporaci'on de un se'nal luminosa que muestre si el robot est'a encendido o apagado. Tambi'en existe la posibilidad de ofrecer informaci'on de otros estados.
-
-\subsubsection{Alimentaci'on}
-Las bater'ias ofrecer'an  una autonom'ia suficiente para moverse en un entorno exterior, se estipula un m'inimo de 2 horas en movimiento como m'inimo aceptable. Adem'as de la duraci'on, su recarga deber'a de ser lo m'aximo de comodo para el usuario, evitando que tenga que manipular las celdas de energ'ia. Se recomienda elementos de seguridad ante problemas como sobrecargas o cortocircuitos y de gesti'on de energ'ia para aumentar la vida 'util.\\
-
-Otro punto a tener en cuenta es la disponibilidad en encontrar repuestos de la bater'ia, por ello se usar'an productos comerciales f'aciles de adquirir. Finalmente, se monitorizar'a el nivel de carga a partir de unos elementos luminosos.
-
-\subsubsection{L'ogica}
-Para el control de la plataforma el proyecto se ha basa en uso de la Raspberry Pi. Dicho ordenador ser'a el responsable de efectuar todo los c'alculos y 'ordenes, A'un as'i, a causa de sus limitaciones se precisa de una l'ogica complementaria capaz de gestionar y contabilizar las lecturas anal'ogicas de los sensores, el control de motores, la comunicaci'on externa y la distribuci'on de energ'ia.
-
-\subsubsection{Comunicaci'on}  
-Para poder interaccionar con el plataforma rob'otica se proponen 3 medios alternativos. Cada uno de estos canales permitir'an el acceso al usuario. Un primer medio ser'a por via cableada, a partir de un cable de red, los otros dos ser'an por via inal'ambrica, por un lado se buscar'a un red Wi-Fi predefinida y por otro se crear'a una red Wi-Fi propia. 
-
-\subsection{Mec'anica}
-Se intentar'a en la medida de lo posible mantener la silueta caracter'istica del robot, asignando mayor prioridad a aquellas modificaciones motivadas por software o  electr'onica. 
-
-\subsubsection{Estructura}
-Se desea mantener la estructura b'asica de la plataforma, dejando su peculiar forma de dos bloques unidos por una barra roscada longitudinal. Se mantendr'a el concepto de perfiles cuadrados como elemento estructural pero modificando la separaci'on entre ellos.La ubicaci'on de los distintos elementos se dispondr'an seg'un su relaci'on con el resto de dispositivos, uniendo seg'un se traten de control de potencia, l'ogica o comunicaci'on.
-
-
-\subsubsection{Tornilleria}
-A causa del deterioro de los elementos de tornilleria se proceder'a a cambiar el roscado de todos los tornillos por uno m'as estandarizado como el m'etrico. Este cambio tambi'en incluye las barras estructurales, los adaptadores de los ejes y los prisioneros
-
-
-
-\newpage
-\section{Modificaciones}
-Para la realizaci'on de este proyecto se deber'a trabajar en varios sectores. Debido que el software es el sector que permite mejor adaptarse a los nuevos cambios y que la mec'anica de la plataforma proporciona cierta flexibilidad, el componente electr'onico ser'a el que ofrezca las mayores limitaciones. Por ello se considera que los primeros esfuerzos deber'an centrarse en este sector, aprovechando al m'aximo los recursos ya existentes.
-
-
-Aunque la platafoma inicial segu'ia funcionando, los problemas derivados de su desgaste propiciaron la necesitad de modificar en gran medida su interior. En un principio de demostr'o que simplemente insertando una Raspberry Pi, conectada mediante puerto ethernet, se pod'ia comandar el robot. Tambi'en fu'e posible acceder a datos b'asicos del robot como el estado de las bater'ias o la lectura de los sensores de proximidad. Pero el hecho de la inestabilidad de su unidad de procesamiento hizo necesaria su subtituci'on completa. A causa de a esta decisi'on, se tuvo que buscar el modo de comunicarse con los dem'as componentes ya existentes: etapa de alimentaci'on, gestor de bater'ias, control de motores y lectura de sensores. 
-
-\subsection{ Componentes Electr'onicos}
-Para poder actuar con cada dispositivo, el robot hac'ia uso de las interf'icies de comunicaci'on UART e I$^{2}$C; Pero a'un sabiendo el protocolo empleado, la comprensi'on de la informaci'on que circulaba fu'e pr'acticamente imposible. Por ello se determin'o que para poder proseguir con el proyecto hac'ia falta el desarrollo de nuevos componentes que substituyesen a los actuales y que permitiesen a futuros usuarios comprender r'apidamente que protocolos se utilizan y c'omo interaccionar con ellos. A continuaci'on se detallan los componentes utilizados.
-
-\subsubsection{Motorizaci'on}
-Debido al buen estado de los motores y del hecho que un par incorpora codificadores de cuadratura, se ha optado por mantener estos motores. Con este gesto evitamos la b'usqueda de su substituto y nos aseguramos que se mantenga la misma funcionalidad que al inicio. Al conservar este dispositivos se considera que el consumo (por lo que afecta a la parte de motorizaci'on) permanecer'a semejante, por tanto la nueva etapa de control de motores dispondr'a de caracterÃ­sticas similares. Siendo el voltaje nominal del grupo motriz de unos 7.2 se requiere de una alimentaci'on acorde a este voltaje; En el caso de utilizar bater'ias de voltaje superior, ser'a necesario una etapa DC-DC para adecuar los niveles.
-
-
-\subsubsection{Sensores de proximidad}
+\subsection{Sensores de proximidad}
 Cualquier plataforma rob'otica dedicada a la exploraci'on ha de disponer de sensores que les proporcionen informaci'on sobre el mundo que le rodea. Por ello se aprovechar'an los sensores anal'ogicos infrarrojos actuales del robot, Sharp GP2Y0A2YK, y se an'adir'an cuatro nuevos sensores por ultrasonidos KS103.\\
 
 \begin{figure}[ht]
@@ -537,7 +525,7 @@ El funcionamiento de este tipo de sensor de basa en el envi'o de un pulso y la r
 
 
 
-\subsubsection{Bater'ia}
+\subsection{Bater'ia}
 Para la selecci'on del sistema de acumulaci'on de energ'ia se ha barajado diferentes posibilidades que podemos encontrar en el mercado:Bater'ias de plomo, NiCd, NiMH, Ion Litio y Pol'imero de Litio (LiPo). Las de plomo han sido las primeras descartadas a causa de su baja densidad de carga y su elevado peso. Las constituidas por elementos de NiCd se encuentran en fase de desaparici'on por experimentar el efecto mem'oria (reducci'on de su capacidad al cabo del tiempo) y ser superadas por sus competidoras. Las bater'ias de Ion de Litio, a'un disponiendo de una alta densidad de carga y bajo peso (motivo de su extendido uso en dispositivos m'obiles), no son capaces de ofrecer una gran capacidad de descarga. \\
 
 \begin{table}[ht]
@@ -571,7 +559,7 @@ Por ello se ha optado por el uso de unas bater'ias con un m'odulo PCM instalado,
 
 Finalmente las la bater'ia elegidas ha sido un conjunto formado por dos celdas de 3.7V de 6000mAh cada una conectadas en serie y con un modulo PCM instalado. Su consumo de carga llega a los 2A y a unos 6A en descarga.
 
-\subsubsection{Punto de acceso WiFi} \label{sec:router}
+\subsection{Punto de acceso WiFi} \label{sec:router}
 Tal y c'omo se ha descrito en las especificaciones, se requiere de una sistema que ofrezca un acceso WiFi. Debido a que se ha descartado el uso del m'odulo que ya dispo'ia el robot, se hace necesario un nuevo dispositivo que se encargue. En este caso de ha optado por el uso de un elemento comercial de tama'no reducido que se pueda alimentar f'acilmente, ofezca un alcance aceptable y de r'apida configuraci'on.
 
 \begin{figure}[ht]
@@ -586,7 +574,7 @@ El dispositivo elegido se trata del mini router TL-WR702N de la empresa TP-LINK.
 Seg'un su gu'ia de usuario \cite{router}, entre todas sus configuraciones (AP Mode, Router Mode , Client Mode,
 Repeater Mode y  Bridge Mode) se ha optado por la de punto de acceso con el nombre de RosPiBot y servidor DHCP activado. De esta manera el usuario s'olo deber'a conectarse a su red para poder acceder al robot.
 
-\subsubsection{Conmutador de red}
+\subsection{Conmutador de red}
 Seg'un las especificaciones se desea que la nueva plataforma disponga de tres medios de acceso a red. Dos de estos medios (Wifi y clavija ethernet) han de estar conectados directamente con el puerto ethernet de la Raspberry, por este motivo se necesita un conmutador o switch. Puesto que el robot ya dispone de un switch de 5 puertos (4 habilitados), se aprovechar'a el mismo dispositivo.\\
 
 \begin{figure}[ht]
@@ -598,7 +586,7 @@ Seg'un las especificaciones se desea que la nueva plataforma disponga de tres me
 
 Debido a que el conector que dispone el switch implica una que el conector se encuentre en posici'on horizontal, se ha optado por la substituci'on de la clavija de cuatro puertos por tres verticales, de esta manera se reduce la superf'icie que requiere el switch con los conectores.
 
-\subsubsection{Descodificador de cuadratura} \label{sec:LS7366}
+\subsection{Descodificador de cuadratura} \label{sec:LS7366}
 Uno de los elementos m'as 'utiles que podemos encontrar en la plataforma es la existencia de dos codificadores de cuadratura dispuestos en el grupo motriz delantero (uno a cada lado). Estos dispositivos permiten medir los cambios del eje del motor (antes de la etapa reductora) con gran precisi'on. Para su funcionamiento requieren de una alimentaci'on de 5 voltios, siendo este mismo voltaje el usado en la salida del se'nal. Debido a su voltaje, superior a los 3.3 voltios que soportan los pines de la Raspberry Pi, se hace necesario un adaptador de nivel. Adem'as, seg'un los resultados experimentados, la frecuencia m'axima de interrupciones generadas por el codificador llega hasta las 80.000 por segundo, Haciendo imposible que el microprocesador sea capaz de gestionarlo.
 
 \begin{figure}[ht]
@@ -612,7 +600,7 @@ Para solventar el problema, se hace uso del circuito integrado LS7366 \cite{coun
 
 Gracias a este integrado, se evita que el microprocesador tenga que hacerse cargo del gran nombre de interupciones, permiti'endole dedicarse a otros procesos. Para la comunicaci'on se aprovecha el m'odulo propio SPI del BCM2835 y dos de los pines de selecci'on de escalvo. 
 
-\subsubsection{Adaptador de nivel de tensi'on}
+\subsection{Adaptador de nivel de tensi'on}
 
 \begin{figure}[ht]
 \centering
@@ -634,7 +622,7 @@ Debido a que algunos pines requieren bidirecionalidad (por ejemplo I${^2}$C) se 
 
 
 
-\subsubsection{Lectura de valores anal'ogicos}
+\subsection{Lectura de valores anal'ogicos}
 
 
 Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrarrojos), el uso de resistencias Shunt y la monitorizaci'on de bater'ias, se requiere una lectura anal'ogica. Por ello se utilizar'a un conversor anal'ogico a digital o ADC ya que la Raspberry no dispone de uno propio. De los posibles componentes que cumplan esta funci'on se ha elegido aquel que de comunique por I$^{2}$C, ofrezca una resoluci'on aceptable, haya sido utilizado satisfactoriamente por otros usuarios y de menor coste. El componente elegido ha sido el MCP3428 \cite{ADC}, un conversor ADC Sigma-Delta de 4 canales diferenciales, resoluci'on de hasta 16 bits y voltaje de referencia interno de 2.048 voltios.
@@ -647,7 +635,7 @@ Debido al uso de sensores de salida anal'ogica (sensores de distancia por infrar
 \end{figure} 
 
 
-\subsubsection{Monitorizaci'on de la Bater'ia}
+\subsection{Monitorizaci'on de la Bater'ia}
 Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas m'oviles, por ello su monitorizaje es imprescindible. Dicho monitorizaje se efectua de dos maneras distintas: La primera mediante un m'odulo ADC que digitaliza el estado de la bater'ia, y la segunda utiliza el circuito integrado LM3914 \cite{display}, un dispositivo encargado de medir el voltaje y mostrar dicha informaci'on mediante LEDs.
 
 \begin{figure}[ht]
@@ -657,7 +645,7 @@ Conocer el estado de la bater'ia en cualquier momento es crucial en plataformas 
 \label{fig:LM3914}
 \end{figure} 
 
-\subsubsection{Alimentaci'on de l'ogica}
+\subsection{Alimentaci'on de l'ogica}
 A causa de los diferentes niveles de tensi'on entre la bater'ia que cada componente requiere, se hace necesario un sistema que lo adecue; Por ello se ha dedicido usar un regulador que ofrezca una salida estable de 5 voltios. En el caso de la Raspberry Pi se utilizar'a el propio regulador interno de 5 a 3.3V.
 A partir de experimentaciones previas se estima un consumo medio de 1500mA. Para satisfacer dicho consumo es necesario un regulador de alta eficiencia, y debido a que siempre nos encontramos la situaci'on de reducir el voltaje, deberemos usar un convertidor Buck. 
 
@@ -677,7 +665,7 @@ El componente elegido ha sido el LM2596 \cite{regulator}, un regulador capaz de 
 \label{fig:Bobina_Graph}
 \end{figure} 
 
-\subsubsection{Control de motores} \label{sec:L298N}
+\subsection{Control de motores} \label{sec:L298N}
 Para el control de motores se utilizar'a el mismo componente L298 usado en el robot original, un doble puente en H . Este dispositivo permite un control independiente de dos motores de cont'inua hasta un consumo de 2 amperios por motor.\\
 
 \begin{figure}[ht]
@@ -689,12 +677,12 @@ Para el control de motores se utilizar'a el mismo componente L298 usado en el ro
 
 El sentido de rotaci'on se dirige a partir de dos pines indicados como ''Inputs'' y la velocidad mediante una se'nal PWM en el pin de ''Enable''. Aunque dispone de una salida para conocer la intensidad que circula por cada canal (se conecta en serie una resistencia Shunt y se mide la diferencia de potencial), no dispone de ning'un sensor para saber la velocidad del motor.
 
-\subsection{Integraci'on de los componentes}
+\section{Integraci'on de los componentes}
 Los componentes descritos anteriormente desde los puntos \ref{sec:LS7366} hasta \ref{sec:L298N} requieren de ser montados en una PCB. Para ello se han dise'nado un conjunto de placas, se han enviado a producir y finalmente se han ensamblado los componentes manualmente.\\
 
 Para la producci'on de las PCB se ha utilizado un servido de prototipado de bajo coste pero con la limitaci'on que los dise'nos han de estar contenidos en rect'angulos de 5x5, 5x10 o 10x10cm. Aunque posiblemente se pudiera incluir todos los componentes en un solo circuito impreso de 10x5cm, se ha preferido crear 3 dise'nos de 5x5cm. As'i se reduce el riesgo de deshacerse de toda una placa por culpa de un imperfecci'on en un componente y se da modularidad al sistema. Las placas creadas s'on: SecurePi, SensorPi y MotorPi.
 
-\subsubsection{SecurePi}
+\subsection{SecurePi}
 Esta placa tiene dos objetivos: Ofrecer una etapa de regulaci'on para la alimentaci'on de todos aquellos elementos que requieran una alimentaci'on de 5V y proteger todos los pines GPIO de la Raspberry Pi (ofreciendo bidirecionalidad y convirtiendo el voltaje de 3.3 a 5V).
 
 \begin{figure}[ht]
@@ -715,7 +703,7 @@ Tal y como se aprecia en la figura \ref{fig:SecurePi_mounted}, una vez montada l
 \label{fig:SecurePi_mounted}
 \end{figure} 
 
-\subsubsection{SensorPi}
+\subsection{SensorPi}
 Sobre la placa SecurePi se coloca la SensorPi, esta placa dispone de los descodificadores de cuadratura, los conversores anal'ogicos y un conjunto de leds (uno verde para indicar la correcta alimentaci'on y ocho 'ambar para los pines GPIO destinador a al control de motores).\\
 
 \begin{figure}[H]
@@ -731,7 +719,7 @@ Para cada uno de los descodificadores se han dispuesto de dos tiras de tres pine
 
 Finalmente las ocho salidas del GPIO se han colocado en un extremo para facilitar su acceso y se ha dispuesto una tira de 4 pines extra para la alimentaci'on y comunicaci'on de los dispositivos que utilizan I${^2}$C.   
 
-\subsubsection{MotorPi}
+\subsection{MotorPi}
 Esta placa controla la gesti'on de motores e incluye el circuito de monitorizaci'on de la bater'ia. Al contrario que las dos placas anteriormente descritas, la MotorPi no est'a dise'nada para ser encajada encima de otra placa.\\
 
 Se han utilizado bloques de terminales para el cableado de potencia (bater'ia y motores) y tiras de pines para el resto de conexiones separadas en 3 bloques: El primero consiste en una tira de 11 pines pensado para el visualizador led de 10 barras. Un segundo bloque de 10 terminales incorpora los quatro pines de indicaci'on del sentido de giro de los motores, dos para la habilitaci'on de los motores delanteros y cuatro más de lectura de corriente. Finalmente el tercer bloque proporciona la alimentaci'on de l'ogica para los L298, dos pines de habilitaci'on para los motores traseros y sus 4 correspondientes para la lectura de consumo.  
@@ -744,10 +732,10 @@ Se han utilizado bloques de terminales para el cableado de potencia (bater'ia y 
 \end{figure} 
 
 \newpage
-\subsection{Conexionado}
+\section{Conexionado}
 Una vez definidos todos los elementos que participan en la modificaci'on de la plataforma rob'otica, es necesario de indicar c'omo se conectan entre ellos. Debido a que cada componente debe ser alimentado a un voltaje específico, se han proyectado diferentes conexionados seg'un la funci'on de sus elementos:
 
-\subsubsection{Potencia}
+\subsection{Potencia}
 Este cableado se encarga de la distribuci'on de energ'ia a todos aquellos componentes que est'en dise'nados para aceptar voltajes dentro del rango de la bater'ia. Si nos fijamos en la figura \ref{fig:esquema_power} estos componentes forman dos grupos que se han enmarcado: El grupo encargado de la recarga, formado por el conector ''Power Jack'' y un fusible para proteger la fuente de alimentaci'on exterior, y el grupo encargado del consumo, donde encontramos un interruptor, el switch y los dos circuitos impresos MotorPi y SecurePi.\\
 
 \begin{figure}[ht]
@@ -760,7 +748,7 @@ Este cableado se encarga de la distribuci'on de energ'ia a todos aquellos compon
 Aunque el circuito de recarga dispone de fusible, se puede observar que el segundo no. Este hecho se debe a que en la situaci'on de funcionamiento normal, el robot se encuentra en movimiento, el circuito de recarga est'a abierto, por lo que toda la energ'ia la subministra la bater'ia. Y en el caso que una sobrecarga o cortocircuito el propio m'odulo PCM actuar'ia, con lo que no hace necesaria la intalaci'on de un fusible para el circuito de consumo. En cambio, si por casualidad nos encontramos en la situaci'on que tenemos el robot recarg'andose con poca bater'ia y decidimos activar los motores, debido al pico de consumo que aparece se puede dar el caso que sea la fuente qui'en alimente el grupo motor y la acabemos dañando.
 
 
-\subsubsection{Alimentaci'on de l'ogica}
+\subsection{Alimentaci'on de l'ogica}
 Una vez la placa SecurePi ha sido alimentada, ofrece una tensi'on de 5V estable. Los consumidores de esta salida son la propia Raspberry Pi, la placa SensorPi y el Router WiFi.
 
 \begin{figure}[ht]
@@ -772,7 +760,7 @@ Una vez la placa SecurePi ha sido alimentada, ofrece una tensi'on de 5V estable.
 
 Tanto la Raspberry Pi como la SensorPi no requieren de cableado puesto que su contacto se efect'ua mediante los pines previamente soldados. Por el otro lado, se ha modificado un cable USB tipo A a MicroUSB para ser conectado al GPIO y subministrar energ'ia al Router.
 
-\subsubsection{Cableado SensorPi}
+\subsection{Cableado SensorPi}
 
 \begin{figure}[ht]
 \centering
@@ -785,14 +773,14 @@ Del mismo modo que la placa SecurePi alimenta a un conjunto de elementos, la pla
 
 El conexionado con la placa MotorPi se separa en 3 grupos: Alimentaci'on, comunicaci'on con los controladores y lectura de consumo. El resto de componentes también son alimentados excepto los destinados a la lectura del estado de las celdas de la bater'ia. 
 
-\subsubsection{Comunicaci'on}
+\subsection{Comunicaci'on}
 Llegados a es este punto tenemos todo lo necesario para que el robot sea capaz de moverse y obtener informaci'on de su entorno, solamente nos queda poder comunicarnos con 'el. Para ello se ha conectado la Raspberry Pi, Router, Switch y la clavija de red externa mediante cables Ethernet. Por otra parte se han extendido las salidas USB de la Raspberry Pi hacia el exterior del robot para facilitar su acceso.
 
 \newpage
-\subsection{Distribuci'on interna}
+\section{Distribuci'on interna}
 Una vez que los elementos internos del robot han sido definidos, es hora de organizar su distribuci'on. Para ello se han considerados las especificaciones previas, donde se define a grandes rasgos su ubicaci'on preferida. Durante esta fase se ha ido corrigiendo la disposici'on de los elementos hasta encontrar uno que satisface todas las restricciones. Para poder llevar a cabo esta tarea se han modelado todos los componentes en SolidWorks\textregistered, de tal manera que se puede obtener una repressentaci'on gr'afica de su colocaci'on y adem'as poder usar herramientas propias del programa para detectar colisiones o interferencias entre s'olidos.
 
-\subsubsection{Dise'no preliminar}
+\subsection{Dise'no preliminar}
 Puesto que se desea que la parte de procesamiento y comunicaci'on se encuentran en el mismo hemisferio, la colocaci'on de la clavija de Ethernet externa y los dos conectores USB también deber'an estar en el mismo bloque. Siguiendo con el proceso de descarte, el único sensor que se puede colocar en el panel trasero derecho es el infrarrojo, ya que el ultrasonidos ocupar'ia demasiado y haciendo imposible una distribuci'on acorde de los conectores externos. A causa de esta elecci'on quedan fijados en que lugares se distribuyen el resto de sensores.\\
 
 \begin{figure}[ht]
@@ -806,7 +794,7 @@ Con los conectores y sensores colocados, es el turno de el Switch y la Raspberry
 
 A continuaci'on se sigui'o con el hemisferio izquierdo. En el panel trasero se ubicaron el interruptor vand'alico, el portafusibles, el encapsulado de 10 leds, el conector para la carga y el sensor de ultrasonidos. Puesto que el uno de los motores se encuentra cerca, la distribuci'on se ha basado en la profundidad a la que llegan estos componentes, de tal manera que se ha evitado cualquier tipo de colisi'on y se ha dejado espacio para el cableado correspondiente. Para terminar se colocaron el placa MotorPi y la bater'ia en la parte inferior de robot y se dejó la IMU en la parte superior para acceder f'acilmente durante el ensamblado, el resultado final se puede apreciar en la figura \ref{fig:pre_design}
 
-\subsubsection{Soportes}
+\subsection{Soportes}
 Con todos los elementos ubicados, llegamos al punto de ofrecer un soporte a cada uno.
 El objetivo de estos soportes es que sus elementos se unan a los paneles más cercanos y posteriormente unir estos grupos al ensamblaje principal. 
 
@@ -821,7 +809,7 @@ Debido a las intrincadas formas que cada uno de los soportes ten'ia que disponer
 
 Para darle un acabado menos rectangular se dise'naron unos chaflanes, para la colocaci'on de estos se crearon piezas auxiliares con el único ebjetivo de ser unidas al cuerpo principal. Estas piezas auxiliares corresponden a las que se encuentran en los extremos de la figura \ref{fig:soportes} formando dos filas. 
 
-\subsubsection{Dise'no Final}
+\subsection{Dise'no Final}
 En esta 'ultima fase se crearon todos los paneles y sus correspondientes orificios par torniller'ia, ejes de motores y paso de cableado. Para mantener la estética original, todos los paneles que forman el robot se ha decidido que sean negros excepto los dos superiores.  
 
 \begin{figure}[ht]
@@ -842,10 +830,10 @@ Para los paneles superiores se ha optado por que sean transparentes, con este ca
 
 
 \newpage
-\subsection{Componentes mec'anicos}
+\section{Componentes mec'anicos}
 El trabajo de ofrecer una estructura donde poder incorporar toda la electr'onica y que permita al robot desplazarse por su entorno recae en la mec'anica. De entre los varios dise'nos posibles se ha elegido aquel que conserve el esp'iritu del robot original, es decir que siga siendo una plataforma constituida por dos partes, que mantenga el concepto de estructura una externa y que su tama'no se respete. A continuaci'on se detallan los diferentes trabajos realizados en este proyecto.  
 
-\subsubsection{Mecanizados}
+\subsection{Mecanizados}
 Como se ha comentado anteriormente, todos los roscados hab'ian sido elaborados con una m'etrica no est'andar. En un primer lugar tenemos los roscados correspondiente a las ocho barras longitudinales de aluminio, unos siete orificios por barra (quatro en una direcci'on y el resto en su perpendicular. Por suerte el di'ametro exterior del roscado era casi id'entico al di'ametro interior de una roscado t'ipico de M3. Gr'acias a este hecho no se requer'ia la necesidad de repasar los orificios con una broca y volver a roscar. Simplemente se volvieron a mecanizar utilizando un macho de roscar.\\
 
 \begin{figure}[ht]
@@ -866,7 +854,7 @@ Otro elemento que tambi'en requer'ia de una modificaci'on era los acopladores (c
 \label{fig:couplings}
 \end{figure} 
 
-\subsubsection{Paneles}
+\subsection{Paneles}
 Una vez dise'nados los paneles que conformar'ian la estructura del robot, se procedi'o a su fabricaci'on. Debido a que en un principio se desconoc'ia que material se utilizar'ia (PVC, Metracrilado, Policarbonato, Acr´ilico, etc.) se decidió usar un grosor típico, f'acil de adquirir y que aportase una resist'encia aceptable. 
 
 \begin{figure}[ht]
@@ -878,14 +866,14 @@ Una vez dise'nados los paneles que conformar'ian la estructura del robot, se pro
 
 Finalmente el material elegido fue el metacrilato, el motivo que hizo decantar la balanza fue saber que era el 'unico que se pod'ia cortar a un precio razonable. Mientras que el resto requer'ian del uso de una fresadora CNC, el metacrilado pod'ia ser trabajado mediante corte l'aser.
 
-\subsubsection{Torniller'ia}
+\subsection{Torniller'ia}
 Adem'as de soportar la estructura el objetivo de la nueva torniller'ia que se ha utilizado es que resista mejor las inclemencias de su entorno, por este motivo se ha querido que todos los tornillos sean inoxidables. Adem'as para evitar posibles enredos a la hora de realizar alg'un mantenimiento se han restringido los tipos de tornillos utilizados. De tal manera que para la sujeci'on de los paneles, elementos internos y motores se ha utilizado un tornillo de calidad A2, de cabeza alomanada o DIN 7985 y de  M3x10 o M3x20 seg'un requiera la ocasi'on. Para sujetar la c'amara se han usado el mismo DIN7985 pero de M2x10. Para la uni'on entre el acoplador y la llanta unos DIN912 A2 de M4x10 y para sujetar el acoplador al eje unos esp'arragos DIN 916 de M5x5, estos últimos han tenido que ser de Acero Negro ya que no se han localizado de inoxidables.
 
 \newpage
-\subsection{Montaje}
+\section{Montaje}
 En esta parte se realiza el ensamblado final del robot. El objetivo es crear un sándwich donde los paneles laterales son el continente y los paneles traseros, delanteros, superiores, inferiores y chaflanes el contenido.
 
-\subsubsection{Grupos individuales}
+\subsection{Grupos individuales}
 Para ello se unen los paneles interiores verticales con sus tapas inferiores, de esta manera se crea una escuadra de referencia. En una de ellas se colocan el Switch y la Raspberry con las placas SecurePi y SensorPi ya insertadas, el la otra la bater'ia y la placa MotorPi. Por el contrario, en los paneles exteriores verticales se instalan los motores y el sensor de ultrasonidos.\\
 
 En el caso de los paneles delanteros y traseros se unen sus respectivos componentes aprovechando los soportes creados. Excepto la clavija de red, ya que esta forma parte del primer grupo definido. Una vez montados todos los grupos individualmente se realiza un primer cableado de aquellos componentes que su posterior acceso resulte reducido o nulo, concretamente estamos hablando del encapsulado de 10 leds, el conjunto de carga (conector y portafusibles), el interruptor antivand'alico, los sensores de infrarrojos y ultrasonidos y el m'odulo de la c'amara. Llegados a este punto se obtiene el resultado de la figura \ref{fig:montaje}
@@ -897,7 +885,7 @@ En el caso de los paneles delanteros y traseros se unen sus respectivos componen
 \label{fig:montaje}
 \end{figure} 
 
-\subsubsection{Conjunto}
+\subsection{Conjunto}
 Finalmente se van acoplando los paneles traseros a cada uno de las escuadras creadas y se hace un primer cableado. A continuaci'on se hace pasar la barra roscada que ser'a la que permita la rotaci'on de cada unos de los hemisferios y se coloca un separador de unos 30mm en el medio. Seguidamente se coloca el panel con los motores con cuidado de respetar las tolerancias y evitando enredos con el cableado. Llegados a este punto colocamos los chaflanes, las tuercas de cabeza redondeada en cada extremo de la barra roscada y las tapas superiores. Para acabar colocamos los acopladores en cada uno de los cuatro ejes e insertamos las llantas en su ranura respetando el sentido del perfil del neum'atico.
 
 \begin{figure}[ht]
@@ -912,7 +900,7 @@ Finalmente se van acoplando los paneles traseros a cada uno de las escuadras cre
 %\subsection{Software}
 %Una vez que disponemos de la nueva plataforma, es el turno de volverla operativa. Para ello se han configurado sus componentes y programado varias herramientas. Primero se ha configurado el punto de acceso WiFi. Una vez establecida la conexi'on se ha procedido con el Sistema Operativo. A continuaci'on se han creado programas que se comunican con los periféricos a un bajo nivel y finalmente se ha dise'nado un m'odulo (o librer'ia) para el usuario final. 
 
-\subsection{Configuraci'on Router WiFi}
+\section{Configuraci'on Router WiFi}
 El router TP-Link WR702N permite operar en vario modos tal y como est'an definidos en el punto \ref{sec:router}. Debido a la necesidad de que tanto la red inal'ambrica como la cableada se puedan comunicar, el único modo posible es que la clavija de red RJ45 est'e configurada como LAN. Adem'as el dispotivo ha de ser capaz de crear su red propia y no depender de otras redes. Por este motivo el modo elegido ha sido el de punto de acceso (o Access Point).\\
 
 La peculiaridad de este punto de acceso es que se ha habilitado el servidor DCHP, lo que permite que cualquier dispositivo que entre en la red se le asigne un IP. Definido el  modo de trabajo, se configura la red inal'ambrica, para ello se ha elegido el nombre de ''\textbf{rospibot}'' como SSID. Para la contrase'na se ha elegido el mismo nombre que la red y protegida mediante el protocolo WPA2.
@@ -934,10 +922,10 @@ La IP del router asignada ha sido la \textbf{192.168.100.254}, se ha elegido est
 \end{figure} 
 
 \newpage
-\subsection{Configuraci'on Raspberry Pi}
+\section{Configuraci'on Raspberry Pi}
 Debido a que el disco duro de la Raspberry Pi reside en la SD, y esta puede ser extra'ida sin inconvenientes, la configuraci'on que a continuaci'on se explica se ha efectuado mediante una segunda Raspberry Pi conectada a internet. Una vez finalizada la configuraci'on, se ha insertado la SD de nuevo en el robot (Para tener acceso a la SD se ha de retirar el panel inferior del hemisferio derecho).
 
-\subsubsection{Grabaci'on Raspbian}
+\subsection{Grabaci'on Raspbian}
 El primer paso realizado ha sido la grabaci'on del sistema operativo \textbf{Raspbian}, el m'as extendido en la comunidad (concretamente se ha utilizado la versi'on m'as actual, la de Enero 2014). La imagen de este sistema ocupa un espacio de unos 2.75GB, pero para un correcto funcionamiento se requiere un SD de 4GB mínimo, 8GB recomendado. De los diferentes procedimientos para la obtenci'on de nuestra SD, se ha optado por el programa \textbf{Win32 Disk Imager}. Una vez grabada la SD, en Windows solo aparecerá la partición NTFS de 57MB.
 
 \begin{figure}[ht]
@@ -949,7 +937,7 @@ El primer paso realizado ha sido la grabaci'on del sistema operativo \textbf{Ras
 
 El sistema operativo de ha obtenido de la p'agina oficial \url{http://www.raspberrypi.org/downloads/} y viene con una cuenta creada con el usuario \textbf{pi} y contrase'na \textbf{raspberry}. Durante toda la realizaci'on del proyecto se ha utilizado esta cuenta de usuario manteniendo su contrase'na. Adem'as de esta dritribuci'on podemos encontrar otros sistemas compatibles con la Raspberry Pi.
 
-\subsubsection{Configuraci'on inicial}
+\subsection{Configuraci'on inicial}
 Con la imagen del sistema cargada en la SD, introducimos la tarjeta de memoria en la Raspberry Pi, conectamos el cable de red y alimentamos el conjunto. Al haber activado el servidor DHCP. por defecto el router le asignar'a una IP aleatoria, en este caso seg'un la figura \ref{fig:dhcp}, \textbf(192.168.1.105). Con esta IP nos conectamos mediante SSH . Para ello podemos utilizar diversos m'etodos, en este proyecto se ha usado el comando \textbf{\texttt{ssh pi@192.168.1.105}} en entorno Linux y el programa \textbf{Putty} en Windows. En el caso de Linux, solamente nos pedir'an la contrase'na, en cambio en Windows hay que especificar el puerto 22 y luego el usuario y contrase'na. Una vez hemos accedido v'ia ssh, nos aparecer'a un terminal id'entico al de la figura \ref{fig:ssh}.
 
 \begin{figure}[ht]
@@ -977,7 +965,7 @@ Aunque tambi'en existe la opci'on de aumentar la frecuencia de la CPU hasta 1GHz
 \label{fig:raspiconfig}
 \end{figure} 
 
-\subsubsection{Instalaci'on de librer'ias}
+\subsection{Instalaci'on de librer'ias}
 Con el S.O. Raspbian debidamente configurado procedemos a la instalaci'on de de herramientas, m'odulos y librer'ias. Primero de todo actualizaremos nuestras fuentes con el comando \textbf{\texttt{sudo apt-get update}}, de esta manera sabremos d'onde encontrar aquello que busquemos. A continuaci'on se ir'an detallando aquellas herramientas instaladas.
 
 \begin{itemize}
@@ -1036,7 +1024,7 @@ Ahora s'olo nos hace falta el m'odulo orientado para la comunicaci'on por SPI, e
 Una vez tenemos nuestra Raspberry Pi ya configurada y con las librer'ias instaladas, reiniciamos para que los cambios surtan efecto. 
 
 \newpage
-\subsection{Programas b'asicos}
+\section{Programas b'asicos}
 Para que el usuario pueda trabajar c'omodamente con el robot, se han creado un conjunto de programas encargados de comunicarse directamente con los dispositivos. Estos programas se han distribuido en dos carpetas dentro del directorio \textbf{\texttt{/home/pi}}: \textbf{Modules}, incluye todas las librer'ias auxiliares creadas por otros miembros de la comunidad Raspberry Pi, y \textbf{Publishers}, d'onde encontramos los programas que se comunican los dispositivos y almacenan la informaci'on en la memoria cach'e.\\
 
 Todos los c'odigos que aqu'i se mencionan peuden allarse en el repositorio \textbf{GitHub} de este proyecto, \url{https://github.com/Guasch5000/RosPiBot}. A continuaci'on se detallan los programas ubicados en la carpeta  \textbf{Publishers}, cual es su funci'on, que par'ametros intervienen y de que manera almacena la informaci'on.
@@ -1056,7 +1044,7 @@ La lectura de los sonars se publica en mil'imetros debido a que esa es su resolu
 
 
 \newpage
-\subsection{M'odulo Rospibot}
+\section{M'odulo Rospibot}
 Puesto que el objetivo de este proyecto es ofrecer una plataforma rob'otica con las herramientas necesarias para trabajar con ella, se ha creado el m'odulo \textbf{rospibot} de python para poder interaccionar con todas las variables del sistema. Dicho m'odulo se encuentra alojado en el directorio \textbf{Modules} (junto otras librer'ias).\\
 
 Para importar este m'odulo desde cualquier ubicaci'on se ha modificado la variable de entorno \textbf{PYTHONPATH}, a'nadiendo el directorio \textbf{/home/pi/Modules} a dicha variable. Para ello se ha ejecutado el comando \textbf{\texttt{export PYTHONPATH=\$PYTHONPATH:/home/pi/Modules}}. Con este cambio cualquier usuario puede importar los nuevos m'odulos, excepto el usuario \textbf{root}. Para que el usuario root tambi'en pueda hacer uso, se ha editado el archivo \textbf{/etc/sudoers} y se ha incorporado la l'inea \textbf{\texttt{Define env$\_$keep += \$PYTHONPATH}}. A continuaci'on se detallan todas la funciones que forman el m'odulo rospibot, estas funciones simplemente sirven de enlace con la memoria cache:\\
@@ -1084,6 +1072,41 @@ Para importar este m'odulo desde cualquier ubicaci'on se ha modificado la variab
 
 
 \newpage
+\newpage
+\section{ROS}
+El nombre de ROS viene de ''Robot Operative System''. ROS puede clasificarse como un Framework de Desarrollo en Robótica que ofrece herramientas y librerías para el desarrollo de sistemas rob'oticos. A pesar de su nombre, ROS no es un sistema operativo propiamente dicho (de hecho funciona sobre Linux).\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{images/ros.png} 
+\caption{Logotipo de ROS}
+\label{fig:ros}
+\end{figure}
+
+El objetivo de ROS es ofrecer una solución integral al problema de desarrollo de robots. Para ello requiere de una abstracci'on del hardware, de tal manera que cada plataforma entienda la misma orden, es decir que si el ROS requiere que el robot se desplace hacia adelante, pues este lo cumpla independientemente de si se trata de un robot diferencial, b'ipedo o volador. Por su parte, ROS incorpora  desde algoritmos de bajo nivel de control, cinemática, SLAM, etc. Hasta algoritmos de alto nivel como planificación o aprendizaje.\\
+
+Lo que hace de ROS una herramienta tan extendida en el mundo de la rob'otica es su mecanismo de comunicaciones distribuido entre nodos. Un nodos es cualquier c'odigo de software del sistema (desde un algoritmo SLAM hasta un driver para el manejo de un motor). El hecho de usar nodos obliga a realizar un nivel de abstracci'on, de esta manera podemos asignar tareas para cada nodos y conseguir que muchos de estos se puedan reutilizar. Otra caracter'istica importante del uso de nodos es la independencia de donde se encuentre localizado el nodo, ya que ROS no hace distinciones.\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{images/rxgraph.png} 
+\caption{Gr'afico ejemplo de la comunicaci'on entre nodos.}
+\label{fig:rxgraph}
+\end{figure}
+
+Estos nodos se comunican entre ellos mediante mecanismos de intercambio de mensajes, entre estos ROS nos ofrece \textbf{Topics}, \textbf{Publishers}, \textbf{Subscribers} y  \textbf{Services} entre otros. Para entender sus diferencias se propone un ejemplo: Imaginemos que tenemos un nodo que informa de la velocidad de cada rueda de un robot diferencial, debido a que la velocidad puede variar en cualquier momento, se ha programado el nodo para que informe cada 0,1 segundos. En este caso el nodo publica la informaci'on, a este acto se define como crear un ''Publisher''. La informaci'on que env'ia se la llama ''Topic'' y su estructura ''Messages''. Todo esto se define en archivos de configuraci'on o dentro del propio c'odigo del nodo. \\
+
+Siguiendo con el ejemplo, si ahora hemos creado un nodo que se dedica a estudiar la odometr'ia, haremos que se subscriba al t'opico, es decir hemos creado un ''Subscriber''. Adem'as de los t'opicos, tambi'en existen los servicios, los servicio se diferencian en que un nodo llama a otro para intercambiar informaci'on. esta informaci'on no puede ser compartida entre otros nodos, excepto si estos utilizan el mismo servicio. Es decir, un t'opico puede ser publicado por varios nodos, y varios nodos se pueden subscribir a él; Pero un ''Service'' solo funciona entre dos nodos.\\
+
+Otro punto fuerte de ROS es la incorporaci'on de simuladores virtuales donde podemos  crear un modelo de nuestro robot y simular su comportamiento en cualquier ambiente, Gazebo y Rviz. Durante la simulaci'on, el sistema es capaz de ofrecernos informaci'on sobre la din'amica de nuestro robot, obteniendo unos resultados muy parecidos a la realidad sin la necesidad que disponer del robot en la realidad. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{images/gazebo.png} 
+\caption{Simulaci'on del robot PR2 en Gazebo y publicaci'on en Rviz.}
+\label{fig:gazebo}
+\end{figure}
+
 \subsection{Instalaci'on ROS Groovy}
 La peculiaridad de este robot respecto otros es el hecho que en su interior puede ejecutarse un n'ucleo de ROS (roscore). Otras plataformas recurren a un ''int'erprete'' entre la informaci'on que procedente de la plataforma y el formato aceptado por ROS. Esta caracter'istica permite que el robot funcione independientemente de un ordenador externo a la hora de trabajar con ROS.\\
 
@@ -1132,10 +1155,10 @@ Este proyecto finaliza con la instalaci'on y configuraci'on de ROS Groovy en la 
 \end{itemize}
 
 \newpage
-\section{Presupuesto}
+\chapter{Presupuesto}
 El coste total de este proyecto asciende hasta los \textbf{5139,69 euros}. El material utilizado implica unos \textbf{523,69 euros} (un 10,2\% del coste total) y el coste personal unos \textbf{4616,00 euros} (el 89,8\% restante). A continuaci'on se detallan los costes del proyecto.
 
-\subsection{Coste Material}
+\section{Coste Material}
 De los 523,69 euros invertidos en este proyecto para la adquisici'on de material, se han distribuido seg'un la tabla \ref{tab:coste material}. En los siguiente sub-apartados se define los componentes.
 
 \begin{table}[H]
@@ -1156,7 +1179,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 \label{tab:coste material}
 \end{table}
 
-\subsubsection{Coste de Dispositivos}
+\subsection{Coste de Dispositivos}
 
 \begin{table}[H]
 \begin{center}
@@ -1181,7 +1204,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 \label{tab:coste dispositivos}
 \end{table}
 
-\subsubsection{Coste de la Electr'onica}
+\subsection{Coste de la Electr'onica}
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|r|r|r|}
@@ -1202,7 +1225,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 \label{tab:coste electronica}
 \end{table}
 
-\subsubsection{Coste placa SecurePi}
+\subsection{Coste placa SecurePi}
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|r|r|r|}
@@ -1233,7 +1256,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 \label{tab:coste securepi}
 \end{table}
 
-\subsubsection{Coste de la Mec'anica}
+\subsection{Coste de la Mec'anica}
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|r|r|r|}
@@ -1256,7 +1279,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 \label{tab:coste mecanica}
 \end{table}
 
-\subsubsection{Coste placa SensorPi}
+\subsection{Coste placa SensorPi}
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|r|r|r|}
@@ -1288,7 +1311,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 \label{tab:coste securepi}
 \end{table}
 
-\subsubsection{Coste placa MotorPi}
+\subsection{Coste placa MotorPi}
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|r|r|r|}
@@ -1315,7 +1338,7 @@ De los 523,69 euros invertidos en este proyecto para la adquisici'on de material
 \end{table}
 
 \newpage
-\subsection{Coste Personal}
+\section{Coste Personal}
 Aunque en un proyecto de este tipo el presupuesto en personal no influyen en el gasto total, es recomendable conocer en que cantidades rondar'ia el proyecto si fuese de 'ambito comercial. Para realizar dicha contabilidad se ha segmentado el coste personal seg'un su labor\\
 
 \begin{table}[H]
@@ -1338,7 +1361,7 @@ Aunque en un proyecto de este tipo el presupuesto en personal no influyen en el 
 \label{tab:coste personal}
 \end{table}
 
-\subsubsection{Descripci'on de las labores}
+\subsection{Descripci'on de las labores}
 
 \begin{itemize}
 \item \textbf{Estudio de viabilidad}  Analizar el producto WifiBot, buscar mejoras, localizar nuevo componentes que ofrezcan mayor utilidad y estudiar su compatibilidad entre ellos.
@@ -1355,7 +1378,7 @@ Aunque en un proyecto de este tipo el presupuesto en personal no influyen en el 
 \end{itemize}
 
 \newpage
-\subsection{Planificaci'on}
+\section{Planificaci'on}
 Este proyecto se ha realizando en un periodo de 15 semanas. En el diagrama de la figura \ref{fig:diagramagantt} se aprecia como determinadas labores se han realizado al mismo tiempo. El motivo de dicha situaci'on se debe al continuo desarrollo de los diferentes sectores y del hecho que decisiones en un sector pueden afectar a otros directamente.\\
 
 Para la programaci'on final del robot se esper'o a disponer de la plataforma totalmente ensamblada, con el fin de poder realizar las pruebas directamente sobre el robot. De esta manera se evitaba repetir las comprobaciones ya que su elaboraci'on previa no implicar'ia un ahorro de tiempo.\\
@@ -1367,9 +1390,9 @@ Para la programaci'on final del robot se esper'o a disponer de la plataforma tot
 vgrid={draw=none, dotted},
 hgrid,
 link/.style={-latex, red}
-]{1}{15}
-\gantttitle{Semanas}{15} \\
-\gantttitlelist{1,...,15}{1} \\
+]{0}{16}
+\gantttitle{Semanas}{17} \\
+\gantttitlelist{0,...,16}{1} \\
 \ganttbar{Estudio de viabilidad}{1}{3} \\
 
 \ganttbar{Modelado 3D }{4}{9}\\
@@ -1411,7 +1434,8 @@ link/.style={-latex, red}
 
 
 \newpage
-\section{Impacto Ambiental}
+\chapter{Impacto Ambiental}
+\section{Elementos suprimidos}
 Aunque este proyecto trate de la restauraci'on de un plataforma m'obil que estaba en desuso, hay que tener en cuenta que existe la posibilidad que su mejora suponga un empeoramiento del medioambiente. Para ello se ha tenido en cuenta aquello de lo que nos deshacemos y de lo que añadimos.\\
 
 Los paneles originales del WifiBot est'an constituidos de Policarbonato, este tipo de pl'astico se recicla alrededor del 90\% en pa'ises europeos. Su impacto en el ambiente es reducido y se puede encontrar en aplicaciones sanitarias. Aun así, desde hace unos a'nos se ha comprobado que en condiciones de degradaci'on este pl'astico libera mol'eculas de Bisfenol A, que puede causar anormalidades durante el desarrollo de embriones.\\ 
@@ -1420,10 +1444,14 @@ Otro elemento del que nos desharemos ser'a la circuiter'ia original. Debido al u
 
 Adem'as de la circuiter'ia, las bater'ias tambi'en s'on otro elemento a tener en cuenta. Aunque la eliminación inadecuada de las baterías de NiMH representa un gran peligro ambiental menor que la de NiCd debido a la ausencia de cadmio tóxico. La extracci'on y su procesamiento puede plantear otros tipos de impacto ambiental, sin embargo, la mayoría de níquel industrial es reciclado, debido a la relativamente fácil recuperación mediante electroimanes. Sobre el n'iquel, se ha de tener en cuenta que tiene efectos sobre la piel y que puede producir c'ancer de pulm'on si se inhala en altas cantidades.\\
 
-Sobre los componentes introducidos, la gran mayor'ia cumplen la directiva RoHS actual. El 'unico componente que puede introducir un poco de sospecha son las bater'ias. Estas bater'ias est'an compuestas por litio, un elemento neurot'oxico y da'nino para el ri'non. Aunque el litio puede conllevar riesgo, su impacto ambiental es m'inimo. En Estados Unidos se ha declarado que se pueden desechar de forma segura como residuo normal, por el contrario, los gobiernos europeos advierten del potencial para contaminar aguas subterr'aneas debido a que contienen metales base como el cobalto. Para extender el uso de las bater'ias, contamos con los m'odulos PCM. Estos m'odulos nos ayudar'an a alargar la vida de nuestras celdas de energ'ia.
+\section{Elementos introducidos}
+Sobre los componentes introducidos, la gran mayor'ia cumplen la directiva RoHS actual. El 'unico componente que puede introducir un poco de sospecha son las bater'ias. Estas bater'ias est'an compuestas por litio, un elemento neurot'oxico y da'nino para el ri'non. Aunque el litio puede conllevar riesgo, su impacto ambiental es m'inimo. \\
+
+En Estados Unidos se ha declarado que se pueden desechar de forma segura como residuo normal, por el contrario, los gobiernos europeos advierten del potencial para contaminar aguas subterr'aneas debido a que contienen metales base como el cobalto. Para extender el uso de las bater'ias, contamos con los m'odulos PCM. Estos m'odulos nos ayudar'an a alargar la vida de nuestras celdas de energ'ia.
 
 \newpage
-\section{Conclusiones}
+\chapter*{Conclusiones}
+\addcontentsline{toc}{chapter}{Conclusiones}
 Aunque restaurar una plataforma y volverla a poner al d'ia ha sido un labor que conllevado varios quebraderos de cabeza, este proyecto demuestra que es realizable. Durante la ejecuci'on de este proyecto se ha observado que las plataformas rob'oticas se quedan obsoletas a causa de sus unidades de procesamiento desfasadas, mientras que los componentes m'as b'asicos como los controladores de motores o los sensores siguen estando operativos. Todo esto hace ver que quiz'a hace falta un cambio en el razonamiento de la rob'otica, de tal manera que las unidades de procesamiento puedan ser actualizadas sin afectar al resto de los elementos de un robot.\\
 
 A medida que se ha ido realizando el proyecto, trabajando con el robot, pensando mejoras y aplic'andolas, uno se da cuenta de las deficiencias del producto original y comprende la evoluci'on que ha seguido la plataforma WifiBot hasta el presente. El cambio m'as notorio es el hecho que los nuevas plataformas creadas por la empresa francesa est'an constituidas por un 'unico bloque (sin la necesidad de crear dos hemisferios). Durante el dise'no del RosPiBot, en el momento de la ubicar sus componentes, se destino gran parte del tiempo a encontrar la manera que el switch, la Raspberry Pi y el router pudiesen convivir en el mismo espacio. Adem'as, disponer de una barra met'alica que atraviesa transversalmente el robot, dificult'o enormemente su desarrollo.\\
@@ -1431,16 +1459,19 @@ A medida que se ha ido realizando el proyecto, trabajando con el robot, pensando
 Por 'ultimo, el hecho de ''Rosificar'' cualquier plataforma rob'otica es una apuesta segura hacia su desarrollo. La gran comunidad que hay detr'as de ROS y el nivel de conocimientos del que dispone, son motivos suficientes utilizar esta herramienta. Incluso con plataformas desactualizadas, añadir ROS puede originar un resurgimiento. 
 
 \newpage
-\section{Agradecimientos}
+\chapter*{Agradecimientos}
+\addcontentsline{toc}{chapter}{Agradecimientos}
 Un proyecto como este no se podría haber realizado sin el apoyo de familiares ni amigos. Ya que son ellos los que me han prestado ayuda y me han dado 'animos durante toda la realizaci'on de este trabajo.\\
 
 Agradecer la oportunidad que los profesores  \textbf{Cecilio Angulo} y \textbf{Manuel Velasco}  me han ofrecido al permitirme poder realizar todas las modificaciones deseadas en el  WifiBot. Tambi'en por el apoyo a la hora de resolver dudas o aportar ideas al proyecto. Adem'as agradecer a los miembros de la asociaci'on \textbf{AESS Estudiants} todo el tiempo que me han dedicado para que este proyecto fuese posible. Compartiendo su experiencia para solucionar los problemas que aparec'ian dia a dia.
 
 
-\newpage
-\addcontentsline{toc}{section}{Referencias}
+%\newpage
+%\addcontentsline{toc}{section}{Referencias}
 
 \begin{thebibliography}{a}
+\addcontentsline{toc}{chapter}{Bibliograf'aa}
+
 \bibitem{ros} \textsc{Mart'inez, A. y Fern'andez, E.},
 \textit{Learning ROS for Robotics Programming.}
 PACKT Publishing, 2013  
@@ -1512,14 +1543,11 @@ Estados Unidos, 1999
 Pa'ises Bajos, 2000
 \url{https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf}
 
-
-
-
 \end{thebibliography}
 
 \newpage
-\section*{Soporte infrom'atico}
-\addcontentsline{toc}{section}{Soporte inform'atico}
+\chapter*{Soporte infrom'atico}
+\addcontentsline{toc}{chapter}{Soporte inform'atico}
 
 \textbf{Filezilla} Linux, Mac, Windows\\
 Cliente FTP multiplataforma de código abierto y software libre. Permite la transferencia de archivos entre ordenadores.\\

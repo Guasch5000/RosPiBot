@@ -1,93 +1,86 @@
 \BOOKMARK [1][-]{section*.1}{Resumen}{}% 1
-\BOOKMARK [1][-]{section*.3}{\315ndice de figuras}{}% 2
-\BOOKMARK [1][-]{section*.4}{\315ndice de tablas}{}% 3
+\BOOKMARK [1][-]{chapter*.3}{\315ndice de figuras}{}% 2
+\BOOKMARK [1][-]{chapter*.4}{\315ndice de tablas}{}% 3
 \BOOKMARK [1][-]{section*.6}{Acr\363nimos}{}% 4
-\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 5
-\BOOKMARK [2][-]{subsection.1.1}{Objetivos}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.2}{Alcance}{section.1}% 7
-\BOOKMARK [1][-]{section.2}{Descripci\363n }{}% 8
-\BOOKMARK [2][-]{subsection.2.1}{WifiBot}{section.2}% 9
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Caracter\355sticas}{subsection.2.1}% 10
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Estructura}{subsection.2.1}% 11
-\BOOKMARK [3][-]{subsubsection.2.1.3}{Grupo Motriz}{subsection.2.1}% 12
-\BOOKMARK [3][-]{subsubsection.2.1.4}{Codificador \363ptico de cuadratura}{subsection.2.1}% 13
-\BOOKMARK [3][-]{subsubsection.2.1.5}{Estado Inicial}{subsection.2.1}% 14
-\BOOKMARK [2][-]{subsection.2.2}{Raspberry Pi}{section.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Caracter\355sticas T\351cnicas}{subsection.2.2}% 16
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Sistemas Operativos}{subsection.2.2}% 17
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Programaci\363n}{subsection.2.2}% 18
-\BOOKMARK [3][-]{subsubsection.2.2.4}{GPIO}{subsection.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.3}{ROS}{section.2}% 20
-\BOOKMARK [1][-]{section.3}{Especificaciones}{}% 21
-\BOOKMARK [2][-]{subsection.3.1}{Software}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.1.1}{GitHub }{subsection.3.1}% 23
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Librer\355as}{subsection.3.1}% 24
-\BOOKMARK [2][-]{subsection.3.2}{Electr\363nica}{section.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Funcionamiento}{subsection.3.2}% 26
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Alimentaci\363n}{subsection.3.2}% 27
-\BOOKMARK [3][-]{subsubsection.3.2.3}{L\363gica}{subsection.3.2}% 28
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Comunicaci\363n}{subsection.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.3}{Mec\341nica}{section.3}% 30
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Estructura}{subsection.3.3}% 31
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Tornilleria}{subsection.3.3}% 32
-\BOOKMARK [1][-]{section.4}{Modificaciones}{}% 33
-\BOOKMARK [2][-]{subsection.4.1}{ Componentes Electr\363nicos}{section.4}% 34
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Motorizaci\363n}{subsection.4.1}% 35
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Sensores de proximidad}{subsection.4.1}% 36
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Bater\355a}{subsection.4.1}% 37
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Punto de acceso WiFi}{subsection.4.1}% 38
-\BOOKMARK [3][-]{subsubsection.4.1.5}{Conmutador de red}{subsection.4.1}% 39
-\BOOKMARK [3][-]{subsubsection.4.1.6}{Descodificador de cuadratura}{subsection.4.1}% 40
-\BOOKMARK [3][-]{subsubsection.4.1.7}{Adaptador de nivel de tensi\363n}{subsection.4.1}% 41
-\BOOKMARK [3][-]{subsubsection.4.1.8}{Lectura de valores anal\363gicos}{subsection.4.1}% 42
-\BOOKMARK [3][-]{subsubsection.4.1.9}{Monitorizaci\363n de la Bater\355a}{subsection.4.1}% 43
-\BOOKMARK [3][-]{subsubsection.4.1.10}{Alimentaci\363n de l\363gica}{subsection.4.1}% 44
-\BOOKMARK [3][-]{subsubsection.4.1.11}{Control de motores}{subsection.4.1}% 45
-\BOOKMARK [2][-]{subsection.4.2}{Integraci\363n de los componentes}{section.4}% 46
-\BOOKMARK [3][-]{subsubsection.4.2.1}{SecurePi}{subsection.4.2}% 47
-\BOOKMARK [3][-]{subsubsection.4.2.2}{SensorPi}{subsection.4.2}% 48
-\BOOKMARK [3][-]{subsubsection.4.2.3}{MotorPi}{subsection.4.2}% 49
-\BOOKMARK [2][-]{subsection.4.3}{Conexionado}{section.4}% 50
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Potencia}{subsection.4.3}% 51
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Alimentaci\363n de l\363gica}{subsection.4.3}% 52
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Cableado SensorPi}{subsection.4.3}% 53
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Comunicaci\363n}{subsection.4.3}% 54
-\BOOKMARK [2][-]{subsection.4.4}{Distribuci\363n interna}{section.4}% 55
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Dise\361o preliminar}{subsection.4.4}% 56
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Soportes}{subsection.4.4}% 57
-\BOOKMARK [3][-]{subsubsection.4.4.3}{Dise\361o Final}{subsection.4.4}% 58
-\BOOKMARK [2][-]{subsection.4.5}{Componentes mec\341nicos}{section.4}% 59
-\BOOKMARK [3][-]{subsubsection.4.5.1}{Mecanizados}{subsection.4.5}% 60
-\BOOKMARK [3][-]{subsubsection.4.5.2}{Paneles}{subsection.4.5}% 61
-\BOOKMARK [3][-]{subsubsection.4.5.3}{Torniller\355a}{subsection.4.5}% 62
-\BOOKMARK [2][-]{subsection.4.6}{Montaje}{section.4}% 63
-\BOOKMARK [3][-]{subsubsection.4.6.1}{Grupos individuales}{subsection.4.6}% 64
-\BOOKMARK [3][-]{subsubsection.4.6.2}{Conjunto}{subsection.4.6}% 65
-\BOOKMARK [2][-]{subsection.4.7}{Configuraci\363n Router WiFi}{section.4}% 66
-\BOOKMARK [2][-]{subsection.4.8}{Configuraci\363n Raspberry Pi}{section.4}% 67
-\BOOKMARK [3][-]{subsubsection.4.8.1}{Grabaci\363n Raspbian}{subsection.4.8}% 68
-\BOOKMARK [3][-]{subsubsection.4.8.2}{Configuraci\363n inicial}{subsection.4.8}% 69
-\BOOKMARK [3][-]{subsubsection.4.8.3}{Instalaci\363n de librer\355as}{subsection.4.8}% 70
-\BOOKMARK [2][-]{subsection.4.9}{Programas b\341sicos}{section.4}% 71
-\BOOKMARK [2][-]{subsection.4.10}{M\363dulo Rospibot}{section.4}% 72
-\BOOKMARK [2][-]{subsection.4.11}{Instalaci\363n ROS Groovy}{section.4}% 73
-\BOOKMARK [3][-]{subsubsection.4.11.1}{Instalaci\363n b\341sica}{subsection.4.11}% 74
-\BOOKMARK [3][-]{subsubsection.4.11.2}{Inicializar dependencias y librer\355as}{subsection.4.11}% 75
-\BOOKMARK [3][-]{subsubsection.4.11.3}{Creaci\363n directorio de trabajo}{subsection.4.11}% 76
-\BOOKMARK [3][-]{subsubsection.4.11.4}{Creaci\363n paquete ''beginner\137tutorials''}{subsection.4.11}% 77
-\BOOKMARK [1][-]{section.5}{Presupuesto}{}% 78
-\BOOKMARK [2][-]{subsection.5.1}{Coste Material}{section.5}% 79
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Coste de Dispositivos}{subsection.5.1}% 80
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Coste de la Electr\363nica}{subsection.5.1}% 81
-\BOOKMARK [3][-]{subsubsection.5.1.3}{Coste placa SecurePi}{subsection.5.1}% 82
-\BOOKMARK [3][-]{subsubsection.5.1.4}{Coste de la Mec\341nica}{subsection.5.1}% 83
-\BOOKMARK [3][-]{subsubsection.5.1.5}{Coste placa SensorPi}{subsection.5.1}% 84
-\BOOKMARK [3][-]{subsubsection.5.1.6}{Coste placa MotorPi}{subsection.5.1}% 85
-\BOOKMARK [2][-]{subsection.5.2}{Coste Personal}{section.5}% 86
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Descripci\363n de las labores}{subsection.5.2}% 87
-\BOOKMARK [2][-]{subsection.5.3}{Planificaci\363n}{section.5}% 88
-\BOOKMARK [1][-]{section.6}{Impacto Ambiental}{}% 89
-\BOOKMARK [1][-]{section.7}{Conclusiones}{}% 90
-\BOOKMARK [1][-]{section.8}{Agradecimientos}{}% 91
-\BOOKMARK [1][-]{section.8}{Referencias}{}% 92
-\BOOKMARK [1][-]{section*.9}{Soporte inform\341tico}{}% 93
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Motivaci\363n}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Alcance}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Descripci\363n Wifibot}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.4.1}{Caracter\355sticas}{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.2}{Estructura}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.3}{Grupo Motriz}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.4}{Codificador \363ptico de cuadratura}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.5}{Estado Inicial}{section.1.4}% 14
+\BOOKMARK [0][-]{chapter.2}{Especificaciones}{}% 15
+\BOOKMARK [1][-]{section.2.1}{Software}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.1.1}{GitHub }{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.2}{Librer\355as}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{Electr\363nica}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.1}{Funcionamiento}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{Alimentaci\363n}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.3}{L\363gica}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.4}{Comunicaci\363n}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{Mec\341nica}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.3.1}{Estructura}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.2}{Tornilleria}{section.2.3}% 26
+\BOOKMARK [0][-]{chapter.3}{Elementos de mejora }{}% 27
+\BOOKMARK [1][-]{section.3.1}{ Componentes Electr\363nicos}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.1.1}{Raspberry Pi}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.2}{Sensores de proximidad}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.3}{Bater\355a}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.4}{Punto de acceso WiFi}{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.5}{Conmutador de red}{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.6}{Descodificador de cuadratura}{section.3.1}% 34
+\BOOKMARK [2][-]{subsection.3.1.7}{Adaptador de nivel de tensi\363n}{section.3.1}% 35
+\BOOKMARK [2][-]{subsection.3.1.8}{Lectura de valores anal\363gicos}{section.3.1}% 36
+\BOOKMARK [2][-]{subsection.3.1.9}{Monitorizaci\363n de la Bater\355a}{section.3.1}% 37
+\BOOKMARK [2][-]{subsection.3.1.10}{Alimentaci\363n de l\363gica}{section.3.1}% 38
+\BOOKMARK [2][-]{subsection.3.1.11}{Control de motores}{section.3.1}% 39
+\BOOKMARK [1][-]{section.3.2}{Integraci\363n de los componentes}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.2.1}{SecurePi}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.2}{SensorPi}{section.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.2.3}{MotorPi}{section.3.2}% 43
+\BOOKMARK [1][-]{section.3.3}{Conexionado}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.1}{Potencia}{section.3.3}% 45
+\BOOKMARK [2][-]{subsection.3.3.2}{Alimentaci\363n de l\363gica}{section.3.3}% 46
+\BOOKMARK [2][-]{subsection.3.3.3}{Cableado SensorPi}{section.3.3}% 47
+\BOOKMARK [2][-]{subsection.3.3.4}{Comunicaci\363n}{section.3.3}% 48
+\BOOKMARK [1][-]{section.3.4}{Distribuci\363n interna}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.4.1}{Dise\361o preliminar}{section.3.4}% 50
+\BOOKMARK [2][-]{subsection.3.4.2}{Soportes}{section.3.4}% 51
+\BOOKMARK [2][-]{subsection.3.4.3}{Dise\361o Final}{section.3.4}% 52
+\BOOKMARK [1][-]{section.3.5}{Componentes mec\341nicos}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.5.1}{Mecanizados}{section.3.5}% 54
+\BOOKMARK [2][-]{subsection.3.5.2}{Paneles}{section.3.5}% 55
+\BOOKMARK [2][-]{subsection.3.5.3}{Torniller\355a}{section.3.5}% 56
+\BOOKMARK [1][-]{section.3.6}{Montaje}{chapter.3}% 57
+\BOOKMARK [2][-]{subsection.3.6.1}{Grupos individuales}{section.3.6}% 58
+\BOOKMARK [2][-]{subsection.3.6.2}{Conjunto}{section.3.6}% 59
+\BOOKMARK [1][-]{section.3.7}{Configuraci\363n Router WiFi}{chapter.3}% 60
+\BOOKMARK [1][-]{section.3.8}{Configuraci\363n Raspberry Pi}{chapter.3}% 61
+\BOOKMARK [2][-]{subsection.3.8.1}{Grabaci\363n Raspbian}{section.3.8}% 62
+\BOOKMARK [2][-]{subsection.3.8.2}{Configuraci\363n inicial}{section.3.8}% 63
+\BOOKMARK [2][-]{subsection.3.8.3}{Instalaci\363n de librer\355as}{section.3.8}% 64
+\BOOKMARK [1][-]{section.3.9}{Programas b\341sicos}{chapter.3}% 65
+\BOOKMARK [1][-]{section.3.10}{M\363dulo Rospibot}{chapter.3}% 66
+\BOOKMARK [1][-]{section.3.11}{ROS}{chapter.3}% 67
+\BOOKMARK [2][-]{subsection.3.11.1}{Instalaci\363n ROS Groovy}{section.3.11}% 68
+\BOOKMARK [0][-]{chapter.4}{Presupuesto}{}% 69
+\BOOKMARK [1][-]{section.4.1}{Coste Material}{chapter.4}% 70
+\BOOKMARK [2][-]{subsection.4.1.1}{Coste de Dispositivos}{section.4.1}% 71
+\BOOKMARK [2][-]{subsection.4.1.2}{Coste de la Electr\363nica}{section.4.1}% 72
+\BOOKMARK [2][-]{subsection.4.1.3}{Coste placa SecurePi}{section.4.1}% 73
+\BOOKMARK [2][-]{subsection.4.1.4}{Coste de la Mec\341nica}{section.4.1}% 74
+\BOOKMARK [2][-]{subsection.4.1.5}{Coste placa SensorPi}{section.4.1}% 75
+\BOOKMARK [2][-]{subsection.4.1.6}{Coste placa MotorPi}{section.4.1}% 76
+\BOOKMARK [1][-]{section.4.2}{Coste Personal}{chapter.4}% 77
+\BOOKMARK [2][-]{subsection.4.2.1}{Descripci\363n de las labores}{section.4.2}% 78
+\BOOKMARK [1][-]{section.4.3}{Planificaci\363n}{chapter.4}% 79
+\BOOKMARK [0][-]{chapter.5}{Impacto Ambiental}{}% 80
+\BOOKMARK [1][-]{section.5.1}{Elementos suprimidos}{chapter.5}% 81
+\BOOKMARK [1][-]{section.5.2}{Elementos introducidos}{chapter.5}% 82
+\BOOKMARK [0][-]{chapter*.16}{Conclusiones}{}% 83
+\BOOKMARK [0][-]{chapter*.17}{Agradecimientos}{}% 84
+\BOOKMARK [0][-]{chapter*.18}{Bibliograf\341a}{}% 85
+\BOOKMARK [0][-]{chapter*.19}{Soporte inform\341tico}{}% 86
