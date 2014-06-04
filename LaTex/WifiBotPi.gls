@@ -1,9 +1,0 @@
-\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
-\begin{theglossary}\glossaryheader
-\glsgroupheading{E}\relax \glsresetentrylist %
-\glossaryentryfield{electrolyte}{\glsnamefont{electrolyte}}{solution able to conduct electric current}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{6}}}\glsgroupskip
-\glsgroupheading{I}\relax \glsresetentrylist %
-\glossaryentryfield{IIC}{\glsnamefont{I$^{2}$C}}{Inter-Integrated Circuit}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter{page}\glsnumberformat{6}}}%
-\end{theglossary}\glossarypostamble

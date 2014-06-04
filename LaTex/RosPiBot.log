@@ -1,21 +1,20 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.29)  29 MAY 2014 21:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.13)  30 MAY 2014 12:29
 entering extended mode
+ %&-line parsing enabled.
 **RosPiBot.tex
-(C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+(./RosPiBot.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -31,7 +30,7 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -66,27 +65,21 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2008/07/08 v3.8m The Babel package
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\spanish.ldf"
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
 Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
@@ -99,14 +92,14 @@ Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
 Package babel Info: Making ' an active character on input line 657.
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\mh\mathtools.sty
-Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+(/usr/share/texmf-texlive/tex/latex/mh/mathtools.sty
+Package: mathtools 2008/08/01 v1.06 mathematical typesetting tools (MH)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count91
 \calc@Bcount=\count92
@@ -119,27 +112,27 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count93
 \calc@Cskip=\skip45
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\mh\mhsetup.sty
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+(/usr/share/texmf-texlive/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2007/12/03 v1.2 programming setup (MH)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen106
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count94
@@ -180,203 +173,182 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count106
 \l_MT_multwidth_dim=\dimen115
-\origjot=\skip49
-\l_MT_shortvdotswithinadjustabove_dim=\dimen116
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen117
-\l_MT_above_intertext_sep=\dimen118
-\l_MT_below_intertext_sep=\dimen119
-\l_MT_above_shortintertext_sep=\dimen120
-\l_MT_below_shortintertext_sep=\dimen121
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count107
 ))
-\Gin@req@height=\dimen122
-\Gin@req@width=\dimen123
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count108
 \Gm@cntv=\count109
 \c@Gm@tempcnt=\count110
-\Gm@bindingoffset=\dimen124
-\Gm@wd@mp=\dimen125
-\Gm@odd@mp=\dimen126
-\Gm@even@mp=\dimen127
-\Gm@layoutwidth=\dimen128
-\Gm@layoutheight=\dimen129
-\Gm@layouthoffset=\dimen130
-\Gm@layoutvoffset=\dimen131
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
 \Gm@dimlist=\toks21
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
-\fancy@headwidth=\skip50
-\f@ncyO@elh=\skip51
-\f@ncyO@erh=\skip52
-\f@ncyO@olh=\skip53
-\f@ncyO@orh=\skip54
-\f@ncyO@elf=\skip55
-\f@ncyO@erf=\skip56
-\f@ncyO@olf=\skip57
-\f@ncyO@orf=\skip58
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip49
+\f@ncyO@elh=\skip50
+\f@ncyO@erh=\skip51
+\f@ncyO@olh=\skip52
+\f@ncyO@orh=\skip53
+\f@ncyO@elf=\skip54
+\f@ncyO@erf=\skip55
+\f@ncyO@olf=\skip56
+\f@ncyO@orf=\skip57
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen122
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
-Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
-Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
-Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
 )
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
-Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
-Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
-)
-\@linkdim=\dimen132
-\Hy@linkcounter=\count111
-\Hy@pagecounter=\count112
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
-)
-\Hy@SavedSpaceFactor=\count113
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4046.
-Package hyperref Info: Link nesting OFF on input line 4051.
-Package hyperref Info: Hyper index ON on input line 4054.
-Package hyperref Info: Plain pages OFF on input line 4061.
-Package hyperref Info: Backreferencing OFF on input line 4066.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4284.
-\c@Hy@tempcnt=\count114
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4637.
-\Fld@menulength=\count115
-\Field@Width=\dimen133
-\Fld@charsize=\dimen134
-Package hyperref Info: Hyper figures OFF on input line 5757.
-Package hyperref Info: Link nesting OFF on input line 5762.
-Package hyperref Info: Hyper index ON on input line 5765.
-Package hyperref Info: backreferencing OFF on input line 5772.
-Package hyperref Info: Link coloring OFF on input line 5777.
-Package hyperref Info: Link coloring with OCG OFF on input line 5782.
-Package hyperref Info: PDF/A mode OFF on input line 5787.
-LaTeX Info: Redefining \ref on input line 5827.
-LaTeX Info: Redefining \pageref on input line 5831.
-\Hy@abspage=\count116
-\c@Item=\count117
-\c@Hfootnote=\count118
-)
+LaTeX Info: Redefining \url on input line 3428.
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
-\Fld@listcount=\count119
-\c@bookmark@seq@number=\count120
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 )
-\Hy@SectionHShift=\skip59
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
-Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count121
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count113
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
+\Field@toks=\toks22
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count117
+)
+(/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
+Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
+\c@tracingmulticols=\count118
 \mult@box=\box28
-\multicol@leftmargin=\dimen135
-\c@unbalance=\count122
-\c@collectmore=\count123
-\doublecol@number=\count124
-\multicoltolerance=\count125
-\multicolpretolerance=\count126
-\full@width=\dimen136
-\page@free=\dimen137
-\premulticols=\dimen138
-\postmulticols=\dimen139
-\multicolsep=\skip60
-\multicolbaselineskip=\skip61
+\multicol@leftmargin=\dimen125
+\c@unbalance=\count119
+\c@collectmore=\count120
+\doublecol@number=\count121
+\multicoltolerance=\count122
+\multicolpretolerance=\count123
+\full@width=\dimen126
+\page@free=\dimen127
+\premulticols=\dimen128
+\postmulticols=\dimen129
+\multicolsep=\skip58
+\multicolbaselineskip=\skip59
 \partial@page=\box29
 \last@line=\box30
 \mult@rightbox=\box31
@@ -400,138 +372,123 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count127
-\c@finalcolumnbadness=\count128
-\last@try=\dimen140
-\multicolovershoot=\dimen141
-\multicolundershoot=\dimen142
+\c@columnbadness=\count124
+\c@finalcolumnbadness=\count125
+\last@try=\dimen130
+\multicolovershoot=\dimen131
+\multicolundershoot=\dimen132
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
-\multicol@sort@counter=\count129
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count130
-\float@exts=\toks22
+\c@float@type=\count126
+\float@exts=\toks23
 \float@box=\box54
-\@float@everytoks=\toks23
+\@float@everytoks=\toks24
 \@floatcapt=\box55
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
+(/usr/share/texmf-texlive/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box56
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool.sty
-Package: datatool 2014/02/03 v2.20 (NLCT)
+(/usr/share/texmf-texlive/tex/latex/datatool/datatool.sty
+Package: datatool 2009/07/13 v2.02 (NLCT)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-\XKV@toks=\toks24
-\XKV@tempa@toks=\toks25
-\XKV@depth=\count131
+(/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+\XKV@depth=\count127
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\xfor\xfor.sty
+(/usr/share/texmf-texlive/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\substr\substr.sty
-Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count132
-)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
-Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count133
-)
-\etb@tempcnta=\count134
-)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool-base.sty
-Package: datatool-base 2013/09/06 v2.18 (NLCT)
-
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool-fp.sty
-Package: datatool-fp 2013/08/29 v2.17 (NLCT)
-
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp.sty
 Package: fp 1995/04/02
 
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\defpattern.sty
+(/usr/share/texmf-texlive/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count135
+\actioncount=\count128
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-basic.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count136
-\FP@xia=\count137
-\FP@xib=\count138
-\FP@xfa=\count139
-\FP@xfb=\count140
-\FP@rega=\count141
-\FP@regb=\count142
-\FP@regs=\count143
-\FP@times=\count144
+\FP@xs=\count129
+\FP@xia=\count130
+\FP@xib=\count131
+\FP@xfa=\count132
+\FP@xfb=\count133
+\FP@rega=\count134
+\FP@regb=\count135
+\FP@regs=\count136
+\FP@times=\count137
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-addons.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-snap.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-snap.sty
 Package: fp-snap 1995/04/05
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-exp.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-exp.sty
 Package: fp-exp 1995/04/03
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-trigo.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-trigo.sty
 Package: fp-trigo 1995/04/14
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-pas.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-pas.sty
 Package: fp-pas 1994/08/29
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-random.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count145
+\FPseed=\count138
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eqn.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-upn.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-upn.sty
 Package: fp-upn 1996/10/21
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eval.sty
+(/usr/share/texmf-texlive/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
-)))
-\@dtl@toks=\toks26
-\@dtl@tmpcount=\count146
-\dtl@tmplength=\skip62
-\dtl@sortresult=\count147
-\@dtl@numgrpsepcount=\count148
-\@dtl@datatype=\count149
-\dtl@codeA=\count150
-\dtl@codeB=\count151
-\@dtl@foreach@level=\count152
+))
+(/usr/share/texmf-texlive/tex/latex/substr/substr.sty
+Package: substr 2005/11/29 v1.1 Handle substrings
+\c@su@anzahl=\count139
 )
-\dtlcolumnnum=\count153
-\dtlrownum=\count154
+(/usr/share/texmf-texlive/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count140
+)
+\@dtl@datatype=\count141
+\@dtl@tmpcount=\count142
+\dtl@tmplength=\skip60
+\@dtl@numgrpsepcount=\count143
+\dtl@codeA=\count144
+\dtl@codeB=\count145
+\dtlcolumnnum=\count146
+\dtlrownum=\count147
 \@dtl@before=\toks27
 \@dtl@after=\toks28
 \@dtl@colhead=\toks29
 \dtlcurrentrow=\toks30
 \dtlbeforerow=\toks31
 \dtlafterrow=\toks32
-\dtlforeachlevel=\count155
-\c@DTLrowi=\count156
-\c@DTLrowii=\count157
-\c@DTLrowiii=\count158
-\c@DTLrow=\count159
-\dtl@rowi=\count160
-\dtl@rowii=\count161
-\dtl@rowiii=\count162
+\@dtl@foreach@level=\count148
+\dtlforeachlevel=\count149
+\c@DTLrowi=\count150
+\c@DTLrowii=\count151
+\c@DTLrowiii=\count152
+\c@DTLrow=\count153
+\dtl@rowi=\count154
+\dtl@rowii=\count155
+\dtl@rowiii=\count156
 \@dtl@curi=\toks33
 \@dtl@previ=\toks34
 \@dtl@nexti=\toks35
@@ -541,106 +498,90 @@ Package: fp-eval 1995/04/03
 \@dtl@curiii=\toks39
 \@dtl@previii=\toks40
 \@dtl@nextiii=\toks41
-\@dtl@elements=\count163
+\@dtl@elements=\count157
 \@dtl@list=\toks42
 \@dtl@rowa=\toks43
 \@dtl@rowb=\toks44
 \@dtl@toksA=\toks45
 \@dtl@toksB=\toks46
+\@dtl@toks=\toks47
+\dtl@sortresult=\count158
 \@dtl@write=\write3
 \@dtl@read=\read1
-\dtl@entrycr=\count164
-\dtl@omitlines=\count165
+\dtl@entrycr=\count159
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\chngcntr\chngcntr.sty
+(/usr/share/texmf-texlive/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
-)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgfgantt\pgfgantt.sty
+) (./pgfgantt.sty
 Package: pgfgantt 2013/06/01 v4.0 Draw Gantt diagrams with TikZ
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-com
-mon.tex
-\pgfutil@everybye=\toks47
-\pgfutil@tempdima=\dimen143
-\pgfutil@tempdimb=\dimen144
-
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-com
-mon-lists.tex))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-lat
-ex.def
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks48
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box57
- (C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.code
-.tex
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.co
-de.tex
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.cod
-e.tex
-\pgfkeys@pathtoks=\toks48
-\pgfkeys@temptoks=\toks49
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks49
+\pgfkeys@temptoks=\toks50
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfilt
-ered.code.tex
-\pgfkeys@tmptoks=\toks50
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks51
 ))
-\pgf@x=\dimen145
-\pgf@y=\dimen146
-\pgf@xa=\dimen147
-\pgf@ya=\dimen148
-\pgf@xb=\dimen149
-\pgf@yb=\dimen150
-\pgf@xc=\dimen151
-\pgf@yc=\dimen152
+\pgf@x=\dimen133
+\pgf@y=\dimen134
+\pgf@xa=\dimen135
+\pgf@ya=\dimen136
+\pgf@xb=\dimen137
+\pgf@yb=\dimen138
+\pgf@xc=\dimen139
+\pgf@yc=\dimen140
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count166
-\c@pgf@countb=\count167
-\c@pgf@countc=\count168
-\c@pgf@countd=\count169
-\t@pgf@toka=\toks51
-\t@pgf@tokb=\toks52
-\t@pgf@tokc=\toks53
+\c@pgf@counta=\count160
+\c@pgf@countb=\count161
+\c@pgf@countc=\count162
+\c@pgf@countd=\count163
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-pd
-ftex.def
-File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-co
-mmon-pdf.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyssof
-tpath.code.tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count170
-\pgfsyssoftpath@bigbuffer@items=\count171
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count164
+\pgfsyssoftpath@bigbuffer@items=\count165
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyspro
-tocol.code.tex
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -654,380 +595,307 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.co
-de.tex
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
-
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.code
-.tex
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.code
-.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.co
-de.tex
-\pgfmath@dimen=\dimen153
-\pgfmath@count=\count172
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen141
+\pgfmath@count=\count166
 \pgfmath@box=\box58
-\pgfmath@toks=\toks54
-\pgfmath@stack@operand=\toks55
-\pgfmath@stack@operation=\toks56
+\pgfmath@toks=\toks52
+\pgfmath@stack@operand=\toks53
+\pgfmath@stack@operation=\toks54
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.code.tex
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.basic.code.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.trigonometric.code.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.random.code.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.comparison.code.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.base.code.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.round.code.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.misc.code.tex)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions
-.integerarithmetics.code.tex)))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.cod
-e.tex
-\c@pgfmathroundto@lastzeros=\count173
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count167
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepoi
-nts.code.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen154
-\pgf@picmaxx=\dimen155
-\pgf@picminy=\dimen156
-\pgf@picmaxy=\dimen157
-\pgf@pathminx=\dimen158
-\pgf@pathmaxx=\dimen159
-\pgf@pathminy=\dimen160
-\pgf@pathmaxy=\dimen161
-\pgf@xx=\dimen162
-\pgf@xy=\dimen163
-\pgf@yx=\dimen164
-\pgf@yy=\dimen165
-\pgf@zx=\dimen166
-\pgf@zy=\dimen167
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen142
+\pgf@picmaxx=\dimen143
+\pgf@picminy=\dimen144
+\pgf@picmaxy=\dimen145
+\pgf@pathminx=\dimen146
+\pgf@pathmaxx=\dimen147
+\pgf@pathminy=\dimen148
+\pgf@pathmaxy=\dimen149
+\pgf@xx=\dimen150
+\pgf@xy=\dimen151
+\pgf@yx=\dimen152
+\pgf@yy=\dimen153
+\pgf@zx=\dimen154
+\pgf@zy=\dimen155
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepat
-hconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen168
-\pgf@path@lasty=\dimen169
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen156
+\pgf@path@lasty=\dimen157
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepat
-husage.code.tex
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen170
-\pgf@shorten@start@additional=\dimen171
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen158
+\pgf@shorten@start@additional=\dimen159
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresco
-pes.code.tex
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box59
 \pgf@hbox=\box60
 \pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count174
+\pgf@picture@serial@count=\count168
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregra
-phicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen172
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen160
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretra
-nsformations.code.tex
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen173
-\pgf@pt@y=\dimen174
-\pgf@pt@temp=\dimen175
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen161
+\pgf@pt@y=\dimen162
+\pgf@pt@temp=\dimen163
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequi
-ck.code.tex
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreobj
-ects.code.tex
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepat
-hprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorearr
-ows.code.tex
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen176
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresha
-de.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen177
-\pgf@sys@shading@range@num=\count175
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen164
+\pgf@sys@shading@range@num=\count169
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreima
-ge.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreext
-ernal.code.tex
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box62
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorelay
-ers.code.tex
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretra
-nsparency.code.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepat
-terns.code.tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleshap
-es.code.tex
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box63
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplot
-.code.tex
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-v
-ersion-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen178
-\pgf@nodesepend=\dimen179
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen165
+\pgf@nodesepend=\dimen166
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-v
-ersion-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.cod
-e.tex))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen167
+\pgffor@skip=\dimen168
+\pgffor@stack=\toks55
+\pgffor@toks=\toks56
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.code
-.tex
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count170
+\pgfplotmarksize=\dimen169
 )
-\pgffor@iter=\dimen180
-\pgffor@skip=\dimen181
-\pgffor@stack=\toks57
-\pgffor@toks=\toks58
-))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\ti
-kz.code.tex
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
-
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryp
-lothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count176
-\pgfplotmarksize=\dimen182
-)
-\tikz@lastx=\dimen183
-\tikz@lasty=\dimen184
-\tikz@lastxsaved=\dimen185
-\tikz@lastysaved=\dimen186
-\tikzleveldistance=\dimen187
-\tikzsiblingdistance=\dimen188
+\tikz@lastx=\dimen170
+\tikz@lasty=\dimen171
+\tikz@lastxsaved=\dimen172
+\tikz@lastysaved=\dimen173
+\tikzleveldistance=\dimen174
+\tikzsiblingdistance=\dimen175
 \tikz@figbox=\box64
-\tikz@figbox@bg=\box65
-\tikz@tempbox=\box66
-\tikz@tempbox@bg=\box67
-\tikztreelevel=\count177
-\tikznumberofchildren=\count178
-\tikznumberofcurrentchild=\count179
-\tikz@fig@count=\count180
+\tikz@tempbox=\box65
+\tikztreelevel=\count171
+\tikznumberofchildren=\count172
+\tikznumberofcurrentchild=\count173
+\tikz@fig@count=\count174
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulematr
-ix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count181
-\pgfmatrixcurrentcolumn=\count182
-\pgf@matrix@numberofcolumns=\count183
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count175
+\pgfmatrixcurrentcolumn=\count176
+\pgf@matrix@numberofcolumns=\count177
 )
-\tikz@expandcount=\count184
+\tikz@expandcount=\count178
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\li
-braries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\li
-braries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
+s.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrarya
-rrows.code.tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen189
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen176
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\li
-braries\tikzlibrarybackgrounds.code.tex
-File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.3)
-\pgf@layerbox@background=\box68
-\pgf@layerboxsaved@background=\box69
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackg
+rounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
+\pgf@layerbox@background=\box66
+\pgf@layerboxsaved@background=\box67
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\li
-braries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.
+code.tex
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\li
-braries\tikzlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.0 (rcs-revision 1.2)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatte
+rns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v2.10 (rcs-revision 1.2)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibraryp
-atterns.code.tex
-File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.0 (rcs-revision 1.13)
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v2.10 (rcs-revision 1.13)
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\li
-braries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
+ioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\li
-braries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
-
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgfl
-ibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.c
+ode.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+)) (/usr/share/texmf/tex/latex/pgf/utilities/pgfcalendar.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfcalendar.code.tex
+File: pgfcalendar.code.tex 2007/07/23 v2.10 (rcs-revision 1.11)
+\pgfcalendarcurrentjulian=\count179
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfcalendar.s
-ty
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfcalendar
-.code.tex
-File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count185
-))
-\gtt@currentline=\count186
-\gtt@lasttitleline=\count187
-\gtt@currgrid=\count188
-\gtt@chartwidth=\count189
-\gtt@lasttitleslot=\count190
-\gtt@elementid=\count191
-\gtt@today@slot=\count192
-\gtt@startjulian=\count193
-\gtt@endjulian=\count194
-\gtt@calendar@slots=\count195
-\gtt@calendar@weeknumber=\count196
-\gtt@calendar@startofweek=\count197
-\gtt@left@slot=\count198
-\gtt@right@slot=\count199
+\gtt@currentline=\count180
+\gtt@lasttitleline=\count181
+\gtt@currgrid=\count182
+\gtt@chartwidth=\count183
+\gtt@lasttitleslot=\count184
+\gtt@elementid=\count185
+\gtt@today@slot=\count186
+\gtt@startjulian=\count187
+\gtt@endjulian=\count188
+\gtt@calendar@slots=\count189
+\gtt@calendar@weeknumber=\count190
+\gtt@calendar@startofweek=\count191
+\gtt@left@slot=\count192
+\gtt@right@slot=\count193
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\glossaries.
-sty
-Package: glossaries 2014/04/04 v4.07 (NLCT)
+(/usr/share/texmf-texlive/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2009/09/23 v2.03 (NLCT)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\mfirstuc.st
-y
-Package: mfirstuc 2013/11/04 v1.08 (NLCT)
-\@glsmfirst=\toks59
-\@glsmrest=\toks60
-) (C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\textcase\textcase.sty
-Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+(/usr/share/texmf-texlive/tex/latex/glossaries/base/mfirstuc.sty
+Package: mfirstuc 2008/12/22 v1.03 (NLCT)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\glossaries-
-compatible-307.sty
-Package: glossaries-compatible-307 2013/11/14 v4.0 (NLCT)
-)
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tran
-slator.sty
+(/usr/share/texmf/tex/latex/beamer/base/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tran
-slator-language-mappings.tex)
-LaTeX Info: Redefining \translate on input line 117.
+(/usr/share/texmf/tex/latex/beamer/base/translator/translator-language-mappings
+.tex)
+LaTeX Info: Redefining \translate on input line 111.
 )
-\gls@level=\count200
-\@gls@tmpb=\toks61
-\gls@tmplen=\skip63
-\glskeylisttok=\toks62
-\glslabeltok=\toks63
-\glsshorttok=\toks64
-\glslongtok=\toks65
+\gls@level=\count194
+\@gls@tmpb=\toks57
+\gls@tmplen=\skip61
+\istfile=\write5
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-
-hypernav.sty
-Package: glossary-hypernav 2013/11/14 v4.0 (NLCT)
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2007/07/04 v1.01 (NLCT)
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-
-list.sty
-Package: glossary-list 2013/11/14 v4.0 (NLCT)
-\glslistdottedwidth=\skip64
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2009/05/30 v2.01 (NLCT)
+\glslistdottedwidth=\skip62
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-
-long.sty
-Package: glossary-long 2013/11/14 v4.0 (NLCT)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2009/05/30 v2.01 (NLCT)
+
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip65
-\LTright=\skip66
-\LTpre=\skip67
-\LTpost=\skip68
-\LTchunksize=\count201
-\LTcapwidth=\dimen190
-\LT@head=\box70
-\LT@firsthead=\box71
-\LT@foot=\box72
-\LT@lastfoot=\box73
-\LT@cols=\count202
-\LT@rows=\count203
-\c@LT@tables=\count204
-\c@LT@chunks=\count205
-\LT@p@ftn=\toks66
+\LTleft=\skip63
+\LTright=\skip64
+\LTpre=\skip65
+\LTpost=\skip66
+\LTchunksize=\count195
+\LTcapwidth=\dimen177
+\LT@head=\box68
+\LT@firsthead=\box69
+\LT@foot=\box70
+\LT@lastfoot=\box71
+\LT@cols=\count196
+\LT@rows=\count197
+\c@LT@tables=\count198
+\c@LT@chunks=\count199
+\LT@p@ftn=\toks58
 )
-\glsdescwidth=\skip69
-\glspagelistwidth=\skip70
+\glsdescwidth=\skip67
+\glspagelistwidth=\skip68
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-
-super.sty
-Package: glossary-super 2013/11/14 v4.0 (NLCT)
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2009/05/30 v2.01 (NLCT)
 
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\supertabular\supertabular.s
-ty
+(/usr/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count206
-\ST@wd=\dimen191
-\ST@rightskip=\skip71
-\ST@leftskip=\skip72
-\ST@parfillskip=\skip73
-\ST@pageleft=\dimen192
-\ST@headht=\dimen193
-\ST@tailht=\dimen194
-\ST@pagesofar=\dimen195
-\ST@pboxht=\dimen196
-\ST@lineht=\dimen197
-\ST@stretchht=\dimen198
-\ST@prevht=\dimen199
-\ST@toadd=\dimen200
-\ST@dimen=\dimen201
-\ST@pbox=\box74
+\c@tracingst=\count200
+\ST@wd=\dimen178
+\ST@rightskip=\skip69
+\ST@leftskip=\skip70
+\ST@parfillskip=\skip71
+\ST@pageleft=\dimen179
+\ST@headht=\dimen180
+\ST@tailht=\dimen181
+\ST@pagesofar=\dimen182
+\ST@pboxht=\dimen183
+\ST@lineht=\dimen184
+\ST@stretchht=\dimen185
+\ST@prevht=\dimen186
+\ST@toadd=\dimen187
+\ST@dimen=\dimen188
+\ST@pbox=\box72
 ))
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary-
-tree.sty
-Package: glossary-tree 2014/03/06 v4.04 (NLCT)
-\glstreeindent=\skip74
-)) (C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
+(/usr/share/texmf-texlive/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2009/01/14 v1.01 (NLCT)
+\glstreeindent=\skip72
+))
+(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.aux
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (./RosPiBot.aux
 
 LaTeX Warning: Label `tab:coste securepi' multiply defined.
 
@@ -1035,6 +903,8 @@ LaTeX Warning: Label `tab:coste securepi' multiply defined.
 LaTeX Warning: Label `display' multiply defined.
 
 )
+\openout1 = `RosPiBot.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
@@ -1050,105 +920,107 @@ LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 66.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count207
-\scratchdimen=\dimen202
-\scratchbox=\box75
-\nofMPsegments=\count208
-\nofMParguments=\count209
-\everyMPshowfont=\toks67
-\MPscratchCnt=\count210
-\MPscratchDim=\dimen203
-\MPnumerator=\count211
-\makeMPintoPDFobject=\count212
-\everyMPtoPDFconversion=\toks68
+\scratchcounter=\count201
+\scratchdimen=\dimen189
+\scratchbox=\box73
+\nofMPsegments=\count202
+\nofMParguments=\count203
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count204
+\MPscratchDim=\dimen190
+\MPnumerator=\count205
+\everyMPtoPDFconversion=\toks60
 )
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=702.78308pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-38.1381pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=42.0pt
-* \marginparwidth=85.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\AtBeginShipoutBox=\box76
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: true
+asymmetric: --
+h-parts: 85.35826pt, 455.24411pt, 56.9055pt
+v-parts: 71.13188pt, 702.78308pt, 71.13188pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  455.24411pt
+\textheight 702.78308pt
+\oddsidemargin  13.08827pt
+\evensidemargin -15.36449pt
+\topmargin  -38.1381pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   42.0pt
+\marginparwidth 85.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+\@twosidetrue \@mparswitchtrue 
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
 Package hyperref Info: Link coloring OFF on input line 66.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
-Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count213
+\c@section@level=\count206
 )
 LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
+ (./RosPiBot.out)
+(./RosPiBot.out)
+\@outlinefile=\write6
+\openout6 = `RosPiBot.out'.
 
-(C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.out)
-(C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.out)
-\@outlinefile=\write5
-
-ABD: EveryShipout initializing macros
-(C:\Users\Joan\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\dict\glossaries-
-dictionary-English.dict
+\AtBeginShipoutBox=\box74
+ ABD: EveryShipout initializing macros
+(/usr/share/texmf-texlive/tex/latex/glossaries/dict/glossaries-dictionary-Engli
+sh.dict
 Dictionary: glossaries-dictionary, Language: English 
 ) <images/upc-logo.png, id=370, 677.6517pt x 142.131pt>
 File: images/upc-logo.png Graphic file (type png)
 
 <use images/upc-logo.png>
-Package pdftex.def Info: images/upc-logo.png used on input line 73.
-(pdftex.def)             Requested size: 364.19667pt x 76.38957pt.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 86.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 86.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 86.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 86.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1161,16 +1033,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <images/etseib-logo.png, id=372, 65.043pt x 85.0377pt>
 File: images/etseib-logo.png Graphic file (type png)
 
-<use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 94.
-(pdftex.def)             Requested size: 65.04283pt x 85.03748pt.
- [1
+<use images/etseib-logo.png> [1
 
-{C:/Users/Joan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Joa
-n/Documents/GitHub/WifiBotPi/LaTex/images/upc-logo.png> <C:/Users/Joan/Document
-s/GitHub/WifiBotPi/LaTex/images/etseib-logo.png>]pdfTeX warning (ext4): destina
-tion with the same identifier (name{page.}) has been already used, duplicate ig
-nored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/upc-logo.png> <./
+images/etseib-logo.png>]pdfTeX warning (ext4): destination with the same identi
+fier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.105 \newpage
@@ -1192,9 +1059,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 127.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1210,9 +1074,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 140.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1221,7 +1082,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 
 [2
 
-] (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.toc
+] (./RosPiBot.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1237,9 +1098,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 32.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1255,9 +1113,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 76.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1265,7 +1120,9 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4])
-\tf@toc=\write6
+\tf@toc=\write7
+\openout7 = `RosPiBot.toc'.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1275,9 +1132,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 150.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1293,9 +1147,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 155.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1304,7 +1155,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 
 [6
 
-] (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.lof
+] (./RosPiBot.lof
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1313,9 +1164,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 36.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1323,7 +1171,9 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7])
-\tf@lof=\write7
+\tf@lof=\write8
+\openout8 = `RosPiBot.lof'.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1333,17 +1183,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 157.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.lot)
-\tf@lot=\write8
+[8] (./RosPiBot.lot)
+\tf@lot=\write9
+\openout9 = `RosPiBot.lot'.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1353,9 +1202,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 164.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1373,9 +1219,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 202.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1402,9 +1245,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 229.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1441,9 +1281,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 242.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1473,9 +1310,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 252.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1486,12 +1320,9 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 File: images/Visuel_Wifibot_2.png Graphic file (type png)
 
 <use images/Visuel_Wifibot_2.png>
-Package pdftex.def Info: images/Visuel_Wifibot_2.png used on input line 263.
-(pdftex.def)             Requested size: 150.56212pt x 131.36545pt.
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 273.
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+ (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
@@ -1524,9 +1355,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 305.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1539,8 +1367,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.305 	\end{itemize}
-                     <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/Vis
-uel_Wifibot_2.png>]
+                     <./images/Visuel_Wifibot_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
@@ -1549,16 +1376,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--318
 File: images/wifibot-open.png Graphic file (type png)
 
 <use images/wifibot-open.png>
-Package pdftex.def Info: images/wifibot-open.png used on input line 332.
-(pdftex.def)             Requested size: 248.06625pt x 187.83772pt.
-
 <images/wifibot-simple.png, id=681, 3934.7pt x 2951.025pt>
 File: images/wifibot-simple.png Graphic file (type png)
 
 <use images/wifibot-simple.png>
-Package pdftex.def Info: images/wifibot-simple.png used on input line 342.
-(pdftex.def)             Requested size: 275.45714pt x 206.59285pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1567,9 +1388,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 349.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1582,14 +1400,11 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.349 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/wifibot-open.png>
-] <images/motor_graph.png, id=690, 1008.01593pt x 700.86844pt>
+       <./images/wifibot-open.png>]
+<images/motor_graph.png, id=690, 1008.01593pt x 700.86844pt>
 File: images/motor_graph.png Graphic file (type png)
 
 <use images/motor_graph.png>
-Package pdftex.def Info: images/motor_graph.png used on input line 359.
-(pdftex.def)             Requested size: 352.81087pt x 245.30763pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1598,9 +1413,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 365.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1619,22 +1431,15 @@ l.365
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.365 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/wifibot-simple.pn
-g> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/motor_graph.png>]
+       <./images/wifibot-simple.png> <./images/motor_graph.png (PNG copy)>]
 <images/cube4G.png, id=697, 3084.52374pt x 1370.11874pt>
 File: images/cube4G.png Graphic file (type png)
 
 <use images/cube4G.png>
-Package pdftex.def Info: images/cube4G.png used on input line 371.
-(pdftex.def)             Requested size: 246.76694pt x 109.61174pt.
-
 <images/graph-sharp.png, id=700, 891.33pt x 418.56375pt>
 File: images/graph-sharp.png Graphic file (type png)
 
 <use images/graph-sharp.png>
-Package pdftex.def Info: images/graph-sharp.png used on input line 381.
-(pdftex.def)             Requested size: 347.61731pt x 163.2392pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1643,9 +1448,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 388.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1664,15 +1466,11 @@ l.388
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.388 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/cube4G.png> <C:/U
-sers/Joan/Documents/GitHub/WifiBotPi/LaTex/images/graph-sharp.png>]
+       <./images/cube4G.png> <./images/graph-sharp.png>]
 <images/encoderQEI.png, id=709, 963.6pt x 380.17032pt>
 File: images/encoderQEI.png Graphic file (type png)
 
 <use images/encoderQEI.png>
-Package pdftex.def Info: images/encoderQEI.png used on input line 391.
-(pdftex.def)             Requested size: 385.43317pt x 152.06543pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
@@ -1685,9 +1483,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 427.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1706,7 +1501,7 @@ l.427
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.427 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/encoderQEI.png>]
+       <./images/encoderQEI.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
@@ -1719,9 +1514,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 432.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1737,9 +1529,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 434.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1757,7 +1546,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 443.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
@@ -1768,9 +1557,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 444.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1790,9 +1576,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 463.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1808,9 +1591,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 477.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1826,9 +1606,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 478.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1851,9 +1628,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 494.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1863,9 +1637,6 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 [25] <images/raspi.png, id=750, 1027.84pt x 552.0625pt>
 File: images/raspi.png Graphic file (type png)
  <use images/raspi.png>
-Package pdftex.def Info: images/raspi.png used on input line 497.
-(pdftex.def)             Requested size: 205.56436pt x 110.41054pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1874,9 +1645,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 531.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1889,22 +1657,15 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.531 	\item 1
-              x SPI bus (dos pines de selecci'on) <C:/Users/Joan/Documents/GitH
-ub/WifiBotPi/LaTex/images/raspi.png>]
+              x SPI bus (dos pines de selecci'on) <./images/raspi.png>]
 <images/RaspiModelB.png, id=757, 1276.77pt x 916.1728pt>
 File: images/RaspiModelB.png Graphic file (type png)
 
 <use images/RaspiModelB.png>
-Package pdftex.def Info: images/RaspiModelB.png used on input line 544.
-(pdftex.def)             Requested size: 191.50723pt x 137.41998pt.
-
 <images/fritzing-raspberry.png, id=758, 743.77875pt x 509.65407pt>
 File: images/fritzing-raspberry.png Graphic file (type png)
 
 <use images/fritzing-raspberry.png>
-Package pdftex.def Info: images/fritzing-raspberry.png used on input line 559.
-(pdftex.def)             Requested size: 223.13535pt x 152.8974pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1913,9 +1674,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 563.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1928,13 +1686,10 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.563 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/RaspiModelB.png>]
+       <./images/RaspiModelB.png>]
 <images/gpio.png, id=766, 755.07094pt x 356.83313pt>
 File: images/gpio.png Graphic file (type png)
  <use images/gpio.png>
-Package pdftex.def Info: images/gpio.png used on input line 566.
-(pdftex.def)             Requested size: 226.52303pt x 107.05075pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 571--572
 
  []
@@ -1947,9 +1702,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 578.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -1968,8 +1720,7 @@ l.578
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.578 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/fritzing-raspberr
-y.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/gpio.png>]
+       <./images/fritzing-raspberry.png> <./images/gpio.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
@@ -1977,9 +1728,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 591--592
 <images/KS103.png, id=773, 380.42125pt x 241.90375pt>
 File: images/KS103.png Graphic file (type png)
  <use images/KS103.png>
-Package pdftex.def Info: images/KS103.png used on input line 595.
-(pdftex.def)             Requested size: 152.16579pt x 96.75978pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 600--601
 
  []
@@ -1988,9 +1736,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 600--601
 File: images/KS103_diagram.png Graphic file (type png)
 
 <use images/KS103_diagram.png>
-Package pdftex.def Info: images/KS103_diagram.png used on input line 604.
-(pdftex.def)             Requested size: 151.61374pt x 135.95552pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1999,9 +1744,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 610.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2020,14 +1762,10 @@ l.610
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.610 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/KS103.png> <C:/Us
-ers/Joan/Documents/GitHub/WifiBotPi/LaTex/images/KS103_diagram.png>]
+       <./images/KS103.png> <./images/KS103_diagram.png (PNG copy)>]
 <images/gy80.png, id=784, 439.6425pt x 305.64188pt>
 File: images/gy80.png Graphic file (type png)
  <use images/gy80.png>
-Package pdftex.def Info: images/gy80.png used on input line 616.
-(pdftex.def)             Requested size: 87.92694pt x 61.12729pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 622--623
 
  []
@@ -2041,9 +1779,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 642--643
 File: images/Lipo_PCM.png Graphic file (type png)
 
 <use images/Lipo_PCM.png>
-Package pdftex.def Info: images/Lipo_PCM.png used on input line 646.
-(pdftex.def)             Requested size: 185.4897pt x 111.7154pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 651--652
 
  []
@@ -2056,9 +1791,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 652.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2071,14 +1803,11 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.652 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/gy80.png>]
+       <./images/gy80.png>]
 <images/TL-WR702N.png, id=792, 1445.4pt x 1289.56781pt>
 File: images/TL-WR702N.png Graphic file (type png)
 
 <use images/TL-WR702N.png>
-Package pdftex.def Info: images/TL-WR702N.png used on input line 660.
-(pdftex.def)             Requested size: 216.80064pt x 193.42682pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 665--666
 
  []
@@ -2091,9 +1820,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 669.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2112,13 +1838,10 @@ l.669
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.669 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/Lipo_PCM.png>]
+       <./images/Lipo_PCM.png>]
 <images/f710.png, id=799, 522.95375pt x 343.2825pt>
 File: images/f710.png Graphic file (type png)
  <use images/f710.png>
-Package pdftex.def Info: images/f710.png used on input line 675.
-(pdftex.def)             Requested size: 209.1778pt x 137.31056pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 684--685
 
  []
@@ -2131,9 +1854,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 685.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2152,21 +1872,14 @@ l.685
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.685 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/TL-WR702N.png> <C
-:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/f710.png>]
+       <./images/TL-WR702N.png> <./images/f710.png>]
 <images/switch_comparative.png, id=807, 1184.17406pt x 321.45094pt>
 File: images/switch_comparative.png Graphic file (type png)
 
 <use images/switch_comparative.png>
-Package pdftex.def Info: images/switch_comparative.png used on input line 688.
-(pdftex.def)             Requested size: 414.46713pt x 112.5095pt.
-
 <images/LS7366.png, id=808, 859.21pt x 879.285pt>
 File: images/LS7366.png Graphic file (type png)
  <use images/LS7366.png>
-Package pdftex.def Info: images/LS7366.png used on input line 700.
-(pdftex.def)             Requested size: 128.87593pt x 131.88705pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
@@ -2179,9 +1892,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 708.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2194,22 +1904,15 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.708 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/switch_comparativ
-e.png>] <images/level_shifter_circuit.png, id=816, 1263.97218pt x 475.7775pt>
+       <./images/switch_comparative.png>]
+<images/level_shifter_circuit.png, id=816, 1263.97218pt x 475.7775pt>
 File: images/level_shifter_circuit.png Graphic file (type png)
 
 <use images/level_shifter_circuit.png>
-Package pdftex.def Info: images/level_shifter_circuit.png used on input line 71
-3.
-(pdftex.def)             Requested size: 379.19458pt x 142.73434pt.
-
 <images/bss138_diagram.png, id=817, 364.36125pt x 316.93407pt>
 File: images/bss138_diagram.png Graphic file (type png)
 
 <use images/bss138_diagram.png>
-Package pdftex.def Info: images/bss138_diagram.png used on input line 720.
-(pdftex.def)             Requested size: 109.3092pt x 95.08095pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 725--726
 
  []
@@ -2222,9 +1925,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 727.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2252,23 +1952,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.14})
                                                   \fi \fi 
 l.727 D
        ebido a que algunos pines requieren bidirecionalidad (por ejemplo I${...
- <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/LS7366.png> <C:/Users/J
-oan/Documents/GitHub/WifiBotPi/LaTex/images/level_shifter_circuit.png> <C:/User
-s/Joan/Documents/GitHub/WifiBotPi/LaTex/images/bss138_diagram.png>]
+ <./images/LS7366.png> <./images/level_shifter_circuit.png (PNG copy)> <./image
+s/bss138_diagram.png (PNG copy)>]
 <images/LM2596.png, id=827, 1123.19624pt x 267.24844pt>
 File: images/LM2596.png Graphic file (type png)
 
 <use images/LM2596.png>
-Package pdftex.def Info: images/LM2596.png used on input line 736.
-(pdftex.def)             Requested size: 393.12457pt x 93.53835pt.
-
 <images/bobina_graph.png, id=830, 579.66562pt x 557.08125pt>
 File: images/bobina_graph.png Graphic file (type png)
 
 <use images/bobina_graph.png>
-Package pdftex.def Info: images/bobina_graph.png used on input line 745.
-(pdftex.def)             Requested size: 173.90102pt x 167.12566pt.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2280,9 +1973,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 749.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2295,22 +1985,15 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.749 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/LM2596.png>]
+       <./images/LM2596.png (PNG copy)>]
 <images/MCP3428_pin_diagram.png, id=840, 372.64218pt x 356.0803pt>
 File: images/MCP3428_pin_diagram.png Graphic file (type png)
 
 <use images/MCP3428_pin_diagram.png>
-Package pdftex.def Info: images/MCP3428_pin_diagram.png used on input line 755.
-
-(pdftex.def)             Requested size: 111.7935pt x 106.8249pt.
-
 <images/LM3914_pin_diagram.png, id=842, 934.24031pt x 425.33907pt>
 File: images/LM3914_pin_diagram.png Graphic file (type png)
 
 <use images/LM3914_pin_diagram.png>
-Package pdftex.def Info: images/LM3914_pin_diagram.png used on input line 765.
-(pdftex.def)             Requested size: 280.27426pt x 127.60269pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2319,9 +2002,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 769.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2340,9 +2020,8 @@ l.769
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.769 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/bobina_graph.png>
- <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/MCP3428_pin_diagram.png
->]
+       <./images/bobina_graph.png (PNG copy)> <./images/MCP3428_pin_diagram.png
+ (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 771--772
 
  []
@@ -2351,9 +2030,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 771--772
 File: images/L298_pin_diagram.png Graphic file (type png)
 
 <use images/L298_pin_diagram.png>
-Package pdftex.def Info: images/L298_pin_diagram.png used on input line 775.
-(pdftex.def)             Requested size: 222.26735pt x 145.85706pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 783--784
 
  []
@@ -2366,9 +2042,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 786.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2387,16 +2060,12 @@ l.786
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.786 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/LM3914_pin_diagra
-m.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/L298_pin_diagram.
-png>] <images/SecurePi_comparation.png, id=856, 641.89418pt x 315.82559pt>
+       <./images/LM3914_pin_diagram.png (PNG copy)> <./images/L298_pin_diagram.
+png (PNG copy)>]
+<images/SecurePi_comparation.png, id=856, 641.89418pt x 315.82559pt>
 File: images/SecurePi_comparation.png Graphic file (type png)
 
 <use images/SecurePi_comparation.png>
-Package pdftex.def Info: images/SecurePi_comparation.png used on input line 792
-.
-(pdftex.def)             Requested size: 385.13948pt x 189.49681pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 797--798
 
  []
@@ -2405,9 +2074,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 797--798
 File: images/SecurePi_mounted.png Graphic file (type png)
 
 <use images/SecurePi_mounted.png>
-Package pdftex.def Info: images/SecurePi_mounted.png used on input line 803.
-(pdftex.def)             Requested size: 154.47438pt x 164.11021pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 809--810
 
  []
@@ -2420,9 +2086,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 810.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2435,14 +2098,11 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.810 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/SecurePi_comparat
-ion.png>] <images/sensorpi.png, id=864, 941.76843pt x 429.10312pt>
+       <./images/SecurePi_comparation.png>]
+<images/sensorpi.png, id=864, 941.76843pt x 429.10312pt>
 File: images/sensorpi.png Graphic file (type png)
 
 <use images/sensorpi.png>
-Package pdftex.def Info: images/sensorpi.png used on input line 813.
-(pdftex.def)             Requested size: 376.7007pt x 171.6382pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 818--819
 
  []
@@ -2460,9 +2120,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 826.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2481,15 +2138,11 @@ l.826
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.826 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/SecurePi_mounted.
-png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/sensorpi.png>]
+       <./images/SecurePi_mounted.png> <./images/sensorpi.png>]
 <images/motorpi.png, id=871, 933.4875pt x 430.60875pt>
 File: images/motorpi.png Graphic file (type png)
 
 <use images/motorpi.png>
-Package pdftex.def Info: images/motorpi.png used on input line 831.
-(pdftex.def)             Requested size: 373.38838pt x 172.24043pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2498,9 +2151,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 836.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2513,8 +2163,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.836 \newpage
-               <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/motorpi.p
-ng>]
+               <./images/motorpi.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 841--842
 
  []
@@ -2523,16 +2172,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 841--842
 File: images/esquema_power.png Graphic file (type png)
 
 <use images/esquema_power.png>
-Package pdftex.def Info: images/esquema_power.png used on input line 845.
-(pdftex.def)             Requested size: 440.23892pt x 117.22641pt.
-
 <images/esquema_5V.png, id=878, 896.59969pt x 661.72218pt>
 File: images/esquema_5V.png Graphic file (type png)
 
 <use images/esquema_5V.png>
-Package pdftex.def Info: images/esquema_5V.png used on input line 858.
-(pdftex.def)             Requested size: 224.14937pt x 165.43013pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2541,9 +2184,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 864.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2556,14 +2196,11 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.864 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/esquema_power.png
->] <images/esquema_sensor.png, id=885, 779.16093pt x 612.03656pt>
+       <./images/esquema_power.png>]
+<images/esquema_sensor.png, id=885, 779.16093pt x 612.03656pt>
 File: images/esquema_sensor.png Graphic file (type png)
 
 <use images/esquema_sensor.png>
-Package pdftex.def Info: images/esquema_sensor.png used on input line 869.
-(pdftex.def)             Requested size: 303.87154pt x 238.6933pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 874--875
 
  []
@@ -2576,9 +2213,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 877.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2597,8 +2231,8 @@ l.877
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.877 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/esquema_5V.png> <
-C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/esquema_sensor.png>]
+       <./images/esquema_5V.png (PNG copy)> <./images/esquema_sensor.png (PNG c
+opy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 886--887
 
  []
@@ -2607,9 +2241,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 886--887
 File: images/pre_design.png Graphic file (type png)
 
 <use images/pre_design.png>
-Package pdftex.def Info: images/pre_design.png used on input line 890.
-(pdftex.def)             Requested size: 415.95844pt x 291.65645pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 895--896
 
  []
@@ -2622,9 +2253,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 898.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2640,9 +2268,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 900--901
 File: images/soportes.png Graphic file (type png)
 
 <use images/soportes.png>
-Package pdftex.def Info: images/soportes.png used on input line 904.
-(pdftex.def)             Requested size: 280.04556pt x 234.50052pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 909--910
 
  []
@@ -2655,9 +2280,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 911.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2671,7 +2293,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.911 P
        ara darle un acabado menos rectangular se dise'naron unos chaflanes, ...
- <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/pre_design.png>]
+ <./images/pre_design.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 914--915
 
  []
@@ -2680,9 +2302,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 914--915
 File: images/final_design.png Graphic file (type png)
 
 <use images/final_design.png>
-Package pdftex.def Info: images/final_design.png used on input line 920.
-(pdftex.def)             Requested size: 494.932pt x 304.54749pt.
-
 Overfull \hbox (39.6879pt too wide) in paragraph at lines 920--921
  [][] 
  []
@@ -2699,9 +2318,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 924.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2714,14 +2330,11 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.924 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/soportes.png>]
+       <./images/soportes.png>]
 <images/final_design2.png, id=911, 1119.43219pt x 639.13782pt>
 File: images/final_design2.png Graphic file (type png)
 
 <use images/final_design2.png>
-Package pdftex.def Info: images/final_design2.png used on input line 928.
-(pdftex.def)             Requested size: 481.34647pt x 274.8239pt.
-
 Overfull \hbox (26.10236pt too wide) in paragraph at lines 928--929
  [][] 
  []
@@ -2734,9 +2347,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 934.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2755,9 +2365,8 @@ l.934 \newpage
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.934 \newpage
-               <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/final_des
-ign.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/final_design2.p
-ng>]
+               <./images/final_design.png (PNG copy)> <./images/final_design2.p
+ng (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 939--940
 
  []
@@ -2765,9 +2374,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 939--940
 <images/barra.png, id=916, 1060.71281pt x 228.10219pt>
 File: images/barra.png Graphic file (type png)
  <use images/barra.png>
-Package pdftex.def Info: images/barra.png used on input line 943.
-(pdftex.def)             Requested size: 456.09763pt x 98.08202pt.
-
 Overfull \hbox (0.85352pt too wide) in paragraph at lines 943--944
  [][] 
  []
@@ -2786,9 +2392,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 950.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2801,21 +2404,15 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.950 \
-        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/barra.png>]
+        <./images/barra.png (PNG copy)>]
 <images/couplings.png, id=923, 720.44156pt x 259.7203pt>
 File: images/couplings.png Graphic file (type png)
 
 <use images/couplings.png>
-Package pdftex.def Info: images/couplings.png used on input line 954.
-(pdftex.def)             Requested size: 309.78383pt x 111.67755pt.
-
 <images/paneles.png, id=924, 3044.37375pt x 2739.23375pt>
 File: images/paneles.png Graphic file (type png)
 
 <use images/paneles.png>
-Package pdftex.def Info: images/paneles.png used on input line 964.
-(pdftex.def)             Requested size: 273.98181pt x 246.5204pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2824,9 +2421,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 973.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2845,8 +2439,7 @@ l.973
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.973 
-       <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/couplings.png> <C
-:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/paneles.png>]
+       <./images/couplings.png (PNG copy)> <./images/paneles.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 979--980
 
  []
@@ -2855,9 +2448,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 979--980
 File: images/montaje.png Graphic file (type png)
 
 <use images/montaje.png>
-Package pdftex.def Info: images/montaje.png used on input line 985.
-(pdftex.def)             Requested size: 463.59206pt x 226.55667pt.
-
 Overfull \hbox (8.34795pt too wide) in paragraph at lines 985--986
  [][] 
  []
@@ -2870,9 +2460,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 992.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2883,9 +2470,6 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 File: images/rospibot_finish.png Graphic file (type png)
 
 <use images/rospibot_finish.png>
-Package pdftex.def Info: images/rospibot_finish.png used on input line 995.
-(pdftex.def)             Requested size: 351.64354pt x 224.02228pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
 
  []
@@ -2902,9 +2486,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1007.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2923,15 +2504,11 @@ l.1007
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1007 
-        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/montaje.png> <C:
-/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/rospibot_finish.png>]
+        <./images/montaje.png> <./images/rospibot_finish.png>]
 <images/routerIP.png, id=944, 511.15968pt x 150.5625pt>
 File: images/routerIP.png Graphic file (type png)
 
 <use images/routerIP.png>
-Package pdftex.def Info: images/routerIP.png used on input line 1012.
-(pdftex.def)             Requested size: 357.80933pt x 105.39302pt.
-
 Overfull \hbox (14.0752pt too wide) in paragraph at lines 1017--1018
 \T1/lmr/m/n/12 pa-ra evi-tar con-flic-tos con las nu-me-ra-cio-nes más uti-li-z
 a-das (192.168.0.XXX y 192.168.1.XXX).
@@ -2941,9 +2518,6 @@ a-das (192.168.0.XXX y 192.168.1.XXX).
 File: images/dhcprospibot.png Graphic file (type png)
 
 <use images/dhcprospibot.png>
-Package pdftex.def Info: images/dhcprospibot.png used on input line 1021.
-(pdftex.def)             Requested size: 357.28238pt x 175.47939pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2952,9 +2526,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1026.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -2973,14 +2544,11 @@ e{figure.3.37}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1026 \newpage
-                <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/routerIP
-.png> <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/dhcprospibot.png>]
-<images/win32disk.png, id=950, 280.04625pt x 136.71075pt>
+                <./images/routerIP.png (PNG copy)> <./images/dhcprospibot.png (
+PNG copy)>] <images/win32disk.png, id=950, 280.04625pt x 136.71075pt>
 File: images/win32disk.png Graphic file (type png)
 
 <use images/win32disk.png>
-Package pdftex.def Info: images/win32disk.png used on input line 1035.
-(pdftex.def)             Requested size: 280.04555pt x 136.7104pt.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1043.
 
@@ -2992,9 +2560,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1044.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3007,13 +2572,10 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1044 
-        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/win32disk.png>]
+        <./images/win32disk.png>]
 <images/dhcp.png, id=961, 416.2752pt x 102.1416pt>
 File: images/dhcp.png Graphic file (type png)
  <use images/dhcp.png>
-Package pdftex.def Info: images/dhcp.png used on input line 1047.
-(pdftex.def)             Requested size: 333.02061pt x 81.71338pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
 
  []
@@ -3021,16 +2583,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
 <images/ssh.png, id=963, 480.34pt x 198.56pt>
 File: images/ssh.png Graphic file (type png)
  <use images/ssh.png>
-Package pdftex.def Info: images/ssh.png used on input line 1056.
-(pdftex.def)             Requested size: 384.27252pt x 158.84819pt.
-
 <images/raspiconfig.png, id=964, 510.40688pt x 308.65312pt>
 File: images/raspiconfig.png Graphic file (type png)
 
 <use images/raspiconfig.png>
-Package pdftex.def Info: images/raspiconfig.png used on input line 1065.
-(pdftex.def)             Requested size: 408.32605pt x 246.92282pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3039,9 +2595,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1072.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3060,22 +2613,15 @@ l.1072
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1072 
-        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/dhcp.png> <C:/Us
-ers/Joan/Documents/GitHub/WifiBotPi/LaTex/images/ssh.png>]
+        <./images/dhcp.png> <./images/ssh.png>]
 <images/blacklist.png, id=973, 473.51906pt x 177.66376pt>
 File: images/blacklist.png Graphic file (type png)
 
 <use images/blacklist.png>
-Package pdftex.def Info: images/blacklist.png used on input line 1092.
-(pdftex.def)             Requested size: 378.81575pt x 142.13118pt.
-
 <images/modules.png, id=974, 480.29437pt x 268.00125pt>
 File: images/modules.png Graphic file (type png)
 
 <use images/modules.png>
-Package pdftex.def Info: images/modules.png used on input line 1101.
-(pdftex.def)             Requested size: 384.23601pt x 214.40128pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3084,9 +2630,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1109.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3100,7 +2643,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
                                                   \fi \fi 
 l.1109 \item \textbf
                     {\texttt{sudo apt-get install i2c-tools}}  Herramientas ...
- <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/raspiconfig.png>]
+ <./images/raspiconfig.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3109,9 +2652,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1119.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3131,9 +2671,8 @@ te ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1119 \item \textbf
-                    {\texttt{mkdir python-spi }} <C:/Users/Joan/Documents/GitHu
-b/WifiBotPi/LaTex/images/blacklist.png> <C:/Users/Joan/Documents/GitHub/WifiBot
-Pi/LaTex/images/modules.png>]
+                    {\texttt{mkdir python-spi }} <./images/blacklist.png (PNG c
+opy)> <./images/modules.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1122.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6> not available
@@ -3161,9 +2700,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1138.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3204,9 +2740,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1153.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3256,9 +2789,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1171.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3278,9 +2808,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1179--1180
 <images/ros.png, id=997, 254.9525pt x 73.27374pt>
 File: images/ros.png Graphic file (type png)
  <use images/ros.png>
-Package pdftex.def Info: images/ros.png used on input line 1183.
-(pdftex.def)             Requested size: 152.97266pt x 43.96457pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
 
  []
@@ -3298,9 +2825,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1194.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3313,21 +2837,15 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1194 
-        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/ros.png>]
+        <./images/ros.png>]
 <images/rxgraph.png, id=1005, 1044.90375pt x 218.31563pt>
 File: images/rxgraph.png Graphic file (type png)
 
 <use images/rxgraph.png>
-Package pdftex.def Info: images/rxgraph.png used on input line 1197.
-(pdftex.def)             Requested size: 365.72179pt x 76.4116pt.
-
 <images/gazebo.png, id=1006, 1298.60156pt x 780.66656pt>
 File: images/gazebo.png Graphic file (type png)
 
 <use images/gazebo.png>
-Package pdftex.def Info: images/gazebo.png used on input line 1206.
-(pdftex.def)             Requested size: 454.51736pt x 273.23738pt.
-
 Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
 
  []
@@ -3340,9 +2858,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1212.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3361,8 +2876,7 @@ l.1212
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1212 
-        <C:/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/rxgraph.png> <C:
-/Users/Joan/Documents/GitHub/WifiBotPi/LaTex/images/gazebo.png>]
+        <./images/rxgraph.png (PNG copy)> <./images/gazebo.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 1218--1219
 
  []
@@ -3402,9 +2916,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1236.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3434,9 +2945,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1264.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3457,9 +2965,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1313.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3486,9 +2991,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1365.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3524,9 +3026,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1420.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3558,9 +3057,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1447.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3592,9 +3088,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1487.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3625,9 +3118,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1543.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3670,9 +3160,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1554.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3694,9 +3181,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1559.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3714,6 +3198,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1564--1565
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1566--1567
+
+ []
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -3721,9 +3210,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1568.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3741,9 +3227,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1569.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3753,7 +3236,7 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 [72
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1571--1572
+Underfull \hbox (badness 10000) in paragraph at lines 1575--1576
 
  []
 
@@ -3765,9 +3248,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1579.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3783,9 +3263,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1579.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3795,19 +3272,19 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 [74
 
 ]
-Underfull \hbox (badness 4739) in paragraph at lines 1596--1600
+Underfull \hbox (badness 4739) in paragraph at lines 1600--1604
 []\T1/lmr/m/sc/12 US Di-gi-tal\T1/lmr/m/n/12 , \T1/lmr/m/it/12 E4P OEM Mi-nia-t
 u-re Op-ti-cal Kit En-co-der \T1/lmr/m/n/12 Es-ta-dos Uni-dos,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1596--1600
+Underfull \hbox (badness 10000) in paragraph at lines 1600--1604
 \T1/lmr/m/n/12 2005 []$\T1/lmtt/m/n/12 http : / / www . usdigital . com / asset
-s / datasheets / E4P _ datasheet . pdf ? k =$
+s / datasheets / E4P _ datasheet . pdf ? k =
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 1627--1631
+Underfull \hbox (badness 2269) in paragraph at lines 1631--1635
 []\T1/lmr/m/sc/12 Fairchild Se-mi-con-duc-tors\T1/lmr/m/n/12 , \T1/lmr/m/it/12 
 BSS138 N-Channel Lo-gic Le-vel En-han-ce-ment
  []
@@ -3820,9 +3297,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1637.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3838,9 +3312,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1660.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3852,34 +3323,34 @@ ay}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1660 \newpage
+l.1664 \newpage
                ]
-Underfull \hbox (badness 10000) in paragraph at lines 1664--1666
+Underfull \hbox (badness 10000) in paragraph at lines 1668--1670
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1667--1669
+Underfull \hbox (badness 10000) in paragraph at lines 1671--1673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1670--1672
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1676
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1673--1675
+Underfull \hbox (badness 10000) in paragraph at lines 1677--1679
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1676--1678
+Underfull \hbox (badness 10000) in paragraph at lines 1680--1682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1679--1681
+Underfull \hbox (badness 10000) in paragraph at lines 1683--1685
 
  []
 
@@ -3891,9 +3362,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/etseib-logo.png Graphic file (type png)
 <use images/etseib-logo.png>
-Package pdftex.def Info: images/etseib-logo.png used on input line 1682.
-(pdftex.def)             Requested size: 39.0261pt x 51.023pt.
-
 
 Package Fancyhdr Warning: \footskip is too small (42.0pt): 
  Make it at least 51.023pt.
@@ -3903,44 +3371,40 @@ Package Fancyhdr Warning: \footskip is too small (42.0pt):
 [77
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1682.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1682.
- (C:\Users\Joan\Documents\GitHub\WifiBotPi\LaTex\RosPiBot.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1682.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1682.
 
-Package rerunfilecheck Info: File `RosPiBot.out' has not changed.
-(rerunfilecheck)             Checksum: 86902CC11114A78A993CA1AABA1EB5D8;6173.
+Package glossaries Warning: \makeglossaries hasn't been used,
+the glossaries will not be updated.
 
+
+Package glossaries Warning: No \printglossary or \printglossaries found.
+This document will not have a glossary.
+
+(./RosPiBot.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24771 strings out of 494045
- 458228 string characters out of 3146017
- 601459 words of memory out of 3000000
- 27245 multiletter control sequences out of 15000+200000
+ 20516 strings out of 493848
+ 357586 string characters out of 1152822
+ 487332 words of memory out of 3000000
+ 22986 multiletter control sequences out of 15000+50000
  76978 words of font info for 56 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 62i,16n,66p,1758b,875s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/
-fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/eurosym/feybr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/l
-m/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
-/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/lm/lmtt12.pfb>
-Output written on RosPiBot.pdf (79 pages, 48481837 bytes).
+ 714 hyphenation exceptions out of 8191
+ 63i,16n,66p,1192b,850s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf-texlive/fonts/type1/p
+ublic/eurosym/feybr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
+2.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on RosPiBot.pdf (79 pages, 48900922 bytes).
 PDF statistics:
  1225 PDF objects out of 1440 (max. 8388607)
  257 named destinations out of 1000 (max. 500000)
