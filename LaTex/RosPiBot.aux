@@ -4,18 +4,22 @@
 \catcode`>\active
 \@nameuse{es@quoting}
 \catcode`'\active
-\ifx\hyper@anchor\@undefined
-\global \let \oldcontentsline\contentsline
-\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
-\global \let \oldnewlabel\newlabel
-\gdef \newlabel#1#2{\newlabelxx{#1}#2}
-\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
-\AtEndDocument{\let \contentsline\oldcontentsline
-\let \newlabel\oldnewlabel}
-\else
-\global \let \hyper@last\relax 
-\fi
-
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \select@language{spanish}
 \@writefile{toc}{\select@language{spanish}}
@@ -61,7 +65,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1.7}{\ignorespaces Esquema de funcionamiento de un encoder de cuadratura}}{18}{figure.1.7}}
 \newlabel{fig:Esquema QEI}{{1.7}{18}{Esquema de funcionamiento de un encoder de cuadratura\relax }{figure.1.7}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces Ensayo de consumo y se'nal de codificador del motor sin carga }}{18}{table.1.1}}
-\newlabel{tab:Encoder periods}{{1.1}{18}{Ensayo de consumo y se'nal de codificador del motor sin carga \relax }{table.1.1}{}}
+\newlabel{tab:Encoder periods}{{1.1}{18}{Ensayo de consumo y se'nal de codificador del motor sin carga\relax }{table.1.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4.8}Estado Inicial}{19}{subsection.1.4.8}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Especificaciones}{21}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -106,7 +110,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Bater'ia}{30}{subsection.3.1.4}}
 \citation{router}
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Comparativa entre tipos de bater'ias }}{31}{table.3.1}}
-\newlabel{tab:Battery_type_table}{{3.1}{31}{Comparativa entre tipos de bater'ias \relax }{table.3.1}{}}
+\newlabel{tab:Battery_type_table}{{3.1}{31}{Comparativa entre tipos de bater'ias\relax }{table.3.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Bater'ia LiPo con PCM instalado}}{31}{figure.3.8}}
 \newlabel{fig:LiPo_PCM}{{3.8}{31}{Bater'ia LiPo con PCM instalado\relax }{figure.3.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Punto de acceso WiFi}{31}{subsection.3.1.5}}

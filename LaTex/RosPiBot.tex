@@ -247,7 +247,7 @@ Así pues, se han creado tres dispositivos distintos: La placa SecurePi, que perm
 
 Puesto que el interior se iba a manipular, se decidió aprovechar para mejorar otros aspectos. La primer punto fue ofrecer un sistema de encendido más cómodo, en vez de un interruptor interior se substituyó por un antivandálico situado en la parte trasera y de fácil acceso. Las baterías pasaron de encontrarse en el exterior a formar parte del interior, se cambiaron por unas de polímero de litio con una electrónica de gestión de carga propia. De esta manera no haría falta comprar cargadores específicos, simplemente una fuente de alimentación acorde de 9V. Para poder acceder remotamente al robot se optó por la incorporación de un router WiFi comercial, para mejorar la modularidad del nuevo robot. por lo que afecta a los nuevos sensores, se instalaron los definidos anteriormente en en el apratado \ref{obje}. A causa de las nuevas modificaciones internas, se rediseñó el exterior del robot, aumentando la altura del chasis pero manteniendo la distancia entre ejes. Puesto que el objetivo era mantener la estética del robot, se conservó su característica principal, un eje transversal que permite pivotar las dos partes del robot.\\
 
-Finalmente se ha desarrollado un módulo de Python llamado rospibot que permite al usuario comandar y acceder a toda la información necesaria, además de instalar y configurar ROS. Este proyecto no otorga ninguna funcionalidad al robot, simplemente se ha centrado en el objetivo de ofrecer una plataforma lo más flexible posible para cualquier futuro proyecto.
+Finalmente se desarrollo un módulo de Python llamado rospibot que permite al usuario comandar y acceder a toda la información necesaria, además de instalar y configurar ROS. Este proyecto no otorga ninguna funcionalidad al robot, simplemente se ha centrado en el objetivo de ofrecer una plataforma lo más flexible posible para cualquier futuro proyecto.
 
 \newpage
 \section{Descripci'on Wifibot}
@@ -1559,15 +1559,11 @@ En Estados Unidos se ha declarado que se pueden desechar de forma segura como re
 \newpage
 \chapter*{Conclusiones}
 \addcontentsline{toc}{chapter}{Conclusiones}
-A lo largo de este proyecto se han cumplido todos los objetivos propuestos. Obteniendo un producto apto para su vuelta al sector educacional. Aunque restaurar una plataforma y volverla a poner al día ha sido una labor que conllevado varios quebraderos de cabeza, este proyecto demuestra que es realizable. Durante la ejecuci'on de este proyecto se ha observado que las plataformas rob'oticas se quedan obsoletas a causa de sus unidades de procesamiento desfasadas, mientras que los componentes m'as b'asicos como los controladores de motores o los sensores siguen estando operativos. Todo esto hace ver que quiz'a hace falta un cambio en el razonamiento de la rob'otica, de tal manera que las unidades de procesamiento puedan ser actualizadas sin afectar al resto de los elementos de un robot.\\
+Aunque restaurar una plataforma y volverla a poner al d'ia ha sido un labor que conllevado varios quebraderos de cabeza, este proyecto demuestra que es realizable. Durante la ejecuci'on de este proyecto se ha observado que las plataformas rob'oticas se quedan obsoletas a causa de sus unidades de procesamiento desfasadas, mientras que los componentes m'as b'asicos como los controladores de motores o los sensores siguen estando operativos. Todo esto hace ver que quiz'a hace falta un cambio en el razonamiento de la rob'otica, de tal manera que las unidades de procesamiento puedan ser actualizadas sin afectar al resto de los elementos de un robot.\\
 
 A medida que se ha ido realizando el proyecto, trabajando con el robot, pensando mejoras y aplic'andolas, uno se da cuenta de las deficiencias del producto original y comprende la evoluci'on que ha seguido la plataforma WifiBot hasta el presente. El cambio m'as notorio es el hecho que los nuevas plataformas creadas por la empresa francesa est'an constituidas por un 'unico bloque (sin la necesidad de crear dos hemisferios). Durante el dise'no del RosPiBot, en el momento de la ubicar sus componentes, se destino gran parte del tiempo a encontrar la manera que el switch, la Raspberry Pi y el router pudiesen convivir en el mismo espacio. Adem'as, disponer de una barra met'alica que atraviesa transversalmente el robot, dificult'o enormemente su desarrollo.\\
 
-Por 'ultimo, el hecho de ''Rosificar'' cualquier plataforma rob'otica es una apuesta segura hacia su desarrollo. La gran comunidad que hay detr'as de ROS y el nivel de conocimientos del que dispone, son motivos suficientes utilizar esta herramienta. Incluso con plataformas desactualizadas, añadir ROS puede originar un resurgimiento. \\
-
-Como futuros proyectos a realizar, se sugieren: Odometria de robots con conducción per deslizamiento, Teleoperación a distancia, Navegación autónoma o incluso añadir nuevos accesorios como sensores de calidad del aire o brazos robóticos. 
-
-
+Por 'ultimo, el hecho de ''Rosificar'' cualquier plataforma rob'otica es una apuesta segura hacia su desarrollo. La gran comunidad que hay detr'as de ROS y el nivel de conocimientos del que dispone, son motivos suficientes utilizar esta herramienta. Incluso con plataformas desactualizadas, añadir ROS puede originar un resurgimiento. 
 
 \newpage
 \chapter*{Agradecimientos}
