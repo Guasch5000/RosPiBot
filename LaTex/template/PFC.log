@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.13)  4 JUN 2014 10:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.13)  16 JUN 2014 11:43
 entering extended mode
  %&-line parsing enabled.
 **PFC.tex
@@ -91,8 +91,7 @@ Package babel Info: Making . an active character on input line 585.
 Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
 Package babel Info: Making ' an active character on input line 657.
-))
-(/usr/share/texmf-texlive/tex/latex/mh/mathtools.sty
+)) (./mathtools.sty
 Package: mathtools 2008/08/01 v1.06 mathematical typesetting tools (MH)
 
 (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
@@ -1525,7 +1524,7 @@ This document will not have a glossary.
 (./PFC.aux) ) 
 Here is how much of TeX's memory you used:
  19714 strings out of 493848
- 343533 string characters out of 1152822
+ 343459 string characters out of 1152822
  473940 words of memory out of 3000000
  22456 multiletter control sequences out of 15000+50000
  63620 words of font info for 47 fonts, out of 3000000 for 9000
